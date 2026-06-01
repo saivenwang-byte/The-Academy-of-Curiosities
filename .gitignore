@@ -1,0 +1,18 @@
+# Archives
+*.zip
+
+# Photo raw files
+*.HEIC
+*.heic
+
+# Saved web pages (Tmall)
+天猫_files/
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temp files
+~$*.docx
+*.tmp

@@ -1,0 +1,342 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.root{padding:1.5rem 0;max-width:680px}
+.header{display:flex;align-items:center;gap:14px;margin-bottom:1.5rem}
+.avatar{width:52px;height:52px;border-radius:50%;background:#B5D4F4;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.agent-name{font-size:17px;font-weight:500;color:var(--color-text-primary)}
+.agent-title{font-size:13px;color:var(--color-text-secondary);margin-top:2px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#639922;display:inline-block;margin-right:5px}
+
+.tabs{display:flex;gap:0;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.5rem}
+.tab{padding:8px 16px;font-size:13px;color:var(--color-text-secondary);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s}
+.tab.active{color:var(--color-text-primary);border-bottom:2px solid var(--color-text-primary);font-weight:500}
+.tab:hover{color:var(--color-text-primary)}
+
+.panel{display:none}.panel.active{display:block}
+
+.input-area{margin-bottom:1rem}
+.input-area label{font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:6px}
+textarea{width:100%;min-height:140px;padding:10px 12px;font-size:14px;line-height:1.6;resize:vertical;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-family:var(--font-sans)}
+textarea:focus{outline:none;border-color:var(--color-border-primary)}
+
+.mode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:1rem}
+.mode-btn{padding:8px 10px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);font-size:12px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);text-align:left;transition:all .15s;line-height:1.4}
+.mode-btn:hover{background:var(--color-background-secondary);color:var(--color-text-primary)}
+.mode-btn.selected{border:1.5px solid #185FA5;background:#E6F1FB;color:#0C447C}
+.mode-icon{font-size:16px;margin-bottom:4px;display:block}
+.mode-label{font-weight:500;display:block;font-size:12px}
+.mode-desc{font-size:11px;opacity:.75;display:block;margin-top:2px}
+
+.btn-run{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px;cursor:pointer;font-family:var(--font-sans);transition:all .15s}
+.btn-run:hover{background:var(--color-background-secondary)}
+.btn-run:active{transform:scale(0.98)}
+
+.output-box{margin-top:1.25rem;padding:16px;background:var(--color-background-secondary);border-radius:var(--border-radius-lg);border:0.5px solid var(--color-border-tertiary);min-height:80px}
+.output-header{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.output-body{font-size:14px;line-height:1.75;color:var(--color-text-primary)}
+.output-body .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-right:6px;font-weight:500}
+.tag-l1{background:#E6F1FB;color:#0C447C}
+.tag-l2{background:#EAF3DE;color:#3B6D11}
+.tag-l3{background:#FAEEDA;color:#854F0B}
+.tag-l4{background:#FBEAF0;color:#993556}
+.tag-l5{background:#EEEDFE;color:#3C3489}
+.tag-warn{background:#FCEBEB;color:#A32D2D}
+.tag-ok{background:#EAF3DE;color:#3B6D11}
+
+.issue-card{padding:10px 12px;border-left:3px solid;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;margin-bottom:8px;background:var(--color-background-primary)}
+.issue-card.warn{border-color:#E24B4A}
+.issue-card.note{border-color:#EF9F27}
+.issue-card.ok{border-color:#639922}
+.issue-card .ic-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.issue-card .ic-body{font-size:13px;color:var(--color-text-secondary);line-height:1.5}
+.issue-card .ic-fix{font-size:12px;color:#0C447C;margin-top:4px}
+
+.layer-row{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.layer-row:last-child{border:none}
+.layer-badge{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0;margin-top:2px}
+.layer-content{flex:1}
+.layer-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.layer-desc{font-size:12px;color:var(--color-text-secondary);line-height:1.5;margin-top:2px}
+
+.empty-state{text-align:center;padding:2rem 0;color:var(--color-text-tertiary);font-size:13px}
+.empty-state i{font-size:32px;margin-bottom:8px;display:block}
+
+.score-bar-wrap{margin:4px 0}
+.score-label{font-size:12px;color:var(--color-text-secondary);margin-bottom:3px}
+.score-bar{height:6px;background:var(--color-border-tertiary);border-radius:3px;overflow:hidden}
+.score-fill{height:100%;border-radius:3px;transition:width .5s ease}
+
+.thinking{display:flex;align-items:center;gap:8px;color:var(--color-text-secondary);font-size:13px;padding:12px 0}
+.dot-anim span{display:inline-block;animation:blink 1.2s infinite;font-size:18px;line-height:1}
+.dot-anim span:nth-child(2){animation-delay:.2s}
+.dot-anim span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.2}40%{opacity:1}}
+</style>
+
+<div class="root">
+  <div class="header">
+    <div class="avatar">🏫</div>
+    <div>
+      <div class="agent-name">田中 みどり — 日本校园文化顾问</div>
+      <div class="agent-title"><span class="status-dot"></span>在线 · 日本小学生活经历 10年 · 现居东京</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('calibrate')">文化校准</div>
+    <div class="tab" onclick="switchTab('layers')">五层感知系统</div>
+    <div class="tab" onclick="switchTab('glossary')">校园词汇库</div>
+  </div>
+
+  <div id="panel-calibrate" class="panel active">
+    <div class="input-area">
+      <label>粘贴需要文化校准的文本段落（中文或日文均可）</label>
+      <textarea id="txt-input" placeholder="例如：放学后，小林推开教室的门，发现椅子还是湿的。他换上室内鞋，走向窗边……"></textarea>
+    </div>
+
+    <div style="margin-bottom:.75rem">
+      <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:8px">校准维度（可多选）</div>
+      <div class="mode-grid">
+        <div class="mode-btn selected" onclick="toggleMode(this,'space')" data-mode="space">
+          <span class="mode-icon"><i class="ti ti-building-school" aria-hidden="true"></i></span>
+          <span class="mode-label">空间与物</span>
+          <span class="mode-desc">室内鞋、推拉门、鞋柜细节</span>
+        </div>
+        <div class="mode-btn selected" onclick="toggleMode(this,'routine')" data-mode="routine">
+          <span class="mode-icon"><i class="ti ti-calendar-event" aria-hidden="true"></i></span>
+          <span class="mode-label">制度与流程</span>
+          <span class="mode-desc">给食、部活、係活動</span>
+        </div>
+        <div class="mode-btn selected" onclick="toggleMode(this,'social')" data-mode="social">
+          <span class="mode-icon"><i class="ti ti-users" aria-hidden="true"></i></span>
+          <span class="mode-label">人际与隐规则</span>
+          <span class="mode-desc">先輩、空気を読む</span>
+        </div>
+        <div class="mode-btn" onclick="toggleMode(this,'culture')" data-mode="culture">
+          <span class="mode-icon"><i class="ti ti-star" aria-hidden="true"></i></span>
+          <span class="mode-label">儿童亚文化</span>
+          <span class="mode-desc">ランドセル、校园怪谈</span>
+        </div>
+        <div class="mode-btn" onclick="toggleMode(this,'emotion')" data-mode="emotion">
+          <span class="mode-icon"><i class="ti ti-heart" aria-hidden="true"></i></span>
+          <span class="mode-label">情感与分寸</span>
+          <span class="mode-desc">克制表达、じゃあね</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-run" onclick="runCalibration()">
+      <i class="ti ti-adjustments-horizontal" aria-hidden="true"></i>
+      开始文化校准 ↗
+    </button>
+
+    <div id="output-calibrate" class="output-box" style="display:none"></div>
+  </div>
+
+  <div id="panel-layers" class="panel">
+    <div style="padding-top:.5rem">
+      <div class="layer-row">
+        <div class="layer-badge" style="background:#B5D4F4;color:#0C447C">1</div>
+        <div class="layer-content">
+          <div class="layer-title">制度与流程的体感</div>
+          <div class="layer-desc">开学式 · 毕业式 · 给食当番 · 部活放学 · 学級会流程 · 係活動分工。这些是日本小学生活的骨架，写错了，骨头就断了。</div>
+        </div>
+      </div>
+      <div class="layer-row">
+        <div class="layer-badge" style="background:#9FE1CB;color:#085041">2</div>
+        <div class="layer-content">
+          <div class="layer-title">空间与物的记忆</div>
+          <div class="layer-desc">室内鞋的气味与触感 · 推拉门的漏风方向 · 讲台（教壇）的位置 · 厕所拖鞋换了忘记换回来的那种羞耻感。这些细节靠查资料查不出来。</div>
+        </div>
+      </div>
+      <div class="layer-row">
+        <div class="layer-badge" style="background:#FAC775;color:#633806">3</div>
+        <div class="layer-content">
+          <div class="layer-title">人际关系与隐性规则</div>
+          <div class="layer-desc">先輩/後輩的纵向压力 · 空気を読む · いじめ的真实形态（无视，不是暴力）· スクールカースト（社交等级，与成绩无关）。</div>
+        </div>
+      </div>
+      <div class="layer-row">
+        <div class="layer-badge" style="background:#F4C0D1;color:#72243E">4</div>
+        <div class="layer-content">
+          <div class="layer-title">儿童文化与亚文化</div>
+          <div class="layer-desc">ランドセル的分量与磨损 · 夏休みの自由研究 · 学校の怪談经典类型（钢琴、人体模型、生物教室）· 女孩书包钥匙扣 · 男孩书包里藏玩具。</div>
+        </div>
+      </div>
+      <div class="layer-row">
+        <div class="layer-badge" style="background:#CECBF6;color:#26215C">5</div>
+        <div class="layer-content">
+          <div class="layer-title">情感表达与分寸感</div>
+          <div class="layer-desc">克制型友谊（放学后走一段，路口说じゃあね）· 鼓励用「頑張ったね」· 安慰是默默坐在旁边 · 道歉与原谅的仪式感。</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:1.25rem">
+      <button class="btn-run" onclick="sendPrompt('我想深入了解日本校园的某一个层次，请展开讲解')">
+        <i class="ti ti-book-2" aria-hidden="true"></i>
+        深入某个层次 ↗
+      </button>
+    </div>
+  </div>
+
+  <div id="panel-glossary" class="panel">
+    <div id="glossary-content" style="padding-top:.5rem">
+    </div>
+    <div style="margin-top:1rem">
+      <button class="btn-run" onclick="sendPrompt('请为《学堂趣事录》的日本版写一段开头，体现所有五个层次的细节')">
+        <i class="ti ti-pencil" aria-hidden="true"></i>
+        生成日版开头段落 ↗
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+const MODES = new Set(['space','routine','social']);
+
+function switchTab(id) {
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const ids = ['calibrate','layers','glossary'];
+    t.classList.toggle('active', ids[i]===id);
+  });
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  if(id==='glossary') renderGlossary();
+}
+
+function toggleMode(el, mode) {
+  if(MODES.has(mode)){MODES.delete(mode);el.classList.remove('selected')}
+  else{MODES.add(mode);el.classList.add('selected')}
+}
+
+const CALIBRATION_DB = {
+  space: [
+    {text:'室内鞋', trigger:['室内鞋','上鞋','换鞋'], type:'ok', title:'✓ 室内鞋细节到位', body:'日本小学确实有严格的「上履き」（室内鞋）制度，在玄关（げんかん）换鞋，室内鞋按编号存放在固定鞋柜格。', fix:'建议加入：鞋柜编号、忘记换鞋走进教室时的那种不安感。'},
+    {text:'推拉门', trigger:['推拉门','门','教室门','推开','推门','哐'], type:'warn', title:'⚠ 教室门类型需确认', body:'日本小学教室是推拉门（引き戸），不是中国常见的铰链门。关门时会发出"カタッ"的轨道滑动声，冬天门缝会漏风。', fix:'建议：把"推开教室的门"改为"拉开引き戸（引き戸を引いた）"。'},
+    {text:'进教室', trigger:['走进教室','进入教室','进教室','推开教室'], type:'warn', title:'⚠ 缺上履き换鞋流程', body:'日本孩子不会在穿外履き的情况下直接进教室。必须先经过昇降口→下駄箱→换上履き。', fix:'在「进教室」前加入：玄关换室内鞋、鞋柜编号、再拉开引き戸。'},
+    {text:'食堂', trigger:['食堂','打饭','端着餐','饭堂','餐厅'], type:'warn', title:'⚠ 日本小学午餐不是食堂制', body:'日本小学午餐是教室給食：配膳当番穿白コート取餐，在教室分发，吃完昼歯磨き。没有中国式食堂排队打饭。', fix:'改为給食当番、配膳室、教室分发、刷牙流程。'},
+    {text:'班长', trigger:['班长','课代表','学习委员','班干部'], type:'warn', title:'⚠ 日本小学不是班干部制', body:'日本小学用係活動：黒板係、配膳係、保健係等，全员有职，不是单一班长。', fix:'改为具体係名，如黒板係、配膳係。'},
+    {text:'黑板', trigger:['黑板','板书'], type:'note', title:'注意 黑板擦放置习惯', body:'日本教室黑板上方有「学級目標」，值日生擦完黑板要把板擦（黒板消し）放在指定位置，通常是黑板槽右端。', fix:'可加入这个细节强化真实感。'},
+    {text:'厕所拖鞋', trigger:['厕所','卫生间','トイレ'], type:'warn', title:'⚠ 厕所需要专用拖鞋', body:'日本校园厕所有「トイレのスリッパ」，进厕所要换拖鞋，出来忘记换回来是很常见的小尴尬，也是社交信号（会被同学提醒）。', fix:'如果场景涉及厕所，务必加入这个细节。'},
+  ],
+  routine: [
+    {text:'给食', trigger:['午饭','吃饭','食堂','给食','值日'], type:'ok', title:'✓ 给食制度是核心场景', body:'给食当番（值日生）穿白大褂、戴帽子和口罩打饭，其他人排队领餐，吃完要刷牙（昼歯磨き）。这是日本小学非常标志性的日常。', fix:'建议完整写出白大褂+帽子+口罩+打饭+刷牙的完整流程。'},
+    {text:'部活', trigger:['社团','放学','部活','俱乐部'], type:'note', title:'注意 部活结束时间感', body:'部活结束时天通常已黑，尤其秋冬季。"部活结束后走回家"这个场景应该是傍晚或天黑后，而不是下午光线充足时。', fix:'检查部活场景的光线描写是否符合实际时间。'},
+    {text:'係活動', trigger:['班级职责','值日','係'], type:'ok', title:'✓ 係活動细节可以更丰富', body:'每个学生都有係（黒板係、配膳係、保健係等），这是日本班级自我管理制度的核心，比中国的"班干部"更平等、更全员参与。', fix:'可以通过角色的係身份来展示人物特征。'},
+    {text:'开学', trigger:['开学','入学','入学式','毕业'], type:'note', title:'注意 开学式氛围', body:'日本小学入学式（4月）氛围正式、紧张，家长全程参与，孩子穿校服；毕业式（3月）则充满情绪，眼泪和感谢。两者氛围截然不同，不可混淆。', fix:'明确区分入学式和毕业式的情绪基调。'},
+  ],
+  social: [
+    {text:'先輩关系', trigger:['学长','学姐','前辈','先輩','後輩'], type:'warn', title:'⚠ 先輩/後輩关系要写准', body:'日本校园的前后辈关系在部活中最明显。新生（一年生）要负责收器材，叫学长必须用"○○さん"或"○○先輩"，不可以直呼其名。', fix:'如果场景涉及社团，要体现这种纵向的权力与礼貌压力。'},
+    {text:'欺凌', trigger:['欺负','孤立','欺凌','无视','いじめ'], type:'warn', title:'⚠ 欺凌的日本形态是"无视"', body:'日本校园的いじめ（欺凌）最常见形式不是肢体冲突，而是集体"无视"——一群人约定不和某人说话。这种冷暴力更隐蔽，也更难处理。', fix:'如果涉及欺凌场景，要调整为这种日本特有的形态。'},
+    {text:'空气', trigger:['气氛','沉默','空气','氛围'], type:'note', title:'空気を読む的文化背景', body:'日本文化中"读空气"极为重要。什么时候该沉默、什么时候该附和、什么时候表达不同意见——这些隐性规则决定一个孩子在班级里的位置。', fix:'可以用角色的"不读空气"来制造自然的社交冲突。'},
+  ],
+  culture: [
+    {text:'书包', trigger:['书包','ランドセル','背包'], type:'note', title:'ランドセル细节', body:'日本小学生的ランドセル（双肩皮书包）是统一配发或购买的，颜色传统上男黑女红，现代则多样化。一年级书包鲜艳，六年级时已磨损褪色。女生喜欢挂钥匙扣，男生侧袋藏玩具。', fix:'如果涉及书包描写，可加入这些磨损和配饰细节。'},
+    {text:'自由研究', trigger:['暑假','自由研究','作业'], type:'ok', title:'✓ 夏休みの自由研究天然契合本IP', body:'日本小学生每个暑假都要完成自主研究（自由研究），开学时在全班展示。这是天然的"侦探养成训练"，与《学堂趣事录》的精神高度契合。', fix:'可以把这个制度作为故事切入点，非常贴合。'},
+    {text:'校园怪谈', trigger:['怪谈','鬼','幽灵','音乐室','人体模型'], type:'note', title:'校园怪谈经典类型', body:'日本学校の怪談不只是"厕所里的鬼"，还有：音乐室夜里会自己弹奏的钢琴、会动的人体模型、生物教室夜里的声音。这些是素材库，不是必须用，但用对了很有感染力。', fix:'可选择性地把这些元素做成"被科学揭穿的怪谈"，正好契合本IP风格。'},
+  ],
+  emotion: [
+    {text:'告别', trigger:['再见','告别','走','じゃあね','明天见'], type:'note', title:'克制型告别：じゃあね文化', body:'日本孩子不直说"我们是好朋友"，但会放学后一起走一段，在某个路口分开时说"じゃあね"（那么明天见）。这种克制的亲密感是日本儿童情感表达的核心。', fix:'可以把告别场景改为这种"走一段路，路口じゃあね"的形式。'},
+    {text:'鼓励', trigger:['你真棒','加油','鼓励','夸奖'], type:'warn', title:'⚠ 鼓励方式不同', body:'日本的鼓励不是"你太棒了！"，而是「頑張ったね」（你努力了/你坚持下来了）。前者强调结果，后者强调过程和努力。这个差别很微妙但很重要。', fix:'把"你真棒"类的称赞改为"頑張ったね"类的鼓励。'},
+    {text:'安慰', trigger:['安慰','难过','哭','伤心'], type:'note', title:'安慰方式：沉默陪伴', body:'日本文化的安慰不是"别难过"，是默默坐在旁边，什么都不说。语言上的过度介入反而会让对方感到压力。沉默本身就是支持。', fix:'如果有安慰场景，可以改为"他没说话，只是坐在旁边"。'},
+  ]
+};
+
+function runCalibration() {
+  const text = document.getElementById('txt-input').value.trim();
+  const out = document.getElementById('output-calibrate');
+  out.style.display = 'block';
+
+  if(!text){
+    out.innerHTML = '<div class="empty-state"><i class="ti ti-pencil" aria-hidden="true"></i>请先在上方输入需要校准的文本段落。</div>';
+    return;
+  }
+
+  out.innerHTML = '<div class="thinking"><i class="ti ti-loader" aria-hidden="true"></i> 田中みどり顾问正在阅读文本 <span class="dot-anim"><span>.</span><span>.</span><span>.</span></span></div>';
+
+  setTimeout(()=>{
+    const issues = [];
+    const lowerText = text.toLowerCase();
+    const textForSearch = text;
+
+    for(const [modeKey, cards] of Object.entries(CALIBRATION_DB)){
+      if(!MODES.has(modeKey)) continue;
+      for(const card of cards){
+        const hit = card.trigger.some(t=>textForSearch.includes(t)||lowerText.includes(t.toLowerCase()));
+        if(hit) issues.push({...card, mode:modeKey});
+      }
+    }
+
+    const warnCount = issues.filter(i=>i.type==='warn').length;
+    const noteCount = issues.filter(i=>i.type==='note').length;
+    const okCount = issues.filter(i=>i.type==='ok').length;
+
+    const modeLabels = {space:'空间与物',routine:'制度与流程',social:'人际隐规则',culture:'儿童亚文化',emotion:'情感分寸'};
+    const modeColors = {space:'tag-l2',routine:'tag-l1',social:'tag-l3',culture:'tag-l4',emotion:'tag-l5'};
+
+    let html = `<div class="output-header"><i class="ti ti-clipboard-check" style="font-size:16px" aria-hidden="true"></i> 校准报告 — 共发现 ${issues.length} 处`;
+    if(issues.length>0) html += ` · <span class="tag tag-warn">${warnCount} 处需修改</span><span class="tag tag-ok">${okCount+noteCount} 处建议</span>`;
+    html += '</div>';
+
+    if(issues.length===0){
+      html += `<div class="empty-state" style="padding:1rem 0"><i class="ti ti-circle-check" style="font-size:28px;color:#639922" aria-hidden="true"></i><div style="color:var(--color-text-secondary);font-size:13px;margin-top:6px">在所选维度内，文本中未检测到明显的文化偏差。<br>可尝试选择更多校准维度，或输入更长的文本段落。</div></div>`;
+    } else {
+      for(const issue of issues){
+        const cls = issue.type==='warn'?'warn':issue.type==='ok'?'ok':'note';
+        html += `<div class="issue-card ${cls}">
+          <div class="ic-title"><span class="tag ${modeColors[issue.mode]}">${modeLabels[issue.mode]}</span>${issue.title}</div>
+          <div class="ic-body">${issue.body}</div>
+          <div class="ic-fix"><i class="ti ti-arrow-right" style="font-size:12px" aria-hidden="true"></i> ${issue.fix}</div>
+        </div>`;
+      }
+    }
+
+    html += `<div style="margin-top:12px;padding-top:10px;border-top:0.5px solid var(--color-border-tertiary)">
+      <button class="btn-run" style="font-size:13px" onclick="sendPrompt('请根据田中みどり顾问的校准报告，对以下文本进行修改，保留原有故事结构，只调整文化细节：\\n${text.substring(0,200)}')">
+        <i class="ti ti-sparkles" aria-hidden="true"></i>
+        根据报告生成修改版本 ↗
+      </button>
+    </div>`;
+
+    out.innerHTML = html;
+  }, 900);
+}
+
+const GLOSSARY = [
+  {term:'上履き（うわばき）',romaji:'Uwabaki',layer:2,desc:'室内鞋。在玄关换上，放在有编号的鞋柜里。忘换走进教室是一种"错误"，同学会提醒或窃笑。'},
+  {term:'給食当番（きゅうしょくとうばん）',romaji:'Kyūshoku tōban',layer:1,desc:'给食值日生。穿白大褂、戴帽子和口罩，负责打饭分发。吃完后全班昼歯磨き（午后刷牙）。'},
+  {term:'係活動（かかりかつどう）',romaji:'Kakari katsudō',layer:1,desc:'全员班级职责分工。黒板係、保健係、配膳係等，每人都有角色，比中国班干部制更平等。'},
+  {term:'部活（ぶかつ）',romaji:'Bukatsu',layer:1,desc:'社团活动。放学后进行，秋冬时结束时天已黑。有严格的先輩/後輩关系，新生收器材。'},
+  {term:'ランドセル',romaji:'Randoseru',layer:4,desc:'小学生专用双肩皮书包。男黑女红（传统），现代多样。一年级鲜艳，六年级磨损褪色。'},
+  {term:'空気を読む（くうきをよむ）',romaji:'Kūki o yomu',layer:3,desc:'"读空气"。最重要的集体隐性规则。知道何时说话、沉默、附和、反对。不读空气会被孤立。'},
+  {term:'先輩/後輩（せんぱい/こうはい）',romaji:'Senpai / Kōhai',layer:3,desc:'前辈/后辈。纵向等级关系。要用敬语，要收器材，训练了日本人一生的等级感知。'},
+  {term:'いじめ',romaji:'Ijime',layer:3,desc:'欺凌。日本最常见形态是集体"无视"（无视）——约定不和某人说话，而非肢体冲突。'},
+  {term:'自由研究（じゆうけんきゅう）',romaji:'Jiyū kenkyū',layer:4,desc:'暑假自主研究。每个小学生暑假要完成一个独立研究项目，开学全班展示。天然侦探训练。'},
+  {term:'学校の怪談（がっこうのかいだん）',romaji:'Gakkō no kaidan',layer:4,desc:'校园怪谈。钢琴自弹、会动的人体模型、生物教室夜里的声音。可做"被科学揭穿"的素材。'},
+  {term:'じゃあね',romaji:'Jā ne',layer:5,desc:'"那么明天见"。放学路口的克制告别语。日本孩子的友谊往往通过这句话的分量来衡量。'},
+  {term:'頑張ったね（がんばったね）',romaji:'Ganbatta ne',layer:5,desc:'"你努力了"。日式鼓励。强调过程和坚持，而非结果。与"你真棒"的结果导向截然不同。'},
+];
+
+const layerColors = ['','#B5D4F4','#9FE1CB','#FAC775','#F4C0D1','#CECBF6'];
+const layerTextColors = ['','#0C447C','#085041','#633806','#72243E','#26215C'];
+
+function renderGlossary(){
+  const el = document.getElementById('glossary-content');
+  if(el.children.length > 0) return;
+  let html = '';
+  for(const item of GLOSSARY){
+    html += `<div style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:0.5px solid var(--color-border-tertiary)">
+      <div style="width:22px;height:22px;border-radius:50%;background:${layerColors[item.layer]};color:${layerTextColors[item.layer]};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;flex-shrink:0;margin-top:2px">${item.layer}</div>
+      <div style="flex:1">
+        <div style="font-size:14px;font-weight:500;color:var(--color-text-primary)">${item.term}</div>
+        <div style="font-size:12px;color:var(--color-text-secondary);margin:1px 0 4px">${item.romaji}</div>
+        <div style="font-size:13px;color:var(--color-text-primary);line-height:1.5">${item.desc}</div>
+      </div>
+    </div>`;
+  }
+  el.innerHTML = html;
+}
+</script>

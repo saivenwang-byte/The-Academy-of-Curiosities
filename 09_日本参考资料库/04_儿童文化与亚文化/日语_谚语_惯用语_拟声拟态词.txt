@@ -1,0 +1,623 @@
+# Japanese Language Reference for Children's Book Series
+## Idioms, Kotowaza, Seasonal Words, and Children's Language
+
+---
+
+# 1. ことわざ (Kotowaza / Proverbs) Kids Learn in School
+
+Japanese proverbs are a core part of 国語 (kokugo, Japanese language) class from 3rd grade onward. Children are typically tested on reading, meaning, and usage scenarios. Below are the 50 most common proverbs taught in elementary school, organized by frequency of classroom appearance.
+
+## Core Fifty Proverbs
+
+| # | Proverb | Reading | Literal | Actual Meaning |
+|---|---------|---------|---------|----------------|
+| 1 | 急がば回れ | いそがば まわれ | If you hurry, go around | Haste makes waste; the long way is the short way |
+| 2 | 猿も木から落ちる | さるも きから おちる | Even monkeys fall from trees | Everyone makes mistakes, even experts |
+| 3 | 猫に小判 | ねこに こばん | A gold coin to a cat | Pearls before swine; giving value to one who cannot appreciate it |
+| 4 | 花より団子 | はなより だんご | Dumplings over flowers | Practicality over aesthetics; substance over style |
+| 5 | 二度あることは三度ある | にど ある ことは さんど ある | What happens twice happens thrice | Bad things come in threes |
+| 6 | 石の上にも三年 | いしの うえにも さんねん | Three years on a stone | Perseverance pays off; endure hardship and it will warm |
+| 7 | ちりも積もれば山となる | ちりも つもれば やまと なる | Even dust, piled up, becomes a mountain | Many small things add up; every little bit counts |
+| 8 | 笑う門には福来たる | わらう かどには ふく きたる | Fortune comes to the gate of laughter | Happiness brings good luck; a cheerful home attracts fortune |
+| 9 | 七転び八起き | ななころび やおき | Fall seven times, rise eight | Never give up; resilience in the face of repeated failure |
+| 10 | 井の中の蛙大海を知らず | いの なかの かわず たいかいを しらず | A frog in a well knows not the great ocean | A narrow worldview; one who knows only their small world |
+| 11 | 釈迦に説法 | しゃかに せっぽう | Preaching to the Buddha | Teaching your grandmother to suck eggs; explaining to an expert |
+| 12 | 百聞は一見にしかず | ひゃくぶんは いっけんに しかず | Hearing a hundred times is no match for seeing once | Seeing is believing |
+| 13 | 一石二鳥 | いっせき にちょう | One stone, two birds | Kill two birds with one stone |
+| 14 | 口は災いのもと | くちは わざわいの もと | The mouth is the source of disaster | Loose lips sink ships; careless words bring trouble |
+| 15 | さるも木から落ちる | (same as #2 above, alternate reading common) | | |
+| 16 | 馬の耳に念仏 | うまの みみに ねんぶつ | Buddhist sutras to a horse's ear | In one ear, out the other; wasted advice |
+| 17 | 犬も歩けば棒に当たる | いぬも あるけば ぼうに あたる | Even a dog, if it walks, gets hit by a stick | If you act, you may encounter misfortune — or fortune; engagement brings both risk and reward |
+| 18 | 泣きっ面に蜂 | なきっつらに はち | A bee to a crying face | When it rains, it pours; misfortune compounds misfortune |
+| 19 | 渡りに船 | わたりに ふね | A boat when crossing | A timely help; exactly what one needed |
+| 20 | 棚からぼた餅 | たなから ぼたもち | A sweet rice cake from the shelf | Unexpected windfall; good luck falling into one's lap |
+| 21 | 蛙の子は蛙 | かえるの こは かえる | The child of a frog is a frog | Like father, like son; the apple doesn't fall far |
+| 22 | 朱に交われば赤くなる | しゅに まじわれば あかくなる | Mix with vermilion and you turn red | You are shaped by the company you keep |
+| 23 | 塞翁が馬 | さいおうが うま | Old Sai's horse | A blessing in disguise; fortune and misfortune are entwined (from a Chinese tale) |
+| 24 | 三人寄れば文殊の知恵 | さんにん よれば もんじゅの ちえ | Three people gather, Monju's wisdom | Two heads are better than three; collective wisdom |
+| 25 | 苦あれば楽あり | くあれば らくあり | If there is suffering, there is joy | After rain comes sunshine; no pain, no gain |
+| 26 | 良薬は口に苦し | りょうやくは くちに にがし | Good medicine tastes bitter | Good advice is hard to swallow |
+| 27 | ローマは一日にして成らず | ローマは いちにちに して ならず | Rome was not built in a day | Great things take time |
+| 28 | 時は金なり | ときは かねなり | Time is money | Time is precious |
+| 29 | 千里の道も一歩から | せんりの みちも いっぽから | A journey of a thousand miles begins with one step | Every great endeavor starts small |
+| 30 | 縁の下の力持ち | えんの したの ちからもち | A strong person under the floor | Unsung hero; someone who does essential work without recognition |
+| 31 | 木を見て森を見ず | きを みて もりを みず | See the tree, not the forest | Missing the big picture by fixating on details |
+| 32 | 好きこそものの上手なれ | すきこそ ものの じょうずなれ | Loving something makes you good at it | Practice what you love and you'll excel |
+| 33 | 善は急げ | ぜんは いそげ | Hurry good deeds | Strike while the iron is hot; do good things without delay |
+| 34 | 噂をすれば影 | うわさを すれば かげ | Speak of a rumor and a shadow appears | Speak of the devil (and he shall appear) |
+| 35 | 弘法も筆の誤り | こうぼうも ふでの あやまり | Even Kobo makes brush mistakes | Even masters make errors (Kobo Daishi was a legendary calligrapher) |
+| 36 | 早起きは三文の得 | はやおきは さんもんの とく | Early rising earns three mon | The early bird catches the worm |
+| 37 | 敵に塩を送る | てきに しおを おくる | Send salt to your enemy | Show compassion even to adversaries (from the historical tale of Uesugi Kenshin) |
+| 38 | ぬかに釘 | ぬかに くぎ | A nail into rice bran | Futile effort; like nailing jelly to a wall |
+| 39 | 豚に真珠 | ぶたに しんじゅ | Pearls to a pig | Pearls before swine (same concept as 猫に小判) |
+| 40 | 鬼に金棒 | おにに かなぼう | An iron club to an ogre | Making the strong even stronger; adding power to power |
+| 41 | 火のないところに煙は立たぬ | ひの ない ところに けむりは たたぬ | No smoke without fire | Where there's smoke, there's fire |
+| 42 | 果報は寝て待て | かほうは ねて まて | Wait for good fortune lying down | Good things come to those who wait; don't force luck |
+| 43 | 塵も積もれば山となる | (same as #7, alternate reading) | | |
+| 44 | 能ある鷹は爪を隠す | のうある たかは つめを かくす | The capable hawk hides its talons | A truly talented person doesn't show off |
+| 45 | 負けるが勝ち | まけるが かち | Losing is winning | Sometimes it's wiser to yield than to fight |
+| 46 | 可愛い子には旅をさせよ | かわいい こには たびを させよ | Send your beloved child on a journey | Tough love; let children experience hardship to grow |
+| 47 | 雨降って地固まる | あめふって じかたまる | After rain, the ground hardens | Adversity strengthens foundations; after a quarrel, relationships deepen |
+| 48 | 転ばぬ先の杖 | ころばぬ さきの つえ | A walking stick before you fall | Prevention is better than cure; better safe than sorry |
+| 49 | 立つ鳥跡を濁さず | たつ とり あとを にごさず | A bird taking off doesn't muddy the water behind | Leave cleanly; don't leave a mess when you depart |
+| 50 | 目は口ほどにものを言う | めは くちほどに ものを いう | Eyes speak as much as the mouth | The eyes are the window to the soul |
+
+## Proverbs Kids Find Funny or Confusing
+
+**Source of humor**: Children often visualize proverbs literally, creating mental images that adults wouldn't.
+
+- **猫に小判 (ねこにこばん)**: Kids imagine giving a gold coin to an actual cat, who bats it around like a toy. Teachers must explain 小判 (koban) was Edo-period currency.
+- **馬の耳に念仏 (うまのみみにねんぶつ)**: Children picture a farmer chanting sutras directly into a horse's twitching ear. Very giggle-inducing.
+- **ぬかに釘 (ぬかにくぎ)**: Trying to hammer a nail into rice bran slime — kids find the image absurd and hilarious.
+- **犬も歩けば棒に当たる (いぬもあるけばぼうにあたる)**: This is genuinely confusing because it carries *two opposite meanings*: originally "action invites trouble," but modern usage often means "action brings opportunity." Teachers debate this one.
+- **棚からぼた餅 (たなからぼたもち)**: The image of a sweet rice cake falling from a high shelf into an open mouth makes kids burst out laughing.
+
+**Classroom confusion points**:
+- **猿も木から落ちる vs 弘法も筆の誤り**: Both mean "even experts fail," and children mix them up on tests.
+- **猫に小判 vs 豚に真珠**: Both mean "pearls before swine," and teachers will mark one wrong if you use the wrong animal.
+- **二度あることは三度ある**: Children think this is *encouraging*, but it actually warns that trouble repeats.
+
+## How Proverbs Appear in 国語 Class
+
+**3rd grade**: Introduction to ことわざ — students learn 10-15 common proverbs, write sentences using each, and illustrate one for the classroom wall. Field assignment: ask grandparents for their favorite proverb.
+
+**4th grade**: ことわざ dictionary project — each student creates a handmade mini-dictionary with 20 proverbs, including picture, meaning, and example sentence. Common activity: ことわざカルタ (karuta card game).
+
+**5th grade**: Deeper analysis — students compare Japanese proverbs with English equivalents, study the historical origin stories (e.g., Uesugi Kenshin and 敵に塩を送る), and discuss which proverbs they agree or disagree with.
+
+**6th grade**: ことわざ debate — "Is 可愛い子には旅をさせよ still true today?" Students write argumentative essays using proverbs as supporting evidence.
+
+**Testing format**: Multiple choice ("choose the correct meaning"), fill-in-the-blank with the proverb, and scenario matching ("which proverb fits this situation?"). The 中学受験 (junior high entrance exam) frequently tests ことわざ, 四字熟語, and 慣用句 (idiomatic phrases) together.
+
+---
+
+# 2. 四字熟語 (Yoji-Jukugo / Four-Character Idioms)
+
+四字熟語 are compact expressions made of four kanji, usually derived from classical Chinese. They appear heavily in 4th-6th grade curriculum and entrance exams. Below are the most common ones taught, organized by theme.
+
+## Core Four-Character Idioms
+
+### Effort and Perseverance
+| Idiom | Reading | Meaning |
+|-------|---------|---------|
+| 一生懸命 | いっしょうけんめい | With all one's might; doing one's very best |
+| 努力奮闘 | どりょくふんとう | Striving hard; strenuous effort |
+| 徹夜作業 | てつやさぎょう | Working through the night (homework cram) |
+| 三日坊主 | みっかぼうず | Three-day monk; someone who quits quickly |
+
+### Human Nature and Relationships
+| Idiom | Reading | Meaning |
+|-------|---------|---------|
+| 一期一会 | いちごいちえ | Once-in-a-lifetime encounter; cherish every meeting |
+| 十人十色 | じゅうにんといろ | Ten people, ten colors; everyone is different |
+| 自業自得 | じごうじとく | You reap what you sow; your own fault |
+| 以心伝心 | いしんでんしん | Heart-to-heart communication; telepathy |
+| 共存共栄 | きょうぞんきょうえい | Coexistence and co-prosperity |
+
+### Nature and Emotion
+| Idiom | Reading | Meaning |
+|-------|---------|---------|
+| 花鳥風月 | かちょうふうげつ | The beauties of nature; flowers, birds, wind, moon |
+| 青天白日 | せいてんはくじつ | Clear sky, bright sun; innocence proven |
+| 電光石火 | でんこうせっか | Lightning speed; blink-and-you-miss-it |
+| 喜怒哀楽 | きどあいらく | The range of human emotions: joy, anger, sorrow, pleasure |
+
+### Mindset and Attitude
+| Idiom | Reading | Meaning |
+|-------|---------|---------|
+| 温故知新 | おんこちしん | Learn from the past to understand the new |
+| 試行錯誤 | しこうさくご | Trial and error |
+| 臨機応変 | りんきおうへん | Adapt to circumstances; play it by ear |
+| 有言実行 | ゆうげんじっこう | Walk the talk; do what you say |
+
+### Chaos and Trouble
+| Idiom | Reading | Meaning |
+|-------|---------|---------|
+| 八方美人 | はっぽうびじん | Someone who tries to please everyone (lit. "eight-direction beauty") |
+| 悪戦苦闘 | あくせんくとう | Desperate struggle; uphill battle |
+| 満身創痍 | まんしんそうい | Covered in wounds; completely exhausted |
+| 暗中模索 | あんちゅうもさく | Groping in the dark; figuring things out blindly |
+
+## How Kids Misuse 四字熟語 (Funny Misunderstandings)
+
+Misunderstandings tend to fall into patterns:
+
+**Pattern 1: Kanji misreading**
+- A 4th grader reads 一期一会 as いちきいちかい instead of いちごいちえ. The teacher corrects him, and for months the class jokes about "いちきいちかい."
+- 自業自得 read as じぎょうじとく (wrong) instead of じごうじとく (correct). Kids confuse 業 (ごう/gō) with 業 (ぎょう/gyō) as in 授業 (jugyō, class).
+
+**Pattern 2: Literal mental images**
+- 八方美人 (はっぽうびじん): A child imagines a person with eight faces — like a monster. The actual meaning (people-pleaser) is abstract and hard to grasp.
+- 三日坊主 (みっかぼうず): Kids picture a monk who only stays at the temple for three days, packs his bag, and leaves. This one actually clicks because the image is so vivid.
+
+**Pattern 3: Wrong context deployment**
+- A child, wanting to praise a friend's drawing, says 「自業自得だね！」meaning to say 「十人十色」. The friend gets offended.
+- Using 八方美人 as a compliment: 「お母さんは八方美人だね！」 Mom is not pleased.
+- Saying 一期一会 when meaning "this is fun, let's do it again soon" — missing the "once-in-a-lifetime" weight of the phrase.
+
+**Pattern 4: Mixing up similar-sounding ones**
+- 一生懸命 (いっしょうけんめい) and 一所懸命 (いっしょけんめい) — both exist and both mean roughly "with all one's might," confusing kids endlessly.
+- 有言実行 (ゆうげんじっこう: do what you say) confused with 不言実行 (ふげんじっこう: do without speaking). One test-swaps them on purpose.
+
+---
+
+# 3. 季語 (Kigo / Seasonal Words)
+
+Seasonal words are the heart of 俳句 (haiku) composition, which begins in 3rd grade. Children learn to identify and use kigo as part of both literature and writing classes. Below are the major seasonal words an elementary student would encounter, organized by season.
+
+## 春 (Haru / Spring)
+
+| Kigo | Reading | Meaning | Context Kids Know |
+|------|---------|---------|-------------------|
+| 桜 | さくら | Cherry blossoms | The ultimate spring symbol; 桜前線 (cherry blossom front) tracked on news |
+| 入学式 | にゅうがくしき | School entrance ceremony | First day of school under blooming cherry trees — iconic photo |
+| つくし | つくし | Field horsetail shoots | Picked on the way home from school; a sign of early spring |
+| チューリップ | チューリップ | Tulip | Every school has tulip beds; kids grow them for 理科 (science) |
+| お花見 | おはなみ | Cherry blossom viewing | Family picnic under sakura; the one time kids can be loud in the park |
+| ひな祭り | ひなまつり | Doll Festival (March 3) | Girls display ひな人形 (hina dolls); eat ひなあられ (colored rice crackers) |
+| 卒業式 | そつぎょうしき | Graduation ceremony | Bittersweet farewell; 6th graders cry |
+| たんぽぽ | たんぽぽ | Dandelion | Blowing the white fluff to scatter seeds |
+| おたまじゃくし | おたまじゃくし | Tadpole | Catching tadpoles in rice paddies or school pond |
+| 春一番 | はるいちばん | First strong spring wind | The gust that signals winter is truly over |
+| 蝶 | ちょう | Butterfly | First butterfly sighting of the year |
+| 菜の花 | なのはな | Rapeseed blossoms | Yellow fields; 菜の花畑 is a common school trip destination |
+
+## 夏 (Natsu / Summer)
+
+| Kigo | Reading | Meaning | Context Kids Know |
+|------|---------|---------|-------------------|
+| 蝉時雨 | せみしぐれ | Cicada chorus (lit. "cicada rain shower") | The deafening buzz that defines Japanese summer; kids collect cicada shells |
+| 花火 | はなび | Fireworks | 花火大会 (fireworks festival); kids wear 浴衣 (yukata); sparklers drawn out |
+| プール | プール | Swimming pool | School pool opens; 水泳 (suiei, swimming) class begins |
+| すいか | すいか | Watermelon | すいか割り (watermelon splitting game) at school summer events |
+| 蚊取り線香 | かとりせんこう | Mosquito coil | The spiral green coil burning at grandma's house; the smell *is* summer |
+| 風鈴 | ふうりん | Wind chime | Glass bell hanging from eaves; the tinkling sound is supposed to feel cooling |
+| アイスクリーム | アイスクリーム | Ice cream | The sound of the ice cream truck's melody through the neighborhood |
+| ひまわり | ひまわり | Sunflower | Grown at school; measured for summer science project height contest |
+| 入道雲 | にゅうどうぐも | Cumulonimbus cloud | The massive white towers in the sky; "looks like a soft-serve ice cream" |
+| ラジオ体操 | ラジオたいそう | Radio calisthenics | Morning exercise in the park during summer vacation; kids get attendance stamps |
+| 夏休み | なつやすみ | Summer vacation | The holy grail — six weeks of freedom with a mountain of 宿題 (homework) |
+| 海 | うみ | The sea / beach | Family beach trips; swimming with inflatable rings |
+| 麦わら帽子 | むぎわらぼうし | Straw hat | The classic summer accessory for both kids and grandpas |
+
+## 秋 (Aki / Autumn)
+
+| Kigo | Reading | Meaning | Context Kids Know |
+|------|---------|---------|-------------------|
+| 紅葉 | こうよう / もみじ | Autumn leaves / colored leaves | 紅葉狩り (momiji-gari, leaf-viewing excursions); leaves pressed in books |
+| 運動会 | うんどうかい | Sports day / field day | The biggest school event of autumn; relay races, tug-of-war, dance performances |
+| 焼き芋 | やきいも | Roasted sweet potato | The 焼き芋屋 (sweet potato truck) drives through neighborhoods calling 「いしやきいも〜」 |
+| どんぐり | どんぐり | Acorn | Collected obsessively by 1st and 2nd graders; made into どんぐりゴマ (acorn spinning tops) |
+| 月見 | つきみ | Moon viewing | 十五夜 (jūgoya, harvest moon night); 月見団子 (moon-viewing dumplings); ススキ (pampas grass) |
+| 虫の声 | むしのこえ | Insect singing | Cricket and bell-cricket sounds; 虫かご (insect cage) is essential autumn gear |
+| 秋刀魚 | さんま | Pacific saury (fish) | Grilled さんま with grated daikon; the taste of autumn at the dinner table |
+| 読書の秋 | どくしょのあき | Autumn of reading | The season's slogan; school reading challenges and book reports |
+| 食欲の秋 | しょくよくのあき | Autumn of appetite | The excuse everyone uses to eat more |
+| コスモス | コスモス | Cosmos flowers | Blooming in school flower beds; tall pink and white flowers swaying in wind |
+| キンモクセイ | キンモクセイ | Osmanthus | The sweet scent drifting through school windows; announces autumn's arrival |
+| 落ち葉 | おちば | Fallen leaves | Raking leaves for 掃除 (cleaning time); jumping into leaf piles |
+
+## 冬 (Fuyu / Winter)
+
+| Kigo | Reading | Meaning | Context Kids Know |
+|------|---------|---------|-------------------|
+| こたつ | こたつ | Heated table with quilt | The irresistible trap; kids do homework under it and fall asleep |
+| みかん | みかん | Mandarin orange | The official fruit of the kotatsu; eating an entire net bag while watching TV |
+| 雪だるま | ゆきだるま | Snowman | Built on rare snow days; bucket for hat, twig for arms, stones for eyes |
+| 年賀状 | ねんがじょう | New Year's card | Every kid writes them to classmates; postcards with the year's zodiac animal |
+| 餅つき | もちつき | Mochi pounding | School or community event; kids take turns with the heavy wooden mallet |
+| 大掃除 | おおそうじ | Year-end deep cleaning | Everyone's least favorite season tradition — but necessary |
+| お年玉 | おとしだま | New Year's money | The reason kids love New Year's; cash in decorative envelopes from relatives |
+| ストーブ | ストーブ | Kerosene heater | The classroom heater; kids fight over the seats closest to it |
+| 手袋 | てぶくろ | Gloves | Lost approximately twice per week during winter term |
+| 霜柱 | しもばしら | Frost pillars | Ice crystals pushing up soil on the way to school; satisfying to crunch underfoot |
+| 大根 | だいこん | Daikon radish | Winter daikon is sweet; appears in おでん (oden hot pot) |
+| ゆず湯 | ゆずゆ | Yuzu citrus bath | On the winter solstice (冬至, tōji), families float yuzu fruit in the bath |
+
+## How Kids Write Haiku
+
+In 3rd grade, children learn the 5-7-5 syllable structure. Common pitfalls:
+- Counting っ (small tsu) and ー (long vowel mark) as one beat each — teachers must drill this.
+- Choosing a kigo that doesn't match due to regional climate differences (e.g., southern kids using 雪 as kigo when they've never seen snow).
+- Copying famous haiku and swapping in their own name: 松尾芭蕉 becomes まつおバナナ.
+
+---
+
+# 4. 擬音語・擬態語 (Giongo / Gitaigo — Onomatopoeia)
+
+Japanese has arguably the richest onomatopoeia system of any language. Children acquire these naturally from babyhood onward, and manga massively expands their vocabulary. The distinction: 擬音語 (giongo) mimic actual sounds, while 擬態語 (gitaigo) describe states, feelings, or manners that don't make sound.
+
+## Emotion Onomatopoeia (擬態語)
+
+| Word | Reading | Meaning | Usage by Children |
+|------|---------|---------|-------------------|
+| ワクワク | waku-waku | Excited, thrilled | "明日の遠足、ワクワクする！" (I'm so excited for tomorrow's field trip!) |
+| ドキドキ | doki-doki | Heart pounding (nervous or excited) | "発表の前、ドキドキした。" (My heart was pounding before the presentation.) |
+| イライラ | ira-ira | Irritated, frustrated | "宿題が多くてイライラする。" (I'm annoyed because there's so much homework.) |
+| モヤモヤ | moya-moya | Cloudy, unsettled feeling | "なんだかモヤモヤする。" (I feel kind of unsettled / cloudy.) |
+| ウキウキ | uki-uki | Light-hearted, buoyant | "金曜日はウキウキする！" (I feel so light on Fridays!) |
+| ハラハラ | hara-hara | Anxious, watching nervously | "リレーのアンカー、ハラハラした。" (The relay anchor leg had me on edge.) |
+| シクシク | shiku-shiku | Weeping softly | "ころんで、シクシク泣いた。" (I fell and cried quietly.) |
+| ムカムカ | muka-muka | Furious, stomach-turning anger | "ずるい！ムカムカする！" (That's not fair! I'm furious!) |
+| クヨクヨ | kuyo-kuyo | Worrying obsessively | "テストの点、クヨクヨしても仕方ないよ。" (No point worrying over your test score.) |
+
+## Rain Onomatopoeia
+
+Japanese distinguishes rain by intensity and droplet size — children learn this nuance early.
+
+| Word | Reading | Intensity | Usage |
+|------|---------|-----------|-------|
+| ザーザー | zā-zā | Heavy downpour | "雨がザーザー降っている。" — Can't go outside for recess |
+| シトシト | shito-shito | Steady, quiet drizzle | "雨がシトシト降っている。" — The kind of rain you can still walk in |
+| ポツポツ | potsu-potsu | Scattered raindrops | "ポツポツ降ってきた！" — The first drops; everyone scrambles |
+| パラパラ | para-para | Light, scattered | "パラパラだから傘いらないかも。" — Might not need an umbrella |
+| ゴロゴロ | goro-goro | Thunder rumbling | Also means "lazing around at home" — confusing for kids |
+
+## School Sound Onomatopoeia
+
+| Word | Reading | Meaning | Context |
+|------|---------|---------|---------|
+| カリカリ | kari-kari | Scratch-scratch (pencil on paper) | The sound of a kanji drill test — everyone writing furiously |
+| ガタガタ | gata-gata | Rattle, clatter | "机がガタガタする" — a wobbly desk; also shivering "寒くてガタガタ" |
+| チョキチョキ | choki-choki | Snip-snip | Cutting paper with scissors during 図工 (art class) |
+| ペタペタ | peta-peta | Pat-pat, stick-stick | Gluing things in art class; also the sound of bare feet on linoleum |
+| キーンコーンカーンコーン | kīn-kōn-kān-kōn | Ding-dong-ding-dong | The school chime — Westminter melody variant — marking period changes |
+| ガヤガヤ | gaya-gaya | Hubbub, chatter | The classroom right before the teacher arrives |
+| シーン | shīn | Dead silence | When the teacher says 「静かにしなさい！」(Be quiet!) |
+| トントン | ton-ton | Tap-tap | Knocking on the staff room door |
+| チャイム | chaimu | Chime | The school bell itself — borrowed English, now a sound word |
+
+## Nature Onomatopoeia
+
+| Word | Reading | Meaning | Context |
+|------|---------|---------|---------|
+| サラサラ | sara-sara | Light, rustling (stream, leaves, sand) | "小川がサラサラ流れている" — a gentle stream |
+| ザワザワ | zawa-zawa | Rustling / murmuring (wind, crowd) | "風で葉っぱがザワザワしてる" — leaves rustling |
+| コポコポ | kopo-kopo | Gurgle-gurgle | Water bubbling from a spring or brook |
+| ピューピュー | pyū-pyū | Whistle-whistle | Wind howling through a crack in the window |
+| ゴーゴー | gō-gō | Roaring (strong wind, waves) | Typhoon wind; kids huddle inside |
+
+## Animal Sound Onomatopoeia
+
+Japanese animal sounds are famously different from English ones — this delights and confuses kids learning English.
+
+| Animal | Japanese Sound | English Equivalent |
+|--------|---------------|-------------------|
+| Dog | ワンワン (wan-wan) | Woof-woof |
+| Cat | ニャーニャー (nyā-nyā) | Meow-meow |
+| Pig | ブーブー (bū-bū) | Oink-oink |
+| Rooster | コケコッコー (kokekokkō) | Cock-a-doodle-doo |
+| Fox | コンコン (kon-kon) | (no English equivalent) |
+| Cicada | ミーンミーン (mīn-mīn) | Buzz-buzz |
+| Frog | ケロケロ (kero-kero) | Ribbit-ribbit |
+
+## How Manga Influences Kids' Onomatopoeia Vocabulary
+
+Manga is the primary expansion vector for onomatopoeia beyond daily speech. Children absorb advanced giongo/gitaigo from manga before they encounter them in literature class.
+
+**Key phenomena**:
+- Manga invents new onomatopoeia constantly. ドドドド (do-do-do-do) for an intimidating presence, ゴゴゴゴ (go-go-go-go) for rising tension — these aren't "real" sounds but kids use them in daily speech.
+- Handwritten/artistic 擬音 in manga panels (often drawn as part of the art, not typeset) teaches kids that onomatopoeia can be visual. They start drawing ドカーン！(boom!) in their own comics.
+- Fighting manga teaches: バキッ (crack!), ドスッ (thud!), ズバッ (slash!), メキメキ (creaking before breaking).
+- Romance/shojo manga teaches emotional states: キュン (heart squeeze / crush feeling), ジーン (moved, touched deeply), ギュッ (tight hug).
+- Horror manga teaches: ヒタヒタ (something approaching slowly), ドクンドクン (pulsing heart/organ), ゾワゾワ (creeping dread).
+
+By 5th and 6th grade, children's onomatopoeia vocabulary can exceed 200+ words, far more than most adult foreigners ever learn.
+
+---
+
+# 5. Kids' Language by Emotion
+
+Japanese children have a rich emotional vocabulary that differs significantly from adult expression. Below are the genuine phrases used, organized by emotion.
+
+## 驚き (Odoroki / Surprise)
+
+| Phrase | Reading | Nuance | Age Range |
+|--------|---------|--------|-----------|
+| えっ？！ | e'?! | Sharp, involuntary gasp — the most basic surprise sound | All ages |
+| うそ！ | uso! | "No way!" — literally "lie!" Used for both positive and negative surprise | 2nd grade+ |
+| まじで？ | maji de? | "Seriously? For real?" Slightly casual; some parents scold this | 4th grade+ |
+| ありえない！ | arienai! | "Unbelievable! Impossible!" Dramatic, often with hand gestures | 3rd grade+ |
+| うわっ！ | uwa'! | Startled yelp; physical flinch response | All ages |
+| ひゃー！ | hyā! | High-pitched squeal of delighted surprise | Younger kids |
+| ぎゃー！ | gyā! | Scream of shock/disgust — "EW!" or "AHH!" | All ages |
+| やばっ！ | yaba'! | "Oh no!" / "Whoa!" — the most versatile slang; can mean amazing or terrible | 5th grade+ |
+
+**Cultural note**: まじで？ is technically 若者言葉 (youth slang) and some teachers discourage it in class, but it's ubiquitous. やばい has undergone complete semantic bleaching — it now means "extreme" in any direction, good or bad.
+
+## 喜び・興奮 (Yorokobi / Joy and Excitement)
+
+| Phrase | Reading | Nuance |
+|--------|---------|--------|
+| やった！ | yatta! | "I did it!" / "Yes!" — the classic victory shout |
+| ラッキー！ | rakkī! | "Lucky!" — borrowed English, used constantly |
+| 最高！ | saikō! | "The best!" — genuine enthusiasm |
+| やったー！ | yattā! | Extended, more euphoric version of やった |
+| うれしい！ | ureshii! | "I'm so happy!" — straightforward emotional expression |
+| ばんざい！ | banzai! | "Hurray!" — arms raised; learned in school celebrations |
+| サイコー！ | saikō! | Stretched version of 最高 for extra emphasis |
+
+## 失望・悲しみ (Shitsubō / Disappointment and Sadness)
+
+| Phrase | Reading | Nuance |
+|--------|---------|--------|
+| がっかり | gakkari | Deep disappointment — the weight of letdown |
+| 最悪 | saiaku | "The worst!" — dramatic, often about small things |
+| ちぇっ | che' | "Darn!" — clicking tongue; mild frustration |
+| もう！ | mō! | "Ugh, come on!" — exasperation |
+| ひどい！ | hidoi! | "That's terrible!" — protest, indignation |
+| つまんない | tsumannai | "Boring!" — contracted from つまらない |
+| はずれ | hazure | "Miss!" / "Dud!" — when you get a bad gacha prize or the wrong ice cream flavor |
+| むり | muri | "Impossible / I can't" — giving up declaration |
+
+## 混乱・迷い (Konran / Confusion and Hesitation)
+
+| Phrase | Reading | Function |
+|--------|---------|----------|
+| えーと… | ēto… | "Umm…" — thinking filler, most common |
+| あの… | ano… | "Um…" — slightly more polite; hesitation before asking something |
+| なんか | nanka | "Like…" / "Somehow…" — the universal filler; vague-ifies anything |
+| あれ？ | are? | "Huh?" — mild confusion; something's not right |
+| なんだっけ | nan dakke | "What was it again?" — memory retrieval attempt |
+| わかんない | wakannai | "I dunno" — contracted from わからない; shrug accompaniment |
+
+## Filler Words Kids Overuse
+
+These are the verbal tics that parents and teachers notice. Kids use them to hold the conversational floor while thinking.
+
+| Filler | Function | Example |
+|--------|----------|---------|
+| あのさ | Attention-grabber, "Hey, you know…" | 「あのさ、昨日の宿題、あのさ、むずかしくなかった？」 |
+| でさ | Connector, "And then, like…" | 「でさ、田中くんがさ、でさ、突然笑いだしてさ…」 |
+| ていうか | Topic shift, "I mean, actually…" | 「ていうか、それってさ、ちがうくない？」 |
+| なんか | Vagueness, "Kinda / like" | 「なんか今日、なんか調子わるい…」 |
+| ってか | Contradiction opener, "Or rather…" | 「ってか、そうじゃなくて…」 |
+| みたいな | Approximation, "-ish / like that" | 「テストむずかしかった、みたいな？」 |
+| じゃん | Tag question (Kanto dialect), "right?" | 「おもしろいじゃん！」 (spreading nationwide via TV) |
+
+---
+
+# 6. Greetings and Their Variations
+
+Japanese greetings have a formal-to-casual spectrum that children navigate intuitively, shortening greetings as relationships deepen. This is one of the first social skills children master.
+
+## The Shortening Spectrum
+
+### おはよう (Good Morning)
+| Form | Intimacy Level | Used With |
+|------|---------------|-----------|
+| おはようございます | Most formal | Teachers, principal, staff room entry |
+| おはよう | Standard polite | Classmates, family, neighborhood |
+| おはよっ | Casual / friendly | Close friends |
+| おは | Very casual / rushed | Best friends, siblings (often while running to school) |
+| おっす | Extremely casual (male) | Boys in sports clubs (from おはようございます → おす → おっす) |
+
+### さようなら (Goodbye)
+| Form | Intimacy Level | Usage |
+|------|---------------|-------|
+| さようなら | Formal | To teachers; the end-of-day school dismissal |
+| さよなら | Semi-formal | Slightly softer than full form |
+| じゃあね | Casual | Between friends leaving school |
+| じゃね / じゃ | Very casual | Quick departure |
+| ばいばい | Childish | Younger kids wave and say this; older kids use it ironically |
+| また明日 | Neutral | "See you tomorrow" — the most common school dismissal phrase |
+| またね | Casual | "See you!" — non-specific next meeting |
+| バイチャ | Slang / playful | Mix of バイバイ and じゃ; trendy, short-lived |
+
+### ありがとう (Thank You)
+| Form | Intimacy Level | Usage |
+|------|---------------|-------|
+| ありがとうございます | Most formal | To teachers, other parents, strangers |
+| ありがとうございました | Past-tense formal | After a completed action (lesson, meal, event) |
+| ありがとう | Standard | Family, friends |
+| ありがと | Casual | Close friends |
+| あざす | Slang | Boys in clubs, VERY casual — from ありがとうございます compressed twice |
+| あざーっす | Slang extended | Same origin, slightly drawn out |
+| サンキュー | Borrowed casual | "Thank you" in English; light and friendly |
+| どうも | Minimal | Quick nod of thanks; the shortest possible acknowledgment |
+
+## Regional Greeting Variations: 名古屋弁 (Nagoya Dialect) Examples
+
+| Standard | Nagoya Dialect | Usage Context |
+|----------|---------------|---------------|
+| ありがとう | ありがとさん / おおきに | "Thanks" — おおきに is more Kansai but bleeds into Nagoya |
+| こんにちは | いりゃあす / まあど | Casual "hello" — rarely heard from children but understood |
+| さようなら | ならんで | Local "goodbye" |
+| すごい | でら | "Very" / "Super" — でらうまい (super tasty), でらおもしろい (super funny) |
+| そうだね | だでね / がね | Agreement — そうだよね becomes そうだでね |
+
+**Classroom relevance**: When studying 方言 (dialects) in 4th-5th grade 国語, kids from different regions share their local greetings. Children who move from one prefecture to another experience greeting culture shock — what's friendly in Osaka (つっこみ / joking banter) may feel aggressive in Tokyo.
+
+---
+
+# 7. School-Specific Language Rituals
+
+Japanese schools operate on a dense system of verbal rituals that children learn by rote from first grade. These are not optional — they are the operating system of classroom life.
+
+## 号令 (Gōrei / Commands): Start and End of Class
+
+Every class period begins and ends with a sequence of commands issued by the 日直 (nicchoku, daily leader — a rotating student role).
+
+### Beginning of Class
+```
+日直: 「起立！」     (kiritsu! — "Stand!")
+全員:  Stand up in unison
+日直: 「礼！」       (rei! — "Bow!")
+全員:  Bow in unison
+日直: 「着席！」     (chakuseki! — "Sit!")
+全員:  Sit in unison
+全員: 「お願いします！」 (onegaishimasu! — "Please [teach us]!")
+先生: 「お願いします」 (teacher echoes)
+```
+
+### End of Class
+```
+日直: 「起立！」
+全員:  Stand
+日直: 「礼！」
+全員:  Bow
+全員: 「ありがとうございました！」 (arigatō gozaimashita! — "Thank you very much!")
+先生: 「ありがとうございました」 (teacher echoes)
+全員:  Sit / disperse
+```
+
+**Details kids notice**:
+- The 日直 wears a special badge or armband and stands at the front.
+- If the bow is sloppy or the class is noisy, the teacher makes them do it again.
+- Some teachers add 「気をつけ！」 (ki o tsuke! — "Attention!") before the bow for extra formality.
+- By 5th-6th grade, kids do this on autopilot; the first week of middle school when they DON'T do it feels disorienting.
+
+## 職員室 (Shokuinshitsu / Staff Room) Protocol
+
+Entering the teachers' room is a formal procedure taught in 1st grade:
+
+```
+1. Knock on the door: トントン (ton-ton, two taps)
+2. Say: 「失礼します。○年○組の○○です。○○先生はいらっしゃいますか。」
+   (Shitsurei shimasu. [Grade] nen [Class] kumi no [Name] desu. [Teacher name] sensei wa irasshaimasu ka?)
+   — "Excuse me. I'm [Name] from class [X] grade [Y]. Is [Teacher] here?"
+3. If teacher is present, state business:
+   「○○のことで来ました。」 (I came about [matter].)
+4. When leaving: 「失礼しました。」 (Shitsurei shimashita. — literally "I have committed a rudeness [and now I'm leaving]")
+5. Close the door quietly.
+```
+
+**Why kids find this stressful**: The staff room smells like cigarettes (old building) or coffee, all the teachers stare at you, and you MUST use 敬語 (keigo, honorific language). Messing up the script is a classic childhood anxiety.
+
+## 給食 (Kyūshoku / School Lunch) Rituals
+
+```
+Before eating (in unison):
+「いただきます！」 (Itadakimasu! — "I humbly receive!")
+クラス全員、手を合わせる (Everyone puts hands together briefly)
+
+After eating (in unison):
+「ごちそうさまでした！」 (Gochisōsama deshita! — "It was a feast!")
+```
+
+**Cultural depth**: いただきます acknowledges the life that became food and the labor that prepared it. Many schools have kids trace this back: 「お米を作ってくれた農家さん、給食を作ってくれた調理員さん、いただきます。」 Teachers sometimes make kids say it again if it's sloppy.
+
+## 朝の会・帰りの会 (Asa no Kai / Kaeri no Kai — Morning and Afternoon Meetings)
+
+**Morning meeting ritual**:
+1. 日直 calls the meeting to order
+2. 健康観察 (kenkō kansatsu, health check): 「○○さん、今日は元気ですか？」 → 「はい、元気です。」
+3. Teacher announcements
+4. Sometimes: 一分間スピーチ (ippunkan supīchi, one-minute speech — each student takes a turn presenting on a topic)
+
+**Going-home meeting ritual**:
+1. 日直 leads reflection: 「今日のよかったこと」 (What went well today?)
+2. Tomorrow's schedule check
+3. さようならの挨拶 (goodbye greeting)
+4. Dismissal
+
+---
+
+# 8. Nicknaming Conventions
+
+Japanese nicknaming follows systematic rules that children internalize by kindergarten. The system encodes intimacy, hierarchy, and social boundaries.
+
+## The Basic System
+
+### Family Name + Honorific (Default, All Classmates)
+| Form | Usage |
+|------|-------|
+| 田中さん (Tanaka-san) | Standard for classmates; gender-neutral polite |
+| 田中くん (Tanaka-kun) | Male classmates; used by teachers and peers |
+| 鈴木さん (Suzuki-san) | Female classmates |
+
+In most elementary schools, teachers address all students as 〜さん regardless of gender. Among children, 〜くん for boys and 〜さん (or 〜ちゃん for close friends) for girls.
+
+### First Name + ちゃん / くん (Close Friends)
+| Form | Meaning |
+|------|---------|
+| はるとくん (Haruto-kun) | Close male friend; using first name signals intimacy |
+| ゆいちゃん (Yui-chan) | Close female friend; ちゃん is affectionate diminutive |
+
+### Nickname Formation Rules
+
+**Rule 1: First syllable(s) + ちゃん / くん**
+- はると → はるちゃん / はるくん
+- ゆうと → ゆうちゃん / ゆうくん
+- さくら → さっちゃん (geminated for cuteness) or さくちゃん
+- こうすけ → こうちゃん
+- りょうた → りょうくん / りょーくん
+
+**Rule 2: Repetition of first syllable (baby talk, very affectionate)**
+- ゆう → ゆうゆう
+- まお → まおまお
+- りな → りなりな
+
+**Rule 3: Totally unrelated nickname based on shared history**
+- A classmate who once brought メロンパン every day → 「メロン」
+- Someone who looks like a character → 「ドラえもん」 → 「ドラちゃん」
+- A child whose name contains 龍 (dragon) → 「ドラゴン」
+
+## The First-Name Threshold
+
+When a classmate switches from family name to first name, it signals a significant upgrade in friendship. This transition is:
+- **Often initiated by girls** — girls tend to switch to first-name basis earlier and more naturally.
+- **Acknowledged subtly** — nobody says "let's use first names now"; it happens organically and if the other person doesn't reciprocate, the initiator quietly retreats.
+- **Awkward with opposite gender** — by 4th-5th grade, using a first name for the opposite gender is loaded with subtext. Boys and girls mostly stick to family names through 6th grade.
+
+## あだ名 (Adana / Nicknames from Appearance or Personality) — The Risky Category
+
+あだ名 based on physical traits are common but increasingly discouraged by schools as いじめ (ijime, bullying) prevention:
+
+| Type | Example | Risk |
+|------|---------|------|
+| Size-based | デブちゃん, チビ | HIGH — body image harm |
+| Glasses | メガネ | Medium — sometimes neutral, sometimes teasing |
+| Hair | ボウズ (buzz cut boy) | Low — usually factual |
+| Personality | ねぼすけ (sleepyhead) | Medium — depends on the target's acceptance |
+| Name puns | イノシシ from 井上 (Inoue) | Medium — can be affectionate or cruel |
+
+**Modern school policy**: Many elementary schools now have "no あだ名 based on appearance" rules. The 2020s trend is toward calling everyone by their actual name with an appropriate honorific. However, affectionate, consensual nicknames among genuine friends persist nonetheless.
+
+## The Meaning of Honorific Shifts
+
+| Shift | Meaning |
+|-------|---------|
+| Family name → First name | Deepening friendship; "you're special to me" |
+| さん → ちゃん | Increased affection and closeness |
+| くん → No honorific (呼び捨て, yobisute) | Extreme closeness OR hostility — context is everything |
+| Any honorific → No honorific | Can be insulting if uninvited; can be intimate between best friends |
+| First name → Family name | Friend breakup; distance; formality returned |
+
+A 6th grade girl who switches a boy from 田中くん → 田中 → たかしくん over the course of a term is telling a story that everyone in class reads fluently.
+
+---
+
+# Cross-Reference: Where These Elements Appear in the Book Series
+
+This reference covers the linguistic landscape of a Japanese elementary school child. In a children's book series, these elements can serve as:
+
+- **Plot mechanics**: A character misusing ことわざ creates comedy; a 季語 sets the season and mood.
+- **Character differentiation**: The kid who uses あざす vs. the kid who says ありがとうございます reveal their personality and background.
+- **Authenticity markers**: Using the correct 号令 script or 給食 ritual instantly anchors a scene in Japanese school reality.
+- **Emotional shorthand**: ドキドキ, ワクワク, シーン — one word conveys what would take a paragraph of English description.
+- **Relationship barometers**: Honorifics and name usage silently track friendship arcs across volumes.
+
+---
+
+*Compiled as reference material for children's book series development. All Japanese text includes readings for accessibility.*

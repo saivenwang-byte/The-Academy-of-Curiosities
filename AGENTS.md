@@ -1,0 +1,50 @@
+# 《学堂趣事录》Agent 编排
+
+本项目使用 **三个协作 skill**（子分身），无需额外下载外部 agent。
+
+## 角色一览
+
+| Skill | 路径 | 角色 | 何时用 |
+|-------|------|------|--------|
+| **academy-series-architect** | `skills/academy-series-architect/` | 总策划 | 愿景、分卷、阶段、卷任务包、先讨论 |
+| **academy-research-editor** | `skills/academy-research-editor/` | 资料总编辑 | 主动搜料、维护 `09_日本参考资料库`、调度知识 |
+| **academy-engine** | `skills/academy-engine/` | 创作引擎 | 写正文、实验、角色台词、质量清单 |
+
+定稿门禁：`japan_campus_consultant_agent.html`（田中みどり · 五维文化校准）
+
+**完整验收清单**：`00_项目总览/创作标准与验收流程.md`
+## 典型流水线
+
+```
+总策划 → 资料总编辑 → 创作引擎 → 文化校准 → 定稿入 03_故事内容/
+```
+
+## 安装说明（已完成）
+
+Skill 已部署于：
+
+- `skills/academy-series-architect/`
+- `skills/academy-research-editor/`
+- `skills/academy-engine/`
+- `.cursor/skills/`（Cursor 项目 skill 镜像）
+
+在 Cursor 对话中直接说：
+
+- 「按总策划拆第2卷任务包」
+- 「资料总编辑补全梅雨相关素材」
+- 「用创作引擎写第1卷」
+
+Agent 应自动读取对应 `SKILL.md`。
+
+## 资料库入口
+
+- **总索引**：`09_日本参考资料库/INDEX.md`
+- URL 清单：`09_日本参考资料库/00_来源索引_全站URL清单.txt`（107+ URL）
+- L类八大主题：`09_日本参考资料库/12_L类八大主题_完整素材库.txt`
+- 归档说明：`09_日本参考资料库/_归档与合并说明.md`
+
+## 规则与笔法
+
+- 红线：`02_创作原则与世界观/创作红线与原则.txt`
+- 叙事笔法：`02_创作原则与世界观/写作技巧与叙事笔法.md`
+- 正典地图：`00_项目总览/正典文件索引.md`

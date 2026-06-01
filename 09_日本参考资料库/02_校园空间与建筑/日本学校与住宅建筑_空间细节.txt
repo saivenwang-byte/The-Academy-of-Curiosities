@@ -1,0 +1,533 @@
+# Japanese Home and School Architecture & Physical Spaces
+## Reference Document for Children's Book Series Set in Nagoya
+
+---
+
+# PART ONE: JAPANESE ELEMENTARY SCHOOL BUILDING DESIGN
+
+## 1.1 Overall School Building Layout
+
+The typical Japanese public elementary school (公立小学校) is a **reinforced concrete building of 3 to 4 stories**, constructed in the functional modernist style that dominated post-war public architecture. These buildings are intentionally unadorned -- pale gray or off-white concrete exteriors with horizontal bands of aluminum-sash windows. The aesthetic is austere but not oppressive; the simplicity allows the life inside to provide the color.
+
+The building footprint is usually an **L-shape, U-shape, or hollow square** surrounding a central courtyard (中庭). This courtyard -- often with a small garden, a pond with goldfish, or simply raked gravel with planters -- is visible from corridors on all sides.
+
+**Roof (屋上 / okujou):** The flat rooftop is one of the most emotionally resonant spaces in a Japanese school. Access is through a heavy steel door at the top of the stairs, usually locked but opened for specific activities. The rooftop is surrounded by a chest-high concrete parapet with metal safety fencing rising another meter above it. The floor is bare concrete with painted lines for evacuation drills. Elementary students go up for: (1) 屋上遊び (rooftop play time), a rare and treasured privilege; (2) science observations of weather, the sun, or the stars; (3) growing plants in planter boxes for science class; (4) school-wide evacuation drills. From a Nagoya school rooftop in summer, one sees a patchwork of tiled roofs, the green of distant hills (the Higashiyama area), and the white egrets that nest along the Shonai River. The wind up there is different -- stronger, carrying the sound of the city filtered through height.
+
+**Gymnasium (体育館 / taiikukan):** A separate or attached wing with a distinctive arched or peaked roof, visible from outside as the tallest part of the school complex. Inside: a sprung wooden floor polished to a honey-colored gleam by decades of bare feet and cleaning. The floor has painted lines for volleyball, basketball, and badminton in white, yellow, and red. The ceiling is high enough for badminton clears, with exposed steel trusses. A stage with red velvet curtains occupies one end, used for assemblies, graduation ceremonies (卒業式), and the school play (学芸会). Folded gymnastics mats smell of vinyl and dust. A gallery or balcony runs along one side. Beneath the stage is a storage space -- dark, smelling of old wood and rosin, filled with vaulting boxes (跳び箱), balance beams, and musty gym mats.
+
+## 1.2 Classroom (教室 / kyoushitsu) Dimensions & Layout
+
+A standard Japanese elementary classroom measures approximately **9 meters wide by 7 meters deep (roughly 63 square meters)**. This accommodates 30-40 students with room for movement.
+
+**Floor:** Vinyl flooring tiles (Pタイル) in pale green, beige, or gray. Slightly cold underfoot in winter despite the ストーブ (kerosene stove), warm and faintly sticky in summer humidity. The tiles have a subtle pebbled texture. By the entrance, the floor shows a slight depression from decades of children removing their indoor shoes.
+
+**Lighting:** Two parallel rows of fluorescent tube lights suspended from the ceiling on chains. They flicker briefly when turned on, hum faintly, and one tube in every classroom seems to be on the verge of dying -- buzzing and flickering intermittently. Afternoon sunlight streams through the south-facing windows, creating long parallelogram patches of light across the desks.
+
+**Walls:** Pale cream or very light green. The lower portion (up to about 1.2 meters) is often wood-paneled or covered in a darker material that can withstand the constant brushing of school bags. Bulletin boards of cork or fabric-covered panels line the walls.
+
+## 1.3 Desks and Chairs (机と椅子 / tsukue to isu)
+
+Until the early 2000s, most Japanese elementary schools used **wooden two-seater desks** -- a single wooden table surface shared by two children, with an open shelf beneath for storing textbooks and supplies. The wood was pale -- Japanese cypress (桧 / hinoki) or cedar (杉 / sugi) in older schools, later replaced with laminated wood composites. The surface showed decades of use: pencil indentations, faint ink stains, generation after generation of children's initials carved with compass points.
+
+Since approximately 2005-2010, most schools have transitioned to **individual desks** with tubular steel legs and a laminated wood top (approximately 60cm x 40cm). But older two-seaters persist in some schools, and for a story set in the past or in a traditional school, the two-seater is more evocative.
+
+**Chair height markings (座高 / zakou):** Each desk and chair set has a numbered height marking. Students are measured at the start of each term and assigned a desk size. Size 1 (lowest) through Size 6 (highest). The school nurse (保健室の先生) manages this. A child being reassigned to a larger desk is a minor milestone -- evidence of growth.
+
+**Desk arrangement patterns:**
+- Standard: rows facing the blackboard, each row with 6-7 desks, 5-6 rows deep
+- Group arrangement: four desks pushed together into an island (班 / han) for group activities -- this is the default arrangement for daily life (給食, cleaning, discussions) with all-desks-facing-front reserved for tests and lectures
+- Each desk has a fabric 机カバー (desk cover) that children bring from home -- patterned with anime characters, flowers, or geometric designs
+
+**Position power dynamics:**
+- **Window-side seats (窓側 / madogawa):** The most desirable position. Sunlight, breeze, looking out at the sky, trees, and the world beyond school. The warm drowsiness of a spring afternoon by the window is a universal Japanese school memory.
+- **Hallway-side seats (廊下側 / roukawa):** Less desirable -- no view, passersby glance in, colder in winter as the corridor-side wall is thinner. But closer to the door for quick exits.
+- **Center seats (真ん中 / mannaka):** Neutral territory.
+- **Front seats (前の方):** Close to the teacher. Better for hearing but worse for covert activities.
+- **Back seats (後ろの方):** Where children who want to escape the teacher's gaze cluster. Near the lockers, near the back bulletin board.
+- Seats rotate typically every 1-2 weeks, shifting one row back and one column over, so everyone experiences every position.
+
+## 1.4 Blackboard (黒板 / kokuban)
+
+Despite the name "blackboard," Japanese school blackboards are **dark green**, not black. The green is easier on the eyes and has been standard since the 1960s. The surface is a steel sheet coated with dark green enamel, magnetically receptive for posting notices. Dimensions: approximately **3.6 meters wide by 1.2 meters tall**, spanning nearly the entire front wall of the classroom.
+
+**Chalk types (チョーク):**
+- Japanese chalk is celebrated for its quality. The most famous brand is **Hagoromo (羽衣)** -- so dense and smooth it's almost creamy, producing almost no dust. A cultural icon among teachers worldwide.
+- Standard white chalk is most common. Yellow chalk is used for emphasis and is slightly softer.
+- Red chalk marks corrections.
+- Blue and green chalk are used for diagrams.
+- Colored chalks come in a flat cardboard box of 12 that sits on the chalk tray ledge.
+
+**The chalk tray (チョーク受け):** A wooden or aluminum trough running the full width of the blackboard. It accumulates a fine layer of white dust. A damp cloth (黒板拭き / kokuban-fuki) folds neatly at one end.
+
+**The blackboard structure:** The main center panel is flanked by two sliding side panels. The teacher slides panels to reveal pre-written material or to access the center. Above the blackboard, a rolled projection screen is housed in a metal cylinder.
+
+**Above the blackboard:** The 学級目標 (gakkyuu mokuhyou) -- class goals -- are posted here in large characters cut from colored paper or handwritten on strips of 画用紙 (drawing paper). These are determined by the class at the start of each term: "思いやりのあるクラス" (A compassionate class), "最後まであきらめない" (Never give up until the end), etc. In some classrooms, a clock hangs above the blackboard. A small Shinto shrine shelf or simply a class photo might occupy one corner.
+
+## 1.5 Lockers (ロッカー)
+
+At the back of the classroom stands a wall of wooden cubby lockers divided into individual compartments, one per child. Each compartment is roughly **30cm wide x 40cm deep x 40cm tall** -- just large enough for a randoseru (ランドセル, the rigid leather school backpack), an indoor shoe bag, and a gym clothes bag.
+
+Above the lockers or on their doors, each child's name is written on a paper label, sometimes with a hand-drawn illustration. The name labels change each year.
+
+The top surface of the lockers serves as a display shelf for: class hamster cage, potted plants each child is responsible for, the class library of books, and art projects left to dry.
+
+**What children keep in lockers:**
+- Randoseru (the heavy leather backpack)
+- 体操着袋 (gym clothes bag): a drawstring cloth bag, color-coded by grade
+- 上履き袋 (indoor shoes bag): another drawstring bag
+- 給食袋 (lunch set bag): containing a placemat (ランチョンマット), chopsticks, a cup, and a toothbrush
+- 防災頭巾 (disaster prevention hood): a quilted rectangular cushion that doubles as a fire/earthquake hood -- stored folded on top of the randoseru
+
+## 1.6 Corridors (廊下 / rouka)
+
+School corridors in Japan are **open-air on one side** in many older designs -- a covered walkway with the building wall on one side and a concrete balustrade on the other, open to the courtyard. In newer or colder-region schools, both sides are walled with windows. Corridor width: approximately **2.5 to 3 meters**, enough for two classes to pass each other in orderly lines.
+
+**Floor:** Polished concrete or linoleum, buffed to a slippery shine by the daily cleaning regimen. Children are forbidden to run but inevitably do, and the distinctive squeak of indoor shoes on polished corridor floors is one of the quintessential sounds of a Japanese school.
+
+**Walls:** The lower half is often finished in a darker color to hide scuff marks from bags and shoes. Upper walls hold: framed calligraphy by honored former principals, educational posters about dental health or fire safety, seasonal art displays, and notice boards with the weekly schedule.
+
+**Along the corridor:** Sinks and water fountains at intervals for hand-washing and gargling (うがい -- a daily ritual, especially in winter). Mop closets with the smell of damp cotton and cleaning solution. Vending machines for milk (in some schools). Trophy cases displaying sports and academic awards.
+
+**The corridor during cleaning time (掃除の時間 / souji no jikan):** After lunch every day, the entire school stops for 15 minutes of cleaning. Corridors are swept, then damp-mopped. Children carry buckets of cold water, squeeze out 雑巾 (zoukin -- cleaning rags) with their bare hands, and race each other down the corridor pushing wet rags on the floor, sliding on their knees. The smell of cold water on concrete, the slap of wet rags, the shouting of the cleaning monitors.
+
+## 1.7 Special Classrooms
+
+### 理科室 (Science Room)
+
+Located on an upper floor, often the 3rd or 4th. The room smells faintly of chemicals -- a clean, slightly medicinal smell of alcohol, acetic acid, and old formaldehyde specimens. Long laboratory tables with black chemical-resistant tops, gas outlets for Bunsen burners, and sinks at regular intervals. A human skeleton model (人体模型) stands in the corner, named something friendly like "Bone-kun" by generations of students. Glass-fronted cabinets contain: glass beakers and flasks, test tubes in wooden racks, microscopes in wooden cases, specimen jars with frogs or snakes suspended in pale yellow formalin, rock and mineral collections, and star globes (星座早見). The wall has a large periodic table. Windows face north if possible, to give consistent light for microscope work.
+
+### 音楽室 (Music Room)
+
+The music room has a distinctive wooden resonance. The floor is real wood -- sometimes parquet -- not vinyl tiles. An upright piano (or grand piano in wealthier schools) dominates one corner, its felt slightly musty. A tiered platform (ひな壇) for choir practice occupies one wall. Portraits of classical composers (Bach, Mozart, Beethoven) hang high on the walls -- Bach with his elaborate white wig and stern expression. Cabinets hold: recorders (リコーダー -- every Japanese child learns the soprano recorder from 3rd grade), melodicas (鍵盤ハーモニカ -- a keyboard instrument you blow into, carried back and forth in a plastic hard case), xylophones, glockenspiels, tambourines, triangles, castanets, cymbals, and a large bass drum. One wall has a music staff painted on it, with magnetic notes that can be arranged. The room has better soundproofing than other classrooms.
+
+### 図書室 (Library)
+
+A room lined with wooden bookshelves reaching about 1.5 meters high -- low enough that children can reach the top shelf. The floor has a carpeted section where children can sit and read. Low tables with child-sized chairs. The smell: old paper, wood, a hint of dust, and the particular sweetness of library paste. Books are organized by the Japanese decimal classification for school libraries. The collection includes: 絵本 (picture books), 児童文学 (children's literature), the inevitable かいけつゾロリ (Kaiketsu Zorori) series, science encyclopedias, sets of Japanese folk tales, and the complete works of Kenji Miyazawa. A circulation desk near the door, manned by 図書委員 (library committee members) -- older students who check books in and out. 読書週間 (Reading Week) decorations of autumn leaves and reading-themed displays. A reading tree where each leaf has a child's name and book title.
+
+### 家庭科室 (Home Economics Room)
+
+A room that smells of whatever was last cooked -- soy sauce, sugar, and oil linger in the air. Six to eight kitchen stations, each with a two-burner gas stove, a sink, and basic cooking implements. Sewing machines (electric, portable) stored in cabinets along one wall. Ironing boards. Mannequin torsos for clothing practice. Long tables for eating what was cooked. The 5th and 6th graders have home economics once or twice a week. They learn to: cook miso soup and rice, make simple stir-fries, sew buttons and simple stitches, use a sewing machine to make aprons or bags. The first home economics class -- making お味噌汁 from scratch, the children grating ginger, cutting tofu into cubes, dissolving miso paste in the broth -- is a rite of passage.
+
+### 図工室 (Art Room)
+
+The messiest, most vibrant room in the school. Long wooden tables scarred with paint, glue, and exacto-knife cuts. Easels stored against walls. A kiln in a connected room for firing clay works. The smell: poster paint (ポスターカラー), clay, turpentine, drying paper, and the particular damp-earth scent of clay projects in progress. Shelves of half-finished projects. Drying racks for paintings. A sink area perpetually stained with paint despite daily cleaning. Tools: chisels for woodblock printing (版画), rollers (ローラー) and ink slabs (インク板) for printmaking, pottery tools, construction paper of every color in large flat drawers. Wire strung across the ceiling for hanging completed works to dry.
+
+### 保健室 (Nurse's Office)
+
+The 保健室 occupies a unique psychic space in the Japanese school. It is a room of refuge.
+
+**Physical description:** Two or three clean white beds separated by pale green curtains on ceiling tracks. A desk where the 養護教諭 (school nurse) sits. A scale and height-measuring device. A blood pressure monitor on a small cart. Cabinets with: bandages (絆創膏), ice packs (冷却パック) in a small freezer, a mini-fridge for medicines that require cooling, thermometers in cases (both digital and old mercury ones), antiseptic, cotton balls, and gauze. A small sink. Educational posters about health, teeth brushing, and hand washing. A full-length mirror.
+
+**The atmosphere:** The room smells of antiseptic (消毒液) and something indefinably hospital-like yet softer. The lighting is gentler than in classrooms. There is always a box of tissues and the slight sound of the mini-fridge humming. The nurse (養護教諭の先生) speaks in a softer voice than other teachers. Children come here when they feel sick, when they've injured themselves, but also when they feel anxious or overwhelmed. The school nurse functions partly as a counselor. A child crying from a stomachache, receiving a cool hand on the forehead, being told to lie down for 20 minutes and see if it passes -- the 保健室 is where school's relentless social demands temporarily lift.
+
+### 職員室 (Teachers' Room)
+
+**Why children fear going there:** The 職員室 is the administrative heart of the school, and its atmosphere is radically different from the student world. It is an adult space that children enter only when summoned -- to deliver a message from another teacher, to retrieve forgotten homework, or to be disciplined. The room smells of coffee, cigarettes (in older decades), copy machine toner, and paper. Rows of teachers' desks face each other, each teacher having their own workspace piled with papers, books, and personal items. A large copier stands in one corner. A green 食券 (meal ticket) board on the wall. File cabinets. The 校長先生 (principal) and 教頭先生 (vice principal) sit at distinguished positions. A child entering the 職員室 must stand at the door, announce "失礼します (Shitsurei shimasu / Excuse me)," state their business, bow, and retreat. The teachers, normally lively in the classroom, are subdued and serious here -- they are working. The click of keyboard keys. The ring of a telephone. The particular terror of seeing your homeroom teacher's face shift from "classroom mode" to "serious adult mode" as you are called in.
+
+---
+
+# PART TWO: JAPANESE HOME ARCHITECTURE
+
+## 2.1 Typical Detached House (一戸建て / Ikkodate) -- Nagoya Style
+
+Nagoya, as a city that was largely rebuilt after the devastating WWII air raids of 1945, has a mix of housing stock. Western Nagoya (Nishi-ku, Nakamura-ku) and the castle-adjacent areas have many post-war homes. The eastern hillside areas (Chikusa-ku, Showa-ku, Meito-ku, Moriyama-ku) contain wealthier, newer construction, and older pre-war homes.
+
+A typical middle-class Nagoya 一戸建て occupies a plot of approximately **100-200 square meters**, with the house itself occupying roughly 60-70% of the land (建ぺい率 / building coverage ratio). Houses are commonly two stories. Construction: wood-frame (木造), increasingly with steel reinforcement. Exterior: stucco (often pale beige, cream, or light gray), with tile roofs in dark gray or blue-gray (瓦 / kawara).
+
+**Roof tiles:** Nagoya is near Seto and Tokoname, two of Japan's most famous ceramic-producing regions. Many traditional Nagoya homes feature **Tokoname-yaki roof tiles** -- a distinctive slightly iridescent gray, thicker and heavier than modern alternatives. These tiles absorb less heat than metal roofing and create a particular sound during rain: a low, steady thrumming rather than sharp pinging.
+
+**Spatial logic:** The house is organized vertically more than horizontally. The ground floor (1階) is communal: entry, living, kitchen, bath, toilet, Japanese room, parents' bedroom. The second floor (2階) is private: children's bedrooms, sometimes additional storage or a secondary living space.
+
+## 2.2 Genkan (玄関 / Entryway)
+
+The 玄関 is the architectural manifestation of Japan's most fundamental spatial distinction: **uchi (内 / inside) vs. soto (外 / outside)**.
+
+**Physical description:** The entry door opens into the たたき (tataki), a sunken entry area of approximately **1-2 tatami mats in size** (roughly 1.5-3 square meters). The floor here is concrete or tile -- hard, cold, practical. A **step of roughly 15-20cm** rises to the main house floor, which is wood, laminate, or (in older homes) tatami.
+
+**The ritual:** One enters, turns to face outward, removes shoes (kneeling or squatting), steps up onto the raised floor, then turns around and crouches to arrange the removed shoes neatly pointing outward -- toes toward the door -- ready to be slipped into for the next exit. A polished stone or ceramic tile at the step's edge where generations of socks have brushed. Visitors' shoes are placed to one side, not blocking the step.
+
+**Shoe storage:** A built-in 下駄箱 (getabako / shoe cabinet) occupies one wall of the 玄関. Sliding doors reveal tilted shelves where shoes are stored heel-down. The cabinet stores: outdoor school shoes for each family member, indoor slippers for guests (スリッパ) -- usually 2-3 pairs of slightly-too-large brown or beige slippers in a small basket, and rarely-used shoes at the top or bottom.
+
+**Smells and sensations:** The 玄関 smells of leather shoe polish, the slight must of stored shoes, the outside air that rushes in whenever the door opens. In winter, cold air pools in the たたき area. In rainy season (梅雨), the entry holds the damp-earth smell from wet umbrellas in the stand (傘立て). The sound of the front door opening -- the metallic rattle of the lock, the click of the latch, the slight suction sound as the door swings open -- is one of the most emotionally loaded sounds in a Japanese home. The anticipation of who is arriving.
+
+## 2.3 Washitsu / Japanese Room (和室)
+
+A multipurpose room with **tatami flooring** that can function as a guest room, a family gathering space during holidays, a place to lay out futons for sleeping, and a space for the household Buddhist altar or Shinto shrine.
+
+**Tatami mats (畳):** Standard size in Nagoya (Edo-ma / 江戸間) is approximately **176cm x 88cm x 5.5cm thick**. The surface is woven igusa (rush grass), pale green when new, mellowing to a golden-beige with age. The edge binding (縁 / heri) is a dark fabric strip, traditionally patterned. Walking on tatami with bare feet: the slight springiness, the particular smell -- green, grassy, slightly sweet, intensifying on humid summer days and after rain. The edges of tatami must not be stepped on (a superstition from the days when heri bore family crests). Tatami requires maintenance: they're taken outside on sunny days for airing, beaten with a 布団たたき (futon beater), and the room has strict rules against placing heavy furniture directly on the mats without protective boards.
+
+**Room features:**
+- **押入れ (oshiire / closet):** A deep closet with sliding 襖 (fusuma) doors, papered with pale paper or cloth. The closet is divided horizontally at roughly chest height into upper and lower compartments. Here are stored: futon sets (布団 / futon) -- the base mattress (敷布団 / shikibuton) and the comforter (掛布団 / kakebuton), folded into thirds and stacked; pillows in cloth cases; spare tatami; seasonal items. The 押入れ has a distinctive smell: the cedar wood of the closet interior, the clean cotton of stored futons, mothballs (樟脳 / shounou), and the particular dry, enclosed scent of things kept in darkness. For a child, the 押入れ represents the ultimate hiding spot and the locus of midnight fears.
+- **床の間 (tokonoma):** An alcove slightly raised above the tatami level, used to display a hanging scroll (掛け軸 / kakejiku), a seasonal flower arrangement (生け花), and perhaps a treasured ceramic piece. This is the honored guest's position. In modern homes, the 床の間 is often absent, but traditional Nagoya homes, especially those in older neighborhoods, retain it.
+- **襖 (fusuma):** Sliding doors made of paper over a wood lattice frame. They rattle softly when slid open. Children are told not to run their fingers along the paper, though everyone inevitably does. Over years, small holes appear at child-height, patched with decorative paper circles.
+
+## 2.4 Western Room / Wood-Floor Room (洋室 / フローリングの部屋)
+
+Modern Japanese homes feature rooms with **wood or laminate flooring** (フローリング) rather than tatami. The flooring is a light-to-medium brown wood tone, often ash or oak laminate with a wood-grain pattern. In winter, these floors are bitter cold to walk on in bare feet. Homes in Nagoya typically have central heating units or, more commonly, kerosene heaters (石油ストーブ and 石油ファンヒーター) supplemented by electric carpets (電気カーペット) beneath the living room rug, and こたつ (kotatsu) in winter.
+
+**Underfloor storage (床下収納):** A square hatch in the kitchen or hallway floor, lifting to reveal a storage pit beneath the house -- cool, dark, smelling of earth and concrete. Used for preserving vegetables, storing sake, or keeping emergency supplies.
+
+## 2.5 Engawa (縁側 / Veranda)
+
+The 縁側 is a narrow wooden corridor running along the exterior of a traditional Japanese room, acting as a threshold between interior and garden. It is a strip of **polished wood approximately 90-120cm wide**, covered by the deep eaves (軒 / noki) that extend the roofline outward.
+
+**Material and texture:** The wood is usually cedar or cypress, burnished to a honey-brown by sunlight and foot traffic. It is raised about 30cm above the garden ground. Sitting on the 縁側, legs dangling over the edge, is one of the iconic postures of Japanese domestic life -- 縁側で日向ぼっこ (basking in the sun on the 縁側).
+
+**The threshold between inside and out:** Glass sliding doors (障子戸 or ガラス戸) separate the tatami room from the 縁側. On pleasant days, these doors are thrown open and the boundary between house and garden dissolves. The 縁側 is technically "outside" but under the eaves, so rain falls a meter beyond your feet. The sensation: warm wood beneath thighs, the smell of sun-warmed cedar, the sound of wind chimes (風鈴 / fuurin) in summer, cicadas at full volume, the sight of the garden spread before you.
+
+**Decline of the engawa:** In modern Japanese homes, the engawa is increasingly rare -- sacrificed to larger interior rooms or simply not included in builder-grade houses. But older Nagoya homes, especially those in established neighborhoods like Kakuozan or Motoyama, often retain their engawa. For a character who lives in a somewhat traditional home, the engawa is a powerful scene-setting device.
+
+## 2.6 Garden (庭 / Niwa) -- Nagoya Style
+
+A typical Nagoya home garden in a 一戸建て on a small to medium plot might include:
+
+**Size:** For a 100-200sqm plot, the garden might occupy 15-40 square meters. A 400sqm garden (as mentioned for the Riku home) is **luxurious by Nagoya standards** and would indicate significant wealth or a location on the city's outskirts in the eastern hills.
+
+**Elements:**
+- **Trees:** A single signature tree is common -- a 梅 (ume / plum) for early spring blossoms, a モミジ (momiji / Japanese maple) for autumn color, a キンモクセイ (kinmokusei / sweet osmanthus) for its intoxicating orange-blossom fragrance in September-October. Fruit-bearing trees are beloved: a persimmon tree (柿の木 / kaki no ki) with fruit that ripens to brilliant orange in autumn, hanging like lanterns after the leaves fall; a ミカン (mikan) or ユズ (yuzu) tree for citrus; a ビワ (biwa / loquat) tree with large dark green leaves and small orange fruit in early summer.
+- **Shrubs:** Azaleas (ツツジ / tsutsuji), clipped into rounded forms; サザンカ (sasanqua camellia) for winter flowers; hydrangeas (アジサイ / ajisai) that turn blue or pink depending on soil acidity -- a rainy season icon.
+- **Groundcover:** Moss (苔 / koke) in shaded areas, a velvety emerald that children are told not to step on. White gravel or stepping stones (飛び石 / tobi-ishi) in irregular natural shapes forming a path.
+- **Stone lantern (石灯籠 / ishidourou):** Present in more traditional gardens, often moss-covered, sometimes with a small Buddha figure (地蔵 / Jizo) tucked nearby.
+- **Water features:** A small pond (池 / ike) with goldfish or koi, perhaps a ししおどし (deer-scarer -- bamboo tube that fills with water and clacks against a stone), though these are more common in temple gardens. A simple water basin (つくばい / tsukubai).
+- **Garden shed (物置 / monooki):** A small metal or wooden shed for tools, often slightly rusted, smelling of gasoline (for the lawnmower), fertilizer, and damp earth.
+- **Laundry poles (物干し竿 / monohoshizao):** A metal T-bar or retractable poles where laundry is hung to dry. White sheets billowing in the breeze, the clean smell of sun-dried cotton.
+
+**Sensory details of the garden:**
+- **Spring:** The heavy sweetness of plum and cherry blossoms, bees working the azaleas, new tatami airing in the shade, earth turned for spring planting
+- **Summer:** Cicadas so loud they drown conversation. The garden hoses coiled green, the すだれ (sudare / bamboo blinds) hanging from the eaves, casting striped shadow. The whine of mosquitoes. The relief of the first cool breeze after sunset. Fireflies if there's a water source nearby.
+- **Autumn:** The maple tree ignites in reds. Persimmons ripen, attracting birds. The smell of キンモクセイ drifts for blocks. Piles of leaves raked into a tarp, smelling of earth and decay. Garden spiders (ジョロウグモ / Jorou-gumo) are at their largest, golden webs spanning shrubs.
+- **Winter:** The stark architecture of bare branches against pale sky. The garden is quiet. Evergreens -- pine, sasanqua, and nandina with red berries -- provide the only color. Frost on the stepping stones in early morning. The 冬至 (touji / winter solstice) tradition of a yuzu bath: whole yuzu citrus fruits floating in the steaming bath, releasing their sharp clean fragrance.
+
+## 2.7 Bath (風呂 / Furo)
+
+The Japanese bathroom is **two rooms**: a changing room (脱衣所 / datsuijo) and the wet room (浴室 / yokushitsu). This separation keeps the changing area dry and clean.
+
+**Changing room (脱衣所):** Tile or water-resistant flooring. A washing machine in the corner. Laundry basket (laundry in Japan is often done during or right after bathing). A sink and mirror. Shelves for towels and changes of clothes. A scale. The room smells of laundry detergent, bath products, and the warm humidity seeping from the bath.
+
+**The bathing ritual:**
+1. Enter the changing room, remove all clothes, place in laundry basket
+2. Enter the wet room, close the door. Sit on a small plastic stool (風呂椅子) before a low faucet and a handheld shower head
+3. Fill a plastic washbowl (洗面器 / senmenki) with water. Thoroughly wash and rinse the entire body with soap and shampoo *outside* the bathtub
+4. Only when completely clean and rinsed (no soap residue), enter the bathtub
+5. The bathtub (湯船 / yubune) contains clean, hot water (40-42°C) shared by the entire family. Because everyone washes before entering, the water remains clean
+6. Soak for 10-30 minutes, the heat sinking into muscle and bone
+7. Exit carefully (the heat can cause dizziness). Some families add cold water before getting out
+
+**The bathtub (浴槽 / yokusou):** Typically shorter but deeper than Western tubs, designed for sitting upright with knees drawn up, water coming to the shoulders or chin. Modern tubs are fiberglass or stainless steel; traditional ones are wooden (檜風呂 / hinoki-buro). A wooden tub releases a magnificent cedar fragrance when heated. The tub has a cover (風呂蓋 / furobuta) -- slatted plastic or wood panels that insulate the water between uses.
+
+**Bathroom features:**
+- Tiled walls (often pale blue, green, or beige), grouting slightly darkened with age
+- A small window high on the wall, fogged with steam, often letting in a sliver of garden view
+- A 換気扇 (ventilation fan) humming in the ceiling
+- Mold on the ceiling corners (inevitable despite cleaning)
+- A wall-mounted control panel for: reheating the water (追い焚き / oidaki), setting water temperature, and sometimes calling an intercom to the kitchen
+- Plastic toys and small buckets for young children
+
+**Timing:** The bath is typically taken in the evening, after dinner. The order is usually: father first (as the head of household, though this tradition is softening), then children, then mother. Children often bathe together with a parent when young. A child's refusal to get out of the warm bath on a winter night -- "あと5分!" (Five more minutes!) -- followed by the sprint through the cold house wrapped in a towel.
+
+## 2.8 Toilet (トイレ / Toire)
+
+In Japanese homes, the toilet is **always a separate room** from the bath -- a distinction that surprises many Western visitors but is non-negotiable in Japanese domestic architecture.
+
+**The room:** Small, typically about **1m x 1.5m**. Tile or waterproof flooring. A small sink (手洗い) integrated into the top of the toilet tank -- the water that refills the tank runs through this sink first, so every flush provides clean water for hand-washing. Ingenious water conservation built into the object itself.
+
+**The toilet (便器 / benki):**
+- **Washlet (ウォシュレット):** The high-tech toilet seat with heated seat, warm-water bidet spray, and warm-air dryer. The control panel on the side with pictograms: a rear spray, a front spray, water pressure up/down, water temperature, seat temperature. A specific sound: the mechanical whir of the bidet wand extending and retracting, the spray of water, the dryer fan humming. Even public elementary schools increasingly have washlets.
+- **Sound Princess (音姫 / Otohime):** A small speaker unit that plays the sound of running water to mask bathroom sounds. Activated by a button or motion sensor.
+- **Toilet slippers (トイレスリッパ):** A pair of slippers kept exclusively at the toilet door. One steps out of hallway slippers, into toilet slippers to enter, then back into hallway slippers upon exit. Forgetting to change out of toilet slippers and walking through the house in them is a classic domestic faux pas that children are scolded for.
+
+## 2.9 Kitchen (台所 or キッチン / Daidokoro or Kitchen)
+
+The Japanese kitchen in a family home is typically a **corridor-style layout** along one wall or, in newer homes, an open-plan kitchen facing the living/dining area (対面キッチン / taimen kitchen).
+
+**Key appliances and features:**
+- **Gas range (ガスコンロ):** Usually 3 burners (三口), with a small fish grill (魚焼きグリル) beneath -- a slim drawer broiler used for grilling fish, toasting mochi, and similar tasks. The smell of grilled mackerel (サバ) or salted salmon (塩鮭) wafting through the house is quintessentially Japanese.
+- **Refrigerator (冷蔵庫 / reizouko):** Typically a multifunction unit with: freezer (冷凍), regular refrigeration (冷蔵), and a vegetable drawer at the bottom. Common capacity for a family: 400-500 liters. The door covered in: family photos, children's artwork, school lunch menus, magnets from places visited, shopping lists held by vegetable-shaped magnetic clips.
+- **Rice cooker (炊飯器 / suihanki):** A permanent fixture on the kitchen counter, kept constantly plugged in. Modern units have induction heating (IH) and pressure functions. The steam vent releases puffs of starchy-sweet vapor when cooking. The particular sound: the click of the lid opening, the puff of steam, the warm yeasty-sweet smell of freshly cooked rice, the gentle beep that announces completion. Rice is the absolute center of Japanese domestic life. A household without a rice cooker is unimaginable.
+- **Microwave/oven combination (電子レンジ・オーブン):** Above-counter placement.
+- **Range hood (換気扇):** The rattling hum when frying; the grease-catching filter that must be regularly cleaned.
+- **Sink (流し台 / nagashidai):** Deep stainless steel, with a removable triangular corner basket for food scraps (三角コーナー / sankaku koonaa). A draining basket (水切りかご) beside the sink.
+- **Cutting board (まな板 / manaita):** Wooden boards used with different sides for different foods (meat vs. vegetables), kept clean and dry.
+- **Above-counter cabinets:** For plates, bowls, teacups, glasses. Rice bowls (茶碗 / chawan), miso soup bowls (お椀 / owan), and chopsticks have defined places.
+- **Under-counter storage:** Pots, pans, cutting boards, the rice storage bin, garbage and recycling bins (燃えるゴミ, 燃えないゴミ, プラスチック, 缶・瓶, ペットボトル -- Japanese garbage sorting is elaborate).
+
+**The professional kitchen variation (as a food laboratory):** For a mother character who is a food professional, the kitchen would feature: a larger island counter, a commercial-grade mixer (KitchenAid or similar, rare in Japanese homes), a larger oven (Japanese homes typically have compact ovens), a second sink, notebook stands for recipe development, ingredient jars labeled in elegant handwriting, a dedicated tasting spoon collection, a thermometer set, and the type of organized chaos that comes from serious cooking -- open cookbooks, tasting notes, labeled containers of test batches.
+
+---
+
+# PART THREE: THE RIKU FAMILY HOME (陸家 / Riku-ke) -- SPECIFIC SCENE BUILDING
+
+## 3.1 Overview and Location
+
+The 陸家 (Riku family) home is a **two-story 一戸建て (detached house)** on a **400-square-meter plot**, which marks the family as notably wealthy by Nagoya standards. Such a property might be located in:
+- **Meito-ku (名東区):** An upscale eastern suburb with hillside views, quiet residential streets, and excellent schools
+- **Chikusa-ku (千種区):** The Higashiyama/Kakuozan area, where old money and academic families mix, with larger-than-average plots
+- **Moriyama-ku (守山区):** Green, quieter, slightly further from city center, drawing families who prioritize space and nature
+- **Tempaku-ku (天白区):** Suburban, with a mix of older farmhouses on large plots and new developments
+
+The location borders an older, more traditional neighborhood (下町風 / shitamachi-fuu), creating a narrative contrast: the Riku home's spacious modern design abuts narrow alleyways between older wooden houses, a neighborhood shrine, and the physical traces of an older Nagoya -- persimmon trees, morning glory vines on bamboo poles, stone Jizo statues, and the smell of grilled fish from neighbors' kitchens.
+
+## 3.2 House Exterior and Approach
+
+**Exterior:** A contemporary interpretation of Japanese domestic architecture. The facade is a pale cream stucco with accents of dark wood -- perhaps cedar that has been treated to weather to a silvery-gray. The roof is dark gray, perhaps a standing-seam metal roof rather than tiles, indicating a designer's hand. Large windows face the garden and south, maximizing light and passive solar gain. Deep eaves (軒 / noki) shade the southern exposure in summer.
+
+**Front gate:** A simple modern gate in dark-stained wood, flanked by a low wall topped with a hedge of レッドロビン (Red Robin photinia) with its striking red new growth. A nameplate (表札 / hyousatsu) beside the gate: "陸" in brushed calligraphy on ceramic.
+
+**Approach path:** Stepping stones (飛び石) through a gravel area lead to the 玄関. On the right, the garden begins; on the left, a parking area for one car (perhaps a practical Japanese van or station wagon -- a Toyota Voxy or a Honda Odyssey, vehicles that make sense for a family with children and design equipment to transport).
+
+## 3.3 Ground Floor (1階)
+
+### Genkan (Entry)
+
+A spacious entry -- larger than typical -- with a tiled たたき of roughly **3 square meters**. The step up is a single piece of polished dark stone. A large shoe cabinet (下駄箱) with sliding doors houses the family's shoes and guest slippers. A wooden bench for sitting while putting on or removing shoes. A window beside the door looks out onto the approach path, so one can see who is coming before opening the door.
+
+In the たたき: Father's leather work shoes, polished but scuffed at the toes. Mother's practical but elegant flats. 陸珣 and 陸瑆's school shoes (上履き -- white canvas with colored rubber soles, the same velcro-fastened style worn throughout elementary school), perhaps kicked off carelessly in the exact middle where everyone trips over them. Small guest slippers for visiting children. An umbrella stand with several clear plastic umbrellas and one elegant dark blue one for Father. A wooden basket for mail and packages.
+
+### Living/Dining Area (リビングダイニング)
+
+An open-plan space of roughly **35-40 square meters** with large south-facing sliding glass doors opening onto the garden. The flooring is oak (ナラ) -- real wood, not laminate, showing the family's means -- in wide planks, warm honey in color. An area rug defines the living zone.
+
+**Living zone:** A low-profile sofa in a neutral fabric. A low wooden coffee table. A こたつ table in winter (the heavy comforter stored in the 押入れ the rest of the year). A TV on a low console, but not the dominant feature of the room. Instead, the garden view through the glass doors is the room's focus.
+
+**Dining zone:** A solid wood table seating 6-8, used for family meals but also frequently commandeered for homework, project planning, and experiment setups. Pendant lighting over the table, warm-toned.
+
+**Design elements:** The room is intentionally designed. Perhaps the wall between living and kitchen is partially opened with a serving counter. The color palette is warm neutrals: cream walls, wood tones, accents of the deep blue-gray that appears in Japanese traditional ceramics. A few carefully chosen pieces of pottery on shelves -- perhaps Shino or Oribe ware, local Seto ceramics. A single seasonal flower arrangement.
+
+**Sound and light:** Morning light floods the south-facing glass. In winter, the low sun reaches deep into the room. In summer, the deep eaves shade the interior. The sound environment: the garden's birds and cicadas, the distant soft chime of the temple bell from the nearby Buddhist temple on New Year's Eve, the muffled thud of Mother's knife against the cutting board from the kitchen.
+
+### Father's Design Studio/Workspace
+
+Attached to or near the living area, separated perhaps by sliding glass doors that can be opened or closed. A room of approximately **20 square meters**.
+
+**Layout:** A large desk -- perhaps a vintage wooden drafting table -- dominates one wall. An architect's lamp with articulated arms. A desktop computer with a large monitor for design work (CAD, rendering, layout). A wide-format printer for proofs. A corkboard wall with pinned: color swatches, material samples, fabric swatches in organized rows, typography specimens, printed inspiration images, photographs of completed projects, and works in progress.
+
+**Storage and materials:** Open shelving with labeled boxes and binders. Flat-file drawers for large paper and prints. Sample books for paper stocks, fabrics, and finishes. A small library of design books, some in Japanese, some imported. A portfolio case with his best work.
+
+**Personal touches:** A coffee cup permanently occupying one corner. A small framed photograph of the family. A child's drawing pinned up among the professional work -- perhaps 陸珣's crayon drawing of the family, or 陸瑆's depiction of the garden. A model or prototype of a current project.
+
+**Atmosphere:** The room has the focused silence of creative work in progress. The hum of the computer. The particular smell of paper, ink, and the slight chemical note of adhesives and markers. Controlled chaos: the desk is covered in work, but there is a system. This is not a messy room; it's an active room.
+
+### Mother's Kitchen as Food Laboratory
+
+Larger than a typical Japanese kitchen, reflecting her professional work. An island counter (キッチンアイランド) of **approximately 2.4m x 0.9m**, topped with stainless steel or a sealed wood butcher block, serves as the primary work surface.
+
+**Layout:** The kitchen is open to the dining area, with the island as the divider. Behind the island, the cooking wall holds: a 3-burner gas range with fish grill, a range hood, a microwave/oven combination, and the indispensable rice cooker. A second, larger oven (unusual for Japan) sits on a separate counter for her recipe development. A dishwasher is integrated into the cabinetry.
+
+**Equipment and tools:** Hanging from a rack above the island: copper pots, a collection of ladles and spatulas, kitchen shears. A knife block with Japanese knives -- a 三徳包丁 (santoku), a 出刃包丁 (debo -- for fish), a vegetable cleaver -- kept meticulously sharp. Wooden cutting boards, several in rotation: some for vegetables, some for meat, some for pastry. A KitchenAid stand mixer (a status item in Japan) in a deep red or brushed metal. A digital kitchen scale, essential for Japanese baking. An instant-read thermometer. Metal and glass canisters for dry ingredients, all labeled with her neat handwriting.
+
+**Organizational system:** Open shelving shows organized jars -- spices, dried ingredients, specialty flours and starches. A clipboard or notebook stand holds her current recipe in development, with tasting notes scribbled in the margins. The refrigerator is larger than typical, and inside, ingredients are organized by project: a tray of test-batch cookies, fresh yeast for bread experiments, seasonal fruit for a dessert menu.
+
+**Atmosphere:** The kitchen smells constantly of something interesting -- baking bread, simmering stock, roasting vegetables, caramelizing sugar. The sounds: the rhythmic chop of a knife on a cutting board, the sizzle of food hitting a hot pan, the timer beeping, the click of the rice cooker lid, running water, running water, running water (a kitchen is always washing something). During recipe development, the kitchen operates at a higher intensity: multiple preparations happening simultaneously, the island covered in ingredients, measuring cups, bowls, and taste-testing spoons.
+
+### Japanese Room (和室)
+
+An 8-mat room (approximately **14 square meters**) on the ground floor, used for guests, family meditation or tea ceremony practice, and laying out futons for visiting relatives. The tatami has mellowed to a deep gold, showing the room's age and use. The 押入れ closet holds futons, seasonal decorations (kimono display for Girls' Day, samurai dolls for Boys' Day), and the family's collection of お正月 (New Year) decorations.
+
+### Bathroom and Toilet
+
+High-quality versions of the standard layout. The bath features a 檜 (hinoki) tub -- a single piece of shaped cypress, releasing its warm woody fragrance with each use -- and a window overlooking a small private garden corner with bamboo and moss. The toilet room features a washlet and a small window, impeccably clean with a seasonal flower in a tiny vase.
+
+## 3.4 Second Floor (2階)
+
+### Staircase (階段 / kaidan)
+
+A straight staircase, not the narrow, steep type of older homes, but of comfortable width. Wooden treads, perhaps with a runner. A handrail on one side. A window on the landing, lighting the stairwell with diffused afternoon sun. The sound of footfalls on wooden stairs is distinct: the heavy tread of Father, the quick light steps of children, the deliberate pace of Mother carrying a laundry basket.
+
+The walls along the stairs display family photographs in simple frames, going up chronologically: wedding photos, infant photos, kindergarten graduations, yearly school photos. A child's height markings penciled on the wall beside the stairs -- 陸珣 at 5 years old, 陸珣 at 6, 陸珣 at 7; 陸瑆's marks beginning a few years later. Mother's marks for both children, each accompanied by a date.
+
+**Upstairs hallway:** A corridor with doors to the children's rooms, a small upstairs トイレ, and a storage closet. A window at the end of the hall. The scent: clean wood, the faint sweetness of whatever air freshener or essential oil diffuser sits on a small shelf.
+
+### 陸珣 & 陸瑆's Rooms
+
+Two separate children's rooms (children's bedrooms / 子供部屋), each approximately **8-10 square meters (roughly 6 tatami mats)**. Whether the siblings share a room or have separate rooms depends on their ages and the family's philosophy, but for the purpose of scene building, each having their own space allows for character expression.
+
+**Standard furnishings in each room:**
+
+- **Desk and study chair (勉強机 / benkyou-zukue):** A wooden desk (approximately 100cm wide x 60cm deep) with drawers on one side. A desk lamp with an adjustable arm. A pencil case (筆箱 / fudebako) with the particular smell of plastic, graphite, and eraser crumbs. A small desk clock. Above the desk, a shelf for textbooks, dictionaries (国語辞典 / kokugo jiten and 漢字辞典 / kanji jiten), and the classwork returning home each day. The surface is often cluttered with: worksheets, a tablet device for school, and eraser shavings -- the fine rubber debris that Japanese children collect into their hands and carry to the trash, a small daily ritual.
+
+- **Bed:** A single bed with a simple wooden frame, or a futon laid out on the floor depending on the room's style. Children's bedding often features favorite characters or neutral colors. A 布団 (futon) folded daily and stored in a built-in closet during the day -- this is more common than a Western-style bed in Japanese children's rooms, as it allows the room to serve multiple functions throughout the day.
+
+- **Closet (クローゼット):** Built-in, with sliding doors. Hanging space for: school uniforms (if applicable), formal clothes for ceremonies, everyday play clothes. Shelves for folded clothing. The bottom of the closet is the domain of: a baseball glove, old art projects, things that should have been thrown away but haven't been.
+
+- **Randoseru (ランドセル) storage:** The heavy leather school backpack has a designated spot -- on a hook by the door, on a dedicated stand (ランドセルラック), or simply on the desk chair. The randoseru is treated with a kind of care: it will last all six years of elementary school, and its condition reflects on the child and family. The smell of a randoseru: leather, the particular scent of textbooks and paper, the slight must of being carried in all weathers, the lingering trace of school lunch. The weight of a packed randoseru (especially on Mondays when all the week's supplies go back, or Fridays when everything comes home) is a significant physical burden for elementary school children.
+
+- **Bookshelf:** Japanese children's books (ズッコケ三人組 series, かいけつゾロリ, 怪談レストラン series, 銭天堂), science and insect encyclopedias, comics (depending on age and household rules), and the ever-present stack of school textbooks.
+
+- **Personalization:** Depending on the child's personality: a notice board or wall area with sports team photos or tournament brackets; a collection shelf with beetle specimens, trading cards, or small ガチャガチャ capsule toys; music stand and instrument case for a recorder, keyboard, or other instrument; a window with a narrow sill, perhaps with a small potted plant (given at school and brought home to care for).
+
+**Differences between siblings' rooms:**
+
+陸珣's room might reflect his (if "珣" suggests a boy, 王+jade radical) personality and interests: perhaps more orderly or more chaotic, adorned with science posters or sports memorabilia. 陸瑆's room (if "瑆" suggests a girl with the same radical) might feature different colors, different organization, different things on the walls.
+
+## 3.5 The 400sqm Garden
+
+A garden of this size is a significant luxury and represents a deliberate family choice -- prioritizing outdoor space over additional building footprint.
+
+**Layout zones:**
+
+1. **Lawn area (芝生 / shibafu):** A stretch of Japanese lawn grass (高麗芝 / kouraishiba) -- coarser and more resilient than Western turf. In summer it needs cutting every two weeks; the smell of freshly cut grass, the electric buzz of the lawnmower, bare feet on warm grass. A badminton net sometimes stretched across, the shuttlecock arcing white against green.
+
+2. **Tree collection:**
+   - A mature 梅 (ume) tree, whose blossoms open in February -- the first sign of spring, pale pink and fragrant against the cold air. Children climbing its lower branches.
+   - A 柿 (kaki / persimmon) tree, planted perhaps when the elder child was born. In autumn the leaves turn brilliant red-orange, then fall, leaving only the fruit hanging like orange ornaments, sweetening after the first frost. The family harvests them with long-handled fruit pickers, and the neighborhood birds fight over the ripest ones.
+   - A 金木犀 (kinmokusei) near the house, so the autumn fragrance drifts into open windows.
+   - A young 桜 (sakura) tree, planted as a family project, still small enough that the children can reach its blossoms. Its progress is measured against the children's own growth.
+   - Evergreen: a 松 (matsu / pine) or two, giving the garden structure in winter.
+
+3. **Vegetable garden (家庭菜園 / katei saien):** A raised bed or designated plot where the family grows: summer tomatoes (the children's project), cucumbers climbing a trellis, shiso leaves (青じそ and 赤じそ), green peppers, eggplant (ナス), and in winter, daikon radishes and 小松菜 (komatsuna greens). This plot ties into the mother's food work. The children are assigned garden duties -- watering, weeding, harvesting. The garden is a space of small discoveries: a praying mantis on a tomato vine, a caterpillar on the shiso, the quick green of a lizard disappearing into the stone wall.
+
+4. **Garden shed (物置):** A wooden (not metal) shed, in keeping with the home's design. Inside: gardening tools (hoe, rake, spade, trowel, pruning shears, watering cans), bags of soil and fertilizer, insecticide spray bottles, gardening gloves in children's sizes, a coiled green hose connected to an outdoor tap.
+
+5. **Private outdoor living area:** A wooden deck (ウッドデッキ) directly outside the living room's sliding glass doors. Wooden outdoor chairs and a small table. Potted herbs (basil, rosemary, mint) near the kitchen door. A place for summer meals outdoors, evening tea while the children chase fireflies, barbecues (焼き肉) with the family gathered around.
+
+6. **Boundary:** A wooden fence of horizontal slats provides privacy. Along the fence, climbing roses or a hedge of ドウダンツツジ (Enkianthus), whose tiny bell-shaped flowers bloom white in spring and whose leaves turn fiery red in autumn. The boundary with the older neighborhood: on the other side of the fence, the narrow alleyway, a neighbor's persimmon tree overhanging, the tin roof of an older house visible through the hedge.
+
+7. **Moon viewing (月見 / tsukimi):** During autumn full moon, the family might lay out a blanket on the deck, arrange 月見団子 (tsukimi dango -- small round white rice dumplings) in a pyramid, and watch the moon rise over the garden. The susuki (pampas grass) plumes from the garden arranged in a tall vase indoors.
+
+---
+
+# PART FOUR: NEIGHBORHOOD SPACES CHILDREN INHABIT
+
+## 4.1 Parks (公園 / Kouen)
+
+Japanese neighborhood parks are small, ubiquitous, and serve as the primary outdoor social space for children from toddler age through upper elementary.
+
+**Typical equipment:**
+- **Swings (ブランコ / buranko):** The most fundamental park equipment. Usually 2-4 swings on a metal frame. The seats are flat rubber rectangles suspended by chains. The sound: the rhythmic creak-squeak of chains under load, the thump of feet landing in the sand, the whoosh of air as a child swings high. The sand beneath the swings is deeply excavated by decades of dragging feet. Children learn to swing independently around age 4-5, the pumping motion becoming instinctive. The competition for swings is fierce. The designated "next person" waits in the sand, counting swings. Jumping off a swing at its highest point -- a prohibited thrill.
+- **Slide (滑り台 / suberidai):** Metal or composite material, often a single curving slide in a small park, or a combination with climbing elements in a larger one. The metal slides of older parks become scorching in summer and icy in winter. The electrostatic shock when touching the metal after sliding -- a tiny surprise every time. The particular sound of shoes squeaking on a plastic slide surface.
+- **Sandbox (砂場 / sunaba):** A square pit framed by wooden or concrete borders, filled with fine gray sand. The sandbox is the domain of toddlers and kindergarteners. The sand is slightly damp beneath the surface. Buckets, spades, and abandoned toy trucks litter the edge. The 砂場 is also where neighborhood cats often relieve themselves (despite the mesh covers that parks provide -- few people actually use them properly), creating a perpetual minor hygiene tension.
+- **Jungle gym (ジャングルジム):** A geodesic dome of painted metal pipes, rusting slightly at the joints. A territory for more athletic play: climbing, hanging upside down, territory games. The top is a coveted perch. The metal is warm from sun or bitterly cold, transferring its temperature directly through clothing.
+- **Horizontal bar (鉄棒 / tetsubou):** A simple metal bar or series of bars at different heights. Children practice 逆上がり (saka-agari / back hip circles) -- a required physical education skill that every Japanese elementary student must master. The scabs on the palms from hours of practice. The sound of the bar creaking as a child's weight rotates around it.
+- **Spring riders (スプリング遊具):** Animal-shaped seats on heavy springs, for the youngest children. A panda, a dolphin, a horse -- rocking back and forth with enthusiastic squeaking.
+- **Water fountain (水飲み場):** A simple waist-height basin with a push-button spigot that arcs water in a small fountain. The water is cold, always slightly metallic-tasting. The concrete beneath is permanently stained dark with water.
+
+**Park atmosphere:**
+- The ground is packed earth and sand, not grass (grass won't survive the foot traffic).
+- Some parks have a single cherry tree, making them 花見 (hanami) destinations in spring.
+- Benches for mothers and elderly neighbors.
+- A clock somewhere visible.
+- A notice board with neighborhood announcements.
+- The hum of cicadas in summer so loud it borders on painful.
+- After school, the park fills with children of mixed ages. The older ones claim the jungle gym; the younger ones are relegated to the sandbox or the swings (if their mothers are there to push them).
+
+## 4.2 Shrines (神社 / Jinja)
+
+The neighborhood shrine is a constant presence in Japanese children's lives -- a place to play (respectfully), a route to and from school, and the venue for seasonal festivals.
+
+**Physical features:**
+- **Torii (鳥居):** The vermillion gate marking the boundary between the mundane and sacred worlds. Made of wood or stone, usually two upright pillars with two crossbeams, the top one curving upward at the ends. Children know instinctively not to walk through the exact center of the torii (it's the path of the kami / gods), and some steps leading up to it are uneven, worn smooth by a century of foot traffic. The paint is slightly chipped at the base where balls and bicycles have dinged it.
+- **Stone steps (石段):** Often mossy at the edges. A long staircase in hillside shrines, children counting the steps on the way up.
+- **Guardian dogs (狛犬 / komainu):** A pair of stone lion-dog statues flanking the approach path or the shrine entrance. One has its mouth open (saying "A" / あ -- the first sound), the other closed (saying "N" / ん -- the last sound), representing alpha and omega, beginning and end. Their stone faces are weathered, slightly softened by rain, with patches of moss in the crevices. Children sometimes pat their heads for good luck.
+- **Purification font (手水舎 / temizuya):** A stone water basin (or dragon-shaped water spout) with long-handled wooden ladles (柄杓 / hishaku) resting across it. The ritual: left hand, right hand, mouth, then the ladle handle. The water is always ice-cold, even in summer, coming from a deep source. The stone basin has a greenish tint to the water, tiny coins glinting at the bottom where visitors have thrown them.
+- **Offering box (賽銭箱 / saisen-bako):** A large wooden box with slatted top before the shrine hall. Children toss 5-yen coins (五円 / go-en, a homophone for "good fortune/connection") into the box. The ritual for children: bow twice, clap twice (the sound sharp in the quiet shrine precinct), make a wish or say a prayer with hands pressed together, bow once more. The specific rattling sound of a coin hitting the wood inside the box.
+- **Bell rope (鈴緒 / suzu-o):** A thick woven rope hanging from the shrine's eaves, ending in a heavy bell. Shaking the rope to ring the bell and get the kami's attention before praying is a highlight of shrine visits for children -- pulling with full body weight, the deep resonant clang.
+- **Omikuji (おみくじ):** Fortune-telling paper strips, available from a small window or a wooden box. For 100 yen, you draw a paper fortune. If it's bad luck (凶 / kyou), you tie it to a designated rack or tree branch, leaving the bad luck behind. If good luck (大吉 / daikichi), you keep it. The paper strips tied to branches flutter white in the breeze, creating a strange, beautiful sight.
+- **Ema (絵馬):** Small wooden votive plaques where visitors write wishes and hang them on a rack. Children's wishes in careful pencil or marker: "I hope I pass the exam," "I want to be a soccer player," "I wish for my family's health."
+- **Grounds:** The shrine precinct includes: a gravel courtyard that crunches underfoot, ancient trees (often a sacred camphor tree / クスノキ with a shimenawa rope around its trunk), stone lanterns, smaller subsidiary shrines, a small grove or wooded area behind the main hall where the boundary between shrine and forest blurs. This wooded area is shadowy, cool, slightly frightening -- the domain of crows, cicadas, and sometimes snakes. Children dare each other to go deeper.
+
+**Festival times:** During お祭り (matsuri), the shrine transforms. Lanterns (提灯 / chouchin) are strung on wires and glow warm orange at dusk. Stalls (屋台 / yatai) line the approach: goldfish scooping (金魚すくい), cotton candy (綿あめ), chocolate bananas, yakitori, takoyaki, shooting galleries (射的), mask stalls with anime character masks. Children in yukata (light cotton kimono). The sound of taiko drums, festival flutes, and the recorded voice of the shrine's announcements echoing across the neighborhood.
+
+## 4.3 Shopping Street (商店街 / Shoutengai)
+
+The covered shopping arcade is a roofed pedestrian street lined with small, family-owned shops: a fishmonger (魚屋) with crushed ice glistening under fresh mackerel, a greengrocer (八百屋) with seasonal produce stacked in crates on the sidewalk, a tofu maker (豆腐屋) with the smell of boiling soy milk, and that most beloved of institutions -- the 駄菓子屋 (dagashiya / penny candy shop) where children stand mesmerized before floor-to-ceiling cardboard boxes of 10-yen snacks, colorful plastic toys, and trading cards dispensed from gumball machines.
+
+## 4.4 Alleys (路地 / Roji)
+
+The narrow pedestrian passageways between houses, just wide enough for a bicycle or two people to pass. Paved with asphalt or sometimes cracked concrete. Utility poles line one side. Walls on both sides: fences, hedges, house walls with their kitchen windows. The alley is a shortcut, a hiding place, a territory that belongs to neither one house nor another. Children use it to run to the park. Cats sleep on top of the walls. Morning glories climb bamboo trellises set against walls.
+
+The 路地 smells of many kitchens -- miso soup in the morning, grilled fish in the evening. The particular sound of someone's TV drifting through an open window. The clack of geta (wooden sandals) if an elderly neighbor passes through.
+
+## 4.5 Vacant Lots (空き地 / Akichi)
+
+Undetermined patches of land between houses -- overgrown with weeds, frequented by neighborhood cats, the unofficial domain of local children. Long summer grasses with dragonflies hovering above them. The brown, woody stalks of dead weeds from last season. Conveniently flat stones arranged into a rough home base for games.
+
+In summer afternoon heat, the 空き地 shimmers. Children catch grasshoppers (バッタ) and praying mantises (カマキリ) here, carrying plastic insect cases with green mesh lids. The largest find -- a カブトムシ (rhinoceros beetle) on the trunk of a nearby oak tree -- is a trophy that enriches a child's entire summer.
+
+## 4.6 Rivers and Canals (川と用水路 / Kawa to Yousuiro)
+
+Nagoya is a city of waterways. The Shonai River (庄内川), the Tempaku River (天白川), the Yamazaki River (山崎川), and networks of smaller rivers and irrigation canals crisscross the city.
+
+**Canal / irrigation channel:** Concrete-lined ditches roughly 1-2 meters wide, with a steady flow of clear or murky water. Iron grates cover sections where they pass under roads. The sides are covered in green algae. Small fish (メダカ / medaka / Japanese rice fish) dart in the shallower sections. In summer, children catch crayfish (ザリガニ / zarigani) with string and bait (a strip of dried squid), pulling them up from the canal: red claws waving, tail curling. The smell: the particular freshwater smell of slowly moving canal water, algae, a hint of agricultural runoff if near farms.
+
+**Rivers:** Larger, with wide concrete embankments (堤防 / teibou) designed for flood control. The embankments are grassy slopes where children roll down, fly kites, and families sit during summer fireworks displays. The river path is a cycling and jogging route. Under the bridges, the sound of trains rumbling overhead, graffitied concrete supports, the river's echo, swallows nesting in the bridge's underside.
+
+## 4.7 Slopes (坂道 / Sakamichi)
+
+Nagoya is flatter than most Japanese cities, but its eastern areas (Higashiyama, Kakuozan) feature notable slopes. A steep 坂道 where children pant ascending on foot or on bicycles, standing on pedals to push up. On descent, the exhilarating rush: bicycle bells ringing, wind catching in uniform skirts and open jackets. Elderly residents pause at handrails installed along the steepest sections.
+
+The view from the top: looking down over the neighborhood, the patchwork of roofs, the green canopy of the schoolyard trees, and on clear winter days, the distant outline of the Japan Alps to the northeast.
+
+---
+
+# PART FIVE: SCHOOL COMMUTE PATH SCENE DETAILS
+
+## 5.1 The Route
+
+The commute to elementary school (集団登校 / shuudan toukou -- group commuting) follows designated safe paths (通学路 / tsuugakuro) marked with green signs and painted symbols on the pavement. Children walk in lines organized by neighborhood, led by older students (6th graders), with the youngest (1st graders) in the middle. The route typically takes 10-25 minutes on foot.
+
+## 5.2 Physical Details Along the Path
+
+- **Traffic signals (信号 / shingo):** The pedestrian signal at a major crossing. The distinctive electronic bird-chirp sound (ピヨピヨ or カッコー / cuckoo) that plays when the pedestrian light turns green, designed for visually impaired pedestrians but a universally recognized sound of Japanese streets. The "waiting" music. The countdown numbers flashing. The light pole has a button that children compete to press.
+- **Crosswalks (横断歩道 / oudanhodou):** White painted stripes across the asphalt. The proper ritual: stop at the curb, raise your hand (手を挙げて), look left, look right, look left again, then cross. First graders being taught this ritual by upperclassmen. The smell of hot asphalt in summer. The slight springiness of the thermoplastic crosswalk paint under shoes when fresh.
+- **Crossing guard (旗当番 / hata touban):** Parents on a rotating schedule stand at dangerous intersections holding yellow flags. They wear yellow safety vests or armbands. The flag is a yellow pennant on a metal pole. A mother or father missing their morning to stand guard, having arranged their work schedule around this civic duty. The guard's "はい、渡っていいよ!" (Okay, you can cross now!) accompanied by a sweep of the flag.
+- **Flower beds (花壇 / kadan):** Along the school route, maintained by the neighborhood association or the school's 園芸委員会 (gardening committee). Pansies in winter and spring, salvias and marigolds in summer, chrysanthemums in autumn. Children are tasked with watering them on a schedule. The smell of damp soil after morning watering. A cricket or grasshopper hiding among the stems.
+- **Community bulletin board (掲示板 / keijiban):** A glass-fronted wooden board on a street corner or at the neighborhood meeting hall (公民館 / kouminkan). Posted within: neighborhood event announcements (summer festival, sports day, disaster drill), contact information for the local police box (交番), a mounted box where residents can pick up paper maps of evacuation routes during disasters, lost pet posters with a phone number tabbed at the bottom, and notices about garbage collection schedule changes.
+- **Vending machines (自動販売機 / jidouhanbaiki):** Ubiquitous on Japanese streets, glowing softly, emitting a low electrical hum. A bank of them might stand in a line: drinks (hot and cold -- the red-lit slot for hot canned coffee, the blue-lit slot for cold drinks), ice cream, or sometimes toys (ガチャガチャ capsule machines). The thunk of a can dropping into the retrieval slot. Children do not use them on the way to school (school rules usually prohibit it), but they are landmarks: "Meet you by the vending machines."
+- **Utility poles (電柱 / denchuu):** Concrete poles, gray, slightly textured. Wrapped with transformers and cable junction boxes. Attached: local notices, neighborhood watch signs, "beware of suspicious persons" warnings (不審者注意 / fushinsha chuui), advertisements for tutoring schools (学習塾 / gakushuu juku), faded posters for the last local election. At the base: the metal plate giving the pole number for emergency location identification. Cats sharpening claws on the rougher sections.
+- **Jizo statues (お地蔵さん / Ojizou-san):** Stone statues of the bodhisattva Jizo, protector of children and travelers, found along roadsides and at intersections. Wearing red bibs and knitted caps, placed by neighbors who tend them. Fresh flowers or offerings of candy in a small cup before them. A child might bow quickly on the way to school, a habit learned from watching parents.
+- **Small roadside shrines (道祖神 / dousojin or small 祠 / hokora):** Tiny Shinto structures, house-sized, containing a stone deity. They sit between houses or at the edge of a field, easy to miss if not looking. Older neighborhoods in Nagoya's eastern wards still have these.
+
+## 5.3 Sensory Journey
+
+**Morning commute (spring):** The chill in the air, pink cherry petals drifting onto the path. The particular pale gold of morning light. The sound of a hundred indoor-shoe-clad feet shuffling in unison, of randoseru buckles clinking, of children calling to each other. The smell of fresh bread from a bakery if the route passes one.
+
+**Morning commute (summer):** Already hot at 7:45 AM. Sunscreen-smell on skin. The loudest cicadas of the day. Children's hats -- the bright yellow or white safety hats (通学帽 / tsuugaku-bou) that 1st and 2nd graders are required to wear. The hats' elastic bands under chins. Sweat on the back of the neck.
+
+**Morning commute (winter):** Breath visible. Hands deep in coat pockets. Noses red. The particular silence of a winter morning -- cars sound louder, footsteps clearer. Frost on the flower beds. A child stopping to break a thin sheet of ice from a puddle.
+
+**Afternoon return:** The group dissolves as children peel off at their respective streets. "また明日!" (See you tomorrow!) The 3:30-5:00 PM period is the golden hour for neighborhood play -- park, alley, shrine, until the 5 PM chime (the 夕焼け小焼け / Yuuyake Koyake melody played over the neighborhood broadcast system) signals that it's time to go home.
+
+---
+
+# APPENDIX: MEASUREMENTS QUICK REFERENCE
+
+| Element | Measurement |
+|---------|-------------|
+| Classroom | ~9m wide x 7m deep (~63 sqm) |
+| Blackboard | ~3.6m wide x 1.2m tall |
+| Individual desk | ~60cm x 40cm |
+| Corridor width | 2.5-3m |
+| Locker compartment | ~30cm x 40cm x 40cm |
+| Tatami mat (Edo-ma) | 176cm x 88cm x 5.5cm |
+| Tatami mat area | ~1.55 sqm each |
+| 8-mat Japanese room | ~12.4 sqm |
+| Genkan tataki area | 1.5-3 sqm |
+| Genkan step height | 15-20cm |
+| Engawa width | 90-120cm |
+| Engawa height above ground | ~30cm |
+| Children's room | 8-10 sqm (~6 mats) |
+| Children's study desk | ~100cm x 60cm |
+| Family land plot | 100-200 sqm (standard), 400 sqm (Riku family) |
+| Building coverage | ~60-70% of plot |
+| Toilet room | ~1m x 1.5m |
+| Father's studio | ~20 sqm |
+| Living/dining area (Riku) | ~35-40 sqm |
+| Kitchen island (Riku) | ~2.4m x 0.9m |
+| Bathtub temperature | 40-42°C |
+| Elementary commute time | 10-25 minutes on foot |
+| School floors | 3-4 stories |
+| Class size | 30-40 students |
+
+---
+
+# APPENDIX: SENSORY GLOSSARY
+
+**Smells:** Tatami (grassy, sweet, intensifying with humidity), school cleaning solution (chlorine-adjacent), old wood and paper in the library, formaldehyde in the science room, antiseptic in the nurse's office, leather shoe polish in the genkan, coffee and copier toner in the teachers' room, grilled fish from the kitchen fish grill, mothballs in the oshiire, sun-warmed cedar on the engawa, freshly cooked rice, bathwater with yuzu floating in it, damp soil from the garden, dust after the rain, hot asphalt in summer, kinmokusei drifting through the autumn air, cut grass, pond water with koi, canal water with algae, the particular scent of a randoseru.
+
+**Sounds:** The electronic bird-chirp of pedestrian signals, the 5 PM "Yuuyake Koyake" melody, the clang of the shrine bell, the crunch of gravel at the shrine, the shuffling of indoor shoes on polished corridors, the thud of a can in a vending machine, the squeak of chalk on a green blackboard, the humming buzz of fluorescent lights, cicadas at full summer volume, the whoosh of sliding fusuma doors, the click of the rice cooker lid, the mechanical whir of a washlet, the rattling of the front door latch, footsteps on wooden stairs, the rhythmic squeak of swings, the gurgle of water in a canal, the distant train crossing signal, wind chimes (fuurin) on a summer afternoon, rain on roof tiles (low thrumming, not sharp).
+
+**Textures:** Smooth-worn wood of two-seater desks, the springiness of tatami under bare feet, cold vinyl classroom tiles in winter, hot metal playground equipment in summer, the grit of sand from the sandbox, the wet cold of a squeezed-out cleaning rag, the roughness of bark on the persimmon tree, the slick tile of the bathroom, the polished stone of the genkan step, the paper of fusuma doors -- fragile, slightly textured, the leather of a randoseru -- stiff at first, softening over six years, the concrete of the school rooftop -- rough through uniform fabric, the velvet of the gymnasium stage curtain.
+
+---
+
+*Compiled for The Academy of Curiosities, Nagoya children's book series. All details are based on standard Japanese elementary school and residential architecture as of the early 21st century, with regional Nagoya characteristics noted where applicable.*
