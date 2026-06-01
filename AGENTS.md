@@ -10,7 +10,11 @@
 | **academy-research-editor** | `skills/academy-research-editor/` | 资料总编辑 | 主动搜料、维护 `09_日本参考资料库`、调度知识 |
 | **academy-engine** | `skills/academy-engine/` | 创作引擎 | 写正文、实验、角色台词、质量清单 |
 
-定稿门禁：`japan_campus_consultant_agent.html`（田中みどり · 五维文化校准）
+定稿门禁（L1 三并列）：
+
+1. **田中みどり** — `japan_campus_consultant_agent.html`（文化）
+2. **Project World Metrics** — `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`（环境/科学）
+3. **本格公平** — `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md`
 
 **完整验收清单**：`00_项目总览/创作标准与验收流程.md`
 ## 典型流水线
@@ -46,6 +50,8 @@ Agent 应自动读取对应 `SKILL.md`。
 ## 规则与笔法
 
 - 红线：`02_创作原则与世界观/创作红线与原则.txt`
-- 硬指标：`02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`
+- **Project World Metrics**：`docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`
+- 硬指标速查：`02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`
 - 叙事笔法：`02_创作原则与世界观/写作技巧与叙事笔法.md`
 - 正典地图：`00_项目总览/正典文件索引.md`
+- 启动门：`docs/00_PROJECT_STARTUP_GATE.md`

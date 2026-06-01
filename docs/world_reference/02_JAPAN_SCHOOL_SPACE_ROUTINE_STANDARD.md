@@ -80,4 +80,8 @@ Applies to: all school scenes
 
 ## 6. Verification Status
 
-Current tag: `CREATOR_CURATED_PENDING_SOURCE_LINK`
+**SECOND_PASS_COMPLETE** — 制度/係/留校细则见：
+
+- [maintenance/01_JAPAN_CAMPUS_CULTURE_STANDARD.md](./maintenance/01_JAPAN_CAMPUS_CULTURE_STANDARD.md)
+
+本文件为 **Writer Quick Ref**（空间·动线·时间表）。

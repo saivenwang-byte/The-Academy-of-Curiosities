@@ -78,6 +78,11 @@ Base city: 名古屋市 / Nagoya City
 
 ## 6. Verification Status
 
-Current tag: `CREATOR_CURATED_PENDING_SOURCE_LINK`
+**SECOND_PASS_COMPLETE** — 细则与 08 标签见：
 
-正式样章前需要补充来源链接或顾问确认。
+- [maintenance/02_GEO_CLIMATE_LIGHT_STANDARD.md](./maintenance/02_GEO_CLIMATE_LIGHT_STANDARD.md)
+- [maintenance/03_WATER_TIDE_WEATHER_STANDARD.md](./maintenance/03_WATER_TIDE_WEATHER_STANDARD.md)
+- [maintenance/05_FLORA_FAUNA_PHENOLOGY_STANDARD.md](./maintenance/05_FLORA_FAUNA_PHENOLOGY_STANDARD.md)
+- [maintenance/08_SOURCE_RELIABILITY_RULES.md](./maintenance/08_SOURCE_RELIABILITY_RULES.md)
+
+本文件为 **Writer Quick Ref**；数值冲突时以 maintenance 层 + `09_` 来源为准。

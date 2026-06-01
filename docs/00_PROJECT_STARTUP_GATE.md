@@ -10,11 +10,17 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 《学堂趣事录》不是凭感觉写日本校园，也不是把中国校园故事翻译成日文。
 
-每一卷正式写作前，必须同时通过三道前置检查门：
+每一卷正式写作前，必须同时通过 **L1 三并列** 与三道检查门：
 
-1. **日本文化校准门**：是否符合日本小学校 / 中学校的真实制度、空间、行为和语言。
-2. **名古屋环境指标门**：是否符合名古屋的地理、气候、日照、湿度、季节、物候和生活环境。
-3. **本格推理公平门**：线索是否提前出现，科学机制是否可验证，儿童读者是否有机会推理。
+| L1 | 门 | 入口 |
+|----|-----|------|
+| 日本校园文化顾问 | 文化校准门 | `japan_campus_consultant_agent.html` |
+| **Project World Metrics** | 名古屋环境指标门 | `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md` |
+| 本格推理公平规则 | 本格推理公平门 | `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md` |
+
+1. **日本文化校准门**：制度、空间、行为、语言、儿童文化、情感分寸。  
+2. **名古屋环境指标门**：地理、气候、日照、湿度、物候、水迹、科学机制。  
+3. **本格推理公平门**：线索提前出现、可验证、儿童可推理。
 
 任何一项未通过，文本状态只能标记为：
 
@@ -35,16 +41,12 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 - `docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md`
 - `02_创作原则与世界观/创作红线与原则.txt`
 
-**世界参考标准（作战地图）**
-- `docs/world_reference/00_MASTER_REFERENCE_INDEX.md`
-- `docs/world_reference/01_JAPAN_CAMPUS_CULTURE_STANDARD.md`
-- `docs/world_reference/02_GEO_CLIMATE_LIGHT_STANDARD.md`
-- `docs/world_reference/03_WATER_TIDE_WEATHER_STANDARD.md`
-- `docs/world_reference/04_FOOD_DAILY_LIFE_STANDARD.md`
-- `docs/world_reference/05_FLORA_FAUNA_PHENOLOGY_STANDARD.md`
-- `docs/world_reference/06_LANGUAGE_PUNS_SOUND_STANDARD.md`
-- `docs/world_reference/07_MYSTERY_FAIR_PLAY_EVIDENCE_STANDARD.md`
-- `docs/world_reference/08_SOURCE_RELIABILITY_RULES.md`
+**Project World Metrics（世界环境指标库）**
+
+- `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md` — **正典入口**
+- Writer Quick Ref：`01`–`08`（见总索引 §1）
+- Maintenance 细则：`docs/world_reference/maintenance/`（09_ 蒸馏 · 08 打标）
+- 每卷执行卡：`docs/volume_planning/`
 
 **L1 硬指标（名古屋数值蒸馏层）**
 - `02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`

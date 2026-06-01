@@ -19,88 +19,15 @@ No reference file should remain only as raw material. Every useful fact must be 
 
 ## Required output documents
 
-1. docs/world_reference/00_MASTER_REFERENCE_INDEX.md
-   - list all imported files
-   - source type
-   - date or version
-   - reliability rating
-   - which writing module uses it
+1. docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md
+   - Project World Metrics 正典入口
+   - Writer Quick Ref（01–08）+ maintenance 映射
 
-2. docs/world_reference/01_JAPAN_CAMPUS_CULTURE_STANDARD.md
-   - school systems
-   - classroom routines
-   - school buildings and spatial routes
-   - school lunch
-   - cleaning duty
-   - club, committee, and class-role activities
-   - speech etiquette and peer rules
+2. docs/world_reference/maintenance/
+   - 09_ 蒸馏细则 · 08 来源标签 · 线索快查
 
-3. docs/world_reference/02_GEO_CLIMATE_LIGHT_STANDARD.md
-   - latitude and longitude
-   - altitude
-   - topography
-   - sunrise and sunset
-   - day length
-   - solar angle and classroom light
-   - seasonal shadows
-   - temperature
-   - humidity
-   - wind
-   - rain, snow, typhoon, rainy season
-
-4. docs/world_reference/03_WATER_TIDE_WEATHER_STANDARD.md
-   - rivers
-   - drainage
-   - puddles
-   - condensation
-   - classroom humidity
-   - coastal tides when relevant
-   - sea breeze and land breeze
-   - weather evidence rules for mystery plots
-
-5. docs/world_reference/04_FOOD_DAILY_LIFE_STANDARD.md
-   - school lunch
-   - snacks
-   - home breakfast and dinner clues
-   - seasonal food
-   - convenience store references
-   - allergies and child safety limits
-
-6. docs/world_reference/05_FLORA_FAUNA_PHENOLOGY_STANDARD.md
-   - cherry blossom timing
-   - plum blossom
-   - hydrangea
-   - cicadas
-   - fallen leaves
-   - pollen
-   - seasonal insects
-   - schoolyard plants
-   - evidence rules based on flowering, smell, pollen, leaves, and insects
-
-7. docs/world_reference/06_LANGUAGE_PUNS_SOUND_STANDARD.md
-   - Japanese child speech
-   - school vocabulary
-   - honorifics
-   - sound symbolism
-   - homophones
-   - pun safety rules
-   - words that cannot be directly translated from Chinese
-
-8. docs/world_reference/07_MYSTERY_FAIR_PLAY_EVIDENCE_STANDARD.md
-   - fair-play detective rules
-   - evidence visibility
-   - science repeatability
-   - child-verifiable experiments
-   - forbidden coincidence
-   - forbidden culture mistake
-   - red-herring rules
-
-9. docs/world_reference/08_SOURCE_RELIABILITY_RULES.md
-   - primary source first
-   - official local data first
-   - weather and tide data must include place and date
-   - no invented numerical values
-   - uncertain facts must be tagged NEEDS_VERIFICATION
+3. docs/volume_planning/
+   - 每卷 Case Card / Scene Cards
 
 ## Fact tagging system
 
@@ -144,9 +71,13 @@ A mystery clue is not allowed unless the reference standard states:
 
 The local folder `09_日本参考资料库/` (24 files) is synchronized in this repository. Facts have been extracted into:
 
-- `docs/world_reference/00_MASTER_REFERENCE_INDEX.md` — master map + scene card + clue lookup
-- `docs/world_reference/01`–`07` — writing standards by domain
-- `docs/world_reference/08_SOURCE_RELIABILITY_RULES.md` — fact tagging
+**Import status**: **HYBRID_MERGE_COMPLETE**
+
+Structure:
+- Entry: `00_MASTER_ENVIRONMENT_INDEX.md`
+- Writer: `01`–`08` at `docs/world_reference/`
+- Maintenance: `docs/world_reference/maintenance/`
+- Volume cards: `docs/volume_planning/`
 
 **Parallel L1 (Chinese workspace):** `02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`
 

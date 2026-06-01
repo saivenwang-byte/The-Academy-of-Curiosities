@@ -1,11 +1,22 @@
-# 推理·科学·卷目机制标准 V0.1
+# 本格推理·科学·案件标准 V0.2 · Writer Quick Ref
 
-Status: ACTIVE
-Applies to: case design, fair-play clues, science explanations, experiments
+> **Status**: ACTIVE  
+> **Maintenance**: [maintenance/07_MYSTERY_FAIR_PLAY…](./maintenance/07_MYSTERY_FAIR_PLAY_EVIDENCE_STANDARD.md) · [maintenance/08_SOURCE…](./maintenance/08_SOURCE_RELIABILITY_RULES.md)
 
 ---
 
-## 1. 本格推理基本规则
+## 1. 公平性六问（必须全 YES）
+
+- 读者能猜到？  
+- 线索提前出现？  
+- 科学可复现？  
+- 日本生活真实？  
+- 符合 7–12 岁理解？  
+- 零超自然？
+
+---
+
+## 2. 本格推理基本规则
 
 《学堂趣事录》的每一卷必须满足：
 
@@ -19,7 +30,29 @@ Applies to: case design, fair-play clues, science explanations, experiments
 
 ---
 
-## 2. 卷1核心机制：結露
+## 3. 线索规则
+
+- 公平线索 **≥3** · 正文可见  
+- 误导须可解释 · 禁止大人代解 · 禁止伪科学/玄学  
+- 环境参数须在 Scene Card 登记  
+
+### 可作为线索的类型
+
+水迹、气味、光影、声音、温度、湿度、风向、物体位置、材质差异、植物或昆虫状态、语言误会或谐音、校园制度造成的行为轨迹
+
+### 不能作为核心解释
+
+超自然、纯巧合、梦境、大人事后解释、主角突然知道读者不知道的信息、不可验证的心理猜测、违反日本校园制度的行为、违反名古屋气候与季节的现象
+
+---
+
+## 4. 学科交叉
+
+每卷 **≥3 原理** · 不重复（见 `名古屋写作硬指标` §十）
+
+---
+
+## 5. 卷1核心机制：結露
 
 ### 科学链
 
@@ -41,8 +74,6 @@ Applies to: case design, fair-play clues, science explanations, experiments
 
 材料：玻璃杯、冰块、纸巾
 
-步骤：
-
 1. 室温杯外壁无明显水珠。
 2. 加入冰块。
 3. 杯壁变冷。
@@ -53,10 +84,10 @@ Applies to: case design, fair-play clues, science explanations, experiments
 
 ---
 
-## 3. 卷目科学核心速查
+## 6. 卷目科学核心速查
 
 | 卷目 | 核心原理 | 交叉原理 |
-|---|---|---|
+|------|----------|----------|
 | 卷1 总是湿的椅子 | 結露 | 露点、热传导、窗框冷却 |
 | 卷2 谁偷了橡皮 | 摩擦力 + 斜面滚动 | 材料摩擦系数 + 行为习惯 |
 | 卷3 蚂蚁的队列 | 昆虫信息素 | 湿度对信息素扩散 + 食物源追踪 |
@@ -70,60 +101,21 @@ Applies to: case design, fair-play clues, science explanations, experiments
 
 ---
 
-## 4. 科学线索使用规则
+## 7. 怪谈外壳
 
-### 4.1 可作为线索的类型
-
-- 水迹
-- 气味
-- 光影
-- 声音
-- 温度
-- 湿度
-- 风向
-- 物体位置
-- 材质差异
-- 植物或昆虫状态
-- 语言误会或谐音
-- 校园制度造成的行为轨迹
-
-### 4.2 不能作为核心解释的内容
-
-- 超自然现象
-- 纯巧合
-- 梦境
-- 大人事后解释
-- 主角突然知道读者不知道的信息
-- 不可验证的心理猜测
-- 违反日本校园制度的行为
-- 违反名古屋气候与季节的现象
+- 允许 rumor / 条件化安全  
+- 谜底必须科学 · 见 maintenance/07 §6.1  
+- **禁止**：口裂女/テケテケ/八尺様  
 
 ---
 
-## 5. Case Card 必填项
+## 8. 定稿前
 
-每卷必须填写：
-
-```text
-卷目：
-核心异常：
-表层误会：
-真实机制：
-核心知识：
-交叉知识：
-公平线索1：
-公平线索2：
-公平线索3：
-儿童可复现实验：
-日本校园成立理由：
-名古屋环境成立理由：
-是否零超自然：YES / NO
-是否读者可推理：YES / NO
-是否需科学顾问复核：YES / NO
-```
+- [ ] Case Card（[08模板](./08_CASE_CARD_TEMPLATE.md)）  
+- [ ] Scene Card（[07模板](./07_SCENE_CARD_TEMPLATE.md)）  
+- [ ] 田中みどり HTML 无 warn  
+- [ ] 状态 ≠ READY_* 直至全过  
 
 ---
 
-## 6. Verification Status
-
-Current tag: `CREATOR_CURATED_PENDING_SOURCE_LINK`
+最后更新：2026-06-02
