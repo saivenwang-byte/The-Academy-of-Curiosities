@@ -140,8 +140,23 @@ A mystery clue is not allowed unless the reference standard states:
 
 ## Current status
 
-PENDING_LOCAL_REFERENCE_UPLOAD
+**FIRST_PASS_COMPLETE** (2026-06-02)
 
-The local folder has not yet been ingested. Upload as a zip file or sync it into the repository under:
+The local folder `09_日本参考资料库/` (24 files) is synchronized in this repository. Facts have been extracted into:
 
-reference_library/japan/
+- `docs/world_reference/00_MASTER_REFERENCE_INDEX.md` — master map + scene card + clue lookup
+- `docs/world_reference/01`–`07` — writing standards by domain
+- `docs/world_reference/08_SOURCE_RELIABILITY_RULES.md` — fact tagging
+
+**Parallel L1 (Chinese workspace):** `02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`
+
+### Next maintenance passes
+
+1. Tag remaining facts from 09_ with `08` reliability levels where not yet tagged inline
+2. Mark `NEEDS_VERIFICATION` items for Japan consultant review
+3. Build per-volume clue index (Vol 1–10) in `00_MASTER_REFERENCE_INDEX.md` §6
+4. Keep L1 hard metrics and world_reference in sync — no drift
+
+### Upload note
+
+ZIP upload is **not required** if `09_日本参考资料库/` is already in the repo. New materials: add to `09_/`, then run the import workflow §Required import workflow.

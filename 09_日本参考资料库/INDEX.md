@@ -1,6 +1,7 @@
 # 09 · 日本参考资料库 · 总索引
 
 > **地位**：L2 素材层（非规则）。规则见 `02_创作原则与世界观/`。  
+> **蒸馏输出**：`docs/world_reference/`（01–08 写作标准 · **FIRST_PASS_COMPLETE**）  
 > **维护**：`academy-research-editor` + 人工审核后入库
 
 ---

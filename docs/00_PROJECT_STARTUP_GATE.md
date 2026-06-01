@@ -30,13 +30,29 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 写作前必须查阅以下文件：
 
+**红线与协议**
 - `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md`
-- `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`
-- `docs/world_reference/01_NAGOYA_GEO_CLIMATE_LIGHT_STANDARD.md`
-- `docs/world_reference/02_JAPAN_SCHOOL_SPACE_ROUTINE_STANDARD.md`
-- `docs/world_reference/03_LANGUAGE_SOCIAL_FOOD_STANDARD.md`
-- `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md`
-- `docs/world_reference/05_CREATIVE_REDLINE_CHECKLIST.md`
+- `docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md`
+- `02_创作原则与世界观/创作红线与原则.txt`
+
+**世界参考标准（作战地图）**
+- `docs/world_reference/00_MASTER_REFERENCE_INDEX.md`
+- `docs/world_reference/01_JAPAN_CAMPUS_CULTURE_STANDARD.md`
+- `docs/world_reference/02_GEO_CLIMATE_LIGHT_STANDARD.md`
+- `docs/world_reference/03_WATER_TIDE_WEATHER_STANDARD.md`
+- `docs/world_reference/04_FOOD_DAILY_LIFE_STANDARD.md`
+- `docs/world_reference/05_FLORA_FAUNA_PHENOLOGY_STANDARD.md`
+- `docs/world_reference/06_LANGUAGE_PUNS_SOUND_STANDARD.md`
+- `docs/world_reference/07_MYSTERY_FAIR_PLAY_EVIDENCE_STANDARD.md`
+- `docs/world_reference/08_SOURCE_RELIABILITY_RULES.md`
+
+**L1 硬指标（名古屋数值蒸馏层）**
+- `02_创作原则与世界观/名古屋写作硬指标_本格科学参考.md`
+- `02_创作原则与世界观/日本校园文化顾问_田中みどり.txt`
+- `japan_campus_consultant_agent.html`
+
+**L2 素材库（查原文，不直接当规则）**
+- `09_日本参考资料库/INDEX.md`
 
 ---
 
