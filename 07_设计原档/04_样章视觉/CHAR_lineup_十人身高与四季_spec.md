@@ -84,11 +84,12 @@
 
 | # | 文件 | 状态 |
 |---|------|------|
-| L0 | `CHAR_lineup_L0_height_reference.png` | ✅ **用户 PASS**（2026-06-02） |
-| L0-P0 | `CHAR_lineup_L0_P0_revision.png` | 🆕 **P0 改訂** · 槽位④⑥⑦ · 待审 |
-| L1 | `CHAR_lineup_L1_spring.png` | ✅ **用户 PASS**（2026-06-02） |
-| L2 | `CHAR_lineup_L2_summer.png` | ✅ **用户 PASS**（2026-06-02） |
-| L3 | `CHAR_lineup_L3_autumn.png` | ✅ **用户 PASS**（2026-06-02） |
-| L4 | `CHAR_lineup_L4_winter.png` | ✅ **用户 PASS**（2026-06-02） |
+| L0 | `CHAR_lineup_L0_height_reference.png` | ✅ **正典 P0**（2026-06-03 重绘 · 槽位④⑥⑦） |
+| L1 | `CHAR_lineup_L1_spring.png` | ✅ **正典 P0**（2026-06-03 重绘） |
+| L2 | `CHAR_lineup_L2_summer.png` | ✅ **正典 P0**（2026-06-03 重绘） |
+| L3 | `CHAR_lineup_L3_autumn.png` | ✅ **正典 P0**（2026-06-03 重绘） |
+| L4 | `CHAR_lineup_L4_winter.png` | ✅ **正典 P0**（2026-06-03 重绘） |
 
-最后更新：2026-06-03 · P0 慧美/中谷/光 · L0 改訂稿待审
+> `CHAR_lineup_L0_P0_revision.png` = L0 备份副本（与主文件同步）
+
+最后更新：2026-06-03 · 全系列排版图 P0 正典重绘

@@ -59,14 +59,14 @@ character design sheet white background, same style as CHAR_lineup_L0 PASS
 
 | 文件 | 角色 | 状态 |
 |------|------|------|
-| `PHASE2_01_陸珣_sheet.png` | 陸珣 | 🆕 初稿待审 |
-| `PHASE2_02_伊藤光_sheet.png` | 光 | 🔄 P0 挂件修订 |
-| `PHASE2_03_加藤慧美_sheet.png` | 慧美 | 🔄 P0 重绘（禁学姐） |
-| `PHASE2_04_松本志郎_sheet.png` | 志郎 | 🆕 初稿待审 |
-| `PHASE2_05_陸瑆_sheet.png` | 陸瑆 | 🆕 初稿待审 |
-| `PHASE2_06_中谷琦_sheet_vol11.png` | 中谷 | 🆕 P0 Vol11+ |
+| `PHASE2_01_陸珣_sheet.png` | 陸珣 | ✅ 正典 P0（2026-06-03） |
+| `PHASE2_02_伊藤光_sheet.png` | 光 | ✅ 正典 P0 · 社区挂件 |
+| `PHASE2_03_加藤慧美_sheet.png` | 慧美 | ✅ 正典 P0 · 9–10岁私服 |
+| `PHASE2_04_松本志郎_sheet.png` | 志郎 | ✅ 正典 P0（2026-06-03） |
+| `PHASE2_05_陸瑆_sheet.png` | 陸瑆 | ✅ 正典 P0 · 不喜虫 |
+| `PHASE2_06_中谷琦_sheet_vol11.png` | 中谷 | ✅ 正典 P0 · 6年生 |
 
-**P0 专用 prompt** → `PHASE2_P0_修订_prompts.md`
+**Prompt 全集** → `PHASE2_全角色_prompts.md` · `PHASE2_P0_修订_prompts.md`
 
 ---
 
