@@ -8,6 +8,9 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 ## 0. Core Decision
 
+**教室正典（LOCKED）**：主人公团队 = **`4年2組 · 窗=校庭`** — 禁止写为 5年2組。  
+详：`docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md`
+
 《学堂趣事录》不是凭感觉写日本校园，也不是把中国校园故事翻译成日文。
 
 每一卷正式写作前，必须同时通过 **L1 三并列** 与三道检查门：
@@ -30,6 +33,8 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 `READY_FOR_SAMPLE` / `READY_FOR_TRANSLATION` / `READY_FOR_ARTIST`
 
+**日文版**：`READY_FOR_TRANSLATION` 额外要求 — 见 `docs/00_JP_TRANSLATION_REVIEW_GATE.md`（田中みどり **全文**五维督查 + J1–J7，产出 `文化校准报告_日本語.txt`）。中文 L1 不能替代。
+
 ---
 
 ## 1. Required Reference Files
@@ -37,6 +42,7 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 写作前必须查阅以下文件：
 
 **红线与协议**
+- `docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md` — **4年2組 · 窗=校庭（LOCKED）**
 - `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md`
 - `docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md`
 - `02_创作原则与世界观/创作红线与原则.txt`
@@ -65,6 +71,7 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 ```text
 卷目：
 场景编号：
+class_canon: 4年2組 · 窗=校庭（必填 · LOCKED）
 地点：名古屋 / 具体校内或通学路空间
 月份：
 时间：
@@ -90,6 +97,7 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 ```text
 卷目：
+class_canon: 4年2組 · 窗=校庭（必填 · LOCKED）
 核心异常：
 表层误会：
 真实机制：
@@ -115,7 +123,9 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 5. Science and Fair-play Review
 6. Drafting
 7. Second review
-8. Archive
+8. Archive（中文 L4）
+9. **日文翻译 → 田中みどり全文督查**（见 `docs/00_JP_TRANSLATION_REVIEW_GATE.md`）
+10. READY_FOR_TRANSLATION（仅日文督查 PASSED 后）
 
 ---
 

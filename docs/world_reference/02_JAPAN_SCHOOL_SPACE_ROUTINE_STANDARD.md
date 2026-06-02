@@ -1,7 +1,8 @@
 # 日本校园空间·建筑·通学路·行为标准 V0.1
 
 Status: ACTIVE  
-Applies to: all school scenes
+Applies to: all school scenes  
+**Class canon (LOCKED)**: **4年2組 · 窗=校庭** — see [00_SCHOOL_CLASS_CANON_LOCKED.md](./00_SCHOOL_CLASS_CANON_LOCKED.md)
 
 ---
 

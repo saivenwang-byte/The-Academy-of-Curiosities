@@ -130,3 +130,19 @@ description: >-
 周期性补全 `research-queue.txt` 中 `pending` 项；完成移 `done` 并记日期。
 
 详见 [research-queue.txt](research-queue.txt)
+
+---
+
+## 入库脚本（第四批）
+
+新增素材或大批量改 `09_/` 后：
+
+```bash
+python scripts/import_reference_library.py --write-report
+python scripts/import_reference_library.py --vol 2   # 按卷摘录
+```
+
+产出：`docs/reference_import/00_last_inventory.md`  
+协议：`docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md` · 事实须打标签后方能进 `world_reference/`
+
+---

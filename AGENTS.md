@@ -1,6 +1,9 @@
 # 《学堂趣事录》Agent 编排
 
-本项目使用 **三个协作 skill**（子分身），无需额外下载外部 agent。
+> 品牌名：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**（系列标语 The Academy of Curiosities）— 见 `00_项目总览/品牌名称定稿.md`  
+> **Claude/Cursor 统一入口**：`CLAUDE.md` · **部署状态**：`docs/00_AGENT_DEPLOYMENT_STATUS.md` · **能力映射**：`docs/00_AGENT_CAPABILITY_MAP.md`
+
+本项目使用 **七个协作 skill**（子分身），无需额外下载外部 agent。
 
 ## 角色一览
 
@@ -9,6 +12,10 @@
 | **academy-series-architect** | `skills/academy-series-architect/` | 总策划 | 愿景、分卷、阶段、卷任务包、先讨论 |
 | **academy-research-editor** | `skills/academy-research-editor/` | 资料总编辑 | 主动搜料、维护 `09_日本参考资料库`、调度知识 |
 | **academy-engine** | `skills/academy-engine/` | 创作引擎 | 写正文、实验、角色台词、质量清单 |
+| **academy-voice-editor** | `skills/academy-voice-editor/` | 文学语感编辑（中文） | Hybrid Voice v3、§7 文学维度 |
+| **academy-jp-voice-editor** | `skills/academy-jp-voice-editor/` | 日文语感编辑 | 日译推敲、去直译腔、J1–J5 |
+| **academy-visual-auditor** | `skills/academy-visual-auditor/` | 视觉审计 | 插图 prompt、成图统调、角色/环境 P0 |
+| **academy-story-database** | `skills/academy-story-database/` | 故事资产库 | 200 篇总表、Case 状态、跨卷检索 |
 
 定稿门禁（L1 三并列）：
 
@@ -17,11 +24,36 @@
 3. **本格公平** — `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md`
 
 **完整验收清单**：`00_项目总览/创作标准与验收流程.md`
+
+**日文版（翻译后必做）**：`docs/00_JP_TRANSLATION_REVIEW_GATE.md` — 田中みどり **全文**五维督查，产出 `文化校准报告_日本語.txt`；未过不得 `READY_FOR_TRANSLATION`。
+
 ## 典型流水线
 
 ```
-总策划 → 资料总编辑 → 创作引擎 → 文化校准 → 定稿入 03_故事内容/
+总策划 → 资料总编辑 → 创作引擎 → 文学语感编辑（中文）→ L1+L2 → 03_/
+                                              ↓
+              日译 → 日文语感编辑 → 田中みどり全文督查 → READY_FOR_TRANSLATION
+                                    ↓
+              插图：academy-visual-auditor（统调后）· 资产表：academy-story-database
 ```
+
+## Cursor 常驻 Rule（Layer 1）
+
+| Rule | 路径 |
+|------|------|
+| 启动门 | `.cursor/rules/00-project-startup-gate.mdc` |
+| 日本校园文化 | `.cursor/rules/01-japan-school-culture.mdc` |
+| 名古屋环境 | `.cursor/rules/02-nagoya-environment-metrics.mdc` |
+| 本格公平 | `.cursor/rules/03-honkaku-fair-play.mdc` |
+| 创作红线 | `.cursor/rules/04-creative-redline.mdc` |
+| Git 与索引 | `.cursor/rules/05-git-and-index.mdc` |
+
+## 外部 Skill 策略（GitHub / skills.sh）
+
+- **可以装**：与本 IP 对齐的 open skill（日译推敲、textlint-ja、文学分析等），优先 GitHub 高 star / skills.sh 1K+ installs
+- **不装**：WPS 及国产中文写作助手（中文排版向，非日文儿童出版）
+- **参考已 IP 化**：[novel2hermes_jp](https://github.com/kgmkm/novel2hermes_jp) MoA 推敲 → `academy-jp-voice-editor`；22 领域 → `02_创作原则与世界观/22领域与七范式映射.txt`
+- **可选 CLI**：`tools/textlint/`（`@textlint-ja/preset-ai-writing`）— 日译稿完成后本地 lint
 
 ## 安装说明（已完成）
 
@@ -30,6 +62,10 @@ Skill 已部署于：
 - `skills/academy-series-architect/`
 - `skills/academy-research-editor/`
 - `skills/academy-engine/`
+- `skills/academy-voice-editor/`
+- `skills/academy-jp-voice-editor/`
+- `skills/academy-visual-auditor/`
+- `skills/academy-story-database/`
 - `.cursor/skills/`（Cursor 项目 skill 镜像）
 
 在 Cursor 对话中直接说：
@@ -37,6 +73,10 @@ Skill 已部署于：
 - 「按总策划拆第2卷任务包」
 - 「资料总编辑补全梅雨相关素材」
 - 「用创作引擎写第1卷」
+- 「用文学语感编辑过 Hybrid Voice v3」
+- 「日文语感编辑过 完整文字稿_日本語.txt」
+- 「视觉审计 Vol1 插图 SC03」
+- 「更新故事资产表 Vol2 状态」
 
 Agent 应自动读取对应 `SKILL.md`。
 

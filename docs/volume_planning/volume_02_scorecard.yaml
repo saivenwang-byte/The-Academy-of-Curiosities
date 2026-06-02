@@ -1,0 +1,20 @@
+# Vol02 scorecard · 谁偷了橡皮
+# 状态：DRAFT · L1 待过
+
+volume: 2
+title_zh: 谁偷了橡皮
+title_jp: 消しゴムはどこへ？
+status: DRAFT
+
+l1:
+  tanaka_html: pending
+  voice_editor: pending
+  jp_translation: pending
+
+checks:
+  body_lint: pass
+  fair_clues_present: true
+  luoxun_lines_max: 5
+
+notes: |
+  第六批初稿。下一步：田中 HTML 审校 → voice-editor 润色 → 日译。

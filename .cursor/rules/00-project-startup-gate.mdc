@@ -1,0 +1,19 @@
+---
+description: 学堂趣事录项目启动门 — 每次写作/插图前必读 L1 与正典入口
+alwaysApply: true
+---
+
+# 项目启动门
+
+这是 **《学堂趣事录》**（名古屋公立小学 · 本格儿童推理 · 6–14 岁），不是普通校园故事或通用代码项目。
+
+**动笔 / 改稿 / 写 prompt / 做 Case Card 前**，必须先读：
+
+- `docs/00_PROJECT_STARTUP_GATE.md`
+- `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md`
+- `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`
+- `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md`
+
+未过 L1 三并列 → 状态仅可 `PENDING_REVIEW`，不可 `READY_FOR_SAMPLE`。
+
+入口：`CLAUDE.md` · `AGENTS.md` · `docs/00_AGENT_CAPABILITY_MAP.md`

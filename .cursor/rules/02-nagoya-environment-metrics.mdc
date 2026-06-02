@@ -1,0 +1,17 @@
+---
+description: 名古屋环境指标 — 月份/气候/日照/结露/物候
+alwaysApply: true
+---
+
+# 名古屋环境指标
+
+场景、科学机制、插图光色须与 **Project World Metrics** 一致。
+
+**正典**：`docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`  
+**速查**：`02_/名古屋写作硬指标_本格科学参考.md`
+
+**必填（Scene 级）**：月份 · 时刻 · 气温 · 湿度 · 日照方向 · 物候
+
+**Vol1 范例**：4月 · 14–15℃ · 结露 · 椅**背**贴アルミ窓枠 · 微湿非泼水
+
+禁止：10月秋樱落叶写进 4月卷；泛「Japanese classroom」不写名古屋/RC 校舍。

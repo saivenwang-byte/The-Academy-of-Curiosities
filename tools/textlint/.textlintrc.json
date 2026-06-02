@@ -1,0 +1,7 @@
+{
+  "plugins": ["@textlint-ja/textlint-plugin-ja"],
+  "rules": {
+    "@textlint-ja/preset-ai-writing": true,
+    "preset-japanese": true
+  }
+}

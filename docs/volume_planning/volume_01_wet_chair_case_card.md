@@ -1,6 +1,10 @@
 # 第1卷 · Case Card · 总是湿的椅子
 
-> **Status**: DRAFT_COMPLETE · 待双 L1 门禁  
+> **⚠️ 迁移**：样章工程主入口 → `docs/volume_01_wet_chair/03_CASE_CARD.md`（v1.2 窓側金属）  
+> 本文件机制描述为 v1.1 · **椅背贴框已作废**
+
+> **Status**: L2_A_MINUS · ready_for_sample: true  
+> **Scorecard**: [volume_01_scorecard.yaml](./volume_01_scorecard.yaml)
 > **正文**: `03_故事内容/第1卷_总是湿的椅子/完整文字稿.txt`
 
 ---
@@ -25,6 +29,7 @@
 | 环境成立 | 4月 14–15℃ · 昼暖夜冷 · 35°N 内陆盆地 |
 | 语言红线 | 不用「报告老师」→「先生、これ見てください」 |
 | 零超自然 | YES |
+| 来源标签 | world_reference/01–04 · maint/03 结露 · Vol1 scorecard · 09_ INDEX L类 |
 
 ---
 
@@ -34,9 +39,11 @@
 - [x] 02 引き戸/上履き/留校  
 - [x] 03 称呼/給食  
 - [x] 04 三线索+实验  
-- [ ] 田中みどり HTML 复检  
-- [ ] 硬指标七检  
+- [x] 田中みどり HTML 复检（2026-06-02 · 0 实质红项）  
+- [x] 硬指标七检（2026-06-02 · 全过）  
+
+**L1 状态**：`JP_CULTURE_REVIEW_PASSED` · `ENVIRONMENT_REVIEW_PASSED` · `SCIENCE_FAIR_PLAY_REVIEW_PASSED`
 
 ---
 
-最后更新：2026-06-02
+最后更新：2026-06-02 · L1 复核完成

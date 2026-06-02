@@ -1,0 +1,113 @@
+# Vol1 · 总是湿的椅子 · L2 质量评分卡（示范）
+# 标准：docs/00_VOLUME_QUALITY_SCORECARD.md
+# 正文：03_故事内容/第1卷_总是湿的椅子/完整文字稿.txt
+# 评估日期：2026-06-02（Hybrid Voice v3 · §7 文学维度补评）
+
+meta:
+  volume: 1
+  title: 总是湿的椅子
+  draft_version: hybrid_voice_v3
+  l1_status: PASSED
+  evaluator: human_table_plus_agent
+  canon_check:
+    names: PASS
+    month: 4月
+    team_size: 4
+    pov: 陸珣_限知第三人称
+
+veto_flags: []  # 无一票否决
+
+scores:
+  # 一、红线与规范（×1.0）
+  "1.1_political": { score: 10, weight: 1.0, note: "无触线" }
+  "1.2_bullying": { score: 10, weight: 1.0, note: "传言层，无霸凌" }
+  "1.3_mystery_duplicate": { score: 10, weight: 1.0, note: "结露+贴窗椅，独立原创" }
+  "1.4_principle_count": { score: 9, weight: 1.0, note: "三原理 Case Card 一致；正文已点名交叉" }
+
+  # 二、文化真实性（×1.5）
+  "2.1_campus_routine": { score: 9, weight: 1.5, evidence: "上履き/給食/昼歯磨き/掃除当番/朝の会", note: "未写部活（卷1可不写）" }
+  "2.2_school_space": { score: 9, weight: 1.5, evidence: "片廊下/引き戸/窓側/アルミサッシ", note: "未写中庭细节，可接受" }
+  "2.3_honorifics": { score: 8, weight: 1.5, evidence: "陸くん/先生/さん", note: "连絡帳未写，非必须" }
+  "2.4_emotion_tone": { score: 9, weight: 1.5, evidence: "じゃあ、また明日", note: "克制告别到位" }
+  "2.5_season_phenology": { score: 8, weight: 1.5, evidence: "樱瓣/花粉/ひんやり/4月", note: "非秋天，硬指标对齐" }
+  "2.6_no_chinese_idiom": { score: 9, weight: 1.5, note: "无报告老师/食堂打饭；误导段用日式搜查" }
+  "2.7_stay_after_school": { score: 9, weight: 1.5, evidence: "掃除当番+先生许可", note: "放課後の会交代清楚" }
+
+  # 三、推理与科学
+  "3.1_mechanism_accuracy": { score: 9, weight: 1.5, note: "结露+铝框传导，准备室老师旁证不代解" }
+  "3.2_fair_clues": { score: 9, weight: 1.5, evidence: "唯一湿椅/窗雾/贴窗框", note: "均在揭晓前" }
+  "3.3_misdirection": { score: 9, weight: 1.0, evidence: "志郎恶作剧→全班搜查→无证据→推翻", note: "全班参与搜查" }
+  "3.4_reproducibility": { score: 9, weight: 1.0, note: "铁片vs载玻片+文末实验" }
+  "3.5_child_readable": { score: 8, weight: 1.0, note: "日语名词略多，有慧美图解" }
+  "3.6_principles_named": { score: 10, weight: 1.0, evidence: "验证后：热传导+湿度+露点三样凑齐", note: "一句串联显性化" }
+  "3.7_scientific_method": { score: 9, weight: 1.0, note: "观察→假设→实验→结论完整" }
+
+  # 四、人物与情感
+  "4.1_character_voice": { score: 9, weight: 1.0, note: "v3：陸珣冷观察回第一版；光/慧美/志郎分工清晰" }
+  "4.2_growth_arc": { score: 9, weight: 1.0, evidence: "周三前两处贴窗框观察", note: "沉默观察者提前立住" }
+  "4.3_team_chemistry": { score: 8, weight: 1.0, note: "误导段增加志郎与慧美分歧" }
+  "4.4_emotional_hook": { score: 9, weight: 1.5, evidence: "陸瑆笔记/椅子干了", note: "温暖收束" }
+  "4.5_hikaru_notes": { score: 9, weight: 1.0, note: "独立视角，非复述" }
+
+  # 五、叙事与结构
+  "5.1_opening_hook": { score: 8, weight: 1.0, evidence: "半拍是在等椅子开口", note: "v3序章钩子+谜面一周闭环" }
+  "5.2_pacing": { score: 9, weight: 0.5, note: "5600字；給食/说明段再瘦10%" }
+  "5.3_ending": { score: 9, weight: 1.0, evidence: "学堂趣事录第1起+实验页", note: "系列伏笔强" }
+  "5.4_dual_narrative": { score: 9, weight: 1.5, note: "陸瑆笔记为竞品差异点" }
+  "5.5_five_beat_structure": { score: 9, weight: 1.0, note: "发现/假设/验证/突破/结论齐全" }
+
+  # 六、语言与风格
+  "6.1_onomatopoeia": { score: 7, weight: 1.0, evidence: "キュッキュッ/ガチャン/ひんやり", note: "可再加1处" }
+  "6.2_dialogue_distinct": { score: 8, weight: 1.0, note: "志郎急躁/慧美短句判定" }
+  "6.3_concision": { score: 8, weight: 0.5, note: "v3 ~5600字，近目标区间" }
+  "6.4_nagoya_dialect": { score: 10, weight: 1.0, note: "陸珣未说方言，用量0" }
+
+  # 七、文学语感 · Hybrid Voice v3（×见 scorecard §7）
+  "7.1_white_space": { score: 9, weight: 1.5, evidence: "半拍/湿/重复就不叫怪", note: "留白与金句密度达标" }
+  "7.2_sentence_length": { score: 8, weight: 1.0, note: "叙事均句≤22字；三章慧美实验对白仍略长" }
+  "7.3_rikushun_voice": { score: 9, weight: 1.5, evidence: "对外台词5句", note: "沉默观察气质回第一版" }
+  "7.4_exposition_ratio": { score: 8, weight: 1.0, note: "制度嵌入动作；科学正文3处发声" }
+  "7.5_lingering_close": { score: 9, weight: 1.5, evidence: "词多了/留一拳/窗框还是四月", note: "瑆笔记双层收束" }
+
+principles_named_in_body:
+  - 结露
+  - 热传导
+  - 露点  # 湿度/露点合并展示
+
+misdirection:
+  proposer: 松本志郎
+  hypothesis: 恶作剧泼水/湿布
+  test: 后排两人协助搜查纸篓/桌肚/窗台/邻座/走廊
+  refutation: 全无水痕与器具
+  section: "二、传言比水先到场"
+
+fair_clues:
+  - "仅光椅湿，邻座干"
+  - "窗玻璃内侧有雾，窗框更冷"
+  - "窗侧金属贴窗框（v1.2 几何）"
+
+summary:
+  raw_total: 213          # /255（含 §7 五项 · v3 修订后估）
+  normalized_estimate: 213
+  grade: A
+  literary_veto: false    # §7 全部 ≥6
+  jp_translation: DEEP_REVISION_v1.2_PENDING_REVIEW
+  jp_status: JP_CULTURE_REVIEW_PARTIAL_PASS
+  ready_for_sample_jp: false
+  blockers:
+    - 田中 HTML 复校 v1.2
+    - 插图 prompt 同步窓側金属机制
+  top_strengths:
+    - Hybrid Voice v3：文学回味+正典骨并存
+    - 文化真实性系统完整（日式校园日常链）
+    - 双层叙事（陸瑆笔记）+ 公平线索三处
+  top_improvements:
+    - 7.2：实验段可再拆短句（日译时处理）
+    - 6.1 オノマトペ可再加1处点缀
+    - 日译后 J6 儿童可读需 beta 读
+
+legacy_comparison:
+  note: "用户两版对比表中「第一版」≈早期小林稿；「第二版」≈当前正典稿"
+  v1_estimated_raw: 130
+  v2_estimated_raw: 196
+  largest_gap_dimension: 文化真实性

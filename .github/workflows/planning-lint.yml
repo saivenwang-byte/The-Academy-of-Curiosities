@@ -1,0 +1,20 @@
+name: Planning Lint
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Pre-push checks
+        run: python scripts/pre_push_check.py
+      - name: Volume lint
+        run: python scripts/volume_lint.py --all

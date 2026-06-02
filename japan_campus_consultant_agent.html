@@ -1,7 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>田中みどり · 日本校园文化顾问</title>
+</head>
+<body>
 <style>
+:root {
+  --font-sans: "Hiragino Sans", "Yu Gothic UI", "Meiryo", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-text-tertiary: #888888;
+  --color-border-tertiary: #e5e5e5;
+  --color-border-secondary: #cccccc;
+  --color-border-primary: #333333;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f5;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font-sans)}
+body{font-family:var(--font-sans);background:var(--color-background-primary);color:var(--color-text-primary);padding:16px}
 .root{padding:1.5rem 0;max-width:680px}
 .header{display:flex;align-items:center;gap:14px;margin-bottom:1.5rem}
 .avatar{width:52px;height:52px;border-radius:50%;background:#B5D4F4;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
@@ -114,12 +135,12 @@ textarea:focus{outline:none;border-color:var(--color-border-primary)}
           <span class="mode-label">人际与隐规则</span>
           <span class="mode-desc">先輩、空気を読む</span>
         </div>
-        <div class="mode-btn" onclick="toggleMode(this,'culture')" data-mode="culture">
+        <div class="mode-btn selected" onclick="toggleMode(this,'culture')" data-mode="culture">
           <span class="mode-icon"><i class="ti ti-star" aria-hidden="true"></i></span>
           <span class="mode-label">儿童亚文化</span>
           <span class="mode-desc">ランドセル、校园怪谈</span>
         </div>
-        <div class="mode-btn" onclick="toggleMode(this,'emotion')" data-mode="emotion">
+        <div class="mode-btn selected" onclick="toggleMode(this,'emotion')" data-mode="emotion">
           <span class="mode-icon"><i class="ti ti-heart" aria-hidden="true"></i></span>
           <span class="mode-label">情感与分寸</span>
           <span class="mode-desc">克制表达、じゃあね</span>
@@ -195,7 +216,7 @@ textarea:focus{outline:none;border-color:var(--color-border-primary)}
 </div>
 
 <script>
-const MODES = new Set(['space','routine','social']);
+const MODES = new Set(['space','routine','social','culture','emotion']);
 
 function switchTab(id) {
   document.querySelectorAll('.tab').forEach((t,i)=>{
@@ -218,6 +239,7 @@ const CALIBRATION_DB = {
     {text:'推拉门', trigger:['推拉门','门','教室门','推开','推门','哐'], type:'warn', title:'⚠ 教室门类型需确认', body:'日本小学教室是推拉门（引き戸），不是中国常见的铰链门。关门时会发出"カタッ"的轨道滑动声，冬天门缝会漏风。', fix:'建议：把"推开教室的门"改为"拉开引き戸（引き戸を引いた）"。'},
     {text:'进教室', trigger:['走进教室','进入教室','进教室','推开教室'], type:'warn', title:'⚠ 缺上履き换鞋流程', body:'日本孩子不会在穿外履き的情况下直接进教室。必须先经过昇降口→下駄箱→换上履き。', fix:'在「进教室」前加入：玄关换室内鞋、鞋柜编号、再拉开引き戸。'},
     {text:'食堂', trigger:['食堂','打饭','端着餐','饭堂','餐厅'], type:'warn', title:'⚠ 日本小学午餐不是食堂制', body:'日本小学午餐是教室給食：配膳当番穿白コート取餐，在教室分发，吃完昼歯磨き。没有中国式食堂排队打饭。', fix:'改为給食当番、配膳室、教室分发、刷牙流程。'},
+    {text:'教室後方', trigger:['教室後方の流し','教室后方','后方水池','教室水槽'], type:'warn', title:'⚠ 昼歯磨き一般不在教室后方', body:'給食後は教室で片付け → 廊下の手洗い場（或配膳室横）で列队昼歯磨き。教室後方に流しだけで全班刷牙は少数校。', fix:'改为：片廊下を通って手洗い場へ——昼歯磨き。'},
     {text:'班长', trigger:['班长','课代表','学习委员','班干部'], type:'warn', title:'⚠ 日本小学不是班干部制', body:'日本小学用係活動：黒板係、配膳係、保健係等，全员有职，不是单一班长。', fix:'改为具体係名，如黒板係、配膳係。'},
     {text:'黑板', trigger:['黑板','板书'], type:'note', title:'注意 黑板擦放置习惯', body:'日本教室黑板上方有「学級目標」，值日生擦完黑板要把板擦（黒板消し）放在指定位置，通常是黑板槽右端。', fix:'可加入这个细节强化真实感。'},
     {text:'厕所拖鞋', trigger:['厕所','卫生间','トイレ'], type:'warn', title:'⚠ 厕所需要专用拖鞋', body:'日本校园厕所有「トイレのスリッパ」，进厕所要换拖鞋，出来忘记换回来是很常见的小尴尬，也是社交信号（会被同学提醒）。', fix:'如果场景涉及厕所，务必加入这个细节。'},
@@ -340,3 +362,5 @@ function renderGlossary(){
   el.innerHTML = html;
 }
 </script>
+</body>
+</html>

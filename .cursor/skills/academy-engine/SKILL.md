@@ -11,7 +11,20 @@ allowed-tools:
   - Bash
 ---
 
-# 学堂趣事录创作引擎 · The Academy of Curiosities Creative Engine
+# 学堂趣事录 · 创作引擎 · The Curious Logbook Creative Engine
+
+## 启动门（写稿前第一步）
+
+**必须先读**（未过 L1 → 输出状态仅 `PENDING_REVIEW`）：
+
+1. `docs/00_PROJECT_STARTUP_GATE.md`
+2. `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md`
+3. `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md`
+4. `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md`
+
+入口总览：`CLAUDE.md` · `docs/00_AGENT_CAPABILITY_MAP.md`
+
+---
 
 ## 协作 Agent（写稿前先对齐）
 
@@ -25,6 +38,27 @@ allowed-tools:
 
 ---适用于故事写作、角色设计、实验设计、大纲规划、谜题构思。
 每次输出前必须通过质量检查清单。不适用于通用写作、其他 IP、或与 学堂趣事录 无关的任务。
+
+---
+
+## 样章生产流水线（Case → Scene → 正文）
+
+**禁止跳步**：未完成前置 Phase → 状态最高 `DRAFT` / `PENDING_REVIEW`（见 startup gate）
+
+| Phase | 产出 | 校验 |
+|-------|------|------|
+| **0 启动** | 读 L1 四门 · 卷任务包确认 · Vol2 读 `volume_02_decisions_locked.md` | `academy-series-architect` |
+| **1 Case Card** | `docs/volume_planning/volume_XX_*_case_card.md` | `python scripts/case_card_lint.py --file …` |
+| **2 Scene Cards** | `docs/volume_planning/volume_XX_scene_cards.md` | `python scripts/scene_card_lint.py --file …` |
+| **3 正文** | `03_故事内容/第X卷_*/完整文字稿.txt` | 本节 §九 清单 |
+| **4 语感** | Hybrid Voice / 日译 | `academy-voice-editor` · `academy-jp-voice-editor` |
+| **5 L1+L2** | 田中 HTML · scorecard | `创作标准与验收流程.md` |
+| **6 插图** | prompts + PNG | `academy-visual-auditor` · `docs/assets_index/visual_asset_index.md` |
+| **7 资产表** | 故事总表一行 | `academy-story-database` · `00_story_asset_table.md` |
+
+**Vol1 范例**：Case `volume_01_wet_chair_case_card.md` · Scene `volume_01_scene_cards.md`
+
+**推送前**：`python scripts/pre_push_check.py`
 
 ---
 
@@ -186,7 +220,19 @@ allowed-tools:
 
 ---
 
-## 八、质量检查清单（每次输出前必过）
+## 九、质量检查清单（每次输出前必过）
+
+**L1 + L2 详见**：`00_项目总览/创作标准与验收流程.md` · `docs/00_VOLUME_QUALITY_SCORECARD.md`
+
+**文学语感（Hybrid Voice · 必查）**：
+
+```
+[ ] 陸珣对外台词 ≤5 句/卷？
+[ ] 说明文/制度解释句是否过多？（目标 ≤8%）
+[ ] 是否有 ≥3 处留白金句型内心（见 语感决策记录）？
+[ ] 制度细节是否「展示」而非「解说」？
+[ ] 科学原理正文是否仅 3 处发声？
+```
 
 ```
 故事检查：
@@ -201,6 +247,7 @@ allowed-tools:
 [ ] 角色对话是否符合其人格Solo和专属台词风格？
 [ ] 陸珣是否在关键时刻发挥了领域专长？
 [ ] 陸瑆笔记是否温柔克制、不煽情？
+[ ] 年级/班级是否符合正典？见 `docs/characters/00_character_canon_index.md`
 
 结构检查：
 [ ] 是否遵循"发现→假设→验证→突破→结论→笔记"结构？
@@ -227,7 +274,22 @@ allowed-tools:
 
 ---
 
-## 九、输出格式示例
+## 十、写作质量 Scale 速查（你找的「全维度专家表」）
+
+| 工具 | 路径 | 何时用 |
+|------|------|--------|
+| **L2 评分卡 24 项** | `docs/00_VOLUME_QUALITY_SCORECARD.md` | 每卷定稿门禁 |
+| **全维度 44 项 + prompt** | `docs/00_VOLUME_QUALITY_SCORECARD_APPENDIX_44.md` | 两版对比、深评 |
+| **Vol1 语感决策** | `03_…/语感决策记录_Vol1.md` | Hybrid Voice 方向 |
+| **五种叙事笔法** | `02_/写作技巧与叙事笔法.md` | 写前笔法选择 |
+| **创作引擎 Skill** | `skills/academy-engine/SKILL.md` | 写稿 + 清单 §八 |
+| **L2 实例** | `docs/volume_planning/volume_01_scorecard.yaml` | Vol1 打分示范 |
+
+**写作顺序（Hybrid Voice）**：先文学稿 → 正典注入 → L1 → 文学回切 → L2（含 §7）→ 可选 44 项对比。
+
+---
+
+## 十一、输出格式示例
 
 当用户要求"写第X卷"时，按以下格式输出：
 

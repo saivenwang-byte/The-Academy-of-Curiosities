@@ -1,6 +1,6 @@
-# 学堂趣事录 · The Academy of Curiosities
+# 学堂趣事录 · The Curious Logbook
 
-> *A Curiosity Hall Mystery Series*
+> *The Academy of Curiosities · A Curiosity Hall Mystery Series*  
 > 儿童跨学科推理绘本系列 · 50卷
 
 ---
@@ -70,6 +70,19 @@
 | **写作技巧与叙事笔法** | `02_创作原则与世界观/写作技巧与叙事笔法.md` |
 | **参考资料库总索引** | `09_日本参考资料库/INDEX.md` |
 | **Agent 编排** | `AGENTS.md` |
+| **Claude/Cursor 入口** | `CLAUDE.md` |
+| **Agent 部署状态** | `docs/00_AGENT_DEPLOYMENT_STATUS.md` |
+
+---
+
+## Agent 生产系统
+
+合并方案 **五批已部署**（详见 `docs/00_AGENT_DEPLOYMENT_STATUS.md`）：
+
+- **7 Skills**：总策划 · 资料 · 引擎 · 中/日语感 · 视觉审计 · 故事资产库  
+- **6 常驻 Rule**：`.cursor/rules/`  
+- **6 脚本**：`python scripts/pre_push_check.py` · `volume_lint.py --all`  
+- **CI**：`.github/workflows/planning-lint.yml`
 
 ---
 
@@ -84,10 +97,14 @@
 ├── 04_产品与商业/         产品定位
 ├── 05_创作对话记录/       只读归档（含旧名，勿作正典）
 ├── 06_参考资料/           外部 scraped（非正典）
-├── 07_设计原档/           docx 原档
+├── 07_设计原档/           ★ 插画/场景/角色视觉 docx + 入库评估
 ├── 08_日本校园文化顾问/   已归档 → 用根目录 html
 ├── 09_日本参考资料库/     ★ INDEX.md · 107+ URL · 分类素材
-├── skills/ + .cursor/skills/   三 Agent skill
+├── skills/ + .cursor/skills/   7× academy Skill
+├── scripts/               6× lint 脚本
+├── .cursor/rules/         6× 常驻 Rule
+├── .claude/               Claude Code 入口说明
+├── CLAUDE.md              ★ 统一启动门
 ├── AGENTS.md              ★ 编排说明
 └── japan_campus_consultant_agent.html  ★ 定稿前文化校准
 ```
@@ -106,7 +123,7 @@
 - [x] 人物体系（10个角色完整设定）
 - [x] 七种推理范式
 - [x] 50卷大纲框架
-- [x] 品牌命名（中/英）
+- [x] 品牌命名（中/日/英 · 见 `00_项目总览/品牌名称定稿.md`）
 - [x] 第一卷文字稿（初稿，待更新为定稿人名）
 - [ ] 第一卷插画
 - [ ] 第一卷实验盒设计
@@ -116,10 +133,15 @@
 
 ## 品牌信息
 
-- **中文主名**：学堂趣事录
-- **英文主名**：The Academy of Curiosities
-- **英文副标题**：A Curiosity Hall Mystery Series
-- **品牌Slogan**：一个谜题，三门学科。
+| 层级 | 名称 |
+|------|------|
+| **中文正名** | 学堂趣事录（品牌书面体可用「録」） |
+| **日文正名** | 学堂奇事録（がくどう きじろく / Gakudō Kijiroku） |
+| **英文书名** | The Curious Logbook |
+| **英文系列标语** | The Academy of Curiosities |
+| **品牌 Slogan** | 一个谜题，三门学科。 |
+
+> 命名依据与使用规则见 `00_项目总览/品牌名称定稿.md` ★
 
 ---
 

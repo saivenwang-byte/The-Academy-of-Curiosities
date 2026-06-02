@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>学堂奇事録 · 十人身高关系 · 四季私服</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:#f5f0e8;color:#2a2018;padding:20px}
+h1{font-family:'Noto Serif JP',serif;text-align:center;font-size:20px;margin-bottom:4px}
+.sub{text-align:center;font-size:11px;color:#8a7860;margin-bottom:16px;line-height:1.6}
+.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:8px 16px;border:1px solid #c8b8a0;border-radius:8px;background:#fff;cursor:pointer;font-size:13px}
+.tab.active{background:#2a2018;color:#fff;border-color:#2a2018}
+.wrap{max-width:1200px;margin:0 auto;background:#fff;border:1px solid #ddd;border-radius:12px;padding:16px 12px 24px;overflow-x:auto}
+.chart{position:relative;height:520px;min-width:980px;margin:0 auto}
+.grid-lines{position:absolute;left:48px;right:12px;top:40px;bottom:60px;border-left:2px solid #333}
+.grid-lines .line{position:absolute;left:0;right:0;border-top:1px solid #e0d8cc}
+.grid-lines .label{position:absolute;left:-44px;top:-8px;font-size:11px;color:#666;width:40px;text-align:right}
+.badge{position:absolute;top:8px;right:12px;background:#e8f0fa;border:1px solid #185FA5;border-radius:50%;width:72px;height:72px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0C447C;text-align:center;line-height:1.3}
+.row{display:flex;align-items:flex-end;justify-content:space-between;position:absolute;left:56px;right:20px;bottom:60px;top:40px;padding:0 4px}
+.slot{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;min-width:0;padding:0 2px}
+.fig{width:56px;border-radius:8px 8px 4px 4px;position:relative;transition:height .3s,background .3s}
+.fig::after{content:'';position:absolute;top:-22px;left:50%;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;background:inherit;filter:brightness(1.05);border:2px solid rgba(0,0,0,.08)}
+.board{margin-top:8px;background:#1a1a1a;color:#fff;font-size:9px;padding:4px 6px;border-radius:3px;text-align:center;line-height:1.35;min-width:52px;max-width:72px;font-weight:700}
+.board small{display:block;font-weight:400;font-size:8px;opacity:.85}
+.hcm{font-size:9px;color:#888;margin-top:3px}
+.note{max-width:980px;margin:14px auto 0;font-size:10px;color:#6a5a4a;line-height:1.7;padding:0 8px}
+.leg{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:10px;font-size:10px}
+.leg span{display:inline-flex;align-items:center;gap:4px}
+.dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+</style>
+</head>
+<body>
+<h1>『学堂奇事録』人物紹介 · 身長比較</h1>
+<p class="sub">10人のみ · 固定位置（左→右＝矮→高）· 私服（制服なし）· 4年2組 LOCKED<br>Character Lineup · Height Chart · Seasonal Casual Outfits</p>
+
+<div class="tabs" id="tabs">
+  <button class="tab active" data-season="base">L0 基准身高</button>
+  <button class="tab" data-season="spring">春 Spring</button>
+  <button class="tab" data-season="summer">夏 Summer</button>
+  <button class="tab" data-season="autumn">秋 Autumn</button>
+  <button class="tab" data-season="winter">冬 Winter</button>
+</div>
+
+<div class="wrap">
+  <div class="chart" id="chart">
+    <div class="badge">人物<br>紹介</div>
+    <div class="grid-lines" id="grid"></div>
+    <div class="row" id="row"></div>
+  </div>
+</div>
+
+<p class="note" id="seasonNote"></p>
+<div class="leg" id="legend"></div>
+
+<script>
+const CHARS = [
+  {id:'kei', ja:'陸瑆', sub:'りく けい', cm:125, color:'#c4a882', role:'3年·筆記'},
+  {id:'jun', ja:'陸珣', sub:'りく しゅん', cm:132, color:'#6a7a8a', role:'4年2組·POV'},
+  {id:'shiro', ja:'松本志郎', sub:'まつもと しろう', cm:135, color:'#c85040', role:'4年2組', wide:1.15},
+  {id:'hikaru', ja:'伊藤光', sub:'いとう ひかる', cm:138, color:'#e8801a', role:'4年2組'},
+  {id:'risa', ja:'山本理紗', sub:'やまもと りさ', cm:139, color:'#9a8a9a', role:'5年·卷11+'},
+  {id:'ki', ja:'中谷琦', sub:'なかたに き', cm:141, color:'#3a4a6a', role:'5年·卷11+'},
+  {id:'keimi', ja:'加藤慧美', sub:'かとう けいみ', cm:145, color:'#5a6a8a', role:'4年2組'},
+  {id:'senzo', ja:'葛西泉蔵', sub:'かさい せんぞう', cm:158, color:'#7a6a5a', role:'70歳·店'},
+  {id:'misaki', ja:'陸美咲', sub:'りく みさき', cm:163, color:'#b87888', role:'母'},
+  {id:'naoto', ja:'陸直人', sub:'りく なおと', cm:175, color:'#4a5a6a', role:'父'}
+];
+
+const SEASONS = {
+  base: {
+    label: 'L0 基准：私服 · 比身高/体型/发型识别锚点（橙围巾·银眼镜·绿包·放大镜等见终稿合辑）',
+    outfits: {}
+  },
+  spring: {
+    label: '春（4–5月）：薄外套 · 光=灰卫衣+橙围巾 · 慧美=针织开衫 · 志郎=运动夹克 · 珣=藏青长袖',
+    outfits: {hikaru:'#b0b8c8', keimi:'#8a9aaa', shiro:'#6a8a5a', jun:'#5a6a7a', kei:'#d4c4a8', risa:'#b0a8b8', ki:'#5a6a7a', senzo:'#8a7a6a', misaki:'#c8a0a8', naoto:'#6a7a8a'}
+  },
+  summer: {
+    label: '夏：短袖短裤 · 光=Polo · 志郎=红T · 珣=灰T+工装短裤 · 瑆=浅色背带',
+    outfits: {hikaru:'#f0a030', keimi:'#a8b8d0', shiro:'#d84838', jun:'#909090', kei:'#e8d8c0', risa:'#c0c0c8', ki:'#304060', senzo:'#a09080', misaki:'#d8a0a0', naoto:'#708090'}
+  },
+  autumn: {
+    label: '秋：卫衣/薄风衣 · 光=摇粒绒+围巾 · 慧美=薄风衣 · 志郎=补丁毛衣',
+    outfits: {hikaru:'#c87820', keimi:'#6a5a4a', shiro:'#7a6a50', jun:'#707880', kei:'#a89070', risa:'#988878', ki:'#404858', senzo:'#706050', misaki:'#987070', naoto:'#505860'}
+  },
+  winter: {
+    label: '冬：大衣/羽绒 · 光=派克+黄围巾 · 志郎=橙色羽绒 · 葛西=厚棉袍+花帽',
+    outfits: {hikaru:'#d89018', keimi:'#4a4a58', shiro:'#d86020', jun:'#3a4048', kei:'#b0a090', risa:'#a8a098', ki:'#2a3040', senzo:'#685848', misaki:'#886060', naoto:'#3a4550'}
+  }
+};
+
+const MIN=100, MAX=180, CH=420;
+
+function buildGrid(){
+  const chart=document.getElementById('chart');
+  const g=document.getElementById('grid');
+  g.innerHTML='';
+  chart.querySelectorAll('.ylabel').forEach(el=>el.remove());
+  for(let h=180;h>=100;h-=10){
+    const y=((MAX-h)/(MAX-MIN))*CH;
+    const line=document.createElement('div');
+    line.className='line';
+    line.style.top=y+'px';
+    g.appendChild(line);
+    const lab=document.createElement('div');
+    lab.className='ylabel label';
+    lab.style.position='absolute';
+    lab.style.left='8px';
+    lab.style.top=(40+y-8)+'px';
+    lab.textContent=h;
+    chart.appendChild(lab);
+  }
+}
+
+function render(season){
+  const s=SEASONS[season];
+  document.getElementById('seasonNote').textContent=s.label;
+  const row=document.getElementById('row');
+  row.innerHTML='';
+  CHARS.forEach(c=>{
+    const h=((c.cm-MIN)/(MAX-MIN))*CH;
+    const slot=document.createElement('div');
+    slot.className='slot';
+    const fig=document.createElement('div');
+    fig.className='fig';
+    fig.style.height=Math.max(h,40)+'px';
+    fig.style.background=s.outfits[c.id]||c.color;
+    if(c.wide) fig.style.width='64px';
+    const board=document.createElement('div');
+    board.className='board';
+    board.innerHTML=c.ja+'<small>'+c.sub+'</small>';
+    const hcm=document.createElement('div');
+    hcm.className='hcm';
+    hcm.textContent=c.cm+'cm';
+    slot.append(fig,board,hcm);
+    row.appendChild(slot);
+  });
+  const leg=document.getElementById('legend');
+  leg.innerHTML=CHARS.map(c=>'<span><i class="dot" style="background:'+(s.outfits[c.id]||c.color)+'"></i>'+c.ja+'</span>').join('');
+}
+
+document.getElementById('tabs').addEventListener('click',e=>{
+  if(!e.target.matches('.tab')) return;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  e.target.classList.add('active');
+  render(e.target.dataset.season);
+});
+
+buildGrid();
+render('base');
+</script>
+</body>
+</html>

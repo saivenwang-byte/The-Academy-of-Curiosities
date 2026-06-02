@@ -1,0 +1,14 @@
+{
+  "name": "academy-textlint",
+  "private": true,
+  "description": "Optional JP prose lint for 学堂趣事录 — not required for pipeline",
+  "scripts": {
+    "lint": "textlint"
+  },
+  "devDependencies": {
+    "@textlint-ja/textlint-plugin-ja": "^5.0.0",
+    "@textlint-ja/preset-ai-writing": "^1.0.0",
+    "textlint": "^14.8.0",
+    "textlint-rule-preset-japanese": "^10.0.0"
+  }
+}
