@@ -1,8 +1,8 @@
 # 《学堂奇事録》IP 视觉与场景开发 · 结构性需求（Cursor 执行版）
 
-> **Status**: DRAFT · **待主编拍板后执行**  
-> **铁律**：**「我们商量后，我判断好，你再开工」** — 本文档 PASS 前，禁止出图、禁止批量 prompt、禁止覆盖正典 PNG。  
-> **正典入口**：`00_SCHOOL_CLASS_CANON_LOCKED.md` · `14_角色设计稿创作简报_v2.md` · `07_VISUAL_DIRECTION.md`
+> **Status**: PARTIAL LOCK · 方案 C + L0–L4 排版图 PASS · **下一项待拍板：4年2組透视基准图**  
+> **铁律**：**「我们商量后，我判断好，你再开工」** — Phase 2+ 未批前禁止批量出图。  
+> **正典入口**：`00_SCHOOL_CLASS_CANON_LOCKED.md` · `11_WORLD_SETTING_AND_ASSET_PLAN.md` · `14_角色设计稿创作简报_v2.md`
 
 ---
 

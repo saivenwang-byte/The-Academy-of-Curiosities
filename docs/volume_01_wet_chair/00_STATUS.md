@@ -25,6 +25,9 @@ NOT:        READY_FOR_PUBLICATION · READY_FOR_ARTIST_FINAL · READY_FOR_TRANSLA
 | JP 文化审 | ⏳ | Agent PASS · **待田中书面 §七** |
 | 科学/公平 | ✅ | v1.2 窓側金属 · 温湿度计 |
 | 视觉方向 | 📋 | `07_VISUAL_DIRECTION.md`（8 张清单 · 未出图） |
+| 十人排版图 L0–L4 | ✅ | `07_设计原档/04_样章视觉/CHAR_lineup_*.png` · 用户 PASS |
+| 空间划分 DEMO | ✅ | `07_设计原档/02_插画与场景/SPATIAL_demo_v01_overall.png` |
+| 世界观资产计划 | ✅ | `11_WORLD_SETTING_AND_ASSET_PLAN.md` · 方案 C LOCKED |
 | 试读包 | 📋 | `08_SAMPLE_PACKAGE_CHECKLIST.md`（结构就绪 · 未发试读） |
 
 ---

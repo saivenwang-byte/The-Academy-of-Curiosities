@@ -78,4 +78,16 @@
 
 ---
 
-最后更新：2026-06-02
+---
+
+## 六、交付状态
+
+| # | 文件 | 状态 |
+|---|------|------|
+| L0 | `CHAR_lineup_L0_height_reference.png` | ✅ **用户 PASS**（2026-06-02） |
+| L1 | `CHAR_lineup_L1_spring.png` | ✅ **用户 PASS**（2026-06-02） |
+| L2 | `CHAR_lineup_L2_summer.png` | ✅ **用户 PASS**（2026-06-02） |
+| L3 | `CHAR_lineup_L3_autumn.png` | ✅ **用户 PASS**（2026-06-02） |
+| L4 | `CHAR_lineup_L4_winter.png` | ✅ **用户 PASS**（2026-06-02） |
+
+最后更新：2026-06-02 · L0–L4 全套 PASS · 见 `docs/volume_01_wet_chair/11_WORLD_SETTING_AND_ASSET_PLAN.md`
