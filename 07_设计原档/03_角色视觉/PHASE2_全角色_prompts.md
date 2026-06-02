@@ -42,7 +42,7 @@ Poses: squat examine ground; scratch head. Label 4年2組 · 松本志郎.
 ### 05 陸瑆 → `PHASE2_05_陸瑆_sheet.png`
 
 3rd grade girl 125cm shortest, round face, oat cardigan, A5 kraft notebook, NOT insect fan.
-Poses: notebook observing people; offer tissue step back. Label 3年 · 陸瑆.
+Poses: notebook observing people; offer tissue step back. Label **4年1組** · 陸瑆.
 
 ### 06 中谷琦 → `PHASE2_06_中谷琦_sheet_vol11.png`
 
