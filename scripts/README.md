@@ -23,6 +23,7 @@ python scripts/body_lint.py --vol 2
 | `import_reference_library.py` | 09_ 盘点 |
 | `archive_vol1_duplicate_pngs.py` | PNG 归档 |
 | `run_tanaka_calibration.py` | 田中 HTML · CALIBRATION_DB 五维批量扫描 |
+| `canon_sweep_4-2.py` | 4年2組 漂移扫描 → `docs/canon_remap/4年2組_漂移扫描清单.md` |
 
 **田中 HTML**：`japan_campus_consultant_agent.html`（v1.2 · 五维默认全开）
 

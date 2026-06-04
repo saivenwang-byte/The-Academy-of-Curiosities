@@ -14,8 +14,8 @@
 | 规划总篇数 | 200 |
 | 已 LOCKED | **0**（见 §LOCK 政策 — 当前无卷过 L1 全门） |
 | READY_FOR_SAMPLE | 1（Vol01-A001 样章） |
-| DRAFT | 2（Vol01-A001 正文 · Vol01-A002 正文） |
-| OUTLINE | 4（Vol01 卷级 · A003–A005 · Vol02 卷级） |
+| DRAFT | 3（Vol01-A001 样章 · A002 · A003 正文） |
+| OUTLINE | 2（Vol01 卷级 · A004–A005 · Vol02 卷级） |
 | PENDING_REVIEW | 1（湿椅子素材库） |
 
 ---
@@ -29,7 +29,7 @@
 | L1 culture / env / fair | 全卷 **N**（未过门） |
 | 插图 + 试读 PDF | 样章部分 ✅ · 全卷 ⬜ |
 
-**→ 表内 `LOCKED` 仅在 L1 三门 + 定稿正文 + 卷级验收后写入。** 子案行可先到 `OUTLINE` / `DRAFT`，不提前 LOCK。
+**→ 表内 `LOCKED` 仅在 L1 三门 + 定稿正文 + 卷级验收后写入。** 详见 [`docs/canon_remap/Vol01_LOCK_门禁.md`](../canon_remap/Vol01_LOCK_门禁.md)
 
 ---
 
@@ -57,7 +57,7 @@
 |----|----------|--------|--------------|-----------|-------------|----------|----------|
 | Vol01-A001 | 翘边的海报 | DRAFT | 湿度·黏着·气流 | `样章包/02_case_card_案01` | `样章包/03_scene_cards` | ✅ 样章 | ✅ §4 |
 | Vol01-A002 | 错位的泥印 | DRAFT | 动线还原·目击链 | `02_case_card_案02` | `03_scene_cards_案02` | ✅ HybridVoice | ⬜ |
-| Vol01-A003 | 空着的那一栏 | OUTLINE | 核实流程·采访伦理 | `02_case_card_案03` | `03_scene_cards_案03-05` §③ | ⬜ | ⬜ |
+| Vol01-A003 | 空着的那一栏 | DRAFT | 核实流程·采访伦理 | `02_case_card_案03` | `03_scene_cards_案03-05` §③ | ✅ HybridVoice | ⬜ |
 | Vol01-A004 | 粉笔灰的圆圈 | OUTLINE | 静電·粉尘·清扫动线 | `02_case_card_案04` | `03_scene_cards_案03-05` §④ | ⬜ | ⬜ |
 | Vol01-A005 | 橡皮屑的方向 | OUTLINE | 摩擦痕迹·行为链 | `02_case_card_案05` | `03_scene_cards_案03-05` §⑤ | ⬜ | ⬜ |
 
@@ -96,4 +96,4 @@
 |------|------|
 | 2026-06-02 | 初版模板 + Vol01 示例行 |
 | 2026-06-04 | Vol1 remap 方案 B · 湿椅子→素材 |
-| 2026-06-04 | **A001–A005 子表 · Case Card 索引修正 · LOCK 政策** |
+| 2026-06-04 | **A003 正文 DRAFT** · canon_sweep_4-2 · Vol01_LOCK_门禁 |

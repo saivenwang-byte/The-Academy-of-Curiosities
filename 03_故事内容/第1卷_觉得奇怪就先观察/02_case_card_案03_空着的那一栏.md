@@ -1,6 +1,6 @@
 # Case Card · Vol1 · 案③ 空着的那一栏
 
-> **Status**: OUTLINE · ready_for_research: true  
+> **Status**: DRAFT · Hybrid Voice v1 · ready_for_voice: true  
 > **接案**: A002 L1 尾钩（无署名投稿）→ 本案开篇核实流程  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案③
 
@@ -53,9 +53,9 @@ source_resolved: no
 
 | 线索 | 最早出现段落 |
 |------|--------------|
-| pencil 占位符 | 待写 |
-| 采访稿/回执 | 待写 |
-| 光等回话 | 待写 |
+| pencil 占位符 | 三·1 栏角「待」 |
+| 采访稿/回执 | 三·2 采访本 · 未确认 |
+| 光等回话 | 三·2 只听到一半 · 三·4 传话人 |
 
 ---
 
