@@ -77,6 +77,8 @@ allowed-tools:
 - **engine** 定 Scene 与科学 → **本 skill** 审 prompt/成图
 - 通过后更新 `Vol*插图评审备忘_*.md` · `docs/assets_index/visual_asset_index.md` · `docs/art_review/`
 
+**专家检查（v0.1 · 硬门禁）**：[`11_检查项`](00_项目概览/01_分支讨论_范式与框架/11_检查项Skill包_v0.1.md) **V12 V13 V14** · P06 · 群像/lineup 未过不得入库（`06_` §9）。
+
 ## 禁止
 
 - 未过 L1 环境/文化门标「定稿插图」

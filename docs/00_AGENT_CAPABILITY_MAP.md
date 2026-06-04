@@ -33,7 +33,10 @@
 | 10 | Git Workflow | 05-git-and-index | User Rules + `pre_push_check.py` | ✅ |
 | — | Sample Chapter Production | **academy-engine** 流水线 Phase 0–7 | `AGENTS.md` · engine §样章生产 | ✅ 第三批 |
 | — | Case/Scene Card | series-architect + story-database | `docs/volume_planning/` · `scripts/case_card_lint.py` | ✅ 脚本 |
-| — | Dialogue / Dialect / Emotion | jp-voice-editor + rules/01 | `00_JP_TRANSLATION_REVIEW_GATE.md` | ✅ 合并 |
+| — | IP 战略参考（立项/钩子/节奏/观察社/Vol1） | `10_IP战略参考_ChatGPT对话/00_INDEX` · E1 · F1 | 范式区 · architect 先讨论 | ✅ 2026-06-04 |
+| — | Agent 协作范式（每会话） | `06_Agent运作卡` · `05_架构参照` | 范式区 | ✅ 2026-06-04 |
+| — | **人类 Expert 池 V1.0** | `12_人类专家池` · `12_专家卡` | 范式区 · 链 `11_` | ✅ 2026-06-04 |
+| — | **专家池 v0.1**（Agent/Skill） | `11_` · `11_检查项` · `06_` §9 | 范式区 | ✅ 2026-06-04 |
 
 ---
 
@@ -48,6 +51,7 @@
 | 日译推敲 | `academy-jp-voice-editor` |
 | 插图 prompt / 成图审 | `academy-visual-auditor` |
 | 200篇表、Case 状态 | `academy-story-database` |
+| 新角色/日译/群像 **该不该定稿** | `11_专家池与Agent调度_v0.1` · `06_` §9 |
 
 ---
 
@@ -57,7 +61,8 @@
 - 独立 `sample-chapter-production` Skill（= engine）
 - 独立 `reference-import` Skill（= research-editor）
 - 20 条全 always-on Rule（仅 6 条常驻）
+- **25 个独立 Expert Agent Skill**（v0.1 合并为 `11_` + 现有 7 Skill）
 
 ---
 
-最后更新：2026-06-02 · **DEPLOYMENT_COMPLETE**（五批）
+最后更新：2026-06-04 · 增范式区与 IP 战略参考

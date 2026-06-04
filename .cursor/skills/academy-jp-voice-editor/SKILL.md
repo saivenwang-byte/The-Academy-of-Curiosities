@@ -143,3 +143,5 @@ cd tools/textlint && npm install && npx textlint "../../03_故事内容/第1卷_
 ```
 
 触发语：「日译润色第1卷」「JP Voice Editor 过一遍 完整文字稿_日本語」
+
+**专家检查（v0.1 · 硬门禁）**：`11_检查项Skill包_v0.1.md` **L09 L10 L11** · 未过不得 `READY_FOR_TRANSLATION`（`06_` §9）。
