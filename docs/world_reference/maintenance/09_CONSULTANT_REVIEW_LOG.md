@@ -98,7 +98,7 @@
 
 | 项 | 状态 |
 |----|------|
-| 范围 | 主要 **10 名** · 读音 · furigana · 光/瑆 同音 · 葛西全藏 |
+| 范围 | 主要 **10 名** · 读音 · furigana · 光/瑆 同音 · 葛西泉藏 |
 | 包 | [`docs/consultant/TANAKA_MIDORI_NAME_REVIEW_PACK_2026-06-04.md`](../../consultant/TANAKA_MIDORI_NAME_REVIEW_PACK_2026-06-04.md) |
 | 邮件 | [`TANAKA_MIDORI_NAME_REVIEW_COVER_EMAIL_ja.md`](../../consultant/TANAKA_MIDORI_NAME_REVIEW_COVER_EMAIL_ja.md) |
 | 样章附件 | `03_…/样章包/04_样章_序+案01_正文_日本語.txt` |
