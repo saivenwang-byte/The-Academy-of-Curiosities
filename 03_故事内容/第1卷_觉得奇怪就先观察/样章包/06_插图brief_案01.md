@@ -11,6 +11,7 @@
 | ID | 类型 | 优先级 |
 |----|------|--------|
 | **V-S01** | 半页 · 侧廊发现海报 | P0 试读必 |
+| **V-S01-TAIL** | quarter · 壁报草稿 · 第4栏空白 | P1 尾钩 · 案① §4 |
 | **V-S02** |  quarter · 瑆日记页（可文字为主） | P1 |
 
 **扩展占位（PDF 8 张灰框）**：V-S03 风侧示意图 · V-S04 三人社 · 等
@@ -43,6 +44,34 @@ hand-drawn club poster peeling on windward edge, three club members
 and one transfer boy in indoor shoes, AC vent above poster,
 children's mystery illustration age 8-10, warm but not chibi,
 clear line art, no horror
+```
+
+---
+
+## V-S01-TAIL · 壁报草稿尾钩（案① §4）
+
+**场景**：侧廊尽头掲示板 · 同日下午 · 三人已离开或仅手入画
+
+**必须出现**
+
+- pencil **壁报草稿**（未贴正式版）：三栏已有字迹
+- **第 4 栏空白** + 慧美 tiny **？**（铅笔）
+- 可见标题格：**翘边的海报** · **验证·文件夹挡风**
+- witness 栏：`陸珣（5-2）· 风侧`（小字即可）
+- 上履き边缘 · 板夹 · **非**中式「明德堂」牌匾
+
+**禁止**
+
+- 恐怖 · 鬼影 · 理紗 · 投稿条（属案②）
+
+**prompt 种子**
+
+```
+Japanese elementary school bulletin draft on clipboard,
+three filled pencil columns and one empty fourth column,
+small question mark in margin, club wall newspaper draft,
+warm afternoon corridor, children's book illustration,
+clear readable empty box, no horror
 ```
 
 ---

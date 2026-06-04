@@ -29,6 +29,20 @@
 | 校园成立 | 上履き · 侧廊 · クラブ海报 · 非校外 |
 | 零超自然 | YES |
 | 标杆 | D01 Hayamine · D02 Sobol · D05 Grabenstein |
+| 趣事尾钩 | **L1 · 壁报** → A002 · 详见 [`14_案01_趣事尾钩_brief.md`](./14_案01_趣事尾钩_brief.md) |
+
+```yaml
+tail_hook_grade: L1
+tail_hook_type: 壁报
+tail_hook_text: "壁报草稿第4栏刻意留空；慧美铅笔小问号；光说核实完再写。"
+tail_hook_fair_in: "Step3 慧美指第4栏空白 + 光解释空栏规矩（同段已出现）"
+next_case_id: A002
+```
+
+```yaml
+propagation_layer: none
+source_resolved: —
+```
 
 ---
 
