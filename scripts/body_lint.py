@@ -89,8 +89,9 @@ def lint_body(path: Path, max_rikushun_speech: int = 5) -> BodyResult:
     if "陸瑆笔记" not in text and "瑆笔记" not in text:
         r.warnings.append("缺少陸瑆笔记层")
 
-    if "怪事研究社" not in text and "学堂趣事录" not in text:
-        r.warnings.append("建议提及怪事研究社或学堂趣事录系列伏笔")
+    club_markers = ("怪事研究社", "学堂趣事录", "観察クラブ", "观察社", "おもしろ観察")
+    if not any(m in text for m in club_markers):
+        r.warnings.append("建议提及观察クラブ/观察社或学堂趣事录系列伏笔")
 
     return r
 

@@ -448,8 +448,8 @@ characters:
   # 07 · 葛西泉蔵 — 社区记忆
   # ===========================================================================
   kasai_senzo:
-    display_name: "葛西 全藏"  # 旧稿：泉蔹 · 读音不变
-    reading: "かさい せんぞう / Kasai Senzō"
+    display_name: "葛西 全藏"
+    reading: "かさい ぜんぞう / Kasai Zenzō ※"
     id: "07"
     
     identity:

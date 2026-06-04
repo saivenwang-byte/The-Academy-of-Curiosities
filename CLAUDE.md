@@ -1,7 +1,8 @@
 # 《学堂趣事录》· Claude Code / Cursor 项目入口
 
-> **IP**：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**  
-> **读者**：日本 6–14 岁 · **舞台**：名古屋真实校园 · **类型**：本格儿童推理（非恐怖、非超自然）  
+> **IP**：日文 **学堂奇事録**（首市场）· 中文 学堂趣事录 · 英文 **The Curious Logbook**  
+> **读者**：日本 **8–11 岁** · **舞台**：名古屋小学校 · **类型**：本格儿童推理（非恐怖、非超自然）  
+> **正典门禁**：`00_项目总览/00_正典门禁_2026-06-04.md` · Vol1 方案 B · 年级 V1.0  
 > **能力地图**：`docs/00_AGENT_CAPABILITY_MAP.md`
 
 ---
@@ -10,7 +11,8 @@
 
 开始任何写作、插图、Case Card、日译任务前，**先读**：
 
-1. `docs/00_PROJECT_STARTUP_GATE.md` — L1 三并列门禁
+1. `00_项目总览/00_正典门禁_2026-06-04.md` — 首市场 · Vol1 · 年级 · 名称
+2. `docs/00_PROJECT_STARTUP_GATE.md` — L1 三并列门禁
 2. `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md` — 日本文化红线
 3. `docs/world_reference/00_MASTER_ENVIRONMENT_INDEX.md` — 名古屋环境指标
 4. `docs/world_reference/04_MYSTERY_SCIENCE_CASE_STANDARD.md` — 本格公平

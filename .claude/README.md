@@ -4,7 +4,7 @@
 
 ## 每次进入项目
 
-1. 读根目录 [`../CLAUDE.md`](../CLAUDE.md)
+1. 读根目录 [`../CLAUDE.md`](../CLAUDE.md) · [`../00_项目总览/00_正典门禁_2026-06-04.md`](../00_项目总览/00_正典门禁_2026-06-04.md)
 2. 读 [`../AGENTS.md`](../AGENTS.md)
 3. 读 [`../docs/00_AGENT_DEPLOYMENT_STATUS.md`](../docs/00_AGENT_DEPLOYMENT_STATUS.md)
 
