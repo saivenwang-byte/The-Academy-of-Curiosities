@@ -122,9 +122,11 @@ Step-by-step Japanese children's science experiment infographic, friendly waterc
 
 ### SUM03 · 11_summary_hikaru_sketch.png — 陸瑆笔记层
 
+**修正**：**4年1組** · **4月12日** · 観察メモ · 接触冷却（禁单独「冷风」叙事）· 禁 3年生/11月
+
 **Prompt**:
 ```
-Japanese 3rd grade girl's journal page on kraft paper #F5EDE0, pencil and colored pencil doodle style NOT polished watercolor. Handwritten Japanese: 観察メモ, sketch of window frame and chair with gap labeled 窓枠とのすきま, arrow ひんやり. Small stickers, silver mechanical pencil, washi tape corner. Younger sister POV diary aesthetic, gentle intelligent NOT pink bunny English scrapbook, 4:3 horizontal.
+Japanese 4th grade girl class 1 (陸瑆) journal page on kraft paper #F5EDE0, pencil and colored pencil doodle style NOT polished watercolor. Handwritten Japanese title きょうの 観察メモ, date 4月12日（金） くもり matching classroom scene. Text about hin'yari aluminum window frame and chair BACK touching sash, label 窓枠とのすきま, thought bubble questioning contact cooling not cold wind. Younger sister POV diary, gentle intelligent, April Nagoya NOT November, 4:3 horizontal.
 ```
 
 ---

@@ -103,8 +103,10 @@ classroom notices, cleaning tools cabinet, 14-15°C spring humidity context
 
 - [x] 统调 `prompts_插图Vol1.md` + 12 PNG 一轮重生
 - [x] 同步 v2 标准
-- [ ] 主编目视抽检 · SUM 日文字形人工校
-- [ ] 固定 seed / 角色定妆 v3
+- [x] SUM03 日语文案校准（4月/4年1組/接触冷却）· `00_插图日语文案锁定_Vol1_2026-06-03.md`
+- [ ] 主编目视抽检 · SUM01/02 字形
+- [ ] SC04/07 窓枠机制 v1.2 重绘
+- [ ] 固定 seed / 角色定妆 v3（待 L0 PASS）
 
 ---
 
