@@ -2,7 +2,7 @@
 # 《学堂趣事录》角色蒸馏 YAML · Single Source of Truth
 # The Academy of Curiosities — Character Scale System
 # ======================================================================
-# Version: 1.0.0 / Date: 2026-06-04
+# Version: 1.1.0 / Date: 2026-06-04 · 年级班级 V1.0
 # 
 # Schema: 每个角色 = identity + anchors + constraints + spectrum + voice + triggers + relations
 # Usage:  创作时注入上下文 / 校验时逐句对照 / 新角色设计时做光谱定位
@@ -21,9 +21,9 @@ characters:
     identity:
       grade: 5
       age: 11
-      class: "五年二組"
+      class: "5年2組"
       gender: male
-      role: "发现者 · 连接者 · 团队发起人"
+      role: "发现者 · 连接者 · 行动发起者"
       persona_solo: "外向的敏锐者"
       core_trait: "用社交感染力串联所有人，力量不在逻辑而在关注"
       join_volume: 1
@@ -88,11 +88,11 @@ characters:
     identity:
       grade: 5
       age: 11
-      class: "五年二組"
+      class: "5年1組"
       gender: female
-      role: "记录整理者 · 证据校准者 · 实验担当"
-      persona_solo: "爱做实验的认真派"
-      core_trait: "不急着下结论——先蹲下看、先记、先测。乐趣是'结果和记录一样'"
+      role: "情绪观察 · 采访温度 · 记录整理"
+      persona_solo: "内敛的剖析者"
+      core_trait: "把混乱线索理成可核对的事实；用温度避免故事变硬"
       join_volume: 1
     
     anchors:
@@ -160,9 +160,9 @@ characters:
     identity:
       grade: 5
       age: 11
-      class: "五年二組"
+      class: "5年3組"
       gender: male
-      role: "行动执行者 · 动手专家"
+      role: "资料查证 · 知识验证 · 动手执行"
       persona_solo: "外显的行动派"
       core_trait: "想到就做——行动永远快于思考。智慧不在脑里在手上"
       join_volume: 1
@@ -232,9 +232,9 @@ characters:
     identity:
       grade: 5
       age: 11
-      class: "五年二組"
+      class: "5年2組"
       gender: male
-      role: "微观猎人 · 领域专家 · 深度传感器 · 男主人公"
+      role: "微观猎人 · 领域专家 · 男主人公 · Vol1 新社员"
       persona_solo: "钝感的专注者"
       core_trait: "日常世界迟钝话少；领域世界骤然精准。不觉得自己厉害——以为谁都能做到"
       join_volume: 1
@@ -316,11 +316,11 @@ characters:
     identity:
       grade: 5
       age: 11
-      class: "五年二組"
+      class: "5年4組"
       gender: female
-      role: "感知敏锐者 · 视觉/听觉担当"
+      role: "感知敏锐者 · 秩序/审美/物品细节"
       persona_solo: "沉默的捕捉者"
-      core_trait: "感官超越常人——能捕捉别人忽略的颜色/光影/声音。敏锐但不等同聪明——她能捕捉不能分析"
+      core_trait: "感官超越常人——能捕捉别人忽略的颜色/光影/声音。Vol1 隐藏，后期进主线"
       join_volume: 11
     
     anchors:
@@ -383,11 +383,11 @@ characters:
     id: "06"
     
     identity:
-      grade: 3
-      age: 9
-      class: "三年"
+      grade: 4
+      age: 10
+      class: "4年2組"
       gender: female
-      role: "记录者 · 《学堂趣事录》作者 · 温柔一刀 · 女主人公"
+      role: "记录者 · 《学堂趣事录》作者 · 非社员 · 女主人公"
       persona_solo: "安静的洞察者"
       core_trait: "不喜欢昆虫、喜欢看人。魔术看一遍能逆推手法。对哥哥信任但不盲从"
       join_volume: "全卷（每卷结尾笔记）"
@@ -448,7 +448,7 @@ characters:
   # 07 · 葛西泉蔵 — 社区记忆
   # ===========================================================================
   kasai_senzo:
-    display_name: "葛西 泉蔵"
+    display_name: "葛西 全藏"  # 旧稿：泉蔹 · 读音不变
     reading: "かさい せんぞう / Kasai Senzō"
     id: "07"
     
@@ -537,9 +537,9 @@ characters:
       age: "40代"
       class: null
       gender: female
-      role: "母亲 · 创意餐厅主理人 · 背景板"
+      role: "母亲 · 主厨主理人 · 背景板"
       persona_solo: "温柔的实验者"
-      core_trait: "把厨房变成实验室——食物是活的，会不停变化"
+      core_trait: "把厨房变成实验室——主厨兼店主人，食物是活的、会变化"
       join_volume: "背景（不参与破案）"
     
     constraints:
@@ -566,12 +566,12 @@ characters:
     identity:
       grade: 6
       age: 12
-      class: "六年"
+      class: "6年1組"
       gender: male
-      role: "实地记录者 · 现场固定者"
-      persona_solo: "会说'你们先别动'的人"
-      core_trait: "怕碰过的现场变样——相机是他留半步的工具。指着照片：'この角、色が違うでしょ？'"
-      join_volume: "11-15卷之间"
+      role: "外圈协助 · 实地记录 · 城市/校外连接"
+      persona_solo: "沉静的锚定者"
+      core_trait: "邻居前辈；Vol1 轻量出现；正式深度参与 Vol11–15"
+      join_volume: "Vol1 轻量 · 11-15 深化"
     
     anchors:
       visual:
@@ -593,9 +593,9 @@ characters:
         - 替别人下结论（替代："這是わかんない。でも撮ってある"）
         - 中学生腔、导师型总结
       never_does:
-        - "替四年级孩子做最终推理"
+        - "替四年级/五年级孩子做最终推理"
         - "破坏现场——摸之前先拍"
-        - "Vol1-10出现"
+        - "Vol1 主案主导"  # Vol1 可轻量邻居/校外边界
     
     spectrum:
       extroversion: 0.20

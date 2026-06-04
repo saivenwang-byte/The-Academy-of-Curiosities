@@ -94,4 +94,18 @@
 
 ---
 
-最后更新：2026-06-02 · Vol1 中文 L1 ✅ · **日文 v1.2 待田中复校**
+## 4. 日文名表记审定（2026-06-04 · 待顾问）
+
+| 项 | 状态 |
+|----|------|
+| 范围 | 主要 **10 名** · 读音 · furigana · 光/瑆 同音 · 葛西全藏 |
+| 包 | [`docs/consultant/TANAKA_MIDORI_NAME_REVIEW_PACK_2026-06-04.md`](../../consultant/TANAKA_MIDORI_NAME_REVIEW_PACK_2026-06-04.md) |
+| 邮件 | [`TANAKA_MIDORI_NAME_REVIEW_COVER_EMAIL_ja.md`](../../consultant/TANAKA_MIDORI_NAME_REVIEW_COVER_EMAIL_ja.md) |
+| 样章附件 | `03_…/样章包/04_样章_序+案01_正文_日本語.txt` |
+| 年级 | **V1.0** 5年2組跨班 · 取代简报包 §B 四年版 |
+| 目标 | `NAME_REVIEW_PASSED` → `READY_FOR_TRANSLATION` |
+| 顾问返信 | ⏳ 希望 2026-06-10 |
+
+---
+
+最后更新：2026-06-04 · Vol1 中文 L1 ✅ · 日文 v1.2 湿椅子待复校 · **人名审定包已发**
