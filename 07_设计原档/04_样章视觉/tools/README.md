@@ -2,6 +2,7 @@
 
 | 脚本 | 用途 | 命令 |
 |------|------|------|
+| `gen_char_lineup_l0_consensus.py` | ★ L0 布局锁定 PNG（**替代 Cursor 生图 401**） | `python gen_char_lineup_l0_consensus.py` |
 | `overlay_lineup_text.py` | L0–L4 举牌§六 + 底部§五 | `python overlay_lineup_text.py ALL` |
 | `overlay_vol1_sum03.py` | SUM03 日语文案（4月/1組/接触冷却） | `python overlay_vol1_sum03.py` |
 | `lineup_text_canon.py` | 文案唯一源（勿手改脚本内字符串） | import |
