@@ -1,8 +1,9 @@
 # 故事资产总表 · Story Asset Table
 
 > **维护 Skill**：`academy-story-database`  
-> **Status**: TEMPLATE · 2026-06-02  
-> **说明**：一行 = 一卷（或一篇独立故事）。状态须符合 `docs/00_PROJECT_STARTUP_GATE.md`。
+> **Status**: ACTIVE · 2026-06-04 remap  
+> **200 案正典**：[`04_产品与商业/00_200篇产品线架构_V1.0.md`](../../04_产品与商业/00_200篇产品线架构_V1.0.md) · [`Remap Gate`](../canon_remap/00_200篇规划正典映射规则_V1.0.md) · [`README.md`](./README.md)  
+> **说明**：一行 = 一卷或一案。**A001–A005** = Vol1（legacy alias EP001–005）。过 Gate 后写入正典 ID。
 
 ---
 
@@ -23,7 +24,8 @@
 
 | id | title_cn | title_jp | status | month_nagoya | science_core | fair_clues | experiment_id | characters | l1_culture | l1_env | l1_fair | paths | notes |
 |----|----------|----------|--------|--------------|--------------|------------|-----------------|------------|------------|--------|---------|-------|-------|
-| Vol01 | 总是湿的椅子 | いつも濡れた椅子 | PENDING_REVIEW | 4月 | 结露 · 椅背贴アルミ窓枠 | 窗侧日照; 椅背湿非椅座; 4月湿度 | EXP-V01-condensation | 陸珣;陸瑆;慧美 | Y | Y | Y | `03_故事内容/第1卷_总是湿的椅子/` | 正文 v4; 插图 v2; art_review 入库 |
+| Vol01 | 觉得奇怪，就先观察 | おかしいと思ったら、まず観察 | OUTLINE | 4月 | 湿度/黏着·静电·摩擦·动线 | 案①–⑤见任务包 | EXP-V01-observe | 光;慧美;志郎;陸珣;瑆 | N | N | N | `03_…/第1卷_觉得奇怪就先观察/` | **A001–A005** · 方案 B · 非湿椅子 |
+| Vol01-A | 总是湿的椅子（素材） | いつも濡れた椅子 | PENDING_REVIEW | 4月 | 结露·传导·湿度 | 窗侧金属;唯一湿椅;晨湿 | EXP-A-condensation | 光;慧美;志郎;陸珣 | Y | Y | Y | `03_…/第1卷_总是湿的椅子/` | **B-3 · C001/A018 候选** · 非 Vol1 |
 | Vol02 | 谁偷了橡皮 | 消しゴムはどこへ？ | DRAFT | 5月 | 摩擦 · 振动滑出 · 行为链 | 屑走向; 尺背印; 扫除翻机日 | EXP-V02-friction | 光;慧美;志郎;陸珣 | N | N | N | `03_故事内容/第2卷_谁偷了橡皮/` | 第六批初稿 · L1 待过 |
 | Vol03 | 蚂蚁的队列 | — | IDEA | 6月 | TBD | — | — | 陸珣 | N | N | N | — | 前10卷规划 |
 | Vol04 | 音乐教室的怪声 | — | IDEA | 7月 | TBD | — | — | — | N | N | N | — | |
@@ -64,4 +66,4 @@
 | 2026-06-02 | Case Card 索引链至 volume_01_wet_chair_case_card.md |
 | 2026-06-02 | Vol02 OUTLINE 行 + Case/Scene 卡 |
 | 2026-06-02 | Vol2 决策锁定 · 第五批 |
-| 2026-06-02 | Vol2 DRAFT 正文 · Vol03–10 IDEA · body_lint · 第六批 |
+| 2026-06-04 | Vol1 remap 方案 B · 湿椅子→素材 · 链 200 篇规划三文档 |
