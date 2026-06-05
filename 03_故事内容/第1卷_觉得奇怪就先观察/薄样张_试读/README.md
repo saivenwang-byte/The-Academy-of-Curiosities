@@ -25,7 +25,10 @@
 cd "03_故事内容/第1卷_觉得奇怪就先观察/薄样张_试读/tools"
 python build_kid_trial_pdf.py
 python build_investor_deck_16x9.py
+python ../../../../scripts/audit_phase_package.py --phase P1
 ```
+
+**阶段定义**：[`00_项目总览/完整产品阶段交付包_V1.0.md`](../../../00_项目总览/完整产品阶段交付包_V1.0.md) · 本目录 = **P1 完整包**
 
 **插图来源**：优先 `样章包/插图/` · 缺图时脚本仍输出 HTML/PDF（占位）
 
