@@ -1,9 +1,21 @@
 # 《学堂趣事录》Agent 编排
 
-> 品牌名：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**（系列标语 The Academy of Curiosities）— 见 `00_项目总览/品牌名称定稿.md`  
-> **Claude/Cursor 统一入口**：`CLAUDE.md` · **部署状态**：`docs/00_AGENT_DEPLOYMENT_STATUS.md` · **能力映射**：`docs/00_AGENT_CAPABILITY_MAP.md`
+> **定位**：**Agent / Cursor Skill 编排的主文档** — 七 skill 流水线、专家调度、安装路径。  
+> **人类统一入口**：[`CLAUDE.md`](./CLAUDE.md) — 启动必读、正典速查；**执行写作/插图任务时以本文件 + 对应 SKILL.md 为准**。  
+> 品牌名：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**（系列标语 The Academy of Curiosities）— 见 `00_项目总览/品牌名称定稿.md`
 
 本项目使用 **七个协作 skill**（子分身），无需额外下载外部 agent。
+
+## 文档层级（CLAUDE ↔ AGENTS）
+
+| 文档 | 读者 | 职责 |
+|------|------|------|
+| **CLAUDE.md** | 人类 · Claude Code · 任意工具 | 项目门面 · Layer 0 必读清单 · 正典速查 · Git |
+| **AGENTS.md**（本文件） | Cursor Agent · 子 skill | **编排主文档** · 谁调用谁 · 专家调度 · Rule 索引 |
+| `skills/*/SKILL.md` | 被路由的 Agent | 单角色执行细则 |
+| `00_项目总览/专家组审议工作流_V1.0.md` | IP 开放议题时 | 模拟 E01–E25 审议 · 待裁决单选题 |
+
+**冲突时**：Skill 执行细节 → **SKILL.md**；多 skill 顺序 → **AGENTS.md**；是否违反 P0 门禁 → **正典门禁 + CLAUDE Layer 0**。
 
 ## 角色一览
 

@@ -1,0 +1,18 @@
+# visual-assets.yaml · 机器可读资产索引 · V1.0
+
+# 维护：制作经理 · 与版权表/版本规范同步
+
+schema_version: "1.0"
+project: 学堂趣事录
+
+assets: []
+  # - id: CHAR-L0-RUKU-V1.0
+  #   role: 陆珣
+  #   path: 07_设计原档/04_样章视觉/...
+  #   version: "1.0"
+  #   approval: APPROVED | HOLD | REJECTED
+  #   copyright: 见 05_视觉设定/法务与授权/
+  #   scope: [vol1, merchandise]
+  #   volumes: [1]
+  #   cases: [A001]
+  #   deprecated: false

@@ -5,6 +5,15 @@ description: >-
   维护 09_日本参考资料库 与来源索引；按卷/主题/web 扩充素材；标注出处与误用警告。
   在用户提到参考资料、素材库、日本文化搜集、L类主题、知识调度、总编辑调研时触发；
   或在写某一卷前需要季节/口语/气候/民俗素材时主动调用。
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Bash
+  - WebSearch
+  - WebFetch
 ---
 
 # 学堂趣事录 · 资料总编辑（Academy Research Editor）

@@ -8,8 +8,8 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 
 ## 0. Core Decision
 
-**教室正典（LOCKED）**：主人公团队 = **`4年2組 · 窗=校庭`** — 禁止写为 5年2組。  
-详：`docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md`
+**教室正典（LOCKED V2）**：珣·光教室 = **`5年2組 · 窗=校庭`** — 禁止写回旧版 4年2組 四人同班。  
+详：`docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md` · `01_角色设定/00_年级班级关系表_V1.0.md`
 
 《学堂趣事录》不是凭感觉写日本校园，也不是把中国校园故事翻译成日文。
 
@@ -42,7 +42,7 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 写作前必须查阅以下文件：
 
 **红线与协议**
-- `docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md` — **4年2組 · 窗=校庭（LOCKED）**
+- `docs/world_reference/00_SCHOOL_CLASS_CANON_LOCKED.md` — **5年2組 · 窗=校庭（LOCKED V2）**
 - `docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md`
 - `docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md`
 - `02_创作原则与世界观/创作红线与原则.txt`
@@ -71,7 +71,7 @@ Applies to: every story, outline, scene, dialogue, visual prompt, sample chapter
 ```text
 卷目：
 场景编号：
-class_canon: 4年2組 · 窗=校庭（必填 · LOCKED）
+class_canon: 5年2組 · 窗=校庭（必填 · LOCKED V2 · 珣·光本班）
 地点：名古屋 / 具体校内或通学路空间
 月份：
 时间：
@@ -97,7 +97,7 @@ class_canon: 4年2組 · 窗=校庭（必填 · LOCKED）
 
 ```text
 卷目：
-class_canon: 4年2組 · 窗=校庭（必填 · LOCKED）
+class_canon: 5年2組 · 窗=校庭（必填 · LOCKED V2 · 珣·光本班）
 核心异常：
 表层误会：
 真实机制：

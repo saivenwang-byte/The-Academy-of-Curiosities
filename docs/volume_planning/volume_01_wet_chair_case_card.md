@@ -1,7 +1,7 @@
 # 第1卷 · Case Card · 总是湿的椅子
 
 > **⚠️ 迁移**：样章工程主入口 → `docs/volume_01_wet_chair/03_CASE_CARD.md`（v1.2 窓側金属）  
-> 本文件机制描述为 v1.1 · **椅背贴框已作废**
+> **正典 ID**：**C001 候选** · `gate_pass: G1=N`（禁 Vol1 入口）· 见 [`前50篇_remap对照表_V0.1.md`](../canon_remap/前50篇_remap对照表_V0.1.md)
 
 > **Status**: L2_A_MINUS · ready_for_sample: true  
 > **Scorecard**: [volume_01_scorecard.yaml](./volume_01_scorecard.yaml)

@@ -1,6 +1,7 @@
 # 语言·社交·饮食标准 V0.2 · Writer Quick Ref
 
 > **Status**: ACTIVE  
+> **日文正文字符/语法（J10）**: [`00_项目总览/日文正文文字与语法标准_标日对齐_V1.0.md`](../../00_项目总览/日文正文文字与语法标准_标日对齐_V1.0.md) · **仅平假名+片假名+日汉字+标日叫法**  
 > **Maintenance（细则+08标签）**: [maintenance/04_FOOD…](./maintenance/04_FOOD_DAILY_LIFE_STANDARD.md) · [maintenance/06_LANGUAGE…](./maintenance/06_LANGUAGE_PUNS_SOUND_STANDARD.md) · [maintenance/01_CAMPUS… §5–6](./maintenance/01_JAPAN_CAMPUS_CULTURE_STANDARD.md)
 
 ---

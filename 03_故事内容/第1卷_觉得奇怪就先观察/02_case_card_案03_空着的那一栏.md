@@ -1,6 +1,7 @@
 # Case Card · Vol1 · 案③ 空着的那一栏
 
-> **Status**: DRAFT · Hybrid Voice v1 · ready_for_voice: true  
+> **Status**: V1.1_STRUCT · 结构定稿 · ready_for_voice: true · ⚠ 篇幅未达 V1.1 预算下限  
+> **正文正本**: [`正式版/01_正文/案03_空着的那一栏_HybridVoice_V1.1定稿.txt`](./正式版/01_正文/案03_空着的那一栏_HybridVoice_V1.1定稿.txt) · JP [`案03_空いているマス_V1.1定稿_日本語.txt`](./正式版/01_正文/案03_空いているマス_V1.1定稿_日本語.txt)  
 > **接案**: A002 L1 尾钩（无署名投稿）→ 本案开篇核实流程  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案③
 
@@ -75,4 +76,4 @@ source_resolved: no
 
 ---
 
-最后更新：2026-06-04
+最后更新：2026-06-05

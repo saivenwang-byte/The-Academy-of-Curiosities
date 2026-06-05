@@ -16,3 +16,9 @@ desktop.ini
 # Temp files
 ~$*.docx
 *.tmp
+
+# Build HTML artifacts (keep PDF; HTML embeds base64 images)
+03_故事内容/**/PDF/*.html
+03_故事内容/**/04_展示版/*.html
+03_故事内容/**/05_出版成果/*.html
+03_故事内容/第1卷_总是湿的椅子/PDF/*.html

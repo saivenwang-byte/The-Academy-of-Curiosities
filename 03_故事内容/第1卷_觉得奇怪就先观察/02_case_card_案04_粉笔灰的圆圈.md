@@ -1,6 +1,7 @@
 # Case Card · Vol1 · 案④ 粉笔灰的圆圈
 
-> **Status**: OUTLINE · ready_for_research: true  
+> **Status**: V1.1_STRUCT · 结构定稿 · ready_for_voice: true · ⚠ 篇幅未达 V1.1 预算下限  
+> **正文正本**: [`正式版/01_正文/案04_粉笔灰的圆圈_HybridVoice_V1.1定稿.txt`](./正式版/01_正文/案04_粉笔灰的圆圈_HybridVoice_V1.1定稿.txt) · JP [`案04_チョークの粉の輪_V1.1定稿_日本語.txt`](./正式版/01_正文/案04_チョークの粉の輪_V1.1定稿_日本語.txt)  
 > **接案**: A003 L1 尾钩（投稿背面路线）→ 本案讲台/习惯  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案④
 
@@ -69,4 +70,4 @@ source_resolved: no
 
 ---
 
-最后更新：2026-06-04
+最后更新：2026-06-05

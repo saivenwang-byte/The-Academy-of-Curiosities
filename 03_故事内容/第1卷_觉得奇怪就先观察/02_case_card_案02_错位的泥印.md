@@ -1,6 +1,7 @@
 # Case Card · Vol1 · 案② 错位的泥印
 
-> **Status**: DRAFT · Hybrid Voice v1 · ready_for_voice: true  
+> **Status**: V1.1_STRUCT · 结构定稿 · ready_for_voice: true · ⚠ 篇幅未达 V1.1 预算下限  
+> **正文正本**: [`正式版/01_正文/案02_错位的泥印_HybridVoice_V1.1定稿.txt`](./正式版/01_正文/案02_错位的泥印_HybridVoice_V1.1定稿.txt) · JP [`案02_ずれた泥のあと_V1.1定稿_日本語.txt`](./正式版/01_正文/案02_ずれた泥のあと_V1.1定稿_日本語.txt)  
 > **接案**: A001 L1 尾钩（壁报第4栏空白）→ 本案开篇可呼应空栏  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案②
 
@@ -79,4 +80,4 @@ source_resolved: no
 
 ---
 
-最后更新：2026-06-04
+最后更新：2026-06-05

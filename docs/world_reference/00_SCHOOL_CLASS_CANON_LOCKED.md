@@ -48,7 +48,7 @@
 ```text
 class_canon: 5年2組          # 珣/光主场景
 club_members: 5年1/2/3組     # 社员跨班
-hikaru_class: 4年2組         # 瑆
+kei_class: 4年2組            # 瑆（非 hikaru · 光=5年2組）
 ```
 
 ---

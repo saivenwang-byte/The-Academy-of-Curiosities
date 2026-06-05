@@ -1,6 +1,7 @@
 # Case Card · Vol1 · 案⑤ 橡皮屑的方向
 
-> **Status**: OUTLINE · ready_for_research: true  
+> **Status**: V1.1_STRUCT · 结构定稿 · ready_for_voice: true · ⚠ 篇幅未达 V1.1 预算下限  
+> **正文正本**: [`正式版/01_正文/案05_橡皮屑的方向_HybridVoice_V1.1定稿.txt`](./正式版/01_正文/案05_橡皮屑的方向_HybridVoice_V1.1定稿.txt) · JP [`案05_消しゴムの屑の向き_V1.1定稿_日本語.txt`](./正式版/01_正文/案05_消しゴムの屑の向き_V1.1定稿_日本語.txt)  
 > **接案**: A004 L1 尾钩（中谷半句）→ 本案收束+入社  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案⑤  
 > **Vol2 续**: 行为链/误会层 · **本案机制须闭合**
@@ -76,4 +77,4 @@ source_resolved: partial
 
 ---
 
-最后更新：2026-06-04
+最后更新：2026-06-05

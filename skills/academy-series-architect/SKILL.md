@@ -5,6 +5,13 @@ description: >-
   拆分分卷与阶段实施计划，为每卷配置所需知识/skills/资料与验收标准。
   在用户提到大纲、分卷、阶段规划、整体目标、先讨论后写、卷任务包、总策划时触发；
   或在启动新一卷创作前做战略对齐时主动调用。
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Bash
 ---
 
 # 学堂趣事录 · 总策划（Series Architect）
