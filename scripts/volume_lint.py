@@ -32,7 +32,12 @@ VOLUMES: dict[int, dict] = {
         "scene": "volume_01_scene_cards.md",
         "scorecard": "volume_01_scorecard.yaml",
         "visual": True,
-        "body": ROOT / "03_故事内容" / "第1卷_总是湿的椅子" / "完整文字稿.txt",
+        # V2 正典：方案 B · 觉得奇怪就先观察（湿椅子为 deprecated 素材，不参与 body lint）
+        "body": ROOT
+        / "03_故事内容"
+        / "第1卷_觉得奇怪就先观察"
+        / "样章包"
+        / "04_样章_序+案01_正文_HybridVoice.txt",
     },
     2: {
         "id": "Vol02",

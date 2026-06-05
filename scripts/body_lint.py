@@ -48,6 +48,14 @@ FORBIDDEN_TONE = [
 ]
 
 # V2 年级：瑆 4年2組 · 珣/光/慧美/志郎/理紗 5年各組 · 中谷 6年1組
+# deprecated 素材（湿椅子等）不参与年级漂移 ERROR
+DEPRECATED_BODY_MARKERS = (
+    "第1卷_总是湿的椅子",
+    "volume_01_wet_chair",
+    "_archive",
+    "00_归档",
+)
+
 V1_GRADE_DRIFT = [
     (re.compile(r"陸珣[^。\n]{0,12}4年2組"), "陸珣 应为 5年2組（V2）"),
     (re.compile(r"伊藤光[^。\n]{0,12}4年2組"), "伊藤光 应为 5年2組（V2）"),
@@ -101,9 +109,12 @@ def lint_body(path: Path, max_rikushun_speech: int = 5) -> BodyResult:
     if "教室後方" in text and "流し" in text and "昼" in text:
         r.errors.append("可能误写昼歯磨き在教室後方流し — 应为廊下手洗い場")
 
-    for pattern, hint in V1_GRADE_DRIFT:
-        if pattern.search(text):
-            r.errors.append(f"年级漂移: {hint}")
+    rel = str(path.relative_to(ROOT)).replace("\\", "/")
+    skip_grade = any(m in rel for m in DEPRECATED_BODY_MARKERS)
+    if not skip_grade:
+        for pattern, hint in V1_GRADE_DRIFT:
+            if pattern.search(text):
+                r.errors.append(f"年级漂移: {hint}")
 
     speeches = RIKUSHUN_SPEECH.findall(text)
     if len(speeches) > max_rikushun_speech:
