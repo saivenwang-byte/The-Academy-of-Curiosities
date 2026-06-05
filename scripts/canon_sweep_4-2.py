@@ -51,7 +51,8 @@ PATH_RULES: list[tuple[str, str, str]] = [
     ("docs/season_01", "NEEDS_REMAP", "检查 Vol1 行是否已 remap"),
 ]
 
-KEI_MARKERS = ("陆瑆", "陸瑆", "りく けい", "瑆", "Kei", "记录者", "非社员", "笔记")
+KEI_MARKERS = ("陆瑆", "陸瑆", "りく ひかる", "瑆", "Hikaru", "记录者", "非社员", "笔记")
+DEPRECATED_KEI = ("りく けい", "Riku Kei", "けいちゃん")
 
 TEXT_EXTENSIONS = {
     ".md", ".txt", ".yaml", ".yml", ".html", ".py", ".json", ".csv", ".tsx", ".ts", ".js"
@@ -79,6 +80,9 @@ def classify(rel: str, line: str) -> tuple[str, str]:
     for frag, cat, note in PATH_RULES:
         if frag in rel.replace("\\", "/"):
             return cat, note
+
+    if any(m in line for m in DEPRECATED_KEI) and ("瑆" in line or "陆瑆" in line):
+        return "NEEDS_REMAP", "陸瑆 废止读音 けい · 正典 ひかる"
 
     if any(m in line for m in KEI_MARKERS):
         return "CANON_KEI", "瑆 4年2組 · V1.0 正确"
