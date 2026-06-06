@@ -1,8 +1,8 @@
 # 《学堂奇事録》IP 视觉与场景开发 · 结构性需求（Cursor 执行版）
 
-> **Status**: PARTIAL LOCK · 方案 C + L0–L4 排版图 PASS · **下一项待拍板：4年2組透视基准图**  
-> **铁律**：**「我们商量后，我判断好，你再开工」** — Phase 2+ 未批前禁止批量出图。  
-> **正典入口**：`00_SCHOOL_CLASS_CANON_LOCKED.md` · `11_WORLD_SETTING_AND_ASSET_PLAN.md` · `14_角色设计稿创作简报_v2.md`
+> **⚠️ DEPRECATED · 湿椅子 Demo / 方案A 快照** · 非 Plan B Vol1 正典  
+> **Vol1 正典**：`03_故事内容/第1卷_觉得奇怪就先观察/` · 年级见 `00_年级班级关系表_V1.0.md`（瑆 **4年2組** · 核心 **5年跨班**）  
+> **Status**: PARTIAL LOCK · 方案 C + L0–L4 排版图 PASS · **历史文档**
 
 ---
 
