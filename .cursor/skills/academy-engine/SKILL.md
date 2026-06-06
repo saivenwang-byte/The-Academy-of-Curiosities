@@ -33,14 +33,15 @@ allowed-tools:
 | 战略 | `academy-series-architect` | 卷任务包、阶段规划、先讨论 |
 | 素材 | `academy-research-editor` | 日本文化/语言/气候资料与调度单 |
 | 执行 | **本 skill** | 正文、实验、质量清单 |
+| 润色 | `academy-voice-editor` | Hybrid Voice v3、§7 文学维度 |
 
 详见项目根 `AGENTS.md`。
 
-**专家检查（v0.2 · 写稿/新案必跑）**：`11_检查项Skill包_v0.1.md` — **C01 C03+C03b/c/d C04** · P06 P08 · S18。  
-**Vol1 对照表**：`03_…/第1卷_觉得奇怪就先观察/案件结构_标杆蒸馏对照.md` · 蒸馏卡 `13_标杆蒸馏卡/` D01–D08。  
+**专家检查（v0.2 · 写稿/新案必跑）**：[`11_检查项Skill包_v0.1.md`](00_项目概览/01_分支讨论_范式与框架/11_检查项Skill包_v0.1.md) — **C01 C03+C03b/c/d C04** · P06 P08 · S18。  
+**Vol1 对照表**：`03_故事内容/第1卷_觉得奇怪就先观察/案件结构_标杆蒸馏对照.md` · 蒸馏卡 `13_标杆蒸馏卡/` D01–D08。  
 缺「人的原因」→ FAIL（C04）。案⑤ 未结案须过 C03b「只悬不骗」+ C03c Roy 钩。
 
----适用于故事写作、角色设计、实验设计、大纲规划、谜题构思。
+---
 每次输出前必须通过质量检查清单。不适用于通用写作、其他 IP、或与 学堂趣事录 无关的任务。
 
 ---
@@ -60,7 +61,7 @@ allowed-tools:
 | **6 插图** | prompts + PNG | `academy-visual-auditor` · `docs/assets_index/visual_asset_index.md` |
 | **7 资产表** | 故事总表一行 | `academy-story-database` · `00_story_asset_table.md` |
 
-**Vol1 范例**：Case `volume_01_wet_chair_case_card.md` · Scene `volume_01_scene_cards.md`
+**Vol1 范例路径**：Case `volume_01_wet_chair_case_card.md` · Scene `volume_01_scene_cards.md` · Scorecard `volume_01_scorecard.yaml`
 
 **推送前**：`python scripts/pre_push_check.py`
 
@@ -233,9 +234,9 @@ allowed-tools:
 [ ] 是否有 ≥3 处留白金句型内心（见 语感决策记录）？
 [ ] 制度细节是否「展示」而非「解说」？
 [ ] 科学原理正文是否仅 3 处发声？
-```
+[ ] 原理详表是否在 **陸瑆笔记**（非正文三遍）？见 `02_…/语感与修订规则_Vol2+.md`
+[ ] 昼歃磨き是否写 **廊下手洗い場**（非教室後方流し）？
 
-```
 故事检查：
 [ ] 违反四条红线？（有则打回重写）
 [ ] 核心原理 ≥ 3个不同学科？
@@ -248,7 +249,7 @@ allowed-tools:
 [ ] 角色对话是否符合其人格Solo和专属台词风格？
 [ ] 陸珣是否在关键时刻发挥了领域专长？
 [ ] 陸瑆笔记是否温柔克制、不煽情？
-[ ] 年级/班级是否符合正典？见 `docs/characters/00_character_canon_index.md`
+[ ] 年级/班级是否符合正典？（珣·光 **5年2組** · 慧美 5-1 · 志郎 5-3 · 瑆 **4年2組**）见 `01_角色设定/00_年级班级关系表_V1.0.md`
 
 结构检查：
 [ ] 是否遵循"发现→假设→验证→突破→结论→笔记"结构？
@@ -282,6 +283,7 @@ allowed-tools:
 | **L2 评分卡 24 项** | `docs/00_VOLUME_QUALITY_SCORECARD.md` | 每卷定稿门禁 |
 | **全维度 44 项 + prompt** | `docs/00_VOLUME_QUALITY_SCORECARD_APPENDIX_44.md` | 两版对比、深评 |
 | **Vol1 语感决策** | `03_…/语感决策记录_Vol1.md` | Hybrid Voice 方向 |
+| **Vol2+ 修订规则** | `02_…/语感与修订规则_Vol2+.md` | 外部评审沉淀 · J8 等 |
 | **五种叙事笔法** | `02_/写作技巧与叙事笔法.md` | 写前笔法选择 |
 | **创作引擎 Skill** | `skills/academy-engine/SKILL.md` | 写稿 + 清单 §八 |
 | **L2 实例** | `docs/volume_planning/volume_01_scorecard.yaml` | Vol1 打分示范 |

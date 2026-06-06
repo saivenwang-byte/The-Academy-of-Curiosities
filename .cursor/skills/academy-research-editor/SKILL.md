@@ -36,6 +36,7 @@ allowed-tools:
 | 优先级 | 路径 | 用途 |
 |--------|------|------|
 | 1 | `02_创作原则与世界观/日本背景知识库_推理写作必读.txt` | 规则级事实 |
+| 1b | `02_创作原则与世界观/名古屋探索圈层地图.txt` | **地点容器** · L0-L4 全图 |
 | 2 | `09_日本参考资料库/00_来源索引_全站URL清单.txt` | 已有 URL，避免重复 |
 | 3 | `09_日本参考资料库/11_写作素材速查/按卷可用的元素清单.txt` | 按卷缺口 |
 | 4 | `09_日本参考资料库/12_L类八大主题_完整素材库.txt` | L类已补全范例 |
@@ -143,11 +144,14 @@ allowed-tools:
 
 ## 入库脚本（第四批）
 
+新增素材或大批量改 `09_/` 后：
+
 ```bash
 python scripts/import_reference_library.py --write-report
-python scripts/import_reference_library.py --vol 2
+python scripts/import_reference_library.py --vol 2   # 按卷摘录
 ```
 
-产出：`docs/reference_import/00_last_inventory.md`
+产出：`docs/reference_import/00_last_inventory.md`  
+协议：`docs/02_REFERENCE_LIBRARY_IMPORT_PROTOCOL.md` · 事实须打标签后方能进 `world_reference/`
 
 ---

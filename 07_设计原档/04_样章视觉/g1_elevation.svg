@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" font-family="Yu Gothic, Meiryo, sans-serif">
+  <rect width="480" height="380" fill="#faf7f2"/>
+  <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="bold">A001 �� � �b � DA1 :M</text>
+  <!-- �b -->
+  <rect x="80" y="50" width="320" height="240" fill="#f0ebe3" stroke="#8a6d4b" stroke-width="2"/>
+  <!-- vent -->
+  <rect x="180" y="58" width="120" height="22" fill="#c5d5e8" stroke="#4a6a8a"/>
+  <text x="240" y="73" text-anchor="middle" font-size="9">vent �� �</text>
+  <path d="M220,82 L220,95 M240,82 L240,95 M260,82 L260,95" stroke="#4a6a8a" stroke-width="1"/>
+  <!-- �7 -->
+  <rect x="100" y="95" width="70" height="50" fill="#d4e8f5" stroke="#4a6a8a"/>
+  <rect x="180" y="95" width="70" height="50" fill="#d4e8f5" stroke="#4a6a8a"/>
+  <rect x="260" y="95" width="70" height="50" fill="#d4e8f5" stroke="#4a6a8a"/>
+  <text x="240" y="125" text-anchor="middle" font-size="8" fill="#555">ݗ+�</text>
+  <!-- w� -->
+  <rect x="165" y="160" width="150" height="80" fill="#fffef8" stroke="#c44" stroke-width="2"/>
+  <text x="240" y="190" text-anchor="middle" font-size="10">f!J�W��߯��</text>
+  <text x="240" y="208" text-anchor="middle" font-size="8">�<[</text>
+  <!-- ع: -->
+  <path d="M165,175 Q155,200 165,225" fill="none" stroke="#c44" stroke-width="2"/>
+  <text x="148" y="200" font-size="7" fill="#c44">ع</text>
+  <!-- 9 -->
+  <rect x="100" y="200" width="30" height="40" fill="#ddd" stroke="#888"/>
+  <text x="115" y="225" text-anchor="middle" font-size="6">9</text>
+  <!-- 0b -->
+  <rect x="60" y="290" width="360" height="12" fill="#ccc" stroke="#888"/>
+  <text x="240" y="302" text-anchor="middle" font-size="8" fill="#555">
+eM � �</text>
+  <!-- ۺjq -->
+  <ellipse cx="140" cy="275" rx="12" ry="18" fill="#e8a050" opacity="0.7"/>
+  <text x="140" y="320" text-anchor="middle" font-size="7">I155</text>
+  <ellipse cx="190" cy="278" rx="11" ry="17" fill="#e8d050" opacity="0.7"/>
+  <text x="190" y="320" text-anchor="middle" font-size="7">g�145</text>
+  <ellipse cx="250" cy="282" rx="10" ry="15" fill="#50a050" opacity="0.7"/>
+  <text x="250" y="320" text-anchor="middle" font-size="7">��142</text>
+  <ellipse cx="310" cy="276" rx="11" ry="17" fill="#5080c0" opacity="0.7"/>
+  <text x="310" y="320" text-anchor="middle" font-size="7">�146�</text>
+  <!-- ئ� -->
+  <line x1="420" y1="50" x2="420" y2="290" stroke="#888" stroke-width="1"/>
+  <text x="435" y="175" font-size="8" fill="#666" transform="rotate(90 435 175)">HH2.8m</text>
+  <text x="70" y="360" font-size="8" fill="#888">4H � ��I � ��e�</text>
+</svg>
