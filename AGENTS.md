@@ -4,7 +4,8 @@
 > **人类统一入口**：[`CLAUDE.md`](./CLAUDE.md) — 启动必读、正典速查；**执行写作/插图任务时以本文件 + 对应 SKILL.md 为准**。  
 > 品牌名：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**（系列标语 The Academy of Curiosities）— 见 `00_项目总览/品牌名称定稿.md`
 
-本项目使用 **七个协作 skill**（子分身），无需额外下载外部 agent。
+本项目使用 **七个协作 skill**（子分身）+ **角色导演 stub**，无需额外下载外部 agent。  
+> **正典审计 2026-06-07**：七 skill 已对齐 `篇幅与单位构架_V1.1` · 详见 [`Skill正典审计报告_20260607.md`](00_项目总览/Skill正典审计报告_20260607.md)
 
 ## 文档层级（CLAUDE ↔ AGENTS）
 
@@ -28,6 +29,10 @@
 | **academy-jp-voice-editor** | `skills/academy-jp-voice-editor/` | 日文语感编辑 | 日译推敲、去直译腔、J1–J5 |
 | **academy-visual-auditor** | `skills/academy-visual-auditor/` | 视觉审计 | 插图 prompt、成图统调、角色/环境 P0 |
 | **academy-story-database** | `skills/academy-story-database/` | 故事资产库 | 200 篇总表、Case 状态、跨卷检索 |
+| **academy-character-director** | `skills/academy-character-director/` | 角色灵魂导演（V0.1 stub） | 出场角色 soul 校验、对白归属、差异测试 |
+
+**已废弃（勿路由）**：`skills/academy-char-01`…`10` → 改指 **character-director** + `characters.yaml` + `characters/soul/*.yaml`  
+**计划中**：`academy-canon-governor`（Sprint 4 正式版；Sprint 1 以审计报告代替）
 
 定稿门禁（L1 三并列）：
 
