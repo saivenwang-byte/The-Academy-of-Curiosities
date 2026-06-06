@@ -15,7 +15,7 @@ characters:
   # ===========================================================================
   ito_hikaru:
     display_name: "伊藤 光"
-    reading: "いとう ひかる / Itō Hikaru"
+    reading: "いとう あきら / Itō Akira"
     id: "01"
     
     identity:
@@ -484,6 +484,23 @@ characters:
         - "主动给提示"
         - "帮孩子们找东西——指一下，剩下的自己找"
     
+    spectrum:
+      extroversion: 0.15     # 不主动开口——被认真问才说
+      action_bias: 0.05      # 不参与行动，只指方向
+      focus_depth: 0.90      # 社区记忆深度极高
+      social_warmth: 0.55    # 被问时温暖，平时安静
+      talkativeness: 0.10    # 话极少——陈述即见证
+      emotional_expression: 0.20  # 表情少，笑时从喉咙深处
+    
+    triggers:
+      - "被认真问起旧事 → 摘下老花镜 + 停顿几秒 + 眼睛看向远方"
+      - "陸珣蹲门口观察 → 认真看一眼 + 轻笑（终于有人问了）"
+    
+    relations:
+      riku_shun: "记忆拼图——不伸手帮忙，只指架子第二层"
+      riku_hikaru: "社区长辈——放学的孩子们路过会点头"
+      ito_hikaru: "杂货铺常客——光偶尔来买零食，他从不主动搭话"
+    
     voice:
       tempo: "极慢——经过时间锤炼的从容"
       register: "苍老、偏哑、平静"
@@ -510,6 +527,17 @@ characters:
       core_trait: "不教——但做给孩子看。带回世界碎片的人"
       join_volume: "背景（不参与破案）"
     
+    anchors:
+      visual:
+        - "椭圆脸 / 深褐单眼皮 / 与陸珣极像的细长眼型"
+        - "黑发鬓角夹白发 / 黑框眼镜"
+      action:
+        - "思考设计：拇指食指捏下巴 + 眼微眯 + 整个人静止"
+        - "被孩子打断：一愣 → 温和微笑"
+      props:
+        - "硬壳速写本随身（画结构/纹理/光影）"
+        - "旧单反相机（拍建筑与材料样本）"
+    
     constraints:
       never_says:
         - "你应该XXX"（原则性的说教）
@@ -517,6 +545,23 @@ characters:
       never_does:
         - "主动教孩子"
         - "在故事正文中给出关键信息"
+    
+    spectrum:
+      extroversion: 0.35
+      action_bias: 0.20      # 安静创造者，不冲现场
+      focus_depth: 0.80      # 对结构与纹理专注深
+      social_warmth: 0.75    # 温和但不主动
+      talkativeness: 0.25    # 话少——用提问回应
+      emotional_expression: 0.30  # 看到有趣物件时眼睛会亮
+    
+    triggers:
+      - "孩子拿奇怪物件提问 → 不直接答，反问'どこで見つけた？'"
+      - "看到有趣结构/纹理 → 眼睛突然亮（陸珣看昆虫时同款）"
+    
+    relations:
+      riku_shun: "沉默教养——工作室材料样本随便摸，不主动教"
+      riku_hikaru: "尊重她的颜色与选择——不强加审美"
+      riku_misaki: "白灰藏蓝与暖色围裙共处——四种颜色和谐"
     
     voice:
       tempo: "中等偏慢"
@@ -542,12 +587,40 @@ characters:
       core_trait: "把厨房变成实验室——主厨兼店主人，食物是活的、会变化"
       join_volume: "背景（不参与破案）"
     
+    anchors:
+      visual:
+        - "柔和长圆脸 / 浅褐通透眼眸 / 与陸瑆极像的圆润鼻头"
+        - "黑发低马尾 / 木发夹（陸珣手工课作品）"
+      action:
+        - "尝味：吹勺 → 唇轻触 → 眯眼静止（'阅读'酱汁）"
+        - "切菜：手指蜷起贴刀面，调味一小撮不多不少"
+      props:
+        - "三条自改围裙（口袋：温度计 + 便签 + 短铅笔）"
+        - "厨房玻璃罐实验样本（发酵面团/果酱/味噌）"
+    
     constraints:
       never_says:
         - "这是科学"（她自己不觉得在做科学——只是在做好吃的）
         - 长段的理论解释（替代："パンが息をしてるんだよ"——面包在呼吸呢）
       never_does:
         - "在故事正文中给出关键信息"
+    
+    spectrum:
+      extroversion: 0.40
+      action_bias: 0.35      # 厨房里的精确行动
+      focus_depth: 0.75      # 对食材变化专注深
+      social_warmth: 0.85    # 温柔邀请式回应
+      talkativeness: 0.45    # 比父亲稍多——用邀请代替讲解
+      emotional_expression: 0.55  # 笑时全脸参与，陸瑆完全继承
+    
+    triggers:
+      - "孩子问为什么 → 邀请'ちょっとやってみる？'而非讲原理"
+      - "食材新鲜切口/恰当焦香 → 眼睛亮 / 嘴角上扬"
+    
+    relations:
+      riku_shun: "厨房启蒙观察——他从小看发酵与变化，不觉得是科学"
+      riku_hikaru: "便签记录温度时间——瑆笔记习惯的最早模板"
+      riku_naoto: "暖色围裙与白灰藏蓝共处——饭桌是兄妹交流场"
     
     voice:
       tempo: "中等"
