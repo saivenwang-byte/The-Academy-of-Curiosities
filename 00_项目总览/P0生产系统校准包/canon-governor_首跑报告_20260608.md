@@ -26,7 +26,7 @@
 |------|--------|------|
 | riku_hikaru_soul.yaml | LOCK | ✅ |
 | riku_shun_soul.yaml | LOCK | ✅ |
-| ito_hikaru_soul.yaml | LOCK | ✅ |
+| ito_akira_soul.yaml | LOCK | ✅ · 2026-06-08 自 ito_hikaru 迁移 |
 | kato_keimi_soul.yaml | LOCK | ✅ |
 | matsumoto_shiro_soul.yaml | LOCK | ✅ |
 

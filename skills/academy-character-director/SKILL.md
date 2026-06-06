@@ -60,7 +60,7 @@ python scripts/character_soul_lint.py --vol1-core
 
 | id | 角色 | tier |
 |----|------|------|
-| ito_hikaru | 伊藤光 | vol1_core |
+| ito_akira | 伊藤光 | vol1_core |
 | kato_keimi | 加藤慧美 | vol1_core |
 | matsumoto_shiro | 松本志郎 | vol1_core |
 | riku_shun | 陸珣 | vol1_core |

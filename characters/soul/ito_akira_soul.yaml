@@ -1,15 +1,17 @@
 meta:
-  character_id: ito_hikaru
+  character_id: ito_akira
+  legacy_id: ito_hikaru
   display_name: "伊藤 光"
   canonical_number: "01"
   narrative_tier: vol1_core
-  soul_version: "0.1.0"
+  soul_version: "0.1.1"
   status: "LOCK"
   locked_at: "2026-06-08"
   locked_by: "KarfWang"
   canon_refs:
     - "01_角色设定/01伊藤 光.txt"
-    - "skills/academy-character-scale/characters.yaml#ito_hikaru"
+    - "skills/academy-character-scale/characters.yaml#ito_akira"
+    - "01_角色设定/00_十人名称_LOCK_2026-06-07.md"
 
 soul_line: "异常值得被分享——先把对的人拉到问题前面，再一起查能查的东西。"
 

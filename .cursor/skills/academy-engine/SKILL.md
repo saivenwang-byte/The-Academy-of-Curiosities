@@ -63,7 +63,7 @@ allowed-tools:
 | **6 插图** | prompts + PNG | `academy-visual-auditor` · `docs/assets_index/visual_asset_index.md` |
 | **7 资产表** | 故事总表一行 | `academy-story-database` · `00_story_asset_table.md` |
 
-**Vol1 范例路径**：Case `volume_01_wet_chair_case_card.md` · Scene `volume_01_scene_cards.md` · Scorecard `volume_01_scorecard.yaml`
+**Vol1 范例路径**：Case `03_故事内容/第1卷_觉得奇怪就先观察/样章包/02_case_card_案01_翘边的海报.md` · Scene `docs/volume_planning/volume_01_scene_cards.md` · 工程索引 `docs/volume_planning/volume_01_observe_first_sample_index.md` · Scorecard `docs/volume_planning/volume_01_scorecard.yaml` · 正文 `03_故事内容/第1卷_觉得奇怪就先观察/正式版/01_正文/案01_翘边的海报_HybridVoice_V1.1定稿.txt`
 
 **推送前**：`python scripts/pre_push_check.py`
 

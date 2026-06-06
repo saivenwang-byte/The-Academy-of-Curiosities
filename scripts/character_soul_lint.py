@@ -19,7 +19,7 @@ SOUL_DIR = ROOT / "characters" / "soul"
 CHAR_YAML = ROOT / "skills" / "academy-character-scale" / "characters.yaml"
 
 VOL1_CORE = [
-    "ito_hikaru_soul.yaml",
+    "ito_akira_soul.yaml",
     "kato_keimi_soul.yaml",
     "matsumoto_shiro_soul.yaml",
     "riku_shun_soul.yaml",
