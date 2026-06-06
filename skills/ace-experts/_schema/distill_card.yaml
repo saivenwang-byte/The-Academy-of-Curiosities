@@ -1,0 +1,257 @@
+# ACE 蒸馏卡 Schema · V0.1
+# 正典路径: skills/ace-experts/_schema/distill_card.yaml
+# 实例路径: skills/ace-experts/{ACE-ID}/cards/{card_id}.yaml
+#
+# 用法: scripts/ace_distill_lint.py 校验必填字段
+# 原则: rag_rules_only · 禁止 fine_tune · 禁止 persona Agent
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: ACEDistillCard
+type: object
+required:
+  - card_id
+  - version
+  - ace_officer
+  - status
+  - implementation
+  - capability_atom
+  - canon_refs
+  - knowledge_sources
+  - checks
+  - reject_if
+  - output_contract
+
+properties:
+  card_id:
+    type: string
+    pattern: "^[A-Z]{3}-[a-z0-9-]+$"
+    description: "唯一 ID，如 VIS-fair-clue-frame"
+  version:
+    type: string
+    example: "0.1.0"
+  ace_officer:
+    type: string
+    enum:
+      - ACE-A_Canon_Gate_Officer
+      - ACE-B_Sample_Visual_Production_Officer
+      - ACE-C_Trial_Market_Officer
+      - ACE-D_Publishing_IP_Extension_Officer
+  status:
+    type: string
+    enum: [draft, active, deprecated, hold]
+  implementation:
+    type: object
+    required: [mode]
+    properties:
+      mode:
+        type: string
+        const: rag_rules_only
+      fine_tune:
+        type: boolean
+        const: false
+      rag_index_paths:
+        type: array
+        items:
+          type: string
+        description: "仅 docs/ace-distill/ 下已标注来源文件"
+
+  capability_atom:
+    type: object
+    required: [atom_id, name, stage, description, canon_priority]
+    properties:
+      atom_id:
+        type: string
+      name:
+        type: string
+      stage:
+        type: string
+        example: gate_b_sample_visual
+      description:
+        type: string
+      canon_priority:
+        type: string
+        enum: [high, low]
+        description: "high = 与正典冲突则丢弃本卡"
+
+  canon_refs:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [path, section]
+      properties:
+        path:
+          type: string
+        section:
+          type: string
+
+  benchmark_refs:
+    type: array
+    items:
+      type: object
+      required: [ip_slug, layer, mechanism_id]
+      properties:
+        ip_slug:
+          type: string
+        layer:
+          type: string
+          enum: [L1, L2, L3]
+        mechanism_id:
+          type: string
+        do_not_copy:
+          type: array
+          items:
+            type: string
+
+  knowledge_sources:
+    type: array
+    description: "公开人物/机构 · 非 persona · 禁止 endorsement 暗示"
+    items:
+      type: object
+      required: [name, type, ref, usage, persona_agent_forbidden]
+      properties:
+        name:
+          type: string
+          description: "真实姓名或机构名 · 仅出处"
+        type:
+          type: string
+          enum: [public_interview, lecture, book, article, official_site, isbn]
+        ref:
+          type: string
+          description: "URL · ISBN · 日期"
+        date_accessed:
+          type: string
+          format: date
+        usage:
+          type: string
+          description: "提取的能力类型 · 非风格模仿"
+        evidence_grade:
+          type: string
+          enum: [confirmed, inferred, speculative]
+        persona_agent_forbidden:
+          type: boolean
+          const: true
+
+  checks:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [check_id, prompt, pass_criteria]
+      properties:
+        check_id:
+          type: string
+        prompt:
+          type: string
+        pass_criteria:
+          type: string
+        inherits:
+          type: array
+          items:
+            type: string
+          description: "如 V12, P0-04, S18"
+        check_type:
+          type: string
+          enum: [lint, agent_review, human_review]
+
+  reject_if:
+    type: array
+    minItems: 1
+    items:
+      type: string
+
+  output_contract:
+    type: object
+    required: [format, signoff]
+    properties:
+      format:
+        type: string
+        enum: [markdown_report, yaml_findings, lint_exit_code]
+      signoff:
+        type: string
+        const: human_required
+      draft_header:
+        type: string
+        const: "STATUS: DRAFT · NOT SIGNOFF"
+
+  human_signoff_map:
+    type: array
+    description: "本卡触达的 👤 硬门禁 · ACE 不代签"
+    items:
+      type: object
+      required: [E_id, action]
+      properties:
+        E_id:
+          type: string
+        action:
+          type: string
+          example: sign | review | produce_png
+
+# --- 示例实例（复制到 ACE-B/cards/ 时删除 $schema 顶层注释）---
+example:
+  card_id: VIS-fair-clue-frame
+  version: "0.1.0"
+  ace_officer: ACE-B_Sample_Visual_Production_Officer
+  status: draft
+  implementation:
+    mode: rag_rules_only
+    fine_tune: false
+    rag_index_paths:
+      - docs/ace-distill/ip_history/encyclopedia_brown_production_history.md
+      - docs/ace-distill/atoms/VIS-001.yaml
+  capability_atom:
+    atom_id: VIS-001
+    name: fair_clue_visible_in_frame
+    stage: gate_b_sample_visual
+    description: 关键线索在 A001 depth 锚点图中可被 8-10 岁读者找到
+    canon_priority: high
+  canon_refs:
+    - path: 05_视觉设定/第一话/P0-04_第一话科学与线索公平性审核表_V1.0.md
+      section: "§5 线索可见"
+    - path: 07_设计原档/04_样章视觉/A001_深度锚点包_6张_画师开工单_V1.0.md
+      section: "锚点 3–5"
+  benchmark_refs:
+    - ip_slug: encyclopedia_brown
+      layer: L1
+      mechanism_id: fair-clue-page-layout
+      do_not_copy: ["无图黑白", "美式小镇"]
+    - ip_slug: houkago_mystery_club
+      layer: L1
+      mechanism_id: map-as-clue-ux
+      do_not_copy: ["全注音", "Q版主视觉"]
+  knowledge_sources:
+    - name: 北村薫
+      type: public_interview
+      ref: "公开访谈中关于本格公平性的表述（具体 URL 填入）"
+      date_accessed: "2026-06-07"
+      usage: 线索公平性原则，非叙事文风
+      evidence_grade: confirmed
+      persona_agent_forbidden: true
+    - name: 石黒圭
+      type: lecture
+      ref: "装帧工序公开讲座（具体 URL/ISBN 填入）"
+      date_accessed: "2026-06-07"
+      usage: 内页完稿检查节点，非装帧风格
+      evidence_grade: confirmed
+      persona_agent_forbidden: true
+  checks:
+    - check_id: VIS-001-A
+      prompt: 锚点图中目标线索是否无需正文补述即可识别
+      pass_criteria: 8-10 岁试读员 3/3 指认
+      inherits: [P0-04, V13, S18]
+      check_type: agent_review
+  reject_if:
+    - 线索仅存在于角色台词
+    - 恐怖/威胁氛围
+    - Q版主视觉
+  output_contract:
+    format: markdown_report
+    signoff: human_required
+    draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+  human_signoff_map:
+    - E_id: E06
+      action: sign
+    - E_id: G1
+      action: produce_png
+    - E_id: E09
+      action: sign
