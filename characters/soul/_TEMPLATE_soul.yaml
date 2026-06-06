@@ -1,0 +1,147 @@
+# ======================================================================
+# 《学堂趣事录》角色灵魂卡 · Schema Template
+# The Academy of Curiosities — Character Soul Card
+# ======================================================================
+# Version: 0.1.0 / Date: 2026-06-07
+# Usage:  Copy to characters/soul/{canonical_id}_soul.yaml
+#         Fill 12 modules · cross-ref characters.yaml for never_says/voice
+# Status: TEMPLATE ONLY — do not inject into production until IP review
+# ======================================================================
+
+meta:
+  character_id: ""          # e.g. riku_hikaru · matches characters.yaml key
+  display_name: ""          # e.g. 陸 瑆
+  canonical_number: ""      # 01–10 per 00_十人名称_LOCK
+  narrative_tier: ""        # vol1_core | note_layer | hidden | lightweight | support
+  soul_version: "0.1.0"
+  status: "DRAFT"
+  supersedes: []            # e.g. skills/academy-char-06-hikaru/SKILL.md
+  canon_refs:
+    - "01_角色设定/XX.txt"
+    - "skills/academy-character-scale/characters.yaml#{character_id}"
+
+# ----------------------------------------------------------------------
+# Module 01 · 灵魂句 — 一句话：此人如何面对世界（非功能描述）
+# ----------------------------------------------------------------------
+soul_line: ""
+# 例（陸珣）：他相信世界不会主动解释自己，所以必须蹲下来，靠得足够近。
+
+# ----------------------------------------------------------------------
+# Module 02 · 核心欲望 — 儿童尺度 · 非成人野心
+# ----------------------------------------------------------------------
+core_desire: ""
+# 例：被看见 · 被理解 · 保持秩序 · 证明判断 · 保护某人 · 记录被忽略的事
+
+# ----------------------------------------------------------------------
+# Module 03 · 核心恐惧 — 儿童尺度 · 禁创伤化/成人化
+# ----------------------------------------------------------------------
+core_fear: ""
+# 例：判断错误拖累朋友 · 被当成怪人 · 朋友不再需要自己 · 记录无人信
+
+# ----------------------------------------------------------------------
+# Module 04 · 性格矛盾 — 至少一条内部张力
+# ----------------------------------------------------------------------
+core_contradiction: ""
+# 例：崇拜哥哥，但坚持独立判断
+
+# ----------------------------------------------------------------------
+# Module 05 · 好奇心方式 — 同一异常，此人最先注意什么
+# ----------------------------------------------------------------------
+curiosity_lens: ""
+# 枚举参考：人 | 物 | 时间 | 空间 | 声音 | 规则 | 微观结构 | 情绪变化
+curiosity_first_move: ""
+# 例：先看谁把目光转向海报，再记说话顺序
+
+# ----------------------------------------------------------------------
+# Module 06 · 思维偏差 — 可制造真实剧情，非人为误会
+# ----------------------------------------------------------------------
+thinking_bias: ""
+bias_story_function: ""
+# 例：光容易过早联想 · 志郎先动手再思考 · 瑆看懂却不说
+
+# ----------------------------------------------------------------------
+# Module 07 · 情绪触发与恢复
+# ----------------------------------------------------------------------
+emotional_triggers:
+  anger: ""
+  silence: ""
+  shy: ""
+  joy: ""
+recovery_style: ""
+apologizes_when: ""         # 何时道歉 · 如何表达关心
+# 交叉引用 characters.yaml triggers[] 若已有
+
+# ----------------------------------------------------------------------
+# Module 08 · 语言指纹 — 与 characters.yaml voice 对齐并扩展
+# ----------------------------------------------------------------------
+language_fingerprint:
+  sentence_length: ""       # 短/中/长 · 字数范围
+  tempo: ""
+  register: ""
+  fillers: []
+  name_addressing: ""     # 直呼/さん/君 · 紧张时变化
+  metaphor_use: ""          # 是否用比喻
+  forbidden_patterns: []    # 叠加 never_says
+  tense_when_nervous: ""
+  tense_when_happy: ""
+# catchphrase 可引用 YAML voice.catchphrase
+
+# ----------------------------------------------------------------------
+# Module 09 · 行为指纹 — 与 characters.yaml anchors.action 对齐并扩展
+# ----------------------------------------------------------------------
+behavior_fingerprint:
+  stance: ""
+  gaze: ""
+  hands: ""
+  walk_pace: ""
+  thinking_gesture: ""
+  anger_gesture: ""
+  scene_entry: ""
+  scene_exit: ""
+
+# ----------------------------------------------------------------------
+# Module 10 · 审美与物品 — 超越服装颜色
+# ----------------------------------------------------------------------
+aesthetics_and_objects:
+  space_preference: ""      # 喜欢怎样的空间
+  new_vs_old: ""
+  notebook_order: ""        # 整齐/乱中有序
+  sensory:                  # 声音/气味/材质偏好
+    sound: ""
+    smell: ""
+    texture: ""
+  keeps_mementos: ""        # 票根/贴纸/包装
+  never_uses: []
+  key_props: []             # 交叉 anchors.props
+
+# ----------------------------------------------------------------------
+# Module 11 · 关系向量 — 同一人对不同对象模式不同
+# ----------------------------------------------------------------------
+relationship_vectors:
+  # 键 = characters.yaml relations 中的 id 或 角色类型
+  # 例：
+  # riku_shun: "信任但不盲从 · 早餐桌轻轻纠正"
+  # classmates: ""
+  # upper_grade: ""
+  # teachers: ""
+  # parents: ""
+  # strangers: ""
+
+# ----------------------------------------------------------------------
+# Module 12 · 成长方向与禁写项
+# ----------------------------------------------------------------------
+growth_and_guardrails:
+  vol1_state: ""
+  vol10_direction: ""
+  post_vol11: ""            # 新人加入后如何变 · 若适用
+  will_learn: ""
+  never_write: []           # 永远不能写成什么 · 叠加 constraints.never_does
+  vol1_screen_time: ""      # 如：瑆=笔记层不出主帧 · 葛西=不破案
+
+# ----------------------------------------------------------------------
+# 同场景差异测试（填卡后必填至少 1 条回归用例）
+# ----------------------------------------------------------------------
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: ""
+    must_not: []
