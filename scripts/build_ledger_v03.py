@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import shutil
+import sys
 from pathlib import Path
 
 import openpyxl
@@ -10,7 +11,20 @@ from openpyxl.styles import Font, PatternFill
 
 ROOT = Path(__file__).resolve().parents[1]
 CC = ROOT / "【CC】files" / "files20260605-2_extracted"
-SRC = next(CC.glob("*.xlsx"))
+
+
+def resolve_source_xlsx(cc_dir: Path) -> Path:
+    if not cc_dir.is_dir():
+        raise FileNotFoundError(f"Source directory missing: {cc_dir}")
+    matches = sorted(cc_dir.glob("*.xlsx"))
+    if not matches:
+        raise FileNotFoundError(f"No .xlsx found in {cc_dir}")
+    if len(matches) > 1:
+        print(f"WARN: multiple xlsx in {cc_dir.name}, using {matches[0].name}", file=sys.stderr)
+    return matches[0]
+
+
+SRC = resolve_source_xlsx(CC)
 SHEET = "前100篇台账"
 DST_V01 = ROOT / "docs" / "story_database" / "02_前100篇原理去重台账_V0.1.xlsx"
 DST_V03 = ROOT / "docs" / "story_database" / "02_前100篇原理去重台账_V0.3.xlsx"
@@ -221,6 +235,8 @@ def main() -> None:
     shutil.copy2(SRC, DST_V01)
 
     wb = openpyxl.load_workbook(SRC)
+    if SHEET not in wb.sheetnames:
+        raise KeyError(f"Sheet {SHEET!r} not in {SRC.name}; found: {wb.sheetnames}")
     ws = wb[SHEET]
 
     ws.insert_cols(1, 2)
@@ -280,4 +296,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (FileNotFoundError, KeyError, OSError) as e:
+        print(f"FAIL: {e}", file=sys.stderr)
+        sys.exit(1)

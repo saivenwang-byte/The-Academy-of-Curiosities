@@ -1,7 +1,8 @@
 # Agent 能力映射 · Claude 10 ↔ Cursor ↔ 仓库正典
 
 > **用途**：避免重复建 Rule/Skill；改标准只改「正典列」  
-> **Status**: ACTIVE · 2026-06-02 合并方案第一批
+> **Status**: ACTIVE · 2026-06-09  
+> **状态表述（强制）**：[`00_项目总览/项目状态表述规范_V1.0.md`](../00_项目总览/项目状态表述规范_V1.0.md)
 
 ---
 
@@ -9,60 +10,66 @@
 
 | Layer | 形态 | 数量 |
 |-------|------|------|
-| 0 入口 | `CLAUDE.md` · `AGENTS.md` | 2 |
+| 0 入口 | `README.md` · `CLAUDE.md` · `AGENTS.md` · **状态表述规范** | 4 |
 | 1 常驻 | `.cursor/rules/*.mdc` | 6 |
-| 2 工作流 | `skills/academy-*/SKILL.md` | 7+ |
-| 3 脚本 | 6 个 + CI | 6 |
-| 4 正典 | `docs/` · `02_/` · `09_/` · HTML | — |
+| 2 工作流 | `skills/academy-*/SKILL.md` | **11**（7 主流程 + 4 P0） |
+| 3 脚本 | lint / build / ledger | 10+ |
+| 4 正典 | `docs/` · `02_/` · `09_/` · HTML 工具 | — |
 
 ---
 
-## 能力对照表
+## Skill 路由（11 · 2026-06-09）
 
-| # | 能力（Claude 10） | Cursor 合并 | 落地 | 状态 |
-|---|-------------------|-------------|------|------|
-| 1 | Project Memory | Startup Gate | `CLAUDE.md` + `rules/00-*` + 本文件 | ✅ 第一批 |
-| 2 | Japan Cultural Calibration | 01-japan-school-culture | `japan_campus_consultant_agent.html` + `rules/01-*` | ✅ |
-| 3 | Nagoya Environment Metrics | 02-nagoya-environment | `world_reference/` + `rules/02-*` | ✅ |
-| 4 | Honkaku Fair-Play | 03-honkaku-fair-play | `04_MYSTERY_SCIENCE_*` + `rules/03-*` | ✅ |
-| 5 | Creative Redline | 04-creative-redline | `创作红线与原则.txt` + `rules/04-*` | ✅ |
-| 6 | Story Database Builder | academy-story-database | `docs/story_database/` + Skill | ✅ 第一批 |
-| 7 | Visual Prompt Auditor | academy-visual-auditor | `07_设计原档/` · `art_review/` · Skill | ✅ 第四批 |
-| 8 | Character Consistency | engine §九 + visual-auditor | `docs/characters/00_character_canon_index.md` | ✅ 第三批 |
-| 9 | Reference Library Import | academy-research-editor | `09_/` · `import_reference_library.py` | ✅ 第四批 |
-| 10 | Git Workflow | 05-git-and-index | User Rules + `pre_push_check.py` | ✅ |
-| — | Sample Chapter Production | **academy-engine** 流水线 Phase 0–7 | `AGENTS.md` · engine §样章生产 | ✅ 第三批 |
-| — | Case/Scene Card | series-architect + story-database | `docs/volume_planning/` · `scripts/case_card_lint.py` | ✅ 脚本 |
-| — | IP 战略参考（立项/钩子/节奏/观察社/Vol1） | `10_IP战略参考_ChatGPT对话/00_INDEX` · E1 · F1 | 范式区 · architect 先讨论 | ✅ 2026-06-04 |
-| — | Agent 协作范式（每会话） | `06_Agent运作卡` · `05_架构参照` | 范式区 | ✅ 2026-06-04 |
-| — | **人类 Expert 池 V1.0** | `12_人类专家池` · `12_专家卡` | 范式区 · 链 `11_` | ✅ 2026-06-04 |
-| — | **专家池 v0.1**（Agent/Skill） | `11_` · `11_检查项` · `06_` §9 | 范式区 | ✅ 2026-06-04 |
+| 用户意图 | Skill | 状态 |
+|----------|-------|------|
+| 拆卷、20卷×5案、任务包 | `academy-series-architect` | PRODUCTION |
+| 查资料、入库 09_ | `academy-research-editor` | PRODUCTION |
+| 写正文、实验、Phase 2b | `academy-engine` | PRODUCTION |
+| Hybrid Voice 中文润色 | `academy-voice-editor` | PRODUCTION |
+| 日译推敲 | `academy-jp-voice-editor` | PRODUCTION |
+| 插图 prompt / 成图审 | `academy-visual-auditor` | PRODUCTION |
+| 200篇表、Case 状态 | `academy-story-database` | PRODUCTION |
+| **角色 soul · 语义审核** | **`academy-character-director`** | **V1.0 PRODUCTION** |
+| 出场规模 · characters.yaml | `academy-character-scale` | SSoT |
+| 正典漂移扫描 | `academy-canon-governor` | **PLANNED**（任务书） |
+| Gate 四栏/E06 汇总 | `academy-gate-orchestrator` | **PLANNED**（任务书） |
+
+**已废弃**：`academy-char-01`…`10` → **character-director** + soul YAML
 
 ---
 
-## Skill 路由（何时触发）
+## 能力对照表（节选）
 
-| 用户意图 | Skill |
-|----------|-------|
-| 拆卷、50卷、任务包 | `academy-series-architect` |
-| 查资料、入库 09_ | `academy-research-editor` |
-| 写正文、实验、质量清单 | `academy-engine` |
-| Hybrid Voice 中文润色 | `academy-voice-editor` |
-| 日译推敲 | `academy-jp-voice-editor` |
-| 插图 prompt / 成图审 | `academy-visual-auditor` |
-| 200篇表、Case 状态 | `academy-story-database` |
-| 新角色/日译/群像 **该不该定稿** | `11_专家池与Agent调度_v0.1` · `06_` §9 |
-
----
-
-## 不部署项（刻意合并）
-
-- 第三方 skills.sh / 未知 GitHub Skill
-- 独立 `sample-chapter-production` Skill（= engine）
-- 独立 `reference-import` Skill（= research-editor）
-- 20 条全 always-on Rule（仅 6 条常驻）
-- **25 个独立 Expert Agent Skill**（v0.1 合并为 `11_` + 现有 7 Skill）
+| # | 能力 | Cursor 合并 | 落地 | 状态 |
+|---|------|-------------|------|------|
+| 1 | Project Memory | Startup Gate | `CLAUDE.md` + rules + **表述规范** | ✅ |
+| 2 | Japan Cultural Calibration | 01-japan-school-culture | 田中 HTML + rules | ✅ |
+| 6 | Story Database | academy-story-database | `docs/story_database/` | ✅ |
+| 7 | Visual Auditor | academy-visual-auditor | `07_设计原档/` · Skill | ✅ |
+| 8 | Character Consistency | **character-director** + engine 2b | soul YAML · lint | ✅ |
+| — | Sample Chapter | academy-engine Phase 0–7 | `AGENTS.md` | ✅ |
+| — | ACE 蒸馏卡 | `skills/ace-experts/` | lint **≠** 真人签核 | ✅ 结构 |
 
 ---
 
-最后更新：2026-06-04 · 增范式区与 IP 战略参考
+## 推送前检查（本地 · 非 CI 强制）
+
+```bash
+python scripts/pre_push_check.py
+python scripts/character_soul_lint.py --vol1-core --strict
+python scripts/volume_lint.py --all   # 按卷
+python scripts/ace_distill_lint.py    # ACE 卡结构
+```
+
+> 仓库 **尚无** 主干 CI 强制门禁 — Agent 推送前 **须自跑** 上述脚本。
+
+---
+
+## 不部署项
+
+- 第三方未知 Skill · 25 个独立 Expert Agent（→ `11_` + 7 主 Skill）
+- 宣称 ACE lint = 科学/文化专家 PASS
+
+---
+
+最后更新：2026-06-09 · 11 Skill · 状态表述规范 · character-director PRODUCTION

@@ -21,4 +21,29 @@ desktop.ini
 03_故事内容/**/PDF/*.html
 03_故事内容/**/04_展示版/*.html
 03_故事内容/**/05_出版成果/*.html
+03_故事内容/**/05_出版成果/Reader/*.html
+03_故事内容/**/薄样张_试读/*.html
 03_故事内容/第1卷_总是湿的椅子/PDF/*.html
+
+# CC inbound mirrors (canonical → 07_*.md / docs/)
+【CC】files/*.html
+【CC】files/*.docx
+【CC】files/**/*.docx
+
+# Superseded / wrong-version snapshots (local only)
+01_角色设定/00_十人名称_LOCK_2026-06-05.md
+03_故事内容/第2卷_谁偷了橡皮/完整文字稿.txt
+
+# Wrong-grade visual baseline · scraped retail pages
+07_设计原档/02_插画与场景/CLASSROOM_4-2_baseline.html
+06_参考资料/放学后的推理俱乐部/
+
+# v1 docx superseded by 07_ design *.md
+07_设计原档/**/12_三语命名决策.docx
+07_设计原档/**/13_插画风格规范.docx
+07_设计原档/**/14_角色设计稿创作简报.docx
+07_设计原档/**/15_场景背景板设计清单.docx
+07_设计原档/files/07_第一卷文字稿（总是湿的椅子）.docx
+
+# Duplicate japan_campus copy (canonical: repo root)
+08_日本校园文化顾问/japan_campus_consultant_agent.html

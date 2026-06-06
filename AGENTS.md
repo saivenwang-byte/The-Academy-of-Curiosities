@@ -1,10 +1,11 @@
 # 《学堂趣事录》Agent 编排
 
-> **定位**：**Agent / Cursor Skill 编排的主文档** — 七 skill 流水线、专家调度、安装路径。  
-> **人类统一入口**：[`CLAUDE.md`](./CLAUDE.md) — 启动必读、正典速查；**执行写作/插图任务时以本文件 + 对应 SKILL.md 为准**。  
+> **定位**：**Agent / Cursor Skill 编排的主文档** — 主流程 + P0 生产 Skill、专家调度。  
+> **人类统一入口**：[`CLAUDE.md`](./CLAUDE.md) — 启动必读 · **含强制状态表述规范**  
+> **状态表述（Agent 汇报必读）**：[`00_项目总览/项目状态表述规范_V1.0.md`](00_项目总览/项目状态表述规范_V1.0.md)  
 > 品牌名：中文 学堂趣事录 · 日文 学堂奇事録 · 英文 **The Curious Logbook**（系列标语 The Academy of Curiosities）— 见 `00_项目总览/品牌名称定稿.md`
 
-本项目使用 **七个协作 skill**（子分身）+ **角色导演 stub**，无需额外下载外部 agent。  
+本项目使用 **十一个协作 skill**（七主流程 + 四 P0 生产）+ 已废弃 char-01…10，无需额外下载外部 agent。  
 > **正典审计 2026-06-07**：七 skill 已对齐 `篇幅与单位构架_V1.1` · 详见 [`Skill正典审计报告_20260607.md`](00_项目总览/Skill正典审计报告_20260607.md)
 
 ## 文档层级（CLAUDE ↔ AGENTS）
@@ -16,7 +17,18 @@
 | `skills/*/SKILL.md` | 被路由的 Agent | 单角色执行细则 |
 | `00_项目总览/专家组审议工作流_V1.0.md` | IP 开放议题时 | 模拟 E01–E25 审议 · 待裁决单选题 |
 
-**冲突时**：Skill 执行细节 → **SKILL.md**；多 skill 顺序 → **AGENTS.md**；是否违反 P0 门禁 → **正典门禁 + CLAUDE Layer 0**。
+**冲突时**：Skill 执行细节 → **SKILL.md**；多 skill 顺序 → **AGENTS.md**；Gate/阶段/自动化口径 → **项目状态表述规范**；P0 门禁 → **正典门禁 + CLAUDE Layer 0**。
+
+## ACE 签核口径（勿误读）
+
+| 层级 | 含义 |
+|------|------|
+| `ace_distill_lint PASS` | 蒸馏卡 **结构** 有效 |
+| ACE review | 规则卡预审 · **非** 真人法律责任 |
+| E04/E07/E09 human PASS | 专业签核 |
+| **E06 PASS** | **KarfWang IP Owner 终签** · 唯一总闸 |
+
+Gate A 内样机可 **ACE 预审 + IP 终签**；对外宣称「经专家审核」前须 **真人资格审查**。
 
 ## 角色一览
 
@@ -29,10 +41,12 @@
 | **academy-jp-voice-editor** | `skills/academy-jp-voice-editor/` | 日文语感编辑 | 日译推敲、去直译腔、J1–J5 |
 | **academy-visual-auditor** | `skills/academy-visual-auditor/` | 视觉审计 | 插图 prompt、成图统调、角色/环境 P0 |
 | **academy-story-database** | `skills/academy-story-database/` | 故事资产库 | 200 篇总表、Case 状态、跨卷检索 |
-| **academy-character-director** | `skills/academy-character-director/` | 角色灵魂导演（V0.1 stub） | 出场角色 soul 校验、对白归属、差异测试 |
+| **academy-character-director** | `skills/academy-character-director/` | 角色灵魂导演 **V1.0** | soul 校验、对白归属、语义审核报告 |
+| **academy-character-scale** | `skills/academy-character-scale/` | 角色规模/关系 SSoT | `characters.yaml` · 出场规模 · 关系向量 |
+| **academy-canon-governor** | `skills/academy-canon-governor/` | 正典治理 **任务书** | 漂移扫描 · 引用影响 · **非自治** |
+| **academy-gate-orchestrator** | `skills/academy-gate-orchestrator/` | Gate 编排 **任务书** | 四栏/E06 汇总 · **不代签** · **非自治** |
 
-**已废弃（勿路由）**：`skills/academy-char-01`…`10` → 改指 **character-director** + `characters.yaml` + `characters/soul/*.yaml`  
-**计划中**：`academy-canon-governor`（Sprint 4 正式版；Sprint 1 以审计报告代替）
+**已废弃（勿路由）**：`skills/academy-char-01`…`10` → 改指 **character-director** + `characters.yaml` + `characters/soul/*.yaml`
 
 定稿门禁（L1 三并列）：
 
@@ -97,7 +111,11 @@ Skill 已部署于：
 - `skills/academy-jp-voice-editor/`
 - `skills/academy-visual-auditor/`
 - `skills/academy-story-database/`
-- `.cursor/skills/`（Cursor 项目 skill 镜像）
+- `skills/academy-character-director/`
+- `skills/academy-character-scale/`（SSoT · 无独立 Cursor 镜像）
+- `skills/academy-canon-governor/`（任务书）
+- `skills/academy-gate-orchestrator/`（任务书）
+- `.cursor/skills/`（Cursor 项目 skill 镜像 · 不含 character-scale）
 
 在 Cursor 对话中直接说：
 
