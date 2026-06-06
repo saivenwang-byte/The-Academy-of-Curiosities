@@ -80,9 +80,9 @@ academy-character-scale    → 机器校验 schema（YAML）
 
 - [x] 本 SKILL.md V0.1
 - [x] `characters/soul/_TEMPLATE_soul.yaml`
-- [ ] ≥1 满填范例 soul（`06_riku_hikaru.yaml` · Sprint 2）
-- [ ] engine 启动链挂钩
-- [ ] `scripts/character_soul_lint.py`（Sprint 3）
+- [x] Vol1 五人满填 soul（LOCK 2026-06-08）
+- [x] engine 启动链挂钩 Phase 2b
+- [x] `scripts/character_soul_lint.py`
 
 ---
 

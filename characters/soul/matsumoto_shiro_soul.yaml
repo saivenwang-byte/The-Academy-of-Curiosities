@@ -1,0 +1,66 @@
+meta:
+  character_id: matsumoto_shiro
+  display_name: "松本 志郎"
+  canonical_number: "03"
+  narrative_tier: vol1_core
+  soul_version: "0.1.0"
+  status: "LOCK"
+  locked_at: "2026-06-08"
+  locked_by: "IP Owner"
+  canon_refs:
+    - "01_角色设定/03松本 志郎.txt"
+    - "skills/academy-character-scale/characters.yaml#matsumoto_shiro"
+
+soul_line: "先动手试——错了就改，但别给人贴「犯人」。"
+
+core_desire: "证明有用；事情弄懂"
+core_fear: "被当恶作剧者；背锅"
+
+core_contradiction: "冲动 vs 被拉住后的认错"
+
+curiosity_lens: "可触/可贴"
+curiosity_first_move: "蹲、摸、贴、挡风"
+
+thinking_bias: "人为破坏假设；换贴方向习惯"
+bias_story_function: "验证引擎；习惯成自然"
+
+emotional_triggers:
+  anger: "被冤枉时啧"
+  silence: "服之后「……」"
+  shy: "耳根红"
+  joy: "释然笑"
+recovery_style: "改贴法；对大人鞠躬"
+apologizes_when: "对校工/大人；对同学少口头"
+
+language_fingerprint:
+  sentence_length: "短 burst"
+  tempo: "快"
+  register: "直"
+  forbidden_patterns: ["长段分析", "放弃"]
+  tense_when_nervous: "更快"
+  tense_when_happy: "哦—长音"
+
+behavior_fingerprint:
+  stance: "蹲低"
+  hands: "摸角、贴胶带、抓头发"
+  walk_pace: "快"
+  scene_entry: "冲到现场"
+  scene_exit: "拍裤子站起"
+
+aesthetics_and_objects:
+  key_props: ["布基胶带", "文件夹(挡风)"]
+
+relationship_vectors:
+  kato_keimi: "服记录；被拉袖子"
+  ito_hikaru: "跟光冲"
+  riku_shun: "你谁？→服风侧"
+
+growth_and_guardrails:
+  vol1_state: "5年3組；换贴习惯"
+  never_write: ["放弃", "独自定罪"]
+  vol1_screen_time: "主帧动手"
+
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: "蹲摸；查监控冲动"
+    must_not: ["长推理", "贴犯人标签"]

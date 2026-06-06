@@ -1,0 +1,75 @@
+meta:
+  character_id: kato_keimi
+  display_name: "加藤 慧美"
+  canonical_number: "02"
+  narrative_tier: vol1_core
+  soul_version: "0.1.0"
+  status: "LOCK"
+  locked_at: "2026-06-08"
+  locked_by: "IP Owner"
+  canon_refs:
+    - "01_角色设定/02加藤 慧美.txt"
+    - "skills/academy-character-scale/characters.yaml#kato_keimi"
+
+soul_line: "事实要可核对——故事可以有温度，但不能变成审判。"
+
+core_desire: "记录被相信；线索可复盘"
+core_fear: "写成定罪/犯人；空栏被当成懒"
+
+core_contradiction: "严谨格子 vs 采访温度"
+
+curiosity_lens: "时间+规则"
+curiosity_first_move: "开笔记本小格：日期/天气/异常/验证"
+
+thinking_bias: "信表格；需志郎补现场"
+bias_story_function: "刹车+格化"
+
+emotional_triggers:
+  anger: "极少外显"
+  silence: "推眼镜=思考"
+  shy: "—"
+  joy: "预测格命中时微点头"
+recovery_style: "多写一行对照"
+apologizes_when: "不对同学大声道歉；用记录补偿"
+
+language_fingerprint:
+  sentence_length: "10–18字"
+  tempo: "中等，确定"
+  register: "平；采访时更柔"
+  fillers: []
+  name_addressing: "志郎君/陸さん"
+  metaphor_use: "少"
+  forbidden_patterns: ["你错了", "犯人", "一定是他"]
+  tense_when_nervous: "更短、更格"
+  tense_when_happy: "—"
+
+behavior_fingerprint:
+  stance: "端正"
+  gaze: "看格子也看人"
+  hands: "翻页、点格、拉袖子"
+  walk_pace: "稳"
+  thinking_gesture: "推眼镜"
+  anger_gesture: "—"
+  scene_entry: "笔记本已开"
+  scene_exit: "夹回板夹"
+
+aesthetics_and_objects:
+  space_preference: "可贴板、可对照处"
+  notebook_order: "严格格子"
+  key_props: ["实验记录型笔记本", "自动铅笔"]
+
+relationship_vectors:
+  matsumoto_shiro: "刹车+拉袖子"
+  ito_hikaru: "接口述落格"
+  riku_shun: "风侧格；把观察变假设"
+  riku_hikaru: "惊讶于因果笔记"
+
+growth_and_guardrails:
+  vol1_state: "5年1組；空栏规矩"
+  never_write: ["定罪", "跳过验证"]
+  vol1_screen_time: "主帧"
+
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: "日期格+雨の日は？"
+    must_not: ["犯人", "你错了"]

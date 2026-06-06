@@ -32,6 +32,7 @@ allowed-tools:
 |------|-------|------|
 | 战略 | `academy-series-architect` | 卷任务包、阶段规划、先讨论 |
 | 素材 | `academy-research-editor` | 日本文化/语言/气候资料与调度单 |
+| **角色** | **`academy-character-director`** | **Phase 2b · 加载 soul.yaml · 对白/行为归属预审** |
 | 执行 | **本 skill** | 正文、实验、质量清单 |
 | 润色 | `academy-voice-editor` | Hybrid Voice v3、§7 文学维度 |
 
@@ -55,7 +56,8 @@ allowed-tools:
 | **0 启动** | 读 L1 四门 · 卷任务包确认 · Vol2 读 `volume_02_decisions_locked.md` | `academy-series-architect` |
 | **1 Case Card** | `docs/volume_planning/volume_XX_*_case_card.md` | `python scripts/case_card_lint.py --file …` |
 | **2 Scene Cards** | `docs/volume_planning/volume_XX_scene_cards.md` | `python scripts/scene_card_lint.py --file …` |
-| **3 正文** | `03_故事内容/第X卷_*/完整文字稿.txt` | 本节 §九 清单 |
+| **2b 角色灵魂** | 出场表 · 加载 `characters/soul/{id}_soul.yaml` · 对白归属预审 | **`academy-character-director`** · `python scripts/character_soul_lint.py --vol1-core` |
+| **3 正文** | `03_故事内容/第X卷_*/完整文字稿.txt` | 本节 §九 清单 · **未完成 2b → 最高 DRAFT** |
 | **4 语感** | Hybrid Voice / 日译 | `academy-voice-editor` · `academy-jp-voice-editor` |
 | **5 L1+L2** | 田中 HTML · scorecard | `创作标准与验收流程.md` |
 | **6 插图** | prompts + PNG | `academy-visual-auditor` · `docs/assets_index/visual_asset_index.md` |
@@ -118,7 +120,7 @@ allowed-tools:
 
 | # | 姓名 | 日文读法 | 功能 | Vol1 | 出场规则 |
 |---|------|---------|------|------|---------|
-| 01 | 伊藤 光 | Itō Hikaru | 发现者/连接者 | 社员 | 5年2組 |
+| 01 | 伊藤 光 | Itō **Akira**（あきら） | 发现者/连接者 | 社员 | 5年2組 |
 | 02 | 加藤 慧美 | Katō Keimi | 记录/采访温度 | 社员 | 5年1組 |
 | 03 | 松本 志郎 | Matsumoto Shirō | 行动派/动手验证 | 社员 | 5年3組 |
 | 04 | 陸 珣 | Riku **Shun**（しゅん） | 观察型/微观猎人 | **新社员** | 5年2組 |

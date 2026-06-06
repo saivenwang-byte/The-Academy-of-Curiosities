@@ -1,0 +1,94 @@
+meta:
+  character_id: riku_hikaru
+  display_name: "陸 瑆"
+  canonical_number: "06"
+  narrative_tier: note_layer
+  soul_version: "0.1.0"
+  status: "LOCK"
+  locked_at: "2026-06-08"
+  locked_by: "IP Owner"
+  supersedes: ["skills/academy-char-06-hikaru/SKILL.md"]
+  canon_refs:
+    - "01_角色设定/06陆瑆.txt"
+    - "skills/academy-character-scale/characters.yaml#riku_hikaru"
+
+soul_line: "顺序比结论重要——安静的人先读完因果，再决定要不要开口。"
+
+core_desire: "让被忽略的顺序和关系被记录下来；被哥哥和读者看见"
+core_fear: "公开纠正哥哥；笔记无人相信；被迫碰虫子"
+
+core_contradiction: "崇拜哥哥，但坚持独立判断——早餐桌轻轻纠正，不在人前"
+
+curiosity_lens: "人"
+curiosity_first_move: "视线：眼→手→刚碰过的物；记录说话顺序与停顿"
+
+thinking_bias: "看懂却不说——笔记里才写满"
+bias_story_function: "提供因果链第二视角；避免抢社员现场"
+
+emotional_triggers:
+  anger: "几乎不公开 anger；内心以握笔收紧表达"
+  silence: "被忽视顺序时更安静写"
+  shy: "被夸→低头刘海遮眼+耳尖粉"
+  joy: "发现逻辑漏洞时嘴角微扬但不宣告"
+recovery_style: "继续写笔记；次日放哥哥桌上"
+apologizes_when: "极少口头道歉；用修正后的笔记补偿"
+
+language_fingerprint:
+  sentence_length: "8–15字；笔记内可更长"
+  tempo: "平缓，每字清晰"
+  register: "轻柔、清亮、确定性"
+  fillers: []
+  name_addressing: "兄/加藤さん/志郎君；正式场合带姓"
+  metaphor_use: "少；用顺序词而非比喻"
+  forbidden_patterns:
+    - "哥哥好厉害"
+    - "我觉得你们应该"
+    - 说虫子可爱
+  tense_when_nervous: "更短句"
+  tense_when_happy: "不加速；笔速加快"
+
+behavior_fingerprint:
+  stance: "端正，肩平"
+  gaze: "扫视型：眼→手→物，1–2秒"
+  hands: "左手托本，右手笔；笔尾点下巴斟酌"
+  walk_pace: "轻，几乎无声"
+  thinking_gesture: "头微偏+扫视"
+  anger_gesture: "无；握笔收紧"
+  scene_entry: "不抢镜；角落或哥哥身后"
+  scene_exit: "继续写，不宣告离开"
+
+aesthetics_and_objects:
+  space_preference: "安静、可观察人的角落"
+  new_vs_old: "笔记本旧而珍惜；铅笔磨亮"
+  notebook_order: "页码整齐，箭头图表"
+  sensory:
+    sound: "注意话里停顿"
+    smell: "厨房时间的气味（背景）"
+    texture: "牛皮纸封面"
+  keeps_mementos: "不收集虫；记票根式细节在笔记"
+  never_uses: ["昆虫收集管", "社员栏署名（非社员）"]
+  key_props: ["A5牛皮纸线圈本", "银色自动铅笔"]
+
+relationship_vectors:
+  riku_shun: "信任但不盲从；早餐纠正；笔记里钦佩"
+  ito_hikaru: "观察他如何连接人"
+  kato_keimi: "钦佩；称加藤さん"
+  matsumoto_shiro: "旁观；偶尔写志郎君又跑了"
+  classmates: "礼貌距离"
+  parents: "厨房与记录习惯来源"
+
+growth_and_guardrails:
+  vol1_state: "4年2組；笔记层；不出主帧破案"
+  vol10_direction: "「我觉得」增多；与哥哥同结论"
+  post_vol11: "新人加入后笔记视角更宽"
+  will_learn: "公开开口的关键一句（卷末）"
+  never_write:
+    - "参与社员栏破案"
+    - "碰虫子"
+    - "公开纠正哥哥"
+  vol1_screen_time: "案末笔记；非社员"
+
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: "若在场：记录谁先指向海报、说话顺序"
+    must_not: ["摸海报角", "喊犯人", "写社员栏"]

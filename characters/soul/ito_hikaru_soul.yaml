@@ -1,0 +1,81 @@
+meta:
+  character_id: ito_hikaru
+  display_name: "伊藤 光"
+  canonical_number: "01"
+  narrative_tier: vol1_core
+  soul_version: "0.1.0"
+  status: "LOCK"
+  locked_at: "2026-06-08"
+  locked_by: "IP Owner"
+  canon_refs:
+    - "01_角色设定/01伊藤 光.txt"
+    - "skills/academy-character-scale/characters.yaml#ito_hikaru"
+
+soul_line: "异常值得被分享——先把对的人拉到问题前面，再一起查能查的东西。"
+
+core_desire: "怪事被追问；团队在一起"
+core_fear: "异常被忽略；朋友散开各查各的"
+
+core_contradiction: "外向但不肤浅——关注是真实的"
+
+curiosity_lens: "人+异常"
+curiosity_first_move: "停步、竖指、喊人；问「你也看到了？」"
+
+thinking_bias: "倾向「谁干的」→ 被慧美拉回「先是不是翘」"
+bias_story_function: "连接者与口述者"
+
+emotional_triggers:
+  anger: "不公时变严肃"
+  silence: "极少"
+  shy: "被真诚感谢时"
+  joy: "≤3秒恢复"
+recovery_style: "拍脑门→下一动作"
+
+language_fingerprint:
+  sentence_length: "10–20字"
+  tempo: "偏快，尾音上扬"
+  register: "清亮"
+  fillers: ["ね", "さ", "よ"]
+  name_addressing: "直呼+さん混用"
+  metaphor_use: "生活比喻"
+  forbidden_patterns: ["你错了", "听我的", "我不确定（直说）"]
+  tense_when_nervous: "仍快但降手势"
+  tense_when_happy: "爽朗笑"
+
+behavior_fingerprint:
+  stance: "挺直，有弹性"
+  gaze: "扫人+扫异常"
+  hands: "指窗外、比划、拍脑门"
+  walk_pace: "轻快"
+  thinking_gesture: "托腮看斜上方"
+  anger_gesture: "眉皱≤3秒"
+  scene_entry: "发现即停"
+  scene_exit: "拉人一起收"
+
+aesthetics_and_objects:
+  space_preference: "人多的走廊、可分享处"
+  new_vs_old: "挂件故事>新物"
+  notebook_order: "口述为主"
+  sensory:
+    sound: "人声"
+    smell: "不敏感"
+    texture: "—"
+  keeps_mementos: "包上社区挂件"
+  never_uses: []
+  key_props: ["浅灰双肩包", "橙色围巾(冬)"]
+
+relationship_vectors:
+  riku_shun: "发现、解释沉默"
+  kato_keimi: "翻译严谨"
+  matsumoto_shiro: "搭档冲"
+  riku_hikaru: "留空间"
+
+growth_and_guardrails:
+  vol1_state: "发现者+连接者；5年2組"
+  never_write: ["命令式破案", "忽视异常"]
+  vol1_screen_time: "主帧主持"
+
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: "站着不碰；问雨日；组织确认"
+    must_not: ["贴犯人", "独自结案"]

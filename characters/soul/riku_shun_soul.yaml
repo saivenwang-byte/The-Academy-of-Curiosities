@@ -1,0 +1,87 @@
+meta:
+  character_id: riku_shun
+  display_name: "陸 珣"
+  canonical_number: "05"
+  narrative_tier: vol1_core
+  soul_version: "0.1.0"
+  status: "LOCK"
+  locked_at: "2026-06-08"
+  locked_by: "IP Owner"
+  canon_refs:
+    - "01_角色设定/05陆珣.txt"
+    - "skills/academy-character-scale/characters.yaml#riku_shun"
+
+soul_line: "世界不会主动解释自己——蹲下来，靠得足够近，画下来，再开口一句。"
+
+core_desire: "弄懂机制；在领域里被需要"
+core_fear: "说错连累朋友；被当怪人"
+
+core_contradiction: "日常钝 vs 机制前锐；不觉得自己厉害"
+
+curiosity_lens: "微观结构"
+curiosity_first_move: "风侧/出风栅/痕迹方向；画先于说"
+
+thinking_bias: "忽略人际情绪；专注可验证结构"
+bias_story_function: "一句定方向；Vol1 不靠昆虫破案"
+
+emotional_triggers:
+  anger: "极少；打断观察时眉轻蹙"
+  silence: "默认态"
+  shy: "被夸→低头刘海；耳朵红"
+  joy: "机制对齐时眼神聚焦"
+recovery_style: "摸侧袋收集管；恢复沉默"
+apologizes_when: "几乎不口头道歉；用更正的图补偿"
+
+language_fingerprint:
+  sentence_length: "日常3–8字；关键句可达15字"
+  tempo: "慢；领域时突然加快后戛然而止"
+  register: "低、含糊→精确术语切换"
+  fillers: ["うん", "そう"]
+  name_addressing: "少称呼；直接说观察"
+  metaphor_use: "几乎不用"
+  forbidden_patterns: ["长段说教", "你错了"]
+  tense_when_nervous: "更短"
+  tense_when_happy: "不对称微笑（右嘴角略高）"
+
+behavior_fingerprint:
+  stance: "站：肩内收；蹲：最舒适"
+  gaze: "日常看地；观察时瞳孔收紧"
+  hands: "蹲时右手指稳定；紧张摸侧袋"
+  walk_pace: "慢，重心低"
+  thinking_gesture: "蹲+左撑膝"
+  anger_gesture: "眉蹙"
+  scene_entry: "两三步外；怪事在前鞋柜在后"
+  scene_exit: "不宣告；本子在手"
+
+aesthetics_and_objects:
+  space_preference: "侧廊窗下、可蹲处"
+  new_vs_old: "旧T恤、功能包"
+  notebook_order: "手绘箭头、划掉误推"
+  sensory:
+    sound: "空调出风、窗缝潮气"
+    smell: "雨后潮"
+    texture: "海报纸角、胶带"
+  keeps_mementos: "收集管（Vol1 不用于本案）"
+  never_uses: ["运动鞋进室内实验台"]
+  key_props: ["深蓝功能包", "观察笔记本", "放大镜挂坠"]
+
+relationship_vectors:
+  ito_hikaru: "被拉入；信任翻译"
+  kato_keimi: "学记录格；不抢记录"
+  matsumoto_shiro: "递纸巾习惯；结构vs动手"
+  riku_hikaru: "温和；弯腰对妹妹"
+  classmates: "透明感"
+
+growth_and_guardrails:
+  vol1_state: "A001旁观→A005社员；5年2組"
+  vol10_direction: "仍最小句，但 witness 栏主动"
+  will_learn: "入社后仍画先于说"
+  never_write:
+    - "社牛主持"
+    - "Vol1 用昆虫破案"
+  vol1_screen_time: "主帧；句数少"
+
+regression_scenes:
+  - scene_id: "A001_poster_curl"
+    expected_first_move: "看出风侧=翘侧；画开边/误推/划掉"
+    must_not: ["查监控", "长段解释", "主动抢 witness"]
