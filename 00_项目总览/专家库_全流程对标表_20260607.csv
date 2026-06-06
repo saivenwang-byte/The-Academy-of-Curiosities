@@ -1,0 +1,45 @@
+﻿阶段,阶段序号,对标国际IP环节,专家类型,E编号,具体工作内容,知识维度,能力要求,当前状态,现有成员/Agent,缺口,拟增补方式,拟虚拟专家名,全网对标参考(角色型),蒸馏Agent名
+零·IP地基,0,MTS Series Bible / Geronimo world bible,战略,E01,50卷愿景、三阶段难度、观察家范式定位,IP战略/竞品,10年系列弧设计,✅已有,总策划文档+用户,—,—,—,Random House series editor (MTS),academy-series-architect
+零·IP地基,0,Encyclopedia Brown fair-play contract,推理,E02,七步观察法、红线条款入正典,推理范式,儿童公平谜题,✅已有,02_创作原则,—,—,—,Donald J. Sobol puzzle ethic,academy-engine
+零·IP地基,0,放課後MC 科学ミステリー体裁,产品,E03,日本市场形态、章节节奏、科学锚点,日童书市场,竞品拆解,✅已有,产品风险分析_V1.0,—,—,—,学研・Gakken MC editorial,—
+零·IP地基,0,Geronimo Stilton transmedia tone,品牌,E15,Hybrid Voice、禁用词、陆珣声线,品牌语调,跨卷一致性,🤖Agent,academy-voice-editor,文学主编人工签核,蒸馏+抽检,川村ひろみ,Scholastic Geronimo line editor,academy-voice-editor
+策划,1,MTS outline per book + arc,策划,E05,卷任务包、Case Card、200篇资产映射,故事架构,卷级里程碑,🤖Agent,academy-series-architect,出版级选题会,虚拟专家,柏原智子,Mary Pope Osborne story meeting,academy-series-architect
+策划,1,放課後MC 实验/线索索引,科学,E06,可复现实验、线索表、知识维度标签,小学科学,实验可教性,🤖Agent,academy-engine,校外科学顾问,待签,佐藤健一,NHK 科学番组监修,academy-expert-science-lab
+策划,1,Encyclopedia Brown clue ledger,推理,E07,公平线索、误导、收束检查表,谜题设计,儿童可推理,✅已有,GateA清单+引擎,—,—,—,Classic kid detective editor,academy-engine
+策划,1,Geronimo 角色圣经,角色,E08,十人团LOCK、年级班级、私服规则,角色Canon,跨卷人设,✅已有,01_角色设定 LOCK,插画人设监修,虚拟专家,田中美咲,Disney character bible lead,academy-expert-character-canon
+策划,1,MTS Research Notes,资料,E09,日本校园季节/口语/气候素材调度,日校园文化,出处标注,🤖Agent,academy-research-editor,名古屋在地校对,蒸馏,田中みどり,japan_campus_consultant 原型,academy-research-editor
+正典,2,MTS manuscript line edit,文学,E04,第三遍润色、删说明文、金句密度,日童文学,小学科学ミステリー语感,🤖Agent,academy-voice-editor,母语儿文签约编辑,👤待签,吉田文子,日本児童文学雑誌編集,academy-expert-jp-literary
+正典,2,Geronimo humor pacing,叙事,E10,单篇张力弧、趣事尾钩、L1-L4,叙事工艺,章节钩子,🤖Agent,academy-engine,—,—,—,Stilton chapter rhythm editor,academy-engine
+正典,2,放課後MC 科学表述审查,科学,E06,正文科学陈述与实验步骤一致,科学准确性,误用警告,⬜缺口,—,缺专职科学审校,虚拟专家优先,佐藤健一,Gakken 監修先生,academy-expert-science-lab
+正典,2,Encyclopedia Brown red herring audit,推理,E11,稿内自检：线索可见性/年龄适配,质量门禁,清单化验收,🤖Agent,academy-engine §QC,第三方谜题审,虚拟专家,渡辺理,Mystery Writers kid division,academy-expert-mystery-qc
+正典,2,MTS historical/cultural sensitivity,文化,E09,名古屋校园礼仪、误 stereotype 扫描,文化合规,儿童适宜,🤖Agent,academy-research-editor,日校教师顾问,蒸馏,田中みどり,School culture consultant JP,academy-research-editor
+正典,2,Geronimo AI slop / humanizer pass,编辑,—,去AI腔、绘本体、说明文渗透,编辑工艺,Humanizer rubric,🤖Agent,ai-polish/humanizer skills,主编终检,—,—,Freelance copy editor (EN/JP),academy-voice-editor
+Gate A,3,MTS pre-illustration story lock,门禁,E12,Vol1 Gate A：结构B、批次0-3条目冻结,阶段门禁,合并前检查,✅已有,Vol1_GateA映射_20260607,—,—,—,Scholastic gate checklist,—
+Gate A,3,Geronimo art brief freeze,视觉,E13,SC prompt、角色一致、名古屋环境,视觉Canon,Plan B机制,🤖Agent,academy-visual-auditor,签约插画总监,虚拟专家,山本彩,Stilton art director,academy-visual-auditor
+Gate A,3,放課後MC 読み物难度 band,阅读,E14,年级V1.0、汉字/假名、脚注规范E04 LOCK,阅读力学,7-12岁日语,✅已有,阅读力学标注规范_V1.1,日语母语试读,👤待签,小林由美,児童書レベル判定士,academy-expert-jp-readability
+Gate A,3,Encyclopedia Brown answer key discipline,推理,E07,Gate A 谜题答案与教师侧一致,教学侧,不泄底,🤖Agent,Case Card,—,—,—,Teacher guide editor,academy-story-database
+Gate A,3,MTS continuity database,资产,E16,200篇总表、卷状态、线索/实验索引,数据治理,Case Card SSOT,🤖Agent,academy-story-database,—,—,—,Series wiki keeper (MTS),academy-story-database
+Gate B,4,Geronimo full layout spec,装帧,E17,PRODUCT-GATE：形态/分册/版式 LOCK,出版工艺,144-176p,✅已有,Vol1正式排版一页纸,印厂对接人,👤待签,鈴木版,Scholastic interior designer,academy-expert-book-design
+Gate B,4,MTS illustration rollout,视觉,E13,A001六格锚点、rollout顺序、SUM页,插图系统,跨章一致,🤖Agent,academy-visual-auditor,外部画师池,虚拟专家协调,山本彩,Magic Tree House art pipeline,academy-visual-auditor
+Gate B,4,放課後MC 図解/实验页,科学传播,E06,实验页、安全提示、器材替代,科学图解,教室可执行,⬜缺口,—,缺实验页模板专家,蒸馏,佐藤健一,科学漫画監修,academy-expert-science-lab
+Gate B,4,Encyclopedia Brown recap pages,结构,E10,篇末回顾、观察家笔记版式,结构模板,可扫描性,🤖Agent,academy-engine,—,—,—,Recap box editor,academy-engine
+Gate B,4,Geronimo JP translation pass,本地化,E18,中→日推敲、去直译、校园口语,日语文学,ミステリー児童文,🤖Agent,academy-jp-voice-editor,签约翻译,蒸馏加强,吉田文子,児童書翻訳者（科学系）,academy-jp-voice-editor
+Vol1,5,MTS Vol1 production sprint,制作,E19,Vol1正典稿、插图批次、Gate证据,卷交付,端到端,🤖Agent,多Skill编排,项目经理,虚拟专家,高橋誠,MTS book producer,academy-engine
+Vol1,5,放課後MC Vol1 科学主题对齐,科学,E06,Vol1主题与实验圈类型图一致,主题科学,L0-L4,✅已有,Vol1结构案,—,—,—,MC episode science tie-in,academy-expert-science-lab
+Vol1,5,Geronimo marketing hook copy,市场,E20,腰封话术、试读章钩子（非正文改）,营销文案,家长/老师向,⬜缺口,—,缺少儿IP营销,虚拟专家,村上麻衣,Kids book publicist,academy-expert-kids-marketing
+Vol1,5,Encyclopedia Brown classroom kit,教育,E21,教师侧讨论题、观察任务单,教育延展,课堂可用,⬜缺口,—,缺教务顾问,待签,伊藤恵,Ed consultant (STEM mystery),academy-expert-education-kit
+试读,6,MTS reader edition QA,试读,E22,Reader版、版本元数据一致 sweep,版本治理,E22清单,🤖Agent,Reader 20260607,外部试读家庭,—,—,Beta reader program MTS,academy-story-database
+试读,6,Geronimo child beta (JP),试读,E14,7-12岁日语可读性、困惑点日志,用户研究,儿童反馈,👤待签,—,缺JP试读网络,招募家长,小林由美,児童読書感想文指導,academy-expert-jp-readability
+试读,6,放課後MC 科学理解度,科学,E06,读者能否复现关键观察,学习成效,形成性评价,⬜缺口,—,缺评估量表,蒸馏,佐藤健一,理科教育評価,academy-expert-science-lab
+试读,6,Encyclopedia Brown spoiler scan,推理,E11,试读版不提前泄底、线索密度,试读合规,谜题体验,🤖Agent,academy-engine QC,—,—,—,Spoiler line editor,academy-expert-mystery-qc
+印前,7,Geronimo prepress PDF/X,印前,E23,CMYK、字体嵌入、插图分辨率,印前工艺,印刷标准,⬜缺口,—,缺印前工程师,外包+Agent,鈴木版,Scholastic prepress,academy-expert-prepress
+印前,7,MTS accessibility / EPUB (future),数字,E24,未来电子书、TTS友好结构,数字出版,可访问性,⬜缺口,—,Vol2+优先级,规划,—,EPUB3 kids standard,academy-expert-digital-pub
+印前,7,放課後MC 版权/肖像,法务,E25,素材出处、字体授权、插画合同,合规,合同模板,👤待签,—,缺法务顾问,待签,森田法务,Publisher legal (JP),academy-expert-rights
+出版,8,MTS launch + series roadmap,出版,E01,Vol1上市、Vol2排期、渠道假设,出版战略,阶段II remap,✅已有,50卷时间表 remap,出版社对接,👤待签,—,Penguin young readers launch,academy-series-architect
+出版,8,Geronimo retail metadata,发行,E20,ISBN元数据、分类、关键词JP,元数据,平台上架,⬜缺口,—,缺发行OP,虚拟专家,村上麻衣,Amazon JP 児童書カテゴリ,academy-expert-kids-marketing
+出版,8,放課後MC 渠道对标,渠道,E03,学研/文库/科学杂志渠道对照,渠道知识,区域策略,✅已有,竞品分析文档,本土发行伙伴,待签,—,Gakken channel manager,—
+Vol2+,9,MTS series continuity office,系列,E16,跨卷伏笔、团队成长弧、难度爬升,系列圣经,长期一致,🤖Agent,academy-story-database,系列主编,虚拟专家,柏原智子,Long-running series editor,academy-series-architect
+Vol2+,9,Encyclopedia Brown case factory,产能,E05,卷2+ Case Card 批量、产能节奏,产能规划,每卷8-12篇,🤖Agent,academy-engine,外部写手（可选）,—,—,Work-for-hire mystery pack,academy-engine
+Vol2+,9,Geronimo localization factory,本地化,E18,多卷日译流水线、术语表,翻译记忆,批量质检,🤖Agent,academy-jp-voice-editor,翻译团队,蒸馏,吉田文子,Stilton i18n lead,academy-jp-voice-editor
+Vol2+,9,放課後MC 科学主题轮换,科学,E06,10卷阶段I主题不重复、实验库扩展,科学策展,主题矩阵,🤖Agent,academy-research-editor,科学顾问团,蒸馏,佐藤健一,Science editor anthology,academy-expert-science-lab
+Vol2+,9,Expert distillation program,组织,—,academy-expert-* Skill 蒸馏、虚拟专家池,Agent工程,Skill SSOT,🤖Agent,.cursor/skills,优先级排序,执行,专家库虚拟人格,Editorial AI ops (2026),skill-creator
