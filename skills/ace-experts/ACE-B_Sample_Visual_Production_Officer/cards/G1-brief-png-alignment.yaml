@@ -1,0 +1,53 @@
+card_id: G1-brief-png-alignment
+version: "0.1.0"
+ace_officer: ACE-B_Sample_Visual_Production_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - docs/ace-distill/ip_history/encyclopedia_brown_production_history.md
+    - 07_设计原档/04_样章视觉/A001_深度锚点包_6张_画师开工单_V1.0.md
+capability_atom:
+  atom_id: G1-001
+  name: g1_brief_png_alignment
+  stage: gate_a_sample_visual
+  description: G1a/G1b 线稿 PNG 与开工单/Shot Map 构图·比例·私服上履き一致
+  canon_priority: high
+canon_refs:
+  - path: 07_设计原档/04_样章视觉/A001_深度锚点包_6张_画师开工单_V1.0.md
+    section: "六帧清单"
+  - path: 05_视觉设定/E22_书籍形态与排版规范_LOCK_V1.0.md
+    section: "插图深度"
+knowledge_sources:
+  - name: 石黒圭
+    type: lecture
+    ref: "装帧编辑公开讲座 · 内页完稿检查节点（ISBN/活动公开信息）"
+    date_accessed: "2026-06-08"
+    usage: 批次审图工序，非装帧风格克隆
+    evidence_grade: confirmed
+    persona_agent_forbidden: true
+checks:
+  - check_id: G1-001-A
+    prompt: PNG 是否覆盖开工单六帧 ID
+    pass_criteria: 6/6 帧有对应 PNG 或 HOLD 登记
+    inherits: [V12, L0]
+    check_type: agent_review
+  - check_id: G1-001-B
+    prompt: 私服/上履き/年级是否与 characters.yaml 一致
+    pass_criteria: visual-auditor 零 CRITICAL
+    inherits: [V12, V13, V14]
+    check_type: agent_review
+reject_if:
+  - Q版主视觉
+  - 湿椅子椅背结露机制套用于 Plan B
+  - living artist style 名
+output_contract:
+  format: markdown_report
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: G1
+    action: produce_png
+  - E_id: E06
+    action: sign

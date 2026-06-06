@@ -1,0 +1,58 @@
+card_id: LNG-jp-vol1-readability
+version: "0.1.0"
+ace_officer: ACE-A_Canon_Gate_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - docs/ace-distill/ip_history/houkago_mystery_club_production_history.md
+    - 00_项目总览/日文读音标注策略_V1.1.md
+capability_atom:
+  atom_id: LNG-001
+  name: jp_vol1_readability_band
+  stage: gate_a_canon
+  description: Vol1 A001 日文符合小五小六独立读 · 标日汉字密度 · 选择性ルビ · 禁翻译腔
+  canon_priority: high
+canon_refs:
+  - path: 00_项目总览/日文读音标注策略_V1.1.md
+    section: "§1 标日对齐"
+  - path: 00_项目总览/00_首市场与试读语言_LOCK_2026-06-07.md
+    section: "试读日本語"
+knowledge_sources:
+  - name: 児童文学編集（行业通识）
+    type: article
+    ref: "日本児童文学学会 · 読みやすさ指標（公开综述）"
+    date_accessed: "2026-06-08"
+    usage: 五六年生汉字配当与ルビ密度，非特定编辑 persona
+    evidence_grade: inferred
+    persona_agent_forbidden: true
+benchmark_refs:
+  - ip_slug: houkago_mystery_club
+    layer: L1
+    mechanism_id: readable-jp-prose-density
+    do_not_copy: ["全注音", "Q版主视觉"]
+checks:
+  - check_id: LNG-001-A
+    prompt: A001 JP 是否避免表外汉字无ルビ
+    pass_criteria: 表外字 100% ルビ或假名改写
+    inherits: [E04, L09]
+    check_type: agent_review
+  - check_id: LNG-001-B
+    prompt: 对话是否 35–45% · 句长 20–35 字符 band
+    pass_criteria: 抽样 20 句达标 ≥85%
+    inherits: [篇幅与单位构架_V1.1]
+    check_type: lint
+reject_if:
+  - 振假名/全振假名术语
+  - 翻译腔直译中文语序
+  - 光=ひかる 误表记
+output_contract:
+  format: markdown_report
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: E06
+    action: sign
+  - E_id: E04
+    action: sign

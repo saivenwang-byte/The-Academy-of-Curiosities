@@ -6,7 +6,7 @@ meta:
   soul_version: "0.1.0"
   status: "LOCK"
   locked_at: "2026-06-08"
-  locked_by: "IP Owner"
+  locked_by: "KarfWang"
   canon_refs:
     - "01_角色设定/01伊藤 光.txt"
     - "skills/academy-character-scale/characters.yaml#ito_hikaru"
@@ -30,6 +30,7 @@ emotional_triggers:
   shy: "被真诚感谢时"
   joy: "≤3秒恢复"
 recovery_style: "拍脑门→下一动作"
+apologizes_when: "极少；用拉人一起查补偿"
 
 language_fingerprint:
   sentence_length: "10–20字"

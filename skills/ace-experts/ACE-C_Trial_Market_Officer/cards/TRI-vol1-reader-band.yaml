@@ -1,0 +1,57 @@
+card_id: TRI-vol1-reader-band
+version: "0.1.0"
+ace_officer: ACE-C_Trial_Market_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - docs/ace-distill/ip_history/houkago_mystery_club_production_history.md
+    - 00_项目总览/完整产品阶段交付包_V1.0.md
+capability_atom:
+  atom_id: TRI-001
+  name: vol1_reader_band_e20
+  stage: gate_c_trial
+  description: E20 试读 band · 10–12 岁 · P1 阈值 · 续读意愿口径
+  canon_priority: high
+canon_refs:
+  - path: 00_项目总览/篇幅与单位构架_V1.1.md
+    section: "§0 主读者"
+  - path: 00_项目总览/完整产品阶段交付包_V1.0.md
+    section: "§3 P1 通过标准"
+knowledge_sources:
+  - name: E20 试读组织（行业通识）
+    type: article
+    ref: "児童書試読会運営ガイド（公开综述类资料索引）"
+    date_accessed: "2026-06-08"
+    usage: 试读阈值与 band 设定，非特定组织者 persona
+    evidence_grade: inferred
+    persona_agent_forbidden: true
+benchmark_refs:
+  - ip_slug: houkago_mystery_club
+    layer: L1
+    mechanism_id: youth-mystery-engagement
+    do_not_copy: ["恐怖元素", "高暴力"]
+checks:
+  - check_id: TRI-001-A
+    prompt: P1 包是否含 PDF+脚本+问卷+阈值
+    pass_criteria: audit_phase_package P1 无 FAIL
+    inherits: [E20, E02]
+    check_type: lint
+  - check_id: TRI-001-B
+    prompt: 试读阈值是否写死（续读≥60% · scary 0%）
+    pass_criteria: README/协议内显式数字
+    inherits: [E20]
+    check_type: lint
+reject_if:
+  - 试读前要求 E20 真人数据
+  - 用成人文学标准评儿童桥梁书
+output_contract:
+  format: markdown_report
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: E20
+    action: sign
+  - E_id: E06
+    action: sign

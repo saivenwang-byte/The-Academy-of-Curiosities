@@ -6,7 +6,7 @@ meta:
   soul_version: "0.1.0"
   status: "LOCK"
   locked_at: "2026-06-08"
-  locked_by: "IP Owner"
+  locked_by: "KarfWang"
   supersedes: ["skills/academy-char-06-hikaru/SKILL.md"]
   canon_refs:
     - "01_角色设定/06陆瑆.txt"
@@ -43,7 +43,7 @@ language_fingerprint:
   forbidden_patterns:
     - "哥哥好厉害"
     - "我觉得你们应该"
-    - 说虫子可爱
+    - "说虫子可爱"
   tense_when_nervous: "更短句"
   tense_when_happy: "不加速；笔速加快"
 

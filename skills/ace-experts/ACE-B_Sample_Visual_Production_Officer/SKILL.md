@@ -10,7 +10,7 @@ allowed-tools:
 
 # ACE-B · Sample Visual Production Officer · V0.1
 
-> **STATUS: DRAFT · NOT SIGNOFF**  
+> **STATUS: ACTIVE · ace_distilled 就绪**（E06/G1 PNG 产出不变）  
 > **Charter**: 阶段生产官，非明星数字人 · 见 [`IP拍板记录_ACE与签核政策_20260607.md`](../../00_项目总览/IP拍板记录_ACE与签核政策_20260607.md)  
 > **Schema**: [`skills/ace-experts/_schema/distill_card.yaml`](../_schema/distill_card.yaml)  
 > **路线图**: [`ACE全球IP专家蒸馏计划_执行路线图_V0.1_20260607.md`](../../00_项目总览/ACE全球IP专家蒸馏计划_执行路线图_V0.1_20260607.md)
@@ -77,12 +77,12 @@ allowed-tools:
 
 ---
 
-## Week 1 交付（stub）
+## Week 1 交付
 
-- [ ] 本 SKILL.md V0.1
-- [ ] ≥1 张示例蒸馏卡（如 `VIS-fair-clue-frame`）
-- [ ] 放課後MC + Encyclopedia Brown 生产史卡（`docs/ace-distill/ip_history/`）
-- [ ] A001 回测脚本占位
+- [x] 本 SKILL.md V0.1
+- [x] 蒸馏卡 `G1-brief-png-alignment` · `VIS-fair-clue-frame`
+- [x] 放課後MC + Encyclopedia Brown 生产史（`docs/ace-distill/ip_history/`）
+- [ ] A001 回测脚本占位（Week 3）
 
 ---
 
@@ -96,4 +96,4 @@ E04 · E22 · G1 · E06                      → 上位法与硬签
 
 ---
 
-| 版本 | 2026-06-07 · V0.1 skeleton · Week 1 stub |
+| 版本 | 2026-06-08 · V0.1 就位 · 2 蒸馏卡 |

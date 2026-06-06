@@ -6,7 +6,7 @@ meta:
   soul_version: "0.1.0"
   status: "LOCK"
   locked_at: "2026-06-08"
-  locked_by: "IP Owner"
+  locked_by: "KarfWang"
   canon_refs:
     - "01_角色设定/03松本 志郎.txt"
     - "skills/academy-character-scale/characters.yaml#matsumoto_shiro"
@@ -36,24 +36,40 @@ language_fingerprint:
   sentence_length: "短 burst"
   tempo: "快"
   register: "直"
+  fillers: ["お"]
+  name_addressing: "直呼/君"
+  metaphor_use: "几乎不用"
   forbidden_patterns: ["长段分析", "放弃"]
   tense_when_nervous: "更快"
   tense_when_happy: "哦—长音"
 
 behavior_fingerprint:
   stance: "蹲低"
+  gaze: "先看手再看角"
   hands: "摸角、贴胶带、抓头发"
   walk_pace: "快"
+  thinking_gesture: "抓头发"
+  anger_gesture: "啧"
   scene_entry: "冲到现场"
   scene_exit: "拍裤子站起"
 
 aesthetics_and_objects:
+  space_preference: "能动手贴的地方"
+  new_vs_old: "胶带常带"
+  notebook_order: "不记格；靠慧美"
+  sensory:
+    sound: "胶带撕扯"
+    smell: "—"
+    texture: "海报纸角"
+  keeps_mementos: "备用胶带卷"
+  never_uses: ["放弃验证"]
   key_props: ["布基胶带", "文件夹(挡风)"]
 
 relationship_vectors:
   kato_keimi: "服记录；被拉袖子"
   ito_hikaru: "跟光冲"
   riku_shun: "你谁？→服风侧"
+  riku_hikaru: "偶尔被记一笔"
 
 growth_and_guardrails:
   vol1_state: "5年3組；换贴习惯"

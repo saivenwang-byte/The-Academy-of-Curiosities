@@ -8,7 +8,8 @@ allowed-tools: [Read, Write, Grep]
 # academy-gate-orchestrator · V0.1 任务书（非自治）
 
 ## 输入
-- 四栏回传 · P0-04 · E04/E07 · visual-auditor 报告 · ACE-B 草案
+- 四栏回传 · P0-04 · E04/E07 · visual-auditor 报告
+- **ACE 蒸馏草案**：`skills/ace-experts/` · `python scripts/ace_distill_lint.py`
 
 ## 输出
 - `GateA_E06_汇总表` 填充分栏

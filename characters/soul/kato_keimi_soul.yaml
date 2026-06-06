@@ -6,7 +6,7 @@ meta:
   soul_version: "0.1.0"
   status: "LOCK"
   locked_at: "2026-06-08"
-  locked_by: "IP Owner"
+  locked_by: "KarfWang"
   canon_refs:
     - "01_角色设定/02加藤 慧美.txt"
     - "skills/academy-character-scale/characters.yaml#kato_keimi"
@@ -27,7 +27,7 @@ bias_story_function: "刹车+格化"
 emotional_triggers:
   anger: "极少外显"
   silence: "推眼镜=思考"
-  shy: "—"
+  shy: "被点名时推眼镜微低头"
   joy: "预测格命中时微点头"
 recovery_style: "多写一行对照"
 apologizes_when: "不对同学大声道歉；用记录补偿"
@@ -41,7 +41,7 @@ language_fingerprint:
   metaphor_use: "少"
   forbidden_patterns: ["你错了", "犯人", "一定是他"]
   tense_when_nervous: "更短、更格"
-  tense_when_happy: "—"
+  tense_when_happy: "微点头确认"
 
 behavior_fingerprint:
   stance: "端正"
@@ -55,7 +55,14 @@ behavior_fingerprint:
 
 aesthetics_and_objects:
   space_preference: "可贴板、可对照处"
+  new_vs_old: "板夹旧而整齐"
   notebook_order: "严格格子"
+  sensory:
+    sound: "翻页声"
+    smell: "—"
+    texture: "板夹金属夹"
+  keeps_mementos: "旧采访剪报（夹内）"
+  never_uses: ["空白格跳过"]
   key_props: ["实验记录型笔记本", "自动铅笔"]
 
 relationship_vectors:

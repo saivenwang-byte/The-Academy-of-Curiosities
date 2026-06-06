@@ -1,0 +1,53 @@
+card_id: CUL-nagoya-campus-five-layer
+version: "0.1.0"
+ace_officer: ACE-A_Canon_Gate_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - 02_创作原则与世界观/日本校园文化顾问_田中みどり.txt
+    - docs/ace-distill/ip_history/houkago_mystery_club_production_history.md
+capability_atom:
+  atom_id: CUL-001
+  name: nagoya_campus_five_layer
+  stage: gate_a_canon
+  description: 名古屋小学五层感知校准 · 侧廊/上履き/引き戸/社团/壁报 · 禁中国校园直译
+  canon_priority: high
+canon_refs:
+  - path: 02_创作原则与世界观/日本校园文化顾问_田中みどり.txt
+    section: "五层感知"
+  - path: docs/00_REDLINE_JP_CULTURAL_CALIBRATION.md
+    section: "L1 硬指标"
+knowledge_sources:
+  - name: 日本小学校生活（公开教育资料）
+    type: official_site
+    ref: "文部科学省 · 小学校学習指導要領 生活科/総合（公开 PDF 索引）"
+    date_accessed: "2026-06-08"
+    usage: 給食/上履き/校内动线事实层，非 persona
+    evidence_grade: confirmed
+    persona_agent_forbidden: true
+checks:
+  - check_id: CUL-001-A
+    prompt: A001 是否出现铰链门推开/穿室外鞋进教室
+    pass_criteria: 零红色文化警告（对照 HTML 工具维度）
+    inherits: [E07, S20]
+    check_type: agent_review
+  - check_id: CUL-001-B
+    prompt: 观察社/壁报/侧廊尺度是否符合名古屋四月气候
+    pass_criteria: Gate §5.2 五维无 BLOCKER
+    inherits: [P0-01]
+    check_type: agent_review
+reject_if:
+  - 中国小学作息直译
+  - 部活秋冬光线错误
+  - いじめ正面冲突描写
+output_contract:
+  format: markdown_report
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: E07
+    action: sign
+  - E_id: E06
+    action: sign

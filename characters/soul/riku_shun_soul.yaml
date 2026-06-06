@@ -6,7 +6,7 @@ meta:
   soul_version: "0.1.0"
   status: "LOCK"
   locked_at: "2026-06-08"
-  locked_by: "IP Owner"
+  locked_by: "KarfWang"
   canon_refs:
     - "01_角色设定/05陆珣.txt"
     - "skills/academy-character-scale/characters.yaml#riku_shun"

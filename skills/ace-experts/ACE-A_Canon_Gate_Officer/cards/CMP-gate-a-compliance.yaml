@@ -1,0 +1,52 @@
+card_id: CMP-gate-a-compliance
+version: "0.1.0"
+ace_officer: ACE-A_Canon_Gate_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - 00_项目总览/00_正典门禁_2026-06-04.md
+    - 00_项目概览/IP拍板记录_ACE与签核政策_20260607.md
+capability_atom:
+  atom_id: CMP-001
+  name: gate_a_compliance_scan
+  stage: gate_a_canon
+  description: Gate A 前合规扫描 · 零恐怖/无政治/无霸凌/湿椅子非Vol1/ACE 四分离
+  canon_priority: high
+canon_refs:
+  - path: 00_项目总览/00_正典门禁_2026-06-04.md
+    section: "Vol1 Plan B"
+  - path: 00_项目总览/IP拍板记录_ACE与签核政策_20260607.md
+    section: "S1–S6"
+knowledge_sources:
+  - name: IP 内部正典门禁
+    type: article
+    ref: "00_正典门禁_2026-06-04.md"
+    date_accessed: "2026-06-08"
+    usage: 合规红线扫描规则源，非 persona
+    evidence_grade: confirmed
+    persona_agent_forbidden: true
+checks:
+  - check_id: CMP-001-A
+    prompt: 全文是否触 S18–S20 红线
+    pass_criteria: 零 CRITICAL
+    inherits: [S18, S19, S20]
+    check_type: lint
+  - check_id: CMP-001-B
+    prompt: ACE 输出是否含 persona/endorsement 暗示
+    pass_criteria: 零命中 · persona_agent_forbidden 全卡 true
+    inherits: [ACE-S1]
+    check_type: lint
+reject_if:
+  - 对外暗示真人专家背书
+  - 使用废止假名 Agent 路径
+output_contract:
+  format: yaml_findings
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: E25
+    action: sign
+  - E_id: E06
+    action: sign

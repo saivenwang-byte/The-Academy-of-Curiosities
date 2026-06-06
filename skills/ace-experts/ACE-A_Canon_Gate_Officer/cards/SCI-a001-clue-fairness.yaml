@@ -1,0 +1,58 @@
+card_id: SCI-a001-clue-fairness
+version: "0.1.0"
+ace_officer: ACE-A_Canon_Gate_Officer
+status: active
+implementation:
+  mode: rag_rules_only
+  fine_tune: false
+  rag_index_paths:
+    - docs/ace-distill/ip_history/encyclopedia_brown_production_history.md
+    - 05_视觉设定/第一话/P0-04_科学与线索公平审核_A001_PASS工作单_V0.2.md
+capability_atom:
+  atom_id: SCI-001
+  name: a001_clue_fairness_p004
+  stage: gate_a_canon
+  description: A001 海报翘边/摩擦屑/风向 · 科学可验证 · 公平线索≥3 · 温柔真相
+  canon_priority: high
+canon_refs:
+  - path: 05_视觉设定/第一话/P0-04_科学与线索公平审核_A001_PASS工作单_V0.2.md
+    section: "§5 PASS 条件"
+  - path: 00_项目概览/01_分支讨论_范式与框架/11_检查项Skill包_v0.1.md
+    section: "C03 C04"
+knowledge_sources:
+  - name: Donald Sobol · Encyclopedia Brown
+    type: book
+    ref: "ISBN 系列 · 公平线索页布局（公开书评/教材引用）"
+    date_accessed: "2026-06-08"
+    usage: 线索在正文/图面前置可见，非美式小镇设定
+    evidence_grade: confirmed
+    persona_agent_forbidden: true
+benchmark_refs:
+  - ip_slug: encyclopedia_brown
+    layer: L1
+    mechanism_id: fair-clue-page-layout
+    do_not_copy: ["无图黑白", "成人侦探"]
+checks:
+  - check_id: SCI-001-A
+    prompt: 风侧/雨天/贴法三线索是否在收束前均可回溯
+    pass_criteria: C03 公平线索 ≥3 · 无事后追加
+    inherits: [P0-04, C03]
+    check_type: agent_review
+  - check_id: SCI-001-B
+    prompt: 志郎行为是否科学可验证且非恶意定罪
+    pass_criteria: C04 温柔真相 PASS
+    inherits: [C04, S18]
+    check_type: agent_review
+reject_if:
+  - 超自然解释
+  - 大人破案
+  - 写成「犯人」审判
+output_contract:
+  format: markdown_report
+  signoff: human_required
+  draft_header: "STATUS: DRAFT · NOT SIGNOFF"
+human_signoff_map:
+  - E_id: E09
+    action: sign
+  - E_id: E06
+    action: sign
