@@ -1,6 +1,7 @@
 # A001 · L0 六帧 · NanoBanana 成品级 Prompt · G1draft · 2026-06-10
 
-> **Status**: **G1DRAFT_PRODUCTION** · Phase 2 · **非 L0 v1.0 LOCK**  
+> **Status**: **SUPERSEDED** → [`prompts_A001_L0六帧_NanoBanana_G1draft_终稿_20260611.md`](./prompts_A001_L0六帧_NanoBanana_G1draft_终稿_20260611.md)  
+> **Status (legacy)**: **G1DRAFT_PRODUCTION** · Phase 2 · **非 L0 v1.0 LOCK**  
 > **Shot Map 正本**: [`03_案01_分镜头与插页地图_V1.3_锁页版.md`](./03_案01_分镜头与插页地图_V1.3_锁页版.md)  
 > **生产清单**: [`06_A001_L0六帧_v1.0_生产清单.md`](./06_A001_L0六帧_v1.0_生产清单.md)  
 > **画风 Sheet**: `07_设计原档/04_样章视觉/Vol1_正篇画风_角色设定Sheet_用户参考_v1.png`  

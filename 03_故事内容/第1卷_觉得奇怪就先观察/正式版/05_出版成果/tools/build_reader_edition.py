@@ -47,24 +47,26 @@ HIKARU_SAMPLE = SAMPLE / "05_陸瑆日记页_样章.txt"
 
 OUT_DATE = date.today().strftime("%Y%m%d")
 
-# 段后插图（A 轨）— 对齐 V1.3 锁页
-SHOT_INJECT: list[tuple[str, str | None, list[tuple[list[Path], str, str, str]]]] = [
-    ("序", None, [([SUPP / "V-S00_序钩_海报微翘_v0.1.png"], "fig-quarter", "V-S00 · 序 · ポスター", "V-S00")]),
-    ("めくれたポスター", "1", [([DEPTH / "V-S01-A1_侧廊发现_v0.2.png", DEPTH / "V-S01-A1_侧廊发现.png"], "fig-half", "DA1 · 側廊で発見", "DA1")]),
+# 段后插图（A 轨）— 对齐 V1.3 锁页 · stem 不含后缀
+SHOT_SPECS: list[tuple[str, str | None, list[tuple[str, str, str, str]]]] = [
+    ("序", None, [("V-S00_序钩_海报微翘", "fig-quarter", "V-S00 · 序 · ポスター", "V-S00")]),
+    ("めくれたポスター", "1", [("V-S01-A1_侧廊发现", "fig-half", "DA1 · 側廊で発見", "DA1")]),
     ("めくれたポスター", "2", [
-        ([DEPTH / "V-S01-A2_误导搜查_v0.2.png", DEPTH / "V-S01-A2_误导搜查.png"], "fig-half", "DA2 · 誤った捜査", "DA2"),
-        ([SUPP / "V-S01-A2b_珣指风侧_MCU_v0.1.png"], "fig-inset", "DA2b · 風の側", "DA2b"),
+        ("V-S01-A2_误导搜查", "fig-half", "DA2 · 誤った捜査", "DA2"),
+        ("V-S01-A2b_珣指风侧_MCU", "fig-inset", "DA2b · 風の側", "DA2b"),
     ]),
     ("めくれたポスター", "3", [
-        ([DEPTH / "V-S01-A3_风侧线索_v0.2.png", DEPTH / "V-S01-A3_风侧线索.png"], "fig-half", "DA3 · 風側の手がかり", "DA3"),
-        ([SUPP / "V-S01-A3b_胶带开边_ECUs_v0.1.png"], "fig-inset", "DA3b · テープの開き辺", "DA3b"),
+        ("V-S01-A3_风侧线索", "fig-half", "DA3 · 風側の手がかり", "DA3"),
+        ("V-S01-A3b_胶带开边_ECUs", "fig-inset", "DA3b · テープの開き辺", "DA3b"),
     ]),
     ("めくれたポスター", "4", [
-        ([DEPTH / "V-S01-A4_验证收束_v0.2.png", DEPTH / "V-S01-A4_验证收束.png"], "fig-half", "DA4 · 検証と収束", "DA4"),
-        ([SUPP / "V-S01-A4b_换贴对比_MCU_v0.1.png"], "fig-inset", "DA4b · 貼り方", "DA4b"),
-        ([DEPTH / "V-S01-TAIL_壁报空栏_v0.2.png", DEPTH / "V-S01-TAIL_壁报空栏.png"], "fig-quarter", "DC1 · 壁報の空欄", "DC1"),
+        ("V-S01-A4_验证收束", "fig-half", "DA4 · 検証と収束", "DA4"),
+        ("V-S01-A4b_换贴对比_MCU", "fig-inset", "DA4b · 貼り方", "DA4b"),
+        ("V-S01-TAIL_壁报空栏", "fig-quarter", "DC1 · 壁報の空欄", "DC1"),
     ]),
 ]
+
+SUPPLEMENT_STEMS = {"V-S00_序钩_海报微翘", "V-S01-A2b_珣指风侧_MCU", "V-S01-A3b_胶带开边_ECUs", "V-S01-A4b_换贴对比_MCU"}
 
 CAST_JP = """陸珣（りく しゅん）· 5年2組 · 転校生
 伊藤光（いとう あきら）· 5年2組 · 学校おもしろ観察クラブ
@@ -81,6 +83,34 @@ def first_existing(candidates: list[Path]) -> Path | None:
         if p.exists():
             return p
     return None
+
+
+def asset_candidates(stem: str, tier: str) -> list[Path]:
+    """Resolve depth/supplement PNG by tier: auto | g1draft | v0.2 | v1.0."""
+    base_dir = SUPP if stem in SUPPLEMENT_STEMS else DEPTH
+    if stem in SUPPLEMENT_STEMS:
+        return [base_dir / f"{stem}_v0.1.png"]
+    tiers = {
+        "v1.0": [base_dir / f"{stem}_v1.0.png"],
+        "g1draft": [base_dir / f"{stem}_G1draft.png"],
+        "v0.2": [base_dir / f"{stem}_v0.2.png"],
+        "legacy": [base_dir / f"{stem}.png"],
+    }
+    if tier == "auto":
+        return tiers["v1.0"] + tiers["g1draft"] + tiers["v0.2"] + tiers["legacy"]
+    if tier == "g1draft":
+        return tiers["g1draft"] + tiers["v0.2"] + tiers["legacy"]
+    if tier == "v0.2":
+        return tiers["v0.2"] + tiers["legacy"]
+    return tiers["v1.0"] + tiers["g1draft"] + tiers["v0.2"] + tiers["legacy"]
+
+
+def shot_inject_for_tier(tier: str):
+    out = []
+    for ch_key, sec, figs in SHOT_SPECS:
+        resolved = [(asset_candidates(stem, tier), css, cap, sid) for stem, css, cap, sid in figs]
+        out.append((ch_key, sec, resolved))
+    return out
 
 
 def load_css() -> str:
@@ -104,9 +134,9 @@ def figure_html(paths: list[Path], css: str, caption: str) -> str:
     )
 
 
-def inject_shots(chapter: str, section: str | None) -> str:
+def inject_shots(chapter: str, section: str | None, tier: str) -> str:
     parts: list[str] = []
-    for ch_key, sec, figs in SHOT_INJECT:
+    for ch_key, sec, figs in shot_inject_for_tier(tier):
         if ch_key not in chapter:
             continue
         if sec is not None and sec != section:
@@ -116,7 +146,7 @@ def inject_shots(chapter: str, section: str | None) -> str:
     return "\n".join(parts)
 
 
-def prose_to_html(text: str) -> str:
+def prose_to_html(text: str, tier: str) -> str:
     blocks: list[str] = []
     current_chapter = ""
     pending_section: str | None = None
@@ -132,7 +162,7 @@ def prose_to_html(text: str) -> str:
                 p = p.strip()
                 if p:
                     sec_body.append(f"<p>{p}</p>")
-        fig = inject_shots(current_chapter, pending_section)
+        fig = inject_shots(current_chapter, pending_section, tier)
         sec_html = "\n".join(sec_body)
         if fig:
             blocks.append(f'<div class="scene-block">{sec_html}{fig}<div class="clear"></div></div>')
@@ -157,7 +187,7 @@ def prose_to_html(text: str) -> str:
             if body:
                 blocks.append(f'<div class="scene-block"><h2 class="chapter">{lines[0]}</h2>')
                 blocks.append(f"<p>{body.replace(chr(10), '</p><p>')}</p>")
-                fig = inject_shots(current_chapter, None)
+                fig = inject_shots(current_chapter, None, tier)
                 if fig:
                     blocks.append(f"{fig}<div class=\"clear\"></div></div>")
                 else:
@@ -232,9 +262,9 @@ def hikaru_html() -> str:
     return f"{img_part}<div class=\"diary-page\">{body}</div>"
 
 
-def post_story_html() -> str:
+def post_story_html(tier: str) -> str:
     db1 = figure_html(
-        [DEPTH / "V-S01-B1_风侧机制图_v0.2.png", DEPTH / "V-S01-B1_风侧机制图.png"],
+        asset_candidates("V-S01-B1_风侧机制图", tier),
         "fig-half",
         "DB1 · 風と湿度と貼り方",
     )
@@ -254,14 +284,80 @@ def post_story_html() -> str:
 """
 
 
-def build_case_html(scope: str) -> str:
+GATE_A_WATERMARK_CSS = """
+body.gate-a-mvp::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    -35deg,
+    transparent,
+    transparent 180px,
+    rgba(180, 60, 40, 0.06) 180px,
+    rgba(180, 60, 40, 0.06) 181px
+  );
+}
+.watermark-banner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  font-size: 22pt;
+  font-weight: 600;
+  color: rgba(160, 50, 35, 0.14);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 9998;
+  letter-spacing: 0.12em;
+}
+.badge-gate-a {
+  display: inline-block;
+  background: #8b3a2a;
+  color: #fff;
+  font-size: 8pt;
+  padding: 0.25em 0.6em;
+  border-radius: 2px;
+  margin-bottom: 0.6em;
+}
+"""
+
+
+def build_case_html(
+    scope: str,
+    *,
+    tier: str = "auto",
+    out_date: str | None = None,
+    gate_a: bool = False,
+) -> str:
     css = load_css()
+    if gate_a:
+        css += GATE_A_WATERMARK_CSS
+    stamp = out_date or OUT_DATE
     label, fname, case_title = CASE_JP[scope]
     jp_path = BODY_DIR / fname
     jp_raw = bde.strip_txt_meta(bde.read_text(jp_path))
-    body = prose_to_html(jp_raw)
-    cover_img = first_existing([DEPTH / "V-S01-A1_侧廊发现_v0.2.png"])
+    body = prose_to_html(jp_raw, tier)
+    cover_img = first_existing(asset_candidates("V-S01-A1_侧廊发现", tier))
     cover_uri = bde.img_data_uri(cover_img) if cover_img else ""
+    body_class = ' class="gate-a-mvp"' if gate_a else ""
+    wm_div = '<div class="watermark-banner">Gate A MVP · 非出版清样</div>' if gate_a else ""
+    badge = (
+        '<p class="badge-gate-a">Gate A MVP · 非出版清样</p>'
+        if gate_a
+        else '<p class="badge-reader">Reader Edition · 橋渡し読み本 · 試読</p>'
+    )
+    intro = (
+        "この本は <strong>Gate A 样张 MVP</strong> です。G1draft 六帧 · 内审/E20 试读 · <strong>非</strong> 出版清样。"
+        if gate_a
+        else "この本は <strong>読者試読版</strong> です。おかしいと思ったら、まず見てみる——観察クラブの最初の一件。"
+    )
+    rights = (
+        f"© 学堂奇事録 · {stamp} · Gate A MVP · 非出版清样 · RGB"
+        if gate_a
+        else f"© 学堂奇事録 · {stamp} · 非売品試読 · RGB"
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="ja">
@@ -270,10 +366,11 @@ def build_case_html(scope: str) -> str:
 <title>学堂奇事録 · 第1巻 · 第1起（Reader）</title>
 <style>{css}</style>
 </head>
-<body>
+<body{body_class}>
+{wm_div}
 
 <div class="cover reader-break">
-  <p class="badge-reader">Reader Edition · 橋渡し読み本 · 試読</p>
+  {badge}
   <h1>学堂奇事録</h1>
   <p class="vol">第1巻 · おかしいと思ったら、まず見てみる<br/>第 1 起 · めくれたポスター</p>
   <p class="tagline">謎が、解ける日。</p>
@@ -282,8 +379,8 @@ def build_case_html(scope: str) -> str:
 
 <div class="front-matter reader-break copyright">
   <h2>はじめに</h2>
-  <p>この本は <strong>読者試読版</strong> です。おかしいと思ったら、まず見てみる——観察クラブの最初の一件。</p>
-  <p style="font-size:9pt;color:#666;">© 学堂奇事録 · {OUT_DATE} · 非売品試読 · RGB</p>
+  <p>{intro}</p>
+  <p style="font-size:9pt;color:#666;">{rights}</p>
   <h2>登場人物</h2>
   <pre class="cast">{CAST_JP}</pre>
   <h2>目次</h2>
@@ -297,7 +394,7 @@ def build_case_html(scope: str) -> str:
 {body}
 </div>
 
-{post_story_html()}
+{post_story_html(tier)}
 
 </body>
 </html>
@@ -312,20 +409,32 @@ def html_to_pdf(html_path: Path, pdf_path: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Vol1 Reader Edition PDF")
     parser.add_argument("--scope", choices=["a001", "a002", "a003", "a004", "a005", "vol1"], default="a001")
+    parser.add_argument("--tier", choices=["auto", "g1draft", "v0.2", "v1.0"], default="auto")
+    parser.add_argument("--gate-a", action="store_true", help="Gate A MVP: g1draft tier + watermark + 非出版清样")
+    parser.add_argument("--out-dir", type=Path, default=None, help="Override output directory")
+    parser.add_argument("--date", default=None, help="YYYYMMDD stamp for filenames (default: today)")
     args = parser.parse_args()
 
     if args.scope == "vol1":
         print("vol1 整卷 Reader 尚未实现 · 请先 --scope a001", file=sys.stderr)
         return 1
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    tier = "g1draft" if args.gate_a else args.tier
+    gate_a = args.gate_a
+    stamp = args.date or OUT_DATE
+    out_dir = args.out_dir or OUT_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
     label, _, _ = CASE_JP[args.scope]
-    stem = f"学堂奇事録_Vol1_Reader_{label}_日本語_{OUT_DATE}"
-    html_path = OUT_DIR / f"{stem}.html"
-    pdf_path = OUT_DIR / f"{stem}.pdf"
+    suffix = "_GateA" if gate_a else ""
+    stem = f"学堂奇事録_Vol1_Reader_{label}_日本語{suffix}_{stamp}"
+    html_path = out_dir / f"{stem}.html"
+    pdf_path = out_dir / f"{stem}.pdf"
 
-    html_path.write_text(build_case_html(args.scope), encoding="utf-8")
-    print(f"Wrote {html_path}")
+    html_path.write_text(
+        build_case_html(args.scope, tier=tier, out_date=stamp, gate_a=gate_a),
+        encoding="utf-8",
+    )
+    print(f"Wrote {html_path} (tier={tier}, gate_a={gate_a})")
 
     try:
         html_to_pdf(html_path, pdf_path)
