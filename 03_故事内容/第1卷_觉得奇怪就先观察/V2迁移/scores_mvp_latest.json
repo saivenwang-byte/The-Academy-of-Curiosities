@@ -1,0 +1,43 @@
+{
+  "version": "mvp_latest",
+  "date": "2026-06-08",
+  "unit": "Vol1-Unit1",
+  "baseline_commit": "f95da38",
+  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed",
+  "卷专家": 8.8,
+  "卷读者": 8.3,
+  "P0_jump_pct": 7.0,
+  "ralph_iter": 1,
+  "cases": {
+    "A001": {
+      "expert": 8.9,
+      "reader": 8.4,
+      "p0_jump": false
+    },
+    "A002": {
+      "expert": 8.7,
+      "reader": 8.2,
+      "p0_jump": false
+    },
+    "A003": {
+      "expert": 8.6,
+      "reader": 8.3,
+      "p0_jump": false
+    },
+    "A004": {
+      "expert": 8.7,
+      "reader": 8.4,
+      "p0_jump": false
+    },
+    "A005": {
+      "expert": 8.6,
+      "reader": 8.2,
+      "p0_jump": false
+    }
+  },
+  "blockers": [
+    "science P0 human lab pending (A001/A002/A005)",
+    "G-BODY IP sign pending",
+    "G-IMG PH not production PNG"
+  ]
+}

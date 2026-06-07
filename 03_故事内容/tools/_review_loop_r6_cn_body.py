@@ -29,17 +29,19 @@ def polish_a002(text: str) -> str:
 
 
 def polish_a003(text: str) -> str:
-    # Reader jump: collapse one redundant 版式 recount
+    # Reader jump: shorten floor inventory list
     old = (
-        "三个人各画一张。红底黑字。标题占半栏。\n\n\n"
-        "画完，三人对照：版式一样，细节不一样。\n\n\n"
+        "他们把媒体器材车上的所有视觉材料摊在空教室地板上：红色标题条「不得参加」、水野的排练照片、蓝色箭头、黄色便签「公开日节目调整中」、安全说明「未佩戴名牌者不得参加器材搬运」、一张空白海报底纸、四枚圆形磁铁。\n\n\n"
+        "每一件都真实存在。**没有一件单独构成「水野不得参加公开日展示」。**"
     )
-    new = "三个人各画一张——画完对照：版式一样，细节不一样。\n\n\n"
+    new = (
+        "他们把器材车上的材料摊在空教室地板上：红标题条、水野排练照、蓝箭头、便签、安全说明、空白底纸、四枚磁铁——"
+        "每一件都真实存在，却没有一件单独构成「水野不得参加展示」。"
+    )
     if old in text:
         text = text.replace(old, new)
-    # Soften cross-case refs
-    text = text.replace("像案②", "像上一案")
     text = text.replace("案①", "上一案")
+    text = text.replace("案②", "上一案")
     return text
 
 
