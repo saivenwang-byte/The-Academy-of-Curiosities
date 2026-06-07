@@ -38,7 +38,36 @@ build_mvp_v2_unit1.py · 00_MVP交付清单 refresh
 ### iter 5 — JP MoA-lite 5/5 + scores
 reader=8.5 P0=5% · expert=8.9 · mvp_jp_moa_lite.json PASS
 
-### iter 6–7 — R9 + doc 33 + BLOCKERS
-Final validator: all PASS except expert 8.9<9.0 → BLOCKED
+### iter 7 (67631ac) — BLOCKERS manifest expert 8.9 cap
 
-<!-- end Ralph loop 2026-06-08 -->
+### iter 8 — validator 9.5 + doc34 + scores schema
+Expert panel: G-BODY · threshold lift · weakest: scores
+
+### iter 9 — R10 A002 FC-1 narrative strip
+Expert 8.9→8.9 · Reader 8.5→8.6 · inline FC pollution fixed
+
+### iter 10 — R11 A002 membrane compress
+Expert 8.9→9.0 · Reader 8.6→8.7 · 膜段重复trim
+
+### iter 11 — R12 A003 post-repair trim
+Expert 9.0 · Reader 8.7→8.8
+
+### iter 12 — R13 A005 production gloss
+repair_action · 五案记录夹 · 拍摄信息
+
+### iter 13 — R14 A001 waveform + A004 tilt
+波形「同一段录音」· 柜顶倾斜 clarity
+
+### iter 14 — A003/A004 repair_action 叙事化
+生产标签→修复动作/修复分三步
+
+### iter 15 — KF brief anchors A001/A002/A005
+07_设计原档/04_样章视觉/G1 keyframes MVP
+
+### iter 16 — build FULL PDF + MVP rebuild
+学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf
+
+### iter 17 — final scores + BLOCKERS 9.5 cap
+卷专家 9.0 · 卷读者 8.9 · `<promise>BLOCKED</promise>`
+
+<!-- end Ralph 9.5 loop 2026-06-08 -->

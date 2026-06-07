@@ -1,43 +1,71 @@
 {
-  "version": "mvp_latest",
+  "version": "mvp_latest_9.5_target",
   "date": "2026-06-08",
   "unit": "Vol1-Unit1",
-  "baseline_commit": "f95da38",
-  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed",
-  "卷专家": 8.9,
-  "卷读者": 8.5,
-  "P0_jump_pct": 5.0,
-  "ralph_iter": 7,
+  "baseline_commit": "67631ac",
+  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed · honesty cap applied",
+  "卷专家": 9.0,
+  "卷读者": 8.9,
+  "P0_jump_pct": 4.0,
+  "ralph_iter": 17,
+  "target": 9.5,
+  "target_met": false,
   "cases": {
     "A001": {
-      "expert": 8.9,
-      "reader": 8.6,
-      "p0_jump": false
+      "expert": 9.0,
+      "reader": 8.8,
+      "p0_jump": false,
+      "good": ["钩子+禁声双重不可能", "三周前彩排录音gloss", "波形剪刀比喻儿童可读"],
+      "bad": ["科学P0波形lab未人类签", "机制维度封顶"],
+      "why": "LOCK兑现9.8级·科学签核缺−0.5",
+      "recommend": "科学P0 lab签核 + Shot Map波形帧"
     },
     "A002": {
-      "expert": 8.7,
-      "reader": 8.399999999999999,
-      "p0_jump": false
+      "expert": 9.1,
+      "reader": 9.0,
+      "p0_jump": false,
+      "good": ["FC-1 inline已清", "膜段压缩", "八秒句+洗冤峰值"],
+      "bad": ["展示膜P0人类lab pending", "器材车频次仍略高"],
+      "why": "叙事改善+0.3·科学P0−0.4",
+      "recommend": "A002展示膜P0签 + indirect framing可选"
     },
     "A003": {
-      "expert": 8.6,
-      "reader": 8.5,
-      "p0_jump": false
+      "expert": 8.9,
+      "reader": 8.8,
+      "p0_jump": false,
+      "good": ["瑆金句+情绪次强", "三版口述公平实验", "post-repair trim"],
+      "bad": ["科学P1观察型未签", "SC-04–06仍略长"],
+      "why": "情绪9.0·科学软6.0拉均",
+      "recommend": "P1签或标注观察型 · 可选C7增厚实验"
     },
     "A004": {
-      "expert": 8.7,
-      "reader": 8.6,
-      "p0_jump": false
+      "expert": 8.9,
+      "reader": 8.7,
+      "p0_jump": false,
+      "good": ["倾斜水泡机制清晰", "尾钩仅水野无影", "repair_action叙事化"],
+      "bad": ["振动实验句略硬", "E07失物柜待细签"],
+      "why": "机制强·校园流程E07 pending",
+      "recommend": "E07细签 + 振动句子向化"
     },
     "A005": {
-      "expert": 8.6,
-      "reader": 8.399999999999999,
-      "p0_jump": false
+      "expert": 9.0,
+      "reader": 8.9,
+      "p0_jump": false,
+      "good": ["仅水野无影LOCK", "拍摄信息gloss", "卷终洗冤+入社"],
+      "bad": ["全景P0人类lab pending", "陸瑆尾段信息密度高"],
+      "why": "EXPERT_LOCK 9.8·科学5.5/metadata已化仍−0.5",
+      "recommend": "全景P0 lab签 + SC-10瘦圈"
     }
   },
   "blockers": [
-    "science P0 human lab pending (A001/A002/A005)",
+    "science P0 human lab pending (A001/A002/A005) caps expert at ~9.0",
     "G-BODY IP sign pending",
-    "G-IMG PH not production PNG"
-  ]
+    "G-IMG PH not production PNG",
+    "E20 real child trial not run — reader scores simulated"
+  ],
+  "dimensions_weakest": {
+    "case": "A004",
+    "dimension": "reader",
+    "score": 8.7
+  }
 }
