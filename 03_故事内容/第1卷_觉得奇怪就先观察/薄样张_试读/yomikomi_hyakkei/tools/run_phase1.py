@@ -33,7 +33,7 @@ def run_evaluations(
     dry_run: bool = True,
     concurrency: int = 4,
     model: str = "gpt-4o-mini",
-) -> list[dict]:
+) -> tuple[list[dict], list[dict]]:
     corpus = load_corpus_from_quota()
     print(f"corpus: {corpus.corpus_id} · chars={corpus.char_count}")
 
@@ -43,17 +43,33 @@ def run_evaluations(
         return live_evaluate(persona, corpus, run_id, model=model)
 
     results: list[dict] = []
+    errors: list[dict] = []
+
     if dry_run or concurrency <= 1:
         for p in personas:
-            results.append(one(p))
+            try:
+                results.append(one(p))
+            except Exception as e:
+                errors.append({"persona_id": p["persona_id"], "error": str(e)})
     else:
         with ThreadPoolExecutor(max_workers=concurrency) as ex:
             futs = {ex.submit(one, p): p for p in personas}
             for fut in as_completed(futs):
-                results.append(fut.result())
+                p = futs[fut]
+                try:
+                    results.append(fut.result())
+                except Exception as e:
+                    errors.append({"persona_id": p["persona_id"], "error": str(e)})
         results.sort(key=lambda e: e["persona_id"])
 
-    return results
+    if errors:
+        print(f"WARN: {len(errors)} evaluation(s) failed", file=sys.stderr)
+        for err in errors[:3]:
+            print(f"  - {err['persona_id']}: {err['error'][:200]}", file=sys.stderr)
+    if not results:
+        raise RuntimeError("All evaluations failed; see errors above")
+
+    return results, errors
 
 
 def main() -> None:
@@ -82,9 +98,17 @@ def main() -> None:
     run_dir = RUNS_DIR / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    evaluations = run_evaluations(personas, run_id, dry_run=dry, concurrency=args.concurrency, model=args.model)
+    evaluations, eval_errors = run_evaluations(personas, run_id, dry_run=dry, concurrency=args.concurrency, model=args.model)
     eval_path = run_dir / "evaluations.json"
-    dump_json(eval_path, {"run_id": run_id, "mode": "dry_run" if dry else "live", "evaluations": evaluations})
+    dump_json(
+        eval_path,
+        {
+            "run_id": run_id,
+            "mode": "dry_run" if dry else "live",
+            "evaluations": evaluations,
+            "errors": eval_errors,
+        },
+    )
 
     health = assess_panel_health(evaluations, personas)
     dump_json(run_dir / "panel_health.json", health)

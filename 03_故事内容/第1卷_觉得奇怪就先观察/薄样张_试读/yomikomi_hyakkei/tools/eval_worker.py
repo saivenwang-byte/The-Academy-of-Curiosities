@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import random
+import time
 import urllib.error
 import urllib.request
 from typing import Any
@@ -156,13 +157,21 @@ def dry_run_evaluate(persona: dict, corpus: Corpus, run_id: str) -> dict[str, An
     }
 
 
-def live_evaluate(persona: dict, corpus: Corpus, run_id: str, model: str = "gpt-4o-mini") -> dict[str, Any]:
+def live_evaluate(
+    persona: dict,
+    corpus: Corpus,
+    run_id: str,
+    model: str = "gpt-4o-mini",
+    max_retries: int = 4,
+) -> dict[str, Any]:
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY not set; use --dry-run")
 
     system = (
         "你是読者百景合成读者评估器。输出严格 JSON。"
+        "必须包含字段: reading_experience, comprehension_quiz, structured_scores, "
+        "behavioral_intent, evidence_citations, uncertainty。"
         "必须引用具体段落位置；材料不足则标注 uncertainty。"
         "合成Persona，不代表真人。禁止编造未提供的插画细节。"
     )
@@ -180,25 +189,40 @@ def live_evaluate(persona: dict, corpus: Corpus, run_id: str, model: str = "gpt-
         "response_format": {"type": "json_object"},
         "temperature": 0.7,
     }
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            body = json.loads(resp.read().decode())
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f"OpenAI API error: {e.read().decode()}") from e
-
-    content = body["choices"][0]["message"]["content"]
-    result = json.loads(content)
-    result.setdefault("persona_id", persona["persona_id"])
-    result.setdefault("corpus_id", corpus.corpus_id)
-    result.setdefault("run_id", run_id)
-    result["mode"] = "live"
-    return result
+    last_err: Exception | None = None
+    for attempt in range(max_retries):
+        req = urllib.request.Request(
+            "https://api.openai.com/v1/chat/completions",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                body = json.loads(resp.read().decode())
+            content = body["choices"][0]["message"]["content"]
+            result = json.loads(content)
+            result.setdefault("persona_id", persona["persona_id"])
+            result.setdefault("corpus_id", corpus.corpus_id)
+            result.setdefault("run_id", run_id)
+            result["mode"] = "live"
+            return result
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode()
+            last_err = RuntimeError(f"OpenAI API error ({e.code}): {err_body}")
+            if "insufficient_quota" in err_body:
+                raise last_err from e
+            if e.code in (429, 500, 502, 503, 504) and attempt < max_retries - 1:
+                time.sleep(2 ** attempt * 2)
+                continue
+            raise last_err from e
+        except Exception as e:
+            last_err = e
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt * 2)
+                continue
+            raise
+    raise last_err or RuntimeError("live_evaluate failed")
