@@ -1,6 +1,7 @@
 # Case Card · Vol1 · 案② 错位的泥印
 
-> **Status**: V1.1_STRUCT · 结构定稿 · ready_for_voice: true · ⚠ 篇幅未达 V1.1 预算下限  
+> **Status**: V1.1_STRUCT · **Gate B 预备 · Batch 3** · ready_for_voice: true  
+> **Gate A 出口**: E06 PASS · A002 一案轻量验收 [`A002_GateB_一案轻量验收_20260613.md`](./正式版/07_审核/A002_GateB_一案轻量验收_20260613.md)  
 > **正文正本**: [`正式版/01_正文/案02_错位的泥印_HybridVoice_V1.1定稿.txt`](./正式版/01_正文/案02_错位的泥印_HybridVoice_V1.1定稿.txt) · JP [`案02_ずれた泥のあと_V1.1定稿_日本語.txt`](./正式版/01_正文/案02_ずれた泥のあと_V1.1定稿_日本語.txt)  
 > **接案**: A001 L1 尾钩（壁报第4栏空白）→ 本案开篇可呼应空栏  
 > **尾钩 brief**: [`样章包/15_Vol1_趣事尾钩_briefs_案02-05.md`](./样章包/15_Vol1_趣事尾钩_briefs_案02-05.md) §案②
