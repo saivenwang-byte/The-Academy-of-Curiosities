@@ -36,25 +36,25 @@ Modern Japanese bridge-book anime illustration, clean organic line art, soft pai
 ### DA1 · 侧廊发现
 
 ```
-Modern Japanese bridge-book anime illustration, clean line art, warm golden afternoon light, 4:3 horizontal. Nagoya elementary school activity preparation room OUTSIDE corridor, April cherry petals optional. Handwritten poster 学校おもしろ観察クラブ with simple eye doodle — entire RIGHT edge curling upward. Air conditioner vent and aluminum window gap above poster SAME side as curl, NO answer arrows. Four 4th graders uwabaki: Ito Hikaru spiky brown hair orange athletic jacket whistle hardcover notebook energetic; Katou Keimi side braid yellow cardigan silver glasses interview recorder; Matsumoto Shirou stocky green plaid shirt utility vest round glasses reference cards; Riku Jun messy black hair blue hoodie yellow shirt route map book standing slightly behind calm observer. Rich corridor props pushpins clipboard aluminum sash. Cinematic cozy mystery discovery.
+Modern Japanese bridge-book anime illustration, clean line art, warm golden afternoon light, 4:3 horizontal. Nagoya elementary school activity preparation room OUTSIDE corridor, April cherry petals optional. Handwritten poster 学校おもしろ観察クラブ with simple eye doodle — entire RIGHT edge curling upward. Air conditioner vent and aluminum window gap above poster SAME side as curl, NO answer arrows. Four 5th graders ages 10-12 uwabaki: Ito Akira spiky brown hair orange athletic jacket whistle hardcover notebook energetic; Katou Keimi side braid yellow cardigan silver glasses interview recorder; Matsumoto Shirou stocky green plaid shirt utility vest round glasses reference cards; Riku Jun messy black hair blue hoodie yellow shirt route map book standing slightly behind calm observer. Rich corridor props pushpins clipboard aluminum sash. Cinematic cozy mystery discovery.
 ```
 
 ### DA2 · 误导搜查
 
 ```
-Bridge-book anime school corridor continuing same Nagoya hallway, warm cinematic lighting 4:3. Matsumoto Shirou green plaid utility vest round glasses crouching exaggerated playful floor search prank theory NOT violent. Ito Hikaru orange jacket shaking head tense. Katou Keimi yellow cardigan stopping him with notebook. Riku Jun blue hoodie aside quietly recording NOT joining. Curled poster visible background. April uwabaki, misdirection beat, clean organic lines soft painterly color.
+Bridge-book anime school corridor continuing same Nagoya hallway, warm cinematic lighting 4:3. Matsumoto Shirou green plaid utility vest round glasses crouching exaggerated playful floor search prank theory NOT violent. Ito Akira orange jacket shaking head tense. Katou Keimi yellow cardigan stopping him with notebook. Riku Jun blue hoodie aside quietly recording NOT joining. Curled poster visible background. April uwabaki, misdirection beat, clean organic lines soft painterly color.
 ```
 
 ### DA3 · 风侧线索
 
 ```
-Bridge-book anime close-up educational scene, Nagoya corridor April rainy optional wet traces, warm soft lighting 4:3. Composition links AC vent grille, window gap, poster curl SAME side — fair clue no giant arrows. Katou Keimi yellow cardigan side braid pointing or writing interview notebook. Ito Hikaru orange jacket and Matsumoto Shirou green vest at edges. Fine details water droplets magnet pin pencil mark. Clean line art painterly digital color NOT watercolor wash.
+Bridge-book anime close-up educational scene, Nagoya corridor April rainy optional wet traces, warm soft lighting 4:3. Composition links AC vent grille, window gap, poster curl SAME side — fair clue no giant arrows. Katou Keimi yellow cardigan side braid pointing or writing interview notebook. Ito Akira orange jacket and Matsumoto Shirou green vest at edges. Fine details water droplets magnet pin pencil mark. Clean line art painterly digital color NOT watercolor wash.
 ```
 
 ### DA4 · 验证收束
 
 ```
-Bridge-book anime corridor resolution, warm golden light 4:3. Matsumoto Shirou green plaid vest repositioning poster OR folder wind shield. Ito Hikaru orange jacket hardcover notebook; Katou Keimi yellow cardigan; Riku Jun blue hoodie route book. Clipboard wall newspaper three columns filled fourth empty pencil. Relaxed mood, uwabaki, NO because-of-wind caption, cinematic Nagoya school.
+Bridge-book anime corridor resolution, warm golden light 4:3. Matsumoto Shirou green plaid vest repositioning poster OR folder wind shield. Ito Akira orange jacket hardcover notebook; Katou Keimi yellow cardigan; Riku Jun blue hoodie route book. Clipboard wall newspaper three columns filled fourth empty pencil. Relaxed mood, uwabaki, NO because-of-wind caption, cinematic Nagoya school.
 ```
 
 ### DB1 · 风侧机制 SUM

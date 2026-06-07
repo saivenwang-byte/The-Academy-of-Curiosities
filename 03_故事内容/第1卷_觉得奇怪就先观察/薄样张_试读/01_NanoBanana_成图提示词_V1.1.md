@@ -1,11 +1,11 @@
-# Nano Banana 成图提示词 · Vol1 案①薄样张 · V1.0
-
-> **Status**: **SUPERSEDED** · 请使用 **[`01_NanoBanana_成图提示词_V1.1.md`](./01_NanoBanana_成图提示词_V1.1.md)**（10–12 岁 · 光=あきら）
+# Nano Banana 成图提示词 · Vol1 案①薄样张 · V1.1
 
 > **用途**：8 角色 master ref（L0 槽①–⑧）+ 案① 4 场景 · 直送 Nano Banana / Stable Diffusion  
 > **正典**：[`CHAR_lineup_L0_专家共识_画师brief.md`](../../../07_设计原档/04_样章视觉/CHAR_lineup_L0_专家共识_画师brief.md)  
-> **禁止**：侦探/探案/犯人 · 制服 · 恐怖 · 泉蔹/全藏错字 · 理紗 Vol1 C 位  
-> **最后更新**：2026-06-05
+> **读音 LOCK**：[`00_十人名称_LOCK_2026-06-07.md`](../../../01_角色设定/00_十人名称_LOCK_2026-06-07.md) · 光=**あきら** · 瑆=**ひかる**  
+> **主读者**：日本 **10–12 岁**（五六年生 · 俱乐部四人=5年）  
+> **禁止**：侦探/探案/犯人 · 制服 · 恐怖 · 泉蔹/全藏错字 · 理紗 Vol1 C 位 · `Hikaru`/`ito_hikaru`  
+> **最后更新**：2026-06-10
 
 ---
 
@@ -13,7 +13,7 @@
 
 ```
 [Style] Japanese children's mystery bridge book, warm transparent watercolor,
-clear ink line, age 8-11 readable, Nagoya spring, NOT chibi, NOT mature anime,
+clear ink line, age 10-12 readable, Nagoya spring, NOT chibi, NOT mature anime,
 NOT 3D render, NOT horror, indoor shoes uwabaki when in school
 [IP] 学堂奇事録 · 学校おもしろ観察クラブ · observation not detective
 ```
@@ -67,17 +67,18 @@ white background full body, 145cm label
 
 ---
 
-### CHAR-04 · 伊藤光（5年2組 · 146cm）
+### CHAR-04 · 伊藤光（5年2組 · 146cm · あきら）
 
 **正 prompt**
 ```
 [Style block] character reference, boy age 10-11, 146cm balanced build,
 round eyes warm smile short soft black hair, gray hoodie bright ORANGE scarf (P0 identity),
 shorts, light gray backpack with community badge keychain NOT travel souvenirs,
-whistle on strap, orange accent, white background full body, 146cm label
+whistle on strap, orange accent, Ito Akira いとう あきら NOT Hikaru,
+white background full body, 146cm label
 ```
 
-**负 prompt**：`sports jersey number detective, uniform, cold expression`
+**负 prompt**：`Hikaru, ito_hikaru, sports jersey number detective, uniform, cold expression`
 
 ---
 
@@ -145,12 +146,12 @@ name 泉藏 NOT 泉蔹, 158cm label
 [Style block] half-page interior illustration, elementary school side corridor Nagoya spring afternoon,
 students in uwabaki, hand-drawn club poster on board Japanese text 学校おもしろ観察クラブ
 and three simple doodle eyes, LEFT edge curling upward (windward clue),
-AC vent grille above poster subtle, four 5th graders ~140-155cm band:
-bright boy orange scarf (Hikaru Ito), girl notebook glasses (Keimi), squatting boy red shirt (Shiro),
-transfer boy quiet with sketchbook behind (Riku Shun POV entry)
+AC vent grille above poster subtle, four 5th graders ages 10-12 ~140-155cm band:
+bright boy orange scarf (Ito Akira あきら), girl notebook glasses (Keimi), squatting boy red shirt (Shiro),
+transfer boy quiet with sketchbook behind (Riku Jun POV entry)
 ```
 
-**负 prompt**：`horror night, Chinese poster, Yamamoto Risa, chibi, photo realistic`
+**负 prompt**：`Hikaru, ito_hikaru, horror night, Chinese poster, Yamamoto Risa, chibi, photo realistic`
 
 **成图**：`样章包/插图/V-S01_侧廊海报.png`
 
@@ -192,7 +193,7 @@ one gentle question at bottom in Japanese mood, peach accent margin, age 9-10 ha
 [Style block] educational diagram for children, simple top-down corridor cross-section,
 poster on wall with one edge lifting, arrows showing airflow from AC vent above,
 left/right curl variants small inset, warm colors clear labels optional Japanese,
-NOT textbook dense, bridge book clarity age 8-10
+NOT textbook dense, bridge book clarity age 10-12
 ```
 
 **负 prompt**：`horror wind ghost, complex physics equations, dark palette`
@@ -204,9 +205,9 @@ NOT textbook dense, bridge book clarity age 8-10
 ## C. 成图验收（案①薄样张）
 
 - [ ] 8 角色 cm / 年级 / 道具与 L0 brief 一致  
-- [ ] 葛西 **泉藏** · 瑆 **ひかる** · 珣 **しゅん**  
+- [ ] 葛西 **泉藏** · 瑆 **ひかる** · 光 **あきら** · 珣 **しゅん**（**禁止** 光=ひかる）  
 - [ ] 场景无恐怖 · 海报日文 **学校おもしろ観察クラブ**  
-- [ ] V-S01 珣在侧后 · 理紗零出镜  
+- [ ] V-S01 俱乐部四人=**5年** · 珣在侧后 · 理紗零出镜  
 - [ ] 薄样张 PDF 可嵌入 4 场景（占位可接受 v0.9）
 
 ---
@@ -221,4 +222,4 @@ NOT textbook dense, bridge book clarity age 8-10
 
 ---
 
-最后更新：2026-06-05
+最后更新：2026-06-10
