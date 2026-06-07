@@ -42,7 +42,8 @@ NEGATIVE: Chinese UI, horror, lip-sync match, side corridor poster curl, chibi, 
 | **Output** | `V-S01-V2-A4_波形硬切_G1draft_c01.png` ⬜ placeholder |
 | **景别** | CU · 平板波形 |
 | **视觉中心** | 波形 discontinuity · 儿童可读剪刀感 |
-| **第二信息** | MP3/低码率小字 · 志郎圆框镜反光 |
+| **正文锚点** | 「两段波峰像同一把剪刀剪出来的——是同一段录音被用了两次。」 |
+| **禁项** | 公式/文件名直出 · 恐怖波形 · 答案箭头 |
 
 ```
 [STYLE] bridge-book watercolor ages 10-12, close-up tablet audio waveform on desk,

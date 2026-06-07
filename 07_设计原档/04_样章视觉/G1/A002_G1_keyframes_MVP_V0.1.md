@@ -23,8 +23,9 @@ NEGATIVE: mud prints, ghost writing, Shiro secret writing pose, poster curl, sne
 ## DA3 · 膜边反光 · SC-05 · P0
 
 | **Output** | `V-S02-V2-A3_膜边反光_G1draft_c01.png` ⬜ placeholder |
-| **视觉中心** | FC-1 膜边反光细线 · 板槽 POV 斜光 |
-| **第二信息** | 清洁液瓶 · 样品袋「未登记」 |
+| **视觉中心** | 膜边反光细线 · 板槽 POV 斜光 |
+| **正文锚点** | 「四月上午的光移动很快。一分钟前膜边不亮，现在亮——像在等人来看。」 |
+| **禁项** | FC标签入叙事 · 志郎秘密写字pose · 鬼怪解释 |
 
 ```
 [STYLE] MCU POV board slot slanted April window light, thin reflective line on transparent

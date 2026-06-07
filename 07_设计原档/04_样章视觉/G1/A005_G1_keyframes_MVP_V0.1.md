@@ -10,10 +10,12 @@
 | **Output** | DEMO ✅ `V-S05-V2-DEMO_仅水野无影.png` · G1 ⬜ `V-S05-V2-A1_投屏无影_G1draft_c01.png` |
 | **视觉中心** | 五人合照 · **仅水野脚边空** · 灯杆/器材车影仍在 |
 
-## DA3 · metadata三帧 · SC-05 · P0
+## DA3 · 拍摄信息三帧 · SC-05 · P0
 
 | **Output** | `V-S05-V2-A3_metadata三帧_G1draft_c01.png` ⬜ placeholder |
-| **视觉中心** | FC-2 分段曝光三帧 · 水野侧让帧高亮 |
+| **视觉中心** | 分段曝光三帧 · 水野侧让帧高亮 |
+| **正文锚点** | 「平板里，合照分段曝光：10:52:03 · 10:52:05 · 10:52:07 —— 三段拼接。」 |
+| **禁项** | 五人全无影 · 诅咒解释 · metadata术语入叙事 |
 
 ```
 [STYLE] MCU tablet POV frame-in-frame three exposure segments timeline,
