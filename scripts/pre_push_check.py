@@ -2,7 +2,8 @@
 """
 Pre-push / pre-commit quality gate for 《学堂趣事录》.
 
-Runs bundled lints (Case Card, Scene Card, story table, Vol1 visuals).
+Runs bundled lints (Case Card, Scene Card, story table, Vol1 visuals,
+registered body texts, and volume planning).
 
 Usage:
   python scripts/pre_push_check.py
@@ -33,14 +34,6 @@ def main() -> int:
     parser.add_argument("--no-visual", action="store_true", help="Skip Vol1 PNG check")
     args = parser.parse_args()
 
-    steps: list[tuple[str, list[str]]] = [
-        ("Case Cards", []),
-        ("Story table", ["--story-table"]),
-        ("Scene Cards", []),
-    ]
-    if not args.no_visual:
-        steps.append(("Vol1 visuals", ["--visual", "vol1"]))
-
     failed: list[str] = []
 
     # case_card_lint handles case cards + optional flags
@@ -65,9 +58,13 @@ def main() -> int:
     if code != 0:
         failed.append("volume_lint")
 
-    code = run_script(ROOT / "scripts" / "body_lint.py", ["--vol", "2"])
+    # Do not hard-code an unfinished/moved volume path here. With no --vol/--file,
+    # body_lint checks only registered body files that actually exist. Previously
+    # this command forced --vol 2 even though that file no longer exists, making
+    # every unrelated documentation push fail CI.
+    code = run_script(ROOT / "scripts" / "body_lint.py", [])
     if code != 0:
-        failed.append("body_lint (vol2)")
+        failed.append("body_lint (registered existing bodies)")
 
     print("\n" + "=" * 50)
     if failed:
