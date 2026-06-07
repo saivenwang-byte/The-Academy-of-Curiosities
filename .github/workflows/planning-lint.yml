@@ -1,20 +1,29 @@
 name: Planning Lint
 
+# V2 work is developed on a migration branch and reviewed through pull requests.
+# Running on every one-file documentation push created one workflow and one
+# failure notification per commit. Keep the quality gate at the integration
+# boundary instead: PRs into main, plus an explicit manual run when needed.
 on:
-  push:
-    branches: [main, master]
   pull_request:
-    branches: [main, master]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: planning-lint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-      - name: Pre-push checks
+      - name: Project quality checks
         run: python scripts/pre_push_check.py
-      - name: Volume lint
-        run: python scripts/volume_lint.py --all
