@@ -51,3 +51,6 @@ __pycache__/
 
 # Duplicate japan_campus copy (canonical: repo root)
 08_日本校园文化顾问/japan_campus_consultant_agent.html
+# Scratch inbound (not canonical)
+【CC】files/竞品*.md
+【Gpt】files/

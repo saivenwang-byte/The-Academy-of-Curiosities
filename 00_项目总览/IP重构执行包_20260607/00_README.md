@@ -1,7 +1,8 @@
 # IP 2.0 · Campus Ripple 执行包 · README
 
-> **Status**: **APPROVED · 方案3 大换血** · 2026-06-07  
-> **主编裁定**: Narrative IP 2.0 全量改写 · Engine V2 取代 V1 主轨  
+> **Status**: **MIGRATION_CANDIDATE** · **NOT canon LOCK** · 2026-06-08  
+> **Truth doc**: [`V2.0_治理层级与事实状态_SINGLE_TRUTH.md`](../V2.0_治理层级与事实状态_SINGLE_TRUTH.md) ★  
+> **主编裁定（L0）**: Engine V2 方法 + Campus Ripple 五案结构候选 · **未** 批准 V2 取代 V1 正典  
 > **分支**: `reframe/ip-v2-campus-ripple` · 基线 `baseline/v1-narrative-20260607`  
 > **Truth**: 本包为 **V2 新写作唯一方法源**；V1 LOCK 文件在合并前 **只读参照**
 
@@ -22,7 +23,7 @@
 
 ---
 
-## 2. 批准记录
+## 2. 批准记录（历史 · 2026-06-07 行已 SUPERSEDED）
 
 | 日期 | 决策 | 签核 |
 |------|------|:----:|

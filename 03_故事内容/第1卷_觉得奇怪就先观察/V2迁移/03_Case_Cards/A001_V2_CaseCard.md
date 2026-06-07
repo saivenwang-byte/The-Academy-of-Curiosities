@@ -4,7 +4,7 @@
 > **Engine**: [`02_单案故事引擎_V2.0.md`](../../../../00_项目总览/IP重构执行包_20260607/02_单案故事引擎_V2.0.md)  
 > **母纲**: [`Vol1_V2_第一单元_MVP母纲_V0.2.md`](../01_五案关系网/Vol1_V2_第一单元_MVP母纲_V0.2.md)  
 > **Supersedes**: 同路径旧 Card（翘边的海报 · V0.1 归档）  
-> **Status**: **V2_STRUCT** · science_validation: **pending**
+> **Status**: **MIGRATION_CANDIDATE** · science_validation: **working_draft_pending_human_sign**  
 
 ```yaml
 schema_version: V2.0
@@ -12,11 +12,11 @@ case_id: A001
 status: V2_STRUCT
 supersedes: A001_V0.1_翘边的海报
 engine: 02_单案故事引擎_V2.0.md
-unit_title: 全校都认错了人
+unit_title: 待定（工作名：全校都认错了人）
 unit_subtitle: 五件怪事，五次指认，最后连观察社也成了嫌疑人
 complexity_budget: L
 scene_count_target: 9
-science_validation_status: working_validated_pending_human_sign
+science_validation_status: working_draft_pending_human_sign
 guest_character: 水野真帆（卷级 · 本案被提及）
 ```
 
