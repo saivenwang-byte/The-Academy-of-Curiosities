@@ -7,7 +7,9 @@ Usage:
 """
 from __future__ import annotations
 
-import argparse
+import functools
+
+print = functools.partial(print, flush=True)  # noqa: A001
 import json
 import os
 import subprocess
@@ -44,6 +46,15 @@ def find_repo_root(start: Path) -> Path:
 
 
 REPO_ROOT = find_repo_root(ROOT)
+POLL_LOG = LIVE_RUNS / "_poll.log"
+
+
+def log(msg: str) -> None:
+    line = f"{datetime.now(timezone.utc).isoformat()} {msg}"
+    print(line)
+    LIVE_RUNS.mkdir(parents=True, exist_ok=True)
+    with POLL_LOG.open("a", encoding="utf-8") as f:
+        f.write(line + "\n")
 
 
 def probe_openai(model: str = "gpt-4o-mini") -> tuple[bool, str]:
@@ -106,18 +117,18 @@ def run_resumable_live(
         errors = []
 
     pending = [p for p in personas if p["persona_id"] not in done_ids]
-    print(f"live eval: {len(evaluations)} done, {len(pending)} pending, corpus={corpus.corpus_id}")
+    log(f"live eval: {len(evaluations)} done, {len(pending)} pending, corpus={corpus.corpus_id}")
 
     delay = max(1.0, 1.0 / max(concurrency, 1))
     for i, p in enumerate(pending):
         pid = p["persona_id"]
         try:
             evaluations.append(live_evaluate(p, corpus, run_id, model=model))
-            print(f"  OK [{i+1}/{len(pending)}] {pid}")
+            log(f"  OK [{i+1}/{len(pending)}] {pid}")
         except Exception as e:
             err = str(e)
             errors.append({"persona_id": pid, "error": err})
-            print(f"  FAIL [{i+1}/{len(pending)}] {pid}: {err[:120]}", file=sys.stderr)
+            log(f"  FAIL [{i+1}/{len(pending)}] {pid}: {err[:120]}")
             if "insufficient_quota" in err:
                 save_checkpoint(
                     {
@@ -191,7 +202,7 @@ def finalize_run(
 """,
         encoding="utf-8",
     )
-    print(f"finalized: {out_dir}")
+    log(f"finalized: {out_dir}")
 
 
 def git_commit_live_run(out_dir: Path, run_id: str) -> None:
@@ -200,7 +211,7 @@ def git_commit_live_run(out_dir: Path, run_id: str) -> None:
     subprocess.run(["git", "add", str(rel), str(tool_script)], cwd=REPO_ROOT, check=True)
     msg = f"E20 data: add live reader lab run GateA preface+A001 ({run_id})."
     subprocess.run(["git", "commit", "-m", msg], cwd=REPO_ROOT, check=True)
-    print(f"committed: {msg}")
+    log(f"committed: {msg}")
 
 
 def main() -> None:
@@ -224,13 +235,13 @@ def main() -> None:
     while True:
         ok, reason = probe_openai(args.model)
         if ok:
-            print("OpenAI probe: OK — starting live run")
+            log("OpenAI probe: OK — starting live run")
             break
-        print(f"OpenAI probe: waiting ({reason[:160]})")
+        log(f"OpenAI probe: waiting ({reason[:160]})")
         if args.once:
             sys.exit(1)
         if time.time() >= deadline:
-            print("Max wait exceeded; exiting")
+            log("Max wait exceeded; exiting")
             sys.exit(1)
         time.sleep(args.poll_interval)
 
@@ -242,7 +253,7 @@ def main() -> None:
     )
 
     if not complete:
-        print(f"Incomplete: {len(evaluations)}/{len(personas)} evaluations; checkpoint saved")
+        log(f"Incomplete: {len(evaluations)}/{len(personas)} evaluations; checkpoint saved")
         sys.exit(2)
 
     finalize_run(out_dir, run_id, seed, personas, evaluations, errors, persona_path)
@@ -254,9 +265,9 @@ def main() -> None:
         git_commit_live_run(out_dir, run_id)
         if args.push:
             subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT, check=True)
-            print("pushed to origin")
+            log("pushed to origin")
 
-    print("done")
+    log("done")
 
 
 if __name__ == "__main__":
