@@ -103,17 +103,17 @@ science_validation_status: pending
 | 字段 | 值 |
 |------|-----|
 | `title_cn` | 午休后消失的影子 |
-| `hook_one_line` | 合照里五个人在——脚下却没有影子。 |
-| `science_core` | 平板全景逐段拼接 · 阴影/地面时间错位 |
+| `hook_one_line` | 合照里五个人都在——**只有她的影子不见了**。 |
+| `science_core` | 平板全景逐段拼接 · **水野侧让** → 仅其地面/阴影时间错位 |
 | `science_cross` | 光学 · 时间戳 · 数字影像 metadata |
-| `pressure_primary` | 20分钟后预展取消 · 观察社停活动 · 五人退出展示 |
+| `pressure_primary` | 水野被疑「带来厄运」· 观察社被疑包庇 · 20 分钟后预展取消 |
 | `pressure_secondary` | 体育馆大屏投屏 |
-| `wrong_responsibility` | 五人+观察社策划五案掩盖破坏 |
-| `true_responsibility` | 照片真但未保存完整同时过程；各人承担传播/沉默/实验/藏卡/未及时说明 |
+| `wrong_responsibility` | 水野/观察社用怪事破坏公开日 |
+| `true_responsibility` | 机制：全景拼接单人阴影丢失；动机：各人传播/沉默/实验/藏卡/未及时说明 |
 | `relation_type` | `info_pollution` + `puzzle_piece` |
 | `relation_to` | —（卷终） |
 | `global_seed_ids` | DS-012 |
-| `kei_second_truth` | 重新拍照后每人都有影子。真正回来的，是他们愿意再站在一起。 |
+| `kei_second_truth` | 重新拍照后，**她的**影子回来了。真正回来的，是他们愿意再站在一起。 |
 | `repair_action` | 全班重拍 · 慧美四栏壁报 · 水野名字并列写回 |
 
 **FC**: 全景模式 icon · 分段曝光 metadata · 器材车经过时间线 · 单次快门对照组有影 · 误推静电失败
