@@ -1,6 +1,7 @@
 # 五案 P0 关键帧 · 文字 brief · KF-LOCK-T · V0.1
 
-> **Status**: **KF-LOCK-T READY** · 2026-06-08 · **无 PNG 承诺**  
+> **Status**: **KF-LOCK-T REFRESH** · 2026-06-08 · **无 PNG 承诺** · post CN R3  
+> **R3 对齐**：production 头移 foot · A001 波形口语锚 · A002 膜段压缩 · G-BODY 后重签  
 > **Gate**: G-EDITOR ✅ + Shot Map V2.0 草案  
 > **Shot Map SSOT**: `03_故事内容/…/样章包/03_案0X_分镜头与插页地图_V2.0.md`  
 > **正文 SSOT**: `正式版/01_正文/案0X_*_HybridVoice_V2.0.txt`  
