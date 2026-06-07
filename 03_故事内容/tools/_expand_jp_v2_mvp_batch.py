@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Expand G-JP MVP translations for A002-A005 from CN R3 bodies."""
+"""Expand G-JP MVP translations for A002-A005 from CN R3 bodies.
+
+Delegates to jp_v2_full/generate_all.py for full-length MVP-JP (non-LOCK).
+"""
 
 from __future__ import annotations
 
@@ -374,10 +377,11 @@ FILES = {
 
 
 def main() -> None:
-    for name, content in FILES.items():
-        path = BODY / name
-        path.write_text(content.strip() + "\n", encoding="utf-8")
-        print(f"Wrote {path} ({len(content)} chars)")
+    import subprocess
+    import sys
+
+    gen = Path(__file__).resolve().parent / "jp_v2_full" / "generate_all.py"
+    subprocess.run([sys.executable, str(gen)], check=True)
 
 
 if __name__ == "__main__":

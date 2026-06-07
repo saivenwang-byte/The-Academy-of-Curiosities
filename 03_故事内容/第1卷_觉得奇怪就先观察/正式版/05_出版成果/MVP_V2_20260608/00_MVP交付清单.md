@@ -1,6 +1,7 @@
-# MVP V2 Unit1 · 交付清单 · 2026-06-08
+# MVP V2 Unit1 · 交付清单 · v2 · 2026-06-08
 
-> **状态**：deadline MVP · 非出版清样 · 非 G-IMG PRODUCT lock
+> **状态**：MVP continuation · G-JP A002–A005 FULL · 非 G-JP LOCK · 非 G-IMG PRODUCT lock  
+> **进度 SSOT**：`V2迁移/31_MVP续作进度_20260608.md`
 
 ## 核心交付物
 
@@ -27,6 +28,7 @@
 
 ## 包内副本
 
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\00_MVP交付清单.md`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案02_没有人写过的道歉_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案03_每个人都记得的海报_HybridVoice_V2.0.txt`
