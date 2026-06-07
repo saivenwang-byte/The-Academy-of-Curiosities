@@ -103,31 +103,58 @@ def write_corpus_manifest(manifest: CorpusManifest, out_path: Path) -> Path:
 
 def load_corpus_from_quota(*, strict: bool = True) -> Corpus:
     cfg = _corpus_config()
-    rel = cfg["html"]
-    html_path = (ROOT / rel).resolve()
-    if not html_path.exists():
-        raise FileNotFoundError(f"Corpus HTML not found: {html_path}")
-    raw = html_path.read_text(encoding="utf-8")
-    text = _strip_html(raw)
-    title_m = re.search(r"<title>([^<]+)</title>", raw, re.I)
-    title = title_m.group(1).strip() if title_m else cfg["id"]
+    min_chars = int(cfg.get("min_char_count", 5000))
+    required_markers = list(cfg.get("required_markers", []))
+
+    # SSoT: committed plain text (reproducible on clone). HTML is display-only fallback.
+    if cfg.get("txt"):
+        txt_path = (ROOT / cfg["txt"]).resolve()
+        if not txt_path.exists():
+            raise FileNotFoundError(f"Corpus TXT not found: {txt_path}")
+        text = txt_path.read_text(encoding="utf-8")
+        title = cfg.get("title") or cfg["id"]
+        source_path = str(txt_path)
+    elif cfg.get("html"):
+        rel = cfg["html"]
+        html_path = (ROOT / rel).resolve()
+        if not html_path.exists():
+            raise FileNotFoundError(f"Corpus HTML not found: {html_path}")
+        raw = html_path.read_text(encoding="utf-8")
+        if len(raw.strip()) < 100:
+            raise CorpusValidationError(
+                f"Corpus HTML appears empty ({len(raw)} bytes). "
+                f"Use data/corpus/*.txt SSoT or regenerate GateA HTML."
+            )
+        text = _strip_html(raw)
+        title_m = re.search(r"<title>([^<]+)</title>", raw, re.I)
+        title = title_m.group(1).strip() if title_m else cfg["id"]
+        source_path = str(html_path)
+    else:
+        raise CorpusValidationError("corpus config must specify 'txt' or 'html'")
+
     sha = _sha256_text(text)
+    expected_sha = cfg.get("expected_sha256")
+    if strict and expected_sha and sha != expected_sha:
+        raise CorpusValidationError(
+            f"corpus sha256 mismatch: got {sha[:16]}… expected {expected_sha[:16]}…"
+        )
+
     corpus = Corpus(
         corpus_id=cfg["id"],
         title=title,
         text=text,
-        source_path=str(html_path),
+        source_path=source_path,
         char_count=len(text),
         sha256=sha,
     )
     markers_found, errors = validate_corpus_text(
         text,
-        min_char_count=int(cfg.get("min_char_count", 5000)),
-        required_markers=list(cfg.get("required_markers", [])),
+        min_char_count=min_chars,
+        required_markers=required_markers,
     )
     if strict and errors:
         raise CorpusValidationError("; ".join(errors))
-    if strict and not markers_found and cfg.get("required_markers"):
+    if strict and not markers_found and required_markers:
         raise CorpusValidationError("no required markers found")
     return corpus
 

@@ -151,6 +151,34 @@ def main() -> None:
         provider=args.provider,
     )
     schema_fail = sum(1 for e in evaluations if e.get("schema_valid") is False)
+    if not dry and (schema_fail or eval_errors):
+        health = {
+            "status": "HOLD",
+            "checks": {"schema_and_errors": False},
+            "label": "HOLD · schema/errors · content scores void",
+            "schema_failures": schema_fail,
+            "eval_errors": len(eval_errors),
+        }
+        dump_json(run_dir / "panel_health.json", health)
+        summary_path = run_dir / "summary.json"
+        dump_json(
+            summary_path,
+            {
+                "status": "HOLD",
+                "content_scores_void": True,
+                "reason": "live eval had schema failures or errors",
+                "schema_failures": schema_fail,
+                "eval_errors": eval_errors,
+            },
+        )
+        (run_dir / "report.md").write_text(
+            "# 読者百景 · HOLD\n\n> **CONTENT SCORES VOID** · schema/errors\n",
+            encoding="utf-8",
+        )
+        raise RuntimeError(
+            f"HOLD: schema_fail={schema_fail} eval_errors={len(eval_errors)} — report not valid"
+        )
+
     eval_path = run_dir / "evaluations.json"
     dump_json(
         eval_path,

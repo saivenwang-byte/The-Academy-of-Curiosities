@@ -70,7 +70,11 @@
   ],
   "corpus": {
     "id": "gatea_preface_a001_20260610",
+    "title": "学堂奇事録 Vol1 序+A001（Reader · 日本語）",
+    "txt": "data/corpus/gatea_preface_a001_ja.txt",
+    "expected_sha256": "4d6772cc9da22f1d86fbb1554dbdedfe61353870df006fab735a39e339089aef",
     "html": "../GateA_样张MVP_20260610/学堂奇事録_Vol1_Reader_序+A001_日本語_GateA_20260610.html",
+    "html_note": "display/PDF build only · ~45MB · may fail strip on empty clone — eval SSoT is txt",
     "min_char_count": 5000,
     "required_markers": ["陸珣", "観察"]
   }

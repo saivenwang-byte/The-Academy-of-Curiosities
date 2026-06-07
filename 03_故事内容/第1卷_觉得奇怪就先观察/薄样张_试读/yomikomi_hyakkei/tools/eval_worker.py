@@ -17,6 +17,10 @@ from provider_router import ProviderQuotaExhaustedError, classify_live_http_erro
 from schema_validate import validate_evaluation
 
 
+class SchemaValidationError(ValueError):
+    """Live evaluation failed local schema after all retries."""
+
+
 def _load_dims_config() -> dict:
     return load_json(CONFIG_DIR / "eval_dimensions.json")
 
@@ -232,9 +236,9 @@ def live_evaluate(
                 if attempt < max_retries - 1:
                     time.sleep(2 ** attempt)
                     continue
-                result["schema_valid"] = False
-                result["schema_errors"] = schema_errors
-                return result
+                raise SchemaValidationError(
+                    f"schema validation failed for {persona['persona_id']}: {schema_errors}"
+                )
             result["schema_valid"] = True
             return result
         except urllib.error.HTTPError as e:
