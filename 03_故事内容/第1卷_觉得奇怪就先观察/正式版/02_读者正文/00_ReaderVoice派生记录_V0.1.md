@@ -1,7 +1,7 @@
 # Reader Voice 派生记录 · V0.1
 
-> **日期**：2026-06-08  
-> **触发**：G-EDITOR ✅ IP signed 2026-06-08 · C6 Reader 层派生  
+> **⚠ PRE-G-BODY · superseded by doc 27** · 2026-06-08 pivot 见 [`24_最小路径_CN正文工作流_V1.0.md`](../../V2迁移/24_最小路径_CN正文工作流_V1.0.md) · [`27_IP裁定_混合插画门禁_LOCK_V0.1.md`](../../V2迁移/27_IP裁定_混合插画门禁_LOCK_V0.1.md) — Reader export **应在 G-BODY 过关后** · 本批次 **非交付 SSOT** · 过关后 **重做 export**
+  
 > **工具**：[`03_故事内容/tools/derive_reader_voice.py`](../../../tools/derive_reader_voice.py)  
 > **口径**：[`README_两轨说明_V0.1.md`](../01_正文/README_两轨说明_V0.1.md) · [`23_评分口径说明与逐案好坏清单_V0.1.md`](../../V2迁移/23_评分口径说明与逐案好坏清单_V0.1.md)
 

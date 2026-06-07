@@ -1,0 +1,46 @@
+---
+description: CN 正文最小路径 — 正文期禁止跳过 REVIEW 直接派生/生产化
+alwaysApply: true
+---
+
+# CN 正文最小路径（Agent 硬约束）
+
+**SSOT**：[`24_最小路径_CN正文工作流_V1.0.md`](../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/24_最小路径_CN正文工作流_V1.0.md)
+
+## 正文期（G-BODY 未签）禁止
+
+- **禁止** 派生或批量更新 `正式版/02_读者正文/*_ReaderVoice_*.txt`（除非 IP 明确「实验归档」）
+- **禁止** 将 Reader export / G-CN LOCK / KF-LOCK-T / G-SHOT-T LOCK / G-JP / 正式插画 v1.0 标为 ✅ 或「已完成」
+- **禁止** 用 GPT_LOCK 9.8 **单独** 解锁下游生产（须 doc 22/23 REVIEW LOOP 过关：案 ≥9.8 · 卷 ≥9.5 · 读者无 P0 跳读）
+- **禁止** 对外表述「五案定稿 / 出版就绪 / Reader 层完成」
+
+## 正文期应做
+
+- 只改 **CN_BODY**（`正式版/01_正文/案0X_*` · 迁移期含 `HybridVoice_V2.0.txt`）
+- 小改迭代后 **同轮** 更新 doc 22 定量 + doc 23 好坏清单
+- 生产化动作 **全部** 指向 doc 24 §5 · 待 **G-BODY** 签后执行
+
+## 过关线（解锁生产化包）
+
+| 条件 | 阈值 |
+|------|------|
+| 单案专家综合 | ≥ 9.8 |
+| 单元专家均 | ≥ 9.5 |
+| 读者群 | ≥ 95% persona 无 P0 跳读 |
+| IP | **G-BODY** 逐案签 |
+
+## G-BODY 后生产化（IP APPROVED 2026-06-08 · doc 27）
+
+**仅 G-BODY 签后** 方可启动以下 **并行** 轨（禁止 G-EDITOR 签替代）：
+
+- **并行 A**：G-JP 全案（E04 + E07 + 读者 JP 可选）
+- **并行 B**：G-KF-T 构图锁（Shot Map V2 草案 · CN interim 字 · **无最终画内字** · 可 G1DRAFT）
+
+汇合后串行：**KF-LOCK-J** → **G-KF-REVIEW**（含 G-SHOT-T LOCK）→ **G-IMG**
+
+2026-06-08 的 G-EDITOR / KF-LOCK-T / Reader 派生 = **PRE-G-BODY** · 见 doc 27
+
+## 关联
+
+- 生产化顺序（G-BODY 后）：[`14_第一单元MVP生产顺序…`](../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/14_第一单元MVP生产顺序_CN→分镜→JP_LOCK_V0.1.md)
+- 工作记忆：[`MEMORY.md`](../memory/MEMORY.md)
