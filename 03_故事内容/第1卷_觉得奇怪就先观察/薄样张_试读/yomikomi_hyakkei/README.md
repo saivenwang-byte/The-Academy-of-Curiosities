@@ -29,6 +29,10 @@ python tools/run_phase1.py --dry-run
 
 # 需 OPENAI_API_KEY · 结构化 live 评价
 python tools/run_phase1.py --live --concurrency 4
+
+# 配额恢复后自动轮询 + live 50人 + commit（可选 push）
+python tools/run_live_when_ready.py --commit --push
+python tools/run_live_when_ready.py --once --commit   # 仅探测一次
 ```
 
 ---
