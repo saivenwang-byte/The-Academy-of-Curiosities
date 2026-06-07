@@ -1,0 +1,4 @@
+G1 PLACEHOLDER
+A001 DA4
+波形硬切 · SC-06
+Status: awaiting G1draft production

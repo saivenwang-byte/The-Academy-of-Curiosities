@@ -44,7 +44,10 @@ CASES = [
         "illus": [
             ("V-S01-V2-A1_广播响起_G1draft_c01.png", "A001 · 放送 · 唇が合わない"),
             ("V-S01-V2-DEMO_广播唇不同步.png", "A001 · デモ · 唇同期ずれ"),
+            ("V-S01-V2-A3_文件时间_G1draft_PH.png", "A001 · ファイル日付 · SC-05"),
+            ("V-S01-V2-A4_波形硬切_G1draft_PH.png", "A001 · 波形カット · SC-06"),
         ],
+        "illus_subdir": "案01",
         "hook": "放送の声は光のものではない——ファイルと波形が先に語る。",
     },
     {
@@ -54,7 +57,12 @@ CASES = [
         "jp_title": "誰も書いていない謝罪",
         "cn_file": "案02_没有人写过的道歉_HybridVoice_V2.0.txt",
         "jp_file": "案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt",
-        "illus": [("V-S02-V2-DEMO_黑板对不起.png", "A002 · 黒板のごめんなさい")],
+        "illus": [
+            ("V-S02-V2-DEMO_黑板对不起.png", "A002 · 黒板のごめんなさい"),
+            ("V-S02-V2-A3_膜边反光_G1draft_PH.png", "A002 · 膜の端 · SC-05"),
+            ("V-S02-V2-A4_对照实验_G1draft_PH.png", "A002 · 対照実験 · SC-07"),
+        ],
+        "illus_subdir": "案02",
         "hook": "黒板に謝罪の字——書いた人は教室に入っていない。",
     },
     {
@@ -64,7 +72,12 @@ CASES = [
         "jp_title": "みんな覚えているポスター",
         "cn_file": "案03_每个人都记得的海报_HybridVoice_V2.0.txt",
         "jp_file": "案03_每个人都记得的海报_HybridVoice_V2.0_日本語.txt",
-        "illus": [("V-S03-V2-DEMO_空海报位.png", "A003 · 空のポスター欄")],
+        "illus": [
+            ("V-S03-V2-DEMO_空海报位.png", "A003 · 空のポスター欄"),
+            ("V-S03-V2-A2_正式照无海报_G1draft_PH.png", "A003 · 公式写真 · SC-03"),
+            ("V-S03-V2-A4_远标题连线_G1draft_PH.png", "A003 · 遠タイトル · SC-04"),
+        ],
+        "illus_subdir": "案03",
         "hook": "三人が三種類のポスターを覚えている——実物はない。",
     },
     {
@@ -74,7 +87,12 @@ CASES = [
         "jp_title": "彼女の引き出しにだけ現れた落とし物",
         "cn_file": "案04_只出现在她抽屉里的失物_HybridVoice_V2.0.txt",
         "jp_file": "案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt",
-        "illus": [("V-S04-V2-DEMO_抽屉失物.png", "A004 · 引き出しの落とし物")],
+        "illus": [
+            ("V-S04-V2-DEMO_抽屉失物.png", "A004 · 引き出しの落とし物"),
+            ("V-S04-V2-A3_倾斜水泡_G1draft_PH.png", "A004 · 傾き水準器 · SC-05"),
+            ("V-S04-V2-A4_振动复现_G1draft_PH.png", "A004 · 振動再現 · SC-07"),
+        ],
+        "illus_subdir": "案04",
         "hook": "鍵のない引き出しに物が現れる——振動と傾きが鍵。",
     },
     {
@@ -84,7 +102,12 @@ CASES = [
         "jp_title": "昼休みのあと消えた影",
         "cn_file": "案05_午休后消失的影子_HybridVoice_V2.0.txt",
         "jp_file": "案05_午休后消失的影子_HybridVoice_V2.0_日本語.txt",
-        "illus": [("V-S05-V2-DEMO_仅水野无影.png", "A005 · 水野だけ影なし")],
+        "illus": [
+            ("V-S05-V2-DEMO_仅水野无影.png", "A005 · 水野だけ影なし"),
+            ("V-S05-V2-A3_metadata三帧_G1draft_PH.png", "A005 · metadata · SC-05"),
+            ("V-S05-V2-A6_重拍有影_G1draft_PH.png", "A005 · 再撮影 · SC-08"),
+        ],
+        "illus_subdir": "案05",
         "hook": "集合写真で一人だけ影がない——タイムラインのずれ。",
     },
 ]
@@ -314,12 +337,20 @@ def copy_bodies_and_illus() -> list[str]:
     ill = OUT_ROOT / "03_插图"
     ill.mkdir(parents=True, exist_ok=True)
     for c in CASES:
+        sub = c.get("illus_subdir")
+        case_dir = ill / sub if sub else ill
+        case_dir.mkdir(parents=True, exist_ok=True)
         for stem, cap in c["illus"]:
             src = DEPTH / stem
             if src.exists():
-                dst = ill / src.name
-                shutil.copy2(src, dst)
-                paths.append(str(dst.resolve()))
+                dst_flat = ill / src.name
+                dst_case = case_dir / src.name
+                shutil.copy2(src, dst_flat)
+                if dst_case != dst_flat:
+                    shutil.copy2(src, dst_case)
+                paths.append(str(dst_flat.resolve()))
+                if dst_case != dst_flat:
+                    paths.append(str(dst_case.resolve()))
     return paths
 
 
@@ -389,9 +420,9 @@ def build_ppt() -> Path:
         [
             "CN正文：五案 R3 reader-flow 完成",
             "JP：五案 G-JP MVP（A001 full · A002–A005 batch 2026-06-08）",
-            "插图：V2 DEMO 五帧 + G1draft A001",
+            "插图：MVP 15 关键帧（7 PNG + 8 G1 PH）· 案01–05 子目录",
             "PDF：中日各一 · reader.html 可浏览器打印",
-            "Gap：G-JP LOCK · 全帧插图 · E06 PASS 待后续",
+            "Gap：G-JP LOCK · G-IMG PRODUCT · E06 PASS 待后续",
         ],
     )
 
@@ -405,7 +436,8 @@ def write_manifest(extra_paths: list[str]) -> Path:
     lines = [
         "# MVP V2 Unit1 · 交付清单 · 2026-06-08",
         "",
-        "> **状态**：deadline MVP · 非出版清样 · 非 G-IMG PRODUCT lock",
+        "> **状态**：MVP v3 · G1 扩展 + R5 CN · 非 G-IMG PRODUCT lock",
+        "> **进度 SSOT**：`V2迁移/32_MVP续作2_插图与R5_20260608.md`",
         "",
         "## 核心交付物",
         "",

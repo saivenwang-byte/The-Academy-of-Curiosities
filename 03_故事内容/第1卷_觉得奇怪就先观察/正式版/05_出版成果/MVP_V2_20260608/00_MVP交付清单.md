@@ -1,7 +1,7 @@
-# MVP V2 Unit1 · 交付清单 · v2 · 2026-06-08
+# MVP V2 Unit1 · 交付清单 · 2026-06-08
 
-> **状态**：MVP continuation · G-JP A002–A005 FULL · 非 G-JP LOCK · 非 G-IMG PRODUCT lock  
-> **进度 SSOT**：`V2迁移/31_MVP续作进度_20260608.md`
+> **状态**：MVP v3 · G1 扩展 + R5 CN · 非 G-IMG PRODUCT lock
+> **进度 SSOT**：`V2迁移/32_MVP续作2_插图与R5_20260608.md`
 
 ## 核心交付物
 
@@ -40,11 +40,47 @@
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案05_午休后消失的影子_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A1_广播响起_G1draft_c01.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A3_文件时间_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A4_波形硬切_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-DEMO_广播唇不同步.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-A3_膜边反光_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-A4_对照实验_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-DEMO_黑板对不起.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-A2_正式照无海报_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-A4_远标题连线_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-DEMO_空海报位.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-A3_倾斜水泡_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-A4_振动复现_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-DEMO_抽屉失物.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-A3_metadata三帧_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-A6_重拍有影_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-DEMO_仅水野无影.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A1_广播响起_G1draft_c01.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A3_文件时间_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A3_文件时间_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A4_波形硬切_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A4_波形硬切_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-DEMO_广播唇不同步.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A3_膜边反光_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A3_膜边反光_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A4_对照实验_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A4_对照实验_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-DEMO_黑板对不起.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A2_正式照无海报_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A2_正式照无海报_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A4_远标题连线_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A4_远标题连线_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-DEMO_空海报位.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A3_倾斜水泡_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A3_倾斜水泡_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A4_振动复现_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A4_振动复现_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-DEMO_抽屉失物.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A3_metadata三帧_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A3_metadata三帧_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A6_重拍有影_G1draft_PH.label.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A6_重拍有影_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-DEMO_仅水野无影.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\reader.html`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\reader_cn.html`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\reader_ja.html`
@@ -62,10 +98,36 @@
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案05_午休后消失的影子_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A1_广播响起_G1draft_c01.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A1_广播响起_G1draft_c01.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-DEMO_广播唇不同步.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-DEMO_广播唇不同步.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A3_文件时间_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A3_文件时间_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S01-V2-A4_波形硬切_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案01\V-S01-V2-A4_波形硬切_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-DEMO_黑板对不起.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-DEMO_黑板对不起.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-A3_膜边反光_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A3_膜边反光_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S02-V2-A4_对照实验_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案02\V-S02-V2-A4_对照实验_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-DEMO_空海报位.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-DEMO_空海报位.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-A2_正式照无海报_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A2_正式照无海报_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S03-V2-A4_远标题连线_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案03\V-S03-V2-A4_远标题连线_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-DEMO_抽屉失物.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-DEMO_抽屉失物.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-A3_倾斜水泡_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A3_倾斜水泡_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S04-V2-A4_振动复现_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案04\V-S04-V2-A4_振动复现_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-DEMO_仅水野无影.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-DEMO_仅水野无影.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-A3_metadata三帧_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A3_metadata三帧_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\V-S05-V2-A6_重拍有影_G1draft_PH.png`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\03_插图\案05\V-S05-V2-A6_重拍有影_G1draft_PH.png`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\第1单元_MVP路演_V2.0_20260608.pptx`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_MVP试读_V2.0_20260608.pdf`
