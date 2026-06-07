@@ -7,9 +7,8 @@ Usage:
 """
 from __future__ import annotations
 
+import argparse
 import functools
-
-print = functools.partial(print, flush=True)  # noqa: A001
 import json
 import os
 import subprocess
@@ -19,6 +18,8 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+print = functools.partial(print, flush=True)  # noqa: A001
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
