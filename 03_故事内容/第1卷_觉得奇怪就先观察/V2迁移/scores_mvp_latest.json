@@ -4,10 +4,10 @@
   "unit": "Vol1-Unit1",
   "baseline_commit": "f95da38",
   "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed",
-  "卷专家": 8.8,
-  "卷读者": 8.3,
-  "P0_jump_pct": 7.0,
-  "ralph_iter": 1,
+  "卷专家": 8.88,
+  "卷读者": 8.45,
+  "P0_jump_pct": 5.0,
+  "ralph_iter": 3,
   "cases": {
     "A001": {
       "expert": 8.9,
