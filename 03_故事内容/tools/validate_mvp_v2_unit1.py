@@ -23,15 +23,17 @@ CN_MIN = 3000
 JP_MIN = 4000
 PNG_MIN_TOTAL = 10
 PNG_MIN_PER_CASE = 2
-EXPERT_MIN = 9.0
-READER_MIN = 8.5
-P0_JUMP_MAX = 8.0
+EXPERT_MIN = 9.5
+READER_MIN = 9.5
+P0_JUMP_MAX = 5.0
+CASE_SCORE_MIN = 9.5
 
 CN_FILES = sorted(BODY.glob("案0*_HybridVoice_V2.0.txt"))
 JP_FILES = sorted(BODY.glob("案0*_HybridVoice_V2.0_日本語.txt"))
 
 PDF_JP = MVP / "学堂趣事录_第1单元_MVP试读_V2.0_20260608.pdf"
 PDF_CN = MVP / "学堂趣事录_CN_第1单元_MVP试读_V2.0_20260608.pdf"
+PDF_FULL_CN = MVP / "学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf"
 PPT = MVP / "第1单元_MVP路演_V2.0_20260608.pptx"
 
 
@@ -88,6 +90,9 @@ def check_editor_pollution(text: str) -> list[str]:
     fc = re.findall(r"【FC-\d+[^】]*】", text)
     if fc:
         hits.append(f"FC tags: {', '.join(fc[:5])}")
+    inline_fc = re.findall(r"(?<![【\w])FC-\d+", text)
+    if inline_fc:
+        hits.append(f"inline FC refs: {', '.join(inline_fc[:5])}")
     return hits
 
 
@@ -164,7 +169,12 @@ def main() -> int:
             summary["jp"]["fail"].append(f"{f.name}: {n} < {JP_MIN} kana/CJK")
 
     # PDF/PPT
-    for label, path in [("PDF_JP", PDF_JP), ("PDF_CN", PDF_CN), ("PPT", PPT)]:
+    for label, path in [
+        ("PDF_JP", PDF_JP),
+        ("PDF_CN", PDF_CN),
+        ("PDF_FULL_CN", PDF_FULL_CN),
+        ("PPT", PPT),
+    ]:
         if path.exists() and path.stat().st_size > 1000:
             summary["deliverables"]["pass"].append(label)
         else:
@@ -217,6 +227,24 @@ def main() -> int:
             summary["scores"]["pass"].append(f"P0_jump={p0}%")
         else:
             summary["scores"]["fail"].append(f"P0_jump={p0}% > {P0_JUMP_MAX}%")
+        cases = data.get("cases", {})
+        for cid in ["A001", "A002", "A003", "A004", "A005"]:
+            if cid not in cases:
+                summary["scores"]["fail"].append(f"{cid}: missing in scores")
+                continue
+            ce = float(cases[cid].get("expert", 0))
+            cr = float(cases[cid].get("reader", 0))
+            if ce >= CASE_SCORE_MIN and cr >= CASE_SCORE_MIN:
+                summary["scores"]["pass"].append(f"{cid}={ce}/{cr}")
+            else:
+                if ce < CASE_SCORE_MIN:
+                    summary["scores"]["fail"].append(
+                        f"{cid} expert={ce} < {CASE_SCORE_MIN}"
+                    )
+                if cr < CASE_SCORE_MIN:
+                    summary["scores"]["fail"].append(
+                        f"{cid} reader={cr} < {CASE_SCORE_MIN}"
+                    )
     else:
         summary["scores"]["fail"].append(f"missing {SCORES.relative_to(REPO)}")
 
