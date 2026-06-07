@@ -3,8 +3,12 @@
 Body text lint for 《学堂趣事录》完整文字稿.txt.
 
 Usage:
-  python scripts/body_lint.py --file 03_故事内容/第2卷_谁偷了橡皮/完整文字稿.txt
-  python scripts/body_lint.py --vol 2
+  python scripts/body_lint.py --file 03_故事内容/第1卷_觉得奇怪就先观察/样章包/04_样章_序+案01_正文_HybridVoice.txt
+  python scripts/body_lint.py --vol 1
+
+Only body files that currently exist and are registered below are checked by the
+no-argument mode. Register a future volume only after its canonical body file
+has been created; a planned path must not be used as a CI dependency.
 """
 
 from __future__ import annotations
@@ -17,14 +21,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Vol1 正典：方案 B · 觉得奇怪就先观察（湿椅子路径为 deprecated 素材）
+# Canonical body files that actually exist in the repository.
 BODY_PATHS: dict[int, Path] = {
     1: ROOT
     / "03_故事内容"
     / "第1卷_觉得奇怪就先观察"
     / "样章包"
     / "04_样章_序+案01_正文_HybridVoice.txt",
-    2: ROOT / "03_故事内容" / "第2卷_谁偷了橡皮" / "完整文字稿.txt",
 }
 
 FORBIDDEN_CN = [
@@ -150,14 +153,18 @@ def main() -> int:
     elif args.vol:
         p = BODY_PATHS.get(args.vol)
         if not p:
-            print(f"Vol{args.vol} 未注册", file=sys.stderr)
+            registered = ", ".join(str(v) for v in sorted(BODY_PATHS)) or "无"
+            print(
+                f"Vol{args.vol} 未注册或正典正文尚不存在；当前已注册卷：{registered}",
+                file=sys.stderr,
+            )
             return 1
         paths = [p]
     else:
         paths = [p for p in BODY_PATHS.values() if p.is_file()]
 
     if not paths:
-        print("No body files to lint.", file=sys.stderr)
+        print("No registered body files exist to lint.", file=sys.stderr)
         return 1
 
     failed = 0
