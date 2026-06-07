@@ -72,13 +72,15 @@
 
 ## 5. 完成度追踪（迭代中更新）
 
-| 维度 | 基线 f95da38 | 当前 | 目标 |
-|------|:------------:|:----:|:----:|
-| CN G-BODY | ~97% | ~97% | ≥99% + 分达标 |
-| JP | ~88% | ~88% | MoA 100% |
-| 插图 | ~48% | ~48% | bundle 达标（已够 PNG 数） |
-| PDF/PPT | ~82% | ~82% | 随 rebuild |
-| **综合** | **~78%** | **~78%** | **validator PASS** |
+| 维度 | 基线 f95da38 | **Ralph 终态** | 目标 |
+|------|:------------:|:--------------:|:----:|
+| CN G-BODY | ~97% | **~98%** | R6–R9 · FC clean · A004 3486字 |
+| JP | ~88% | **~90%** | MoA-lite 5/5 recorded |
+| 插图 | ~48% | **~48%** | bundle 32 PNG · PH 未换 production |
+| PDF/PPT | ~82% | **~84%** | rebuild iter 4 |
+| **综合** | **~78%** | **~86%** | validator **BLOCKED** expert 8.9<9.0 |
+
+**Ralph 结果**：8 iterations (0–7) · `<promise>BLOCKED</promise>` · see `tools/ralph-loop/workspace/BLOCKERS.md`
 
 ---
 
