@@ -17,6 +17,10 @@ desktop.ini
 ~$*.docx
 *.tmp
 
+# Python bytecode
+__pycache__/
+*.pyc
+
 # Build HTML artifacts (keep PDF; HTML embeds base64 images)
 03_故事内容/**/PDF/*.html
 03_故事内容/**/04_展示版/*.html
