@@ -7,6 +7,7 @@
 
 | 类型 | 绝对路径 |
 |------|----------|
+| PDF（中文·FULL读者版） | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf` |
 | PDF（中文） | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_CN_第1单元_MVP试读_V2.0_20260608` |
 | PDF | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_MVP试读_V2.0_20260608.pdf` |
 | PPT | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\第1单元_MVP路演_V2.0_20260608.pptx` |
@@ -86,6 +87,7 @@
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\reader_ja.html`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_CN_第1单元_MVP试读_V2.0_20260608.pdf`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_MVP试读_V2.0_20260608.pdf`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\第1单元_MVP路演_V2.0_20260608.pptx`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案02_没有人写过的道歉_HybridVoice_V2.0.txt`

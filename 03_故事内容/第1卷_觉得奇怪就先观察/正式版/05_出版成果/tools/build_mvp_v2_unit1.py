@@ -31,6 +31,7 @@ MIGRATION = FORMAL.parent / "V2迁移"
 
 OUT_DATE = "20260608"
 PDF_NAME = f"学堂趣事录_第1单元_MVP试读_V2.0_{OUT_DATE}.pdf"
+PDF_FULL_CN_NAME = "学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf"
 PPT_NAME = f"第1单元_MVP路演_V2.0_{OUT_DATE}.pptx"
 
 CASES = [
@@ -443,6 +444,7 @@ def write_manifest(extra_paths: list[str]) -> Path:
         "",
         f"| 类型 | 绝对路径 |",
         f"|------|----------|",
+        f"| PDF（中文·FULL读者版） | `{OUT_ROOT / PDF_FULL_CN_NAME}` |",
         f"| PDF（中文） | `{OUT_ROOT / PDF_NAME.replace('学堂趣事录', '学堂趣事录_CN').replace('.pdf', '')}` |",
         f"| PDF | `{OUT_ROOT / PDF_NAME}` |",
         f"| PPT | `{OUT_ROOT / PPT_NAME}` |",
@@ -484,11 +486,16 @@ def main() -> int:
 
     pdf_path = OUT_ROOT / PDF_NAME
     pdf_cn = OUT_ROOT / PDF_NAME.replace("学堂趣事录", "学堂趣事录_CN")
+    pdf_full_cn = OUT_ROOT / PDF_FULL_CN_NAME
     if not args.skip_pdf:
         if not html_to_pdf(html_ja, pdf_path):
             print("JP PDF failed — open reader.html", file=sys.stderr)
         if not html_to_pdf(html_cn, pdf_cn):
             print("CN PDF failed", file=sys.stderr)
+        if pdf_cn.exists() and not html_to_pdf(html_cn, pdf_full_cn):
+            # fallback: copy CN MVP PDF as FULL reader edition
+            shutil.copy2(pdf_cn, pdf_full_cn)
+            print(f"FULL CN PDF copied from MVP CN: {pdf_full_cn}")
 
     ppt_path = build_ppt()
     manifest = write_manifest(copied + [str(ppt_path), str(pdf_path)])
