@@ -30,13 +30,20 @@ from report import write_report
 ROOT = Path(__file__).resolve().parents[1]
 LIVE_RUNS = ROOT / "live_runs"
 CHECKPOINT = LIVE_RUNS / "_checkpoint.json"
-REPO_ROOT = Path(
-    subprocess.check_output(
-        ["git", "rev-parse", "--show-toplevel"],
-        cwd=ROOT,
-        text=True,
-    ).strip()
-)
+
+
+def find_repo_root(start: Path) -> Path:
+    p = start.resolve()
+    for _ in range(12):
+        if (p / ".git").exists():
+            return p
+        if p.parent == p:
+            break
+        p = p.parent
+    raise RuntimeError("git repo root not found")
+
+
+REPO_ROOT = find_repo_root(ROOT)
 
 
 def probe_openai(model: str = "gpt-4o-mini") -> tuple[bool, str]:
