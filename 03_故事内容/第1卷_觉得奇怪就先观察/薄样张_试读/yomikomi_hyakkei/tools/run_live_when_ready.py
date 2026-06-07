@@ -20,11 +20,11 @@ print = functools.partial(print, flush=True)  # noqa: A001
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import CONFIG_DIR, dump_json, load_json, run_id_now
-from corpus_loader import load_corpus_from_quota
+from corpus_loader import CorpusValidationError, load_corpus_from_quota
 from eval_worker import live_evaluate
 from llm_config import get_provider, resolve_model
 from panel_health import assess_panel_health
-from persona_factory import build_panel, write_personas
+from persona_factory import build_panel, validate_panel_quotas, write_personas
 from provider_router import (
     FALLBACK_PROVIDER,
     PRIMARY_PROVIDER,
@@ -270,11 +270,33 @@ def finalize_run(
     log(f"finalized: {out_dir}")
 
 
+def preflight_corpus_and_panel(seed: int) -> tuple:
+    """Fail fast before any live API spend."""
+    try:
+        corpus = load_corpus_from_quota(strict=True)
+    except CorpusValidationError as e:
+        log(f"CORPUS GATE FAIL: {e}")
+        sys.exit(3)
+    except FileNotFoundError as e:
+        log(f"CORPUS GATE FAIL: {e}")
+        sys.exit(3)
+    log(
+        f"corpus OK: {corpus.corpus_id} · {corpus.char_count} chars · sha256={corpus.sha256[:16]}…"
+    )
+    personas = build_panel(seed)
+    quota_v = validate_panel_quotas(personas)
+    if not quota_v.get("ok"):
+        log(f"PANEL QUOTA FAIL: {quota_v.get('errors', quota_v)}")
+        sys.exit(4)
+    log(f"panel quota OK: n={len(personas)} seed={seed}")
+    return corpus, personas
+
+
 def git_commit_live_run(out_dir: Path, run_id: str) -> None:
     rel = out_dir.relative_to(REPO_ROOT)
     tool_script = (ROOT / "tools" / "run_live_when_ready.py").relative_to(REPO_ROOT)
     subprocess.run(["git", "add", str(rel), str(tool_script)], cwd=REPO_ROOT, check=True)
-    msg = f"E20 data: add live reader lab run GateA preface+A001 ({run_id})."
+    msg = f"hyakkei: live simulation run {run_id} (NOT E20 human data)."
     subprocess.run(["git", "commit", "-m", msg], cwd=REPO_ROOT, check=True)
     log(f"committed: {msg}")
 
@@ -285,7 +307,12 @@ def main() -> None:
     parser.add_argument("--poll-interval", type=int, default=300, help="Seconds between provider probes")
     parser.add_argument("--max-wait-hours", type=float, default=72.0)
     parser.add_argument("--once", action="store_true", help="Single probe, no polling loop")
-    parser.add_argument("--commit", action="store_true", help="Git commit live_runs on success")
+    parser.add_argument("--commit", action="store_true", help="Git commit live_runs on success (requires corpus+quota PASS)")
+    parser.add_argument(
+        "--allow-sim-commit",
+        action="store_true",
+        help="Required with --commit: acknowledge SIMULATION data, not E20 human evidence",
+    )
     parser.add_argument("--concurrency", type=int, default=2)
     parser.add_argument("--model", default=None, help="Override model (default per provider)")
     parser.add_argument(
@@ -325,7 +352,12 @@ def main() -> None:
             time.sleep(args.poll_interval)
 
     assert selection is not None
-    personas = build_panel(seed)
+
+    if args.commit and not args.allow_sim_commit:
+        log("Refusing --commit without --allow-sim-commit (SIMULATION ≠ E20 human data)")
+        sys.exit(5)
+
+    _, personas = preflight_corpus_and_panel(seed)
     persona_path = write_personas(personas, seed)
 
     evaluations, errors, complete = run_resumable_live(

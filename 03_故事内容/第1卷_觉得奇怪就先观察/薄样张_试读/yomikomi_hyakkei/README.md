@@ -30,14 +30,16 @@ python tools/run_phase1.py --dry-run
 # Live（默认 auto：OpenAI 首选，配额耗尽才 DeepSeek）
 python tools/run_phase1.py --live --concurrency 4
 
-# 轮询配额 + 断点续跑 + 可选 git commit（同样 primary-first）
-python tools/run_live_when_ready.py --commit
-python tools/run_live_when_ready.py --once --commit
+# 轮询配额 + 断点续跑（commit 须双 flag · SIMULATION ≠ E20）
+python tools/run_live_when_ready.py --allow-sim-commit --commit
+python tools/run_live_when_ready.py --once --allow-sim-commit --commit
 
 # 手动指定 provider（跳过 auto 策略，调试用）
 python tools/run_phase1.py --live --provider openai
 python tools/run_phase1.py --live --provider deepseek
 ```
+
+**Commit 门禁**：`--commit` 必须同时带 `--allow-sim-commit`；语料/配额预检失败则 exit 3/4，不会写库。
 
 **Provider 策略（`--provider auto`，默认）**
 
