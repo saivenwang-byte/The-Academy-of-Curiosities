@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://academy-of-curiosities.local/schema/persona/v1",
+  "title": "YomikomiHyakkei Persona",
+  "type": "object",
+  "required": [
+    "persona_id",
+    "panel",
+    "is_anchor",
+    "language_background",
+    "primary_motive",
+    "main_aversion",
+    "human_summary_zh"
+  ],
+  "properties": {
+    "persona_id": { "type": "string", "pattern": "^(CH|AD|PR)-" },
+    "panel": {
+      "type": "string",
+      "enum": ["child_experience", "adult_gate", "pro_diagnosis"]
+    },
+    "is_anchor": { "type": "boolean" },
+    "anchor_archetype": { "type": "string" },
+    "age": { "type": "integer", "minimum": 9, "maximum": 70 },
+    "gender": { "type": "string", "enum": ["M", "F", "unspecified"] },
+    "role": { "type": "string" },
+    "reading_level": {
+      "type": "string",
+      "enum": ["low", "average", "high", "n/a"]
+    },
+    "weekly_reading_minutes": { "type": "integer", "minimum": 0 },
+    "attention_span": {
+      "type": "string",
+      "enum": ["short", "medium", "long", "n/a"]
+    },
+    "mystery_affinity": { "type": "number", "minimum": 0, "maximum": 1 },
+    "visual_dependency": { "type": "number", "minimum": 0, "maximum": 1 },
+    "competitor_familiarity": { "type": "number", "minimum": 0, "maximum": 1 },
+    "competitor_titles_read": { "type": "array", "items": { "type": "string" } },
+    "strictness": { "type": "number", "minimum": 0, "maximum": 1 },
+    "low_reading_motivation": { "type": "boolean" },
+    "cultural_familiarity": { "type": "string" },
+    "language_background": { "type": "string" },
+    "risk_sensitivity": { "type": "number", "minimum": 0, "maximum": 1 },
+    "purchase_sensitivity": { "type": "number", "minimum": 0, "maximum": 1 },
+    "primary_motive": { "type": "string" },
+    "main_aversion": { "type": "string" },
+    "human_summary_ja": { "type": "string" },
+    "human_summary_zh": { "type": "string" },
+    "synthetic_label": {
+      "type": "string",
+      "const": "合成Persona · 不对应任何真实个人或机构"
+    }
+  },
+  "additionalProperties": true
+}

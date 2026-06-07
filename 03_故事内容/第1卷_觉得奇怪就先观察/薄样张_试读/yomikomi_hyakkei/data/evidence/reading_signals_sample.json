@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "label": "SIMULATION · hand-curated public signals · not scraped profiles",
+  "signals": [
+    {
+      "id": "SIG-001",
+      "source_type": "industry_guide",
+      "audience": "parent",
+      "theme": "purchase_blocker",
+      "signal": "参考書・問題集に見えると購入を躊躇する",
+      "evidence_grade": "inferred"
+    },
+    {
+      "id": "SIG-002",
+      "source_type": "peer_mystery_readers",
+      "audience": "child_10_12",
+      "theme": "fairness",
+      "signal": "手がかりが後から追加されると不公平感で離脱",
+      "evidence_grade": "inferred"
+    },
+    {
+      "id": "SIG-003",
+      "source_type": "bridge_book_reviews",
+      "audience": "child_10_12",
+      "theme": "engagement",
+      "signal": "最初の3–5ページに具体的事件がないと続読率が下がる",
+      "evidence_grade": "inferred"
+    },
+    {
+      "id": "SIG-004",
+      "source_type": "librarian_practice",
+      "audience": "teacher_librarian",
+      "theme": "recommend",
+      "signal": "語彙難易度が学年平均+2以上だとクラス貸出を控える",
+      "evidence_grade": "inferred"
+    },
+    {
+      "id": "SIG-005",
+      "source_type": "low_motivation_readers",
+      "audience": "child_10_12",
+      "theme": "dropout",
+      "signal": "漢字密度が高い連続ページでゲーム/動画に戻る",
+      "evidence_grade": "inferred"
+    }
+  ]
+}

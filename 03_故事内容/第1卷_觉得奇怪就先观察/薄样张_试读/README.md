@@ -61,4 +61,20 @@ python ../../../../scripts/audit_phase_package.py --phase P1
 
 ---
 
-最后更新：2026-06-05
+## 読者百景 · 数字读者实验室（Phase 1）
+
+> **SIMULATION** · 50 合成读者（12 锚点 + 38 生成）· **非** 真人 E20 替代
+
+| 入口 | [`yomikomi_hyakkei/README.md`](./yomikomi_hyakkei/README.md) |
+|------|------|
+| 规格 | [`yomikomi_hyakkei/読者百景_Phase1_入口_20260614.md`](./yomikomi_hyakkei/読者百景_Phase1_入口_20260614.md) |
+| 真人校准 | [`E20_真实读者招募槽位_20260613.md`](./E20_真实读者招募槽位_20260613.md) |
+
+```powershell
+cd yomikomi_hyakkei/tools
+python run_phase1.py --dry-run
+```
+
+---
+
+最后更新：2026-06-14
