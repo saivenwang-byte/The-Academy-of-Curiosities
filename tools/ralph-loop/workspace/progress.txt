@@ -1,0 +1,44 @@
+# Ralph Loop · Vol1 Unit1 MVP · progress log
+# Baseline: f95da38 · doc 30/31/32 · ~78% MVP
+
+## Baseline snapshot (2026-06-08)
+
+| Dimension | % | Notes |
+|-----------|:-:|-------|
+| CN G-BODY | ~97% | R5 done · expert 8.7 · reader 8.1 |
+| JP | ~88% | MVP-JP FULL · MoA-lite NOT recorded |
+| Illustrations | ~48% | 15 keyframes · 7 real + 8 PH · 32 PNG in bundle |
+| PDF/PPT | ~82% | rebuilt f95da38 |
+| E06 | 0% | defer |
+| **综合** | **~78%** | |
+
+## Validator baseline (pre-bootstrap)
+
+Expected hard fails:
+- scores_mvp_latest.json missing
+- mvp_jp_moa_lite.json missing
+- A004 CN 2661 < 3000 CJK
+- FC tags in A002/A004/A005 narrative (first 80%)
+- G-BODY 8.7/8.1 < 9.0/8.5
+
+## Iterations
+
+### iter 0 (6577397) — bootstrap
+Validator + doc 33 + R6 script stub
+
+### iter 1 (01eb10a) — R6 FC strip + A004 expand
+Expert panel: G-BODY 8.8 · Reader 8.3 · P0 7% · weakest: scores+pollution
+
+### iter 3 (8c8baaf) — R7+R8 (iter 2 merged)
+A001 rehearsal gloss · A004 3486字 · A005 metadata→拍摄设置
+
+### iter 4 — PDF/PPT rebuild
+build_mvp_v2_unit1.py · 00_MVP交付清单 refresh
+
+### iter 5 — JP MoA-lite 5/5 + scores
+reader=8.5 P0=5% · expert=8.9 · mvp_jp_moa_lite.json PASS
+
+### iter 6–7 — R9 + doc 33 + BLOCKERS
+Final validator: all PASS except expert 8.9<9.0 → BLOCKED
+
+<!-- end Ralph loop 2026-06-08 -->
