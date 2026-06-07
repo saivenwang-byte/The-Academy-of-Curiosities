@@ -1,22 +1,23 @@
-# Case Card · A001 · 翘边的海报 · V2.0
+# Case Card · A001 · 全班都听见了他的声音 · V2.0
 
 > **Schema**: [`06_Case_Card_Schema_V2.0.md`](../../../../00_项目总览/IP重构执行包_20260607/06_Case_Card_Schema_V2.0.md)  
 > **Engine**: [`02_单案故事引擎_V2.0.md`](../../../../00_项目总览/IP重构执行包_20260607/02_单案故事引擎_V2.0.md)  
-> **Supersedes**: `样章包/02_case_card_案01_翘边的海报.md`（V1.1_STRUCT）  
+> **母纲**: [`Vol1_V2_第一单元_MVP母纲_V0.2.md`](../01_五案关系网/Vol1_V2_第一单元_MVP母纲_V0.2.md)  
+> **Supersedes**: 同路径旧 Card（翘边的海报 · V0.1 归档）  
 > **Status**: **V2_STRUCT** · science_validation: **pending**
 
 ```yaml
 schema_version: V2.0
 case_id: A001
 status: V2_STRUCT
-supersedes: V1.1_STRUCT
+supersedes: A001_V0.1_翘边的海报
 engine: 02_单案故事引擎_V2.0.md
-unit_title: 五件怪事都指向同一个人
-unit_subtitle: 全校都在等他承认
+unit_title: 全校都认错了人
+unit_subtitle: 五件怪事，五次指认，最后连观察社也成了嫌疑人
 complexity_budget: L
 scene_count_target: 9
-science_validation_status: pending
-guest_character: 水野直人
+science_validation_status: working_validated_pending_human_sign
+guest_character: 水野真帆（卷级 · 本案被提及）
 ```
 
 ---
@@ -25,14 +26,14 @@ guest_character: 水野直人
 
 | 字段 | 值 |
 |------|-----|
-| `title_cn` | 翘边的海报 |
-| `title_jp` | めくれたポスター（工作稿） |
-| `hook_one_line` | 报名截止前，海报翘边露旧字——全校等他承认，观察社先查风。 |
+| `title_cn` | 全班都听见了他的声音 |
+| `title_jp` | クラス全員が、彼の声を聞いた（工作稿） |
+| `hook_one_line` | 广播里是他的声音——可他就站在全班面前，一句话也还没说。 |
 | `club_layer` | observe → interview → verify |
-| `scene` | 名古屋 · 活动准备室门外侧廊 · 海报板+壁报夹 |
-| `month_nagoya` | 4月第2–3周 · 樱尾声 · 午后可能有雨 |
-| `char_lead` | 慧美（核对）· 志郎（动手）· 光（问人） |
-| `global_seed_ids` | `DS-002` |
+| `scene` | 名古屋 · 5年段教室 + 校内广播室/器材车接口 · 公开日准备周 |
+| `month_nagoya` | 4月下旬 · 公开日前 · 樱季末 |
+| `char_lead` | 光（被疑）· 慧美（拦定罪）· 志郎（查设备） |
+| `global_seed_ids` | `DS-008`（声学/录音类 · 待 remap 登记） |
 
 ---
 
@@ -40,11 +41,11 @@ guest_character: 水野直人
 
 | 字段 | 值 |
 |------|-----|
-| `science_core` | 侧廊晨间高湿 → 胶带黏性下降；空调出风/窗缝气流 → **风侧**胶带先开边 |
-| `science_cross` | 贴胶带方向习惯（志郎换向）→ 翘边 **换边** 假象 |
-| `misread` | 有人恶作剧撕/翘海报；**水野**故意破坏活动 |
-| `human_truth` | 志郎想贴牢换方向；水野只想把旧通知摆正确却不敢说清 |
-| `儿童实验` | 胶带+电吹风模拟风侧；湿度对照纸角（继承 V1） |
+| `science_core` | 旧排练录音误播 · 数字音频压缩/跳播 · 句子边界截断 |
+| `science_cross` | 听觉声纹熟悉度 · 语境缺失（只听半句） |
+| `misread` | 光当面恶意说「水野不该参加」 |
+| `human_truth` | 光曾转述未经确认的排练片段；对水野有顾虑但未当面排斥 |
+| `儿童实验` | 两段录音拼接/跳播对比 · 「 familiar 声音 ≠ 同一句原话」（禁伤害性内容） |
 
 ---
 
@@ -52,10 +53,10 @@ guest_character: 水野直人
 
 | 字段 | 值 |
 |------|-----|
-| `pressure_primary` | **活动报名截止前撤委员**；5年段议论「水野搅局」 |
-| `pressure_secondary` | 报名截止前 **20 分钟**；联络事项「午后可能有雨」 |
-| `wrong_responsibility` | 水野直人为阻止春季活动/泄愤，**故意撕翘**观察社海报 |
-| `true_responsibility` | **机制**：风侧+湿度+志郎换贴方向；**动机**：水野换贴旧活动通知半句、想参加却怯懦沉默 |
+| `pressure_primary` | 光失去 **广播协助/公开日导播** 资格；班级议论「排斥同学」 |
+| `pressure_secondary` | 公开日彩排前 **40 分钟**；器材车下一班轮转 |
+| `wrong_responsibility` | 伊藤光通过广播 **故意** 羞辱水野、破坏公开日团结 |
+| `true_responsibility` | **机制**：旧卡/排练文件误触播放+压缩跳播；**动机**：光传播过未核实排练消息且未及时澄清 |
 
 ---
 
@@ -65,16 +66,16 @@ guest_character: 水野直人
 |------|-----|
 | `relation_type` | `shared_source` |
 | `relation_to` | A002 |
-| `relation_hook_text` | 侧廊规矩才刚立下，鞋柜那边也出现了「不该有的痕迹」。 |
-| `propagation_layer` | `rumor` |
-| `source_resolved` | `no` |
+| `relation_hook_text` | 广播安静了，黑板上却开始每天出现一句「对不起」。 |
+| `propagation_layer` | `broadcast` |
+| `source_resolved` | `partial`（误播源可定位 · 恶意意图不可） |
 | `next_case_id` | A002 |
 
 ```yaml
 tail_hook_grade: L1
-tail_hook_type: 壁报
-tail_hook_text: "壁报草稿第4栏刻意留空；慧美铅笔小问号；光说核实完再写。"
-tail_hook_fair_in: "SC-09 光解释空栏规矩+半句旧通知未核实"
+tail_hook_type: 广播/器材车
+tail_hook_text: "志郎在广播日志里发现展示膜测试记录——与黑板有关。"
+tail_hook_fair_in: "SC-09 器材车清单+志郎一句「黑板那边也有怪事」"
 ```
 
 ---
@@ -83,10 +84,10 @@ tail_hook_fair_in: "SC-09 光解释空栏规矩+半句旧通知未核实"
 
 | ID | 线索 | 公平含义 | 曝光场次 |
 |----|------|----------|----------|
-| FC-1 | 翘边总在 **出风栅/窗缝同侧** | 气流受力侧 | SC-02 |
-| FC-2 | **雨天/高湿** 日翘边更明显 | 黏性下降 | SC-04 |
-| FC-3 | 志郎 **换胶带方向** 与翘边换边同日 | 人为习惯非恶作剧 | SC-04 |
-| FC-4 | 旧活动通知 **半句** 露出（可擦墨印边） | 水野动过但非「撕毁」 | SC-05 |
+| FC-1 | 播放时 **光唇未动** / 与现场不同步 | 非现场发言 | SC-02 |
+| FC-2 | 日志 **文件时间** 早于当日 · 标签「排练_0328」 | 旧录音 | SC-05 |
+| FC-3 | 波形在「不该参加」前 **硬切/压缩断点** | 跳播拼接 | SC-06 |
+| FC-4 | 完整排练句为「……**迟到者**不该参加 **彩排**」· 广播只播中间段 | 语境截断 | SC-07 |
 
 ---
 
@@ -94,9 +95,9 @@ tail_hook_fair_in: "SC-09 光解释空栏规矩+半句旧通知未核实"
 
 | 字段 | 值 |
 |------|-----|
-| `kei_note_angle` | 哥哥们查风时，她看的是海报下角谁站过 |
-| `kei_second_truth` | 「他把海报换回去了。不是想毁掉——是想把那句话摆到大家能看见的地方。」 |
-| `kei_second_truth_test` | 读者对水野产生 **理解** 而非厌恶；误会伤人先于机制 |
+| `kei_note_angle` | 哥哥们查文件时，她看的是光 **有没有躲开** 大家的眼睛 |
+| `kei_second_truth` | 「大家都听见他的声音了。可没有人听见，他其实还没开口。」 |
+| `kei_second_truth_test` | 读者对 **光** 产生「被误会」的同情，而非「传谣者活该」 |
 
 ---
 
@@ -104,12 +105,12 @@ tail_hook_fair_in: "SC-09 光解释空栏规矩+半句旧通知未核实"
 
 | 角色 | 本场功能 |
 |------|----------|
-| 陸珣 | 指风侧；本子记录；拒写目击栏名字 |
-| 伊藤光 | 拦「查犯人」；写草稿 |
-| 加藤慧美 | 天气/对照表；空栏规矩 |
-| 松本志郎 | 换贴习惯；文件夹挡风验证 |
-| 水野直人 | 误指焦点；沉默；换贴旧通知 |
-| 校工 | 划边界「别撕」 |
+| 陸珣 | 先看 **屏幕时间/日志** · 不先站队 |
+| 伊藤光 | 被疑焦点 · 修复句「我说过一句很像的话…」 |
+| 加藤慧美 | 拦「犯人」· 记录不同版本说法 |
+| 松本志郎 | 查器材车/广播链 · 幽默 relief |
+| 水野真帆 | 被提及 · 未出场主帧 · 沉默承受误传 |
+| 班主任 | 制度钟 · 要求「午休前说明」 |
 
 ---
 
@@ -117,22 +118,22 @@ tail_hook_fair_in: "SC-09 光解释空栏规矩+半句旧通知未核实"
 
 | 项 | 状态 |
 |----|:----:|
-| Remap G1–G7 | 待 V2 正文后重跑 |
-| Card-G1–G6 | ✅ 字段齐 |
-| Card-G7 科学签 | ⬜ pending |
+| Remap G1–G7 | 待 V2 正文 |
+| Card-G1–G6 | ✅ |
+| Card-G7 科学签 | 🟡 working_validated · 见 `P0_科学顾问签核记录_V0.1.md` |
 | phase2b | 待正文 |
 
 ---
 
-## 9. C03b 段落锚（对接分场脚本）
+## 9. C03b 段落锚
 
 | 线索 | 场次 |
 |------|------|
 | FC-1 | SC-02 |
-| FC-2 | SC-04 |
-| FC-3 | SC-04 / SC-07 |
-| FC-4 | SC-05 / SC-08 |
+| FC-2 | SC-05 |
+| FC-3 | SC-06 |
+| FC-4 | SC-07 / SC-08 |
 
 ---
 
-最后更新：2026-06-07 · A001 V2_STRUCT
+最后更新：2026-06-07 · A001 V2_STRUCT · 标题优先版
