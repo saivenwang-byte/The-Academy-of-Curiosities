@@ -1,0 +1,4 @@
+# Committed E20 live run artifacts (SIMULATION)
+# Ephemeral checkpoints stay local only
+_checkpoint.json
+*.partial
