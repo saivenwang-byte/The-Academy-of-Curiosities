@@ -12,10 +12,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import CONFIG_DIR, RUNS_DIR, dump_json, load_json, run_id_now
-from corpus_loader import load_corpus_from_quota
+from corpus_loader import load_corpus_with_manifest
 from eval_worker import dry_run_evaluate, live_evaluate
 from panel_health import assess_panel_health
-from persona_factory import build_panel, validate_low_motivation_ratio, write_personas
+from persona_factory import build_panel, validate_low_motivation_ratio, validate_panel_quotas, write_personas
+from provider_router import (
+    FALLBACK_PROVIDER,
+    PRIMARY_PROVIDER,
+    ProviderQuotaExhaustedError,
+    ProviderUnavailableError,
+    select_provider,
+)
 from report import write_report
 
 
@@ -23,24 +30,54 @@ def run_personas(seed: int) -> tuple[list[dict], Path]:
     panel = build_panel(seed)
     path = write_personas(panel, seed)
     low_ok = validate_low_motivation_ratio(panel, 0.25)
-    print(f"personas: {len(panel)} · anchors={sum(1 for p in panel if p['is_anchor'])} · low_motivation_ok={low_ok}")
+    quota_ok = validate_panel_quotas(panel)
+    print(
+        f"personas: {len(panel)} · anchors={sum(1 for p in panel if p['is_anchor'])} "
+        f"· low_motivation_ok={low_ok} · quota_valid={quota_ok['valid']}"
+    )
     return panel, path
 
 
 def run_evaluations(
     personas: list[dict],
     run_id: str,
+    run_dir: Path,
     dry_run: bool = True,
     concurrency: int = 4,
-    model: str = "gpt-4o-mini",
-) -> tuple[list[dict], list[dict]]:
-    corpus = load_corpus_from_quota()
-    print(f"corpus: {corpus.corpus_id} · chars={corpus.char_count}")
+    model: str | None = None,
+    provider: str = "auto",
+) -> tuple[list[dict], list[dict], str | None]:
+    corpus, manifest = load_corpus_with_manifest(run_dir)
+    print(f"corpus: {corpus.corpus_id} · chars={corpus.char_count} · gate={manifest.gate_status}")
+
+    active_provider: str | None = None
+    if not dry_run:
+        force = None if provider in ("auto", "") else provider
+        try:
+            sel = select_provider(model=model, force=force)
+            active_provider = sel.provider
+            print(
+                f"llm: {active_provider} ({sel.reason}) · "
+                f"primary={PRIMARY_PROVIDER} fallback={FALLBACK_PROVIDER}"
+            )
+        except ProviderUnavailableError as e:
+            raise RuntimeError(str(e)) from e
 
     def one(persona: dict) -> dict:
+        nonlocal active_provider
         if dry_run:
             return dry_run_evaluate(persona, corpus, run_id)
-        return live_evaluate(persona, corpus, run_id, model=model)
+        assert active_provider is not None
+        try:
+            return live_evaluate(persona, corpus, run_id, model=model, provider=active_provider)
+        except ProviderQuotaExhaustedError:
+            if provider in ("auto", "") and active_provider == PRIMARY_PROVIDER:
+                fb = select_provider(model=model, force=None)
+                if fb.provider == FALLBACK_PROVIDER:
+                    active_provider = FALLBACK_PROVIDER
+                    print(f"llm failover: {PRIMARY_PROVIDER} → {FALLBACK_PROVIDER}")
+                    return live_evaluate(persona, corpus, run_id, model=model, provider=active_provider)
+            raise
 
     results: list[dict] = []
     errors: list[dict] = []
@@ -69,7 +106,7 @@ def run_evaluations(
     if not results:
         raise RuntimeError("All evaluations failed; see errors above")
 
-    return results, errors
+    return results, errors, active_provider
 
 
 def main() -> None:
@@ -79,7 +116,13 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", default=True)
     parser.add_argument("--live", action="store_true", help="Use OpenAI API")
     parser.add_argument("--concurrency", type=int, default=4)
-    parser.add_argument("--model", default="gpt-4o-mini")
+    parser.add_argument("--model", default=None, help="Override model (default per provider)")
+    parser.add_argument(
+        "--provider",
+        default="auto",
+        choices=["auto", "openai", "deepseek"],
+        help="auto=OpenAI first, DeepSeek only on quota exhaustion (default)",
+    )
     args = parser.parse_args()
 
     dry = not args.live
@@ -98,15 +141,26 @@ def main() -> None:
     run_dir = RUNS_DIR / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    evaluations, eval_errors = run_evaluations(personas, run_id, dry_run=dry, concurrency=args.concurrency, model=args.model)
+    evaluations, eval_errors, llm_provider = run_evaluations(
+        personas,
+        run_id,
+        run_dir,
+        dry_run=dry,
+        concurrency=args.concurrency,
+        model=args.model,
+        provider=args.provider,
+    )
+    schema_fail = sum(1 for e in evaluations if e.get("schema_valid") is False)
     eval_path = run_dir / "evaluations.json"
     dump_json(
         eval_path,
         {
             "run_id": run_id,
             "mode": "dry_run" if dry else "live",
+            "llm_provider": llm_provider,
             "evaluations": evaluations,
             "errors": eval_errors,
+            "schema_failures": schema_fail,
         },
     )
 
@@ -121,6 +175,7 @@ def main() -> None:
         "personas_file": str(persona_path.relative_to(persona_path.parent.parent)),
         "mode": "SIMULATION",
         "dry_run": dry,
+        "llm_provider": llm_provider,
         "panel_health": health["status"],
     }
     dump_json(run_dir / "run_meta.json", meta)

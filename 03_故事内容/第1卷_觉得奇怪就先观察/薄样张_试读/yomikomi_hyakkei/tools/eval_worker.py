@@ -12,6 +12,9 @@ from typing import Any
 
 from common import CONFIG_DIR, load_json
 from corpus_loader import Corpus, excerpt
+from llm_config import get_provider, resolve_model
+from provider_router import ProviderQuotaExhaustedError, classify_live_http_error
+from schema_validate import validate_evaluation
 
 
 def _load_dims_config() -> dict:
@@ -115,7 +118,7 @@ def dry_run_evaluate(persona: dict, corpus: Corpus, run_id: str) -> dict[str, An
         },
     ]
 
-    return {
+    result = {
         "persona_id": persona["persona_id"],
         "corpus_id": corpus.corpus_id,
         "run_id": run_id,
@@ -152,21 +155,28 @@ def dry_run_evaluate(persona: dict, corpus: Corpus, run_id: str) -> dict[str, An
         "uncertainty": {
             "confidence": round(0.55 + rng.uniform(0, 0.35), 2),
             "missing_materials": [] if visual > 0.4 else ["部分插页未单独输入"],
-            "notes": "dry_run · SIMULATION",
+            "notes": "dry_run · SIMULATION · smoke test only",
         },
     }
+    ok, schema_errors = validate_evaluation(result)
+    if not ok:
+        raise ValueError(f"dry_run schema validation failed: {schema_errors}")
+    return result
 
 
 def live_evaluate(
     persona: dict,
     corpus: Corpus,
     run_id: str,
-    model: str = "gpt-4o-mini",
+    model: str | None = None,
     max_retries: int = 4,
+    provider: str = "openai",
 ) -> dict[str, Any]:
-    api_key = os.environ.get("OPENAI_API_KEY")
+    prov = get_provider(provider)
+    api_key = prov.api_key()
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY not set; use --dry-run")
+        raise RuntimeError(f"{prov.api_key_env} not set; use --dry-run or set API key")
+    model = resolve_model(prov, model)
 
     system = (
         "你是読者百景合成读者评估器。输出严格 JSON。"
@@ -180,19 +190,23 @@ def live_evaluate(
         "corpus_excerpt": excerpt(corpus.text, 10000),
         "eligible_dimensions": sorted(eligible_dimensions(persona)),
     }
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
-        ],
-        "response_format": {"type": "json_object"},
-        "temperature": 0.7,
-    }
     last_err: Exception | None = None
+    last_schema_errors: list[str] = []
     for attempt in range(max_retries):
+        system_msg = system
+        if last_schema_errors:
+            system_msg += f" 上次输出未通过 schema: {'; '.join(last_schema_errors[:5])}。请补全全部必填字段。"
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system_msg},
+                {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
+            ],
+            "response_format": {"type": "json_object"},
+            "temperature": 0.7,
+        }
         req = urllib.request.Request(
-            "https://api.openai.com/v1/chat/completions",
+            prov.chat_url,
             data=json.dumps(payload).encode("utf-8"),
             headers={
                 "Authorization": f"Bearer {api_key}",
@@ -209,12 +223,26 @@ def live_evaluate(
             result.setdefault("corpus_id", corpus.corpus_id)
             result.setdefault("run_id", run_id)
             result["mode"] = "live"
+            result["llm_provider"] = prov.name
+            result["llm_model"] = model
+            ok, schema_errors = validate_evaluation(result)
+            if not ok:
+                last_schema_errors = schema_errors
+                last_err = ValueError(f"schema validation failed: {schema_errors}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
+                result["schema_valid"] = False
+                result["schema_errors"] = schema_errors
+                return result
+            result["schema_valid"] = True
             return result
         except urllib.error.HTTPError as e:
             err_body = e.read().decode()
-            last_err = RuntimeError(f"OpenAI API error ({e.code}): {err_body}")
-            if "insufficient_quota" in err_body:
+            last_err = classify_live_http_error(prov.name, err_body)
+            if isinstance(last_err, ProviderQuotaExhaustedError):
                 raise last_err from e
+            last_err = RuntimeError(f"{prov.name} API error ({e.code}): {err_body}")
             if e.code in (429, 500, 502, 503, 504) and attempt < max_retries - 1:
                 time.sleep(2 ** attempt * 2)
                 continue

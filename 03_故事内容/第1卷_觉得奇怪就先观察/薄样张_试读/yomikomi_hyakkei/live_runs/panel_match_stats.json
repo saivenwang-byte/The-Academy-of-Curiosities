@@ -1,0 +1,105 @@
+{
+  "panel_counts": {
+    "total": 50,
+    "child_experience": 30,
+    "adult_gate": 13,
+    "pro_diagnosis": 7,
+    "anchors": 12
+  },
+  "child_attributes": {
+    "low_reading_motivation_ratio": 0.333,
+    "age_distribution": {
+      "10": 6,
+      "12": 10,
+      "11": 10,
+      "9": 2,
+      "13": 2
+    },
+    "competitor_familiarity_gte_0_6": 10,
+    "visual_dependency_gte_0_7": 12,
+    "mystery_affinity_gte_0_7": 8,
+    "reading_level_low": 7
+  },
+  "quota_validation": {
+    "valid": true,
+    "errors": [],
+    "checks": {
+      "child_experience_count": 30,
+      "age_bucket_0": {
+        "target": 8,
+        "actual": 8,
+        "ages": [
+          9,
+          10
+        ]
+      },
+      "age_bucket_1": {
+        "target": 10,
+        "actual": 10,
+        "ages": [
+          11
+        ]
+      },
+      "age_bucket_2": {
+        "target": 10,
+        "actual": 10,
+        "ages": [
+          12
+        ]
+      },
+      "age_bucket_3": {
+        "target": 2,
+        "actual": 2,
+        "ages": [
+          13
+        ]
+      },
+      "adult_gate_count": 13,
+      "adult_gate_role_parent_caregiver": {
+        "target": 7,
+        "actual": 7
+      },
+      "adult_gate_role_classroom_teacher": {
+        "target": 3,
+        "actual": 3
+      },
+      "adult_gate_role_librarian_promoter": {
+        "target": 3,
+        "actual": 3
+      },
+      "pro_diagnosis_count": 7,
+      "pro_diagnosis_role_children_editor": {
+        "target": 2,
+        "actual": 2
+      },
+      "pro_diagnosis_role_art_editor": {
+        "target": 1,
+        "actual": 1
+      },
+      "pro_diagnosis_role_market_channel": {
+        "target": 1,
+        "actual": 1
+      },
+      "pro_diagnosis_role_critic": {
+        "target": 1,
+        "actual": 1
+      },
+      "pro_diagnosis_role_reading_cognition": {
+        "target": 1,
+        "actual": 1
+      },
+      "pro_diagnosis_role_jp_campus_reviewer": {
+        "target": 1,
+        "actual": 1
+      },
+      "low_reading_motivation_ratio": 0.333
+    }
+  },
+  "project_fit_checks": {
+    "target_age_9_13": true,
+    "low_motivation_gte_25pct": true,
+    "quota_30_13_7": true,
+    "quota_exact_valid": true,
+    "jp_primary_language": 1.0
+  }
+}

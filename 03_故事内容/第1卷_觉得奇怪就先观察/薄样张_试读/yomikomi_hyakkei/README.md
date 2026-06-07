@@ -27,13 +27,26 @@ python tools/run_phase1.py --step personas
 # 完整 dry-run（人格 + 模拟评价 + 健康度 + 报告）
 python tools/run_phase1.py --dry-run
 
-# 需 OPENAI_API_KEY · 结构化 live 评价
+# Live（默认 auto：OpenAI 首选，配额耗尽才 DeepSeek）
 python tools/run_phase1.py --live --concurrency 4
 
-# 配额恢复后自动轮询 + live 50人 + commit（可选 push）
-python tools/run_live_when_ready.py --commit --push
-python tools/run_live_when_ready.py --once --commit   # 仅探测一次
+# 轮询配额 + 断点续跑 + 可选 git commit（同样 primary-first）
+python tools/run_live_when_ready.py --commit
+python tools/run_live_when_ready.py --once --commit
+
+# 手动指定 provider（跳过 auto 策略，调试用）
+python tools/run_phase1.py --live --provider openai
+python tools/run_phase1.py --live --provider deepseek
 ```
+
+**Provider 策略（`--provider auto`，默认）**
+
+1. 每次启动 / 轮询 / 从 fallback 恢复前：**先 probe OpenAI**
+2. OpenAI 可用 → 使用 OpenAI
+3. 仅当 OpenAI 返回 **配额耗尽** → 才 probe 并启用 DeepSeek
+4. 运行中若正在用 DeepSeek，**每条 eval 前**会再 probe OpenAI；恢复则自动切回
+
+环境变量：`OPENAI_API_KEY`（首选）· `DEEPSEEK_API_KEY`（备选）
 
 ---
 

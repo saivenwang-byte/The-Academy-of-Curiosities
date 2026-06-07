@@ -21,8 +21,8 @@ core_contradiction: "严谨格子 vs 采访温度"
 curiosity_lens: "时间+规则"
 curiosity_first_move: "开笔记本小格：日期/天气/异常/验证"
 
-thinking_bias: "信表格；需志郎补现场"
-bias_story_function: "刹车+格化"
+thinking_bias: "先感受关系与现场，再落格；表格服务于人不审判人"
+bias_story_function: "采访温度+格化刹车；动手验证交给志郎"
 
 emotional_triggers:
   anger: "极少外显"
@@ -73,7 +73,7 @@ relationship_vectors:
 
 growth_and_guardrails:
   vol1_state: "5年1組；空栏规矩"
-  never_write: ["定罪", "跳过验证"]
+  never_write: ["定罪", "跳过验证", "冷静理性", "逻辑链总结全场", "三原理口播"]
   vol1_screen_time: "主帧"
 
 regression_scenes:

@@ -70,6 +70,8 @@
   ],
   "corpus": {
     "id": "gatea_preface_a001_20260610",
-    "html": "../GateA_样张MVP_20260610/学堂奇事録_Vol1_Reader_序+A001_日本語_GateA_20260610.html"
+    "html": "../GateA_样张MVP_20260610/学堂奇事録_Vol1_Reader_序+A001_日本語_GateA_20260610.html",
+    "min_char_count": 5000,
+    "required_markers": ["陸珣", "観察"]
   }
 }
