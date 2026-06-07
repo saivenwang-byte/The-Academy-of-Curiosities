@@ -4,34 +4,34 @@
   "unit": "Vol1-Unit1",
   "baseline_commit": "f95da38",
   "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed",
-  "卷专家": 8.88,
-  "卷读者": 8.45,
+  "卷专家": 8.9,
+  "卷读者": 8.5,
   "P0_jump_pct": 5.0,
-  "ralph_iter": 3,
+  "ralph_iter": 7,
   "cases": {
     "A001": {
       "expert": 8.9,
-      "reader": 8.4,
+      "reader": 8.6,
       "p0_jump": false
     },
     "A002": {
       "expert": 8.7,
-      "reader": 8.2,
+      "reader": 8.399999999999999,
       "p0_jump": false
     },
     "A003": {
       "expert": 8.6,
-      "reader": 8.3,
+      "reader": 8.5,
       "p0_jump": false
     },
     "A004": {
       "expert": 8.7,
-      "reader": 8.4,
+      "reader": 8.6,
       "p0_jump": false
     },
     "A005": {
       "expert": 8.6,
-      "reader": 8.2,
+      "reader": 8.399999999999999,
       "p0_jump": false
     }
   },
