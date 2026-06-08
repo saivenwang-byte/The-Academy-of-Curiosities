@@ -82,6 +82,9 @@
 这一次，被看的人不是光，也不是志郎。是慧美。
 
 
+志郎从文件夹里抬头，像给空气留半口气：「**又查了，还是没有。**」
+
+
 慧美把笔记本摊在壁报栏下的折叠桌。四栏格：**已确认** · **听说** · **仍不知道** · **趣事**。
 
 
@@ -489,20 +492,20 @@
 
 ---
 
-【EDITOR · REVIEW_LOOP R3 · 2026-06-08】
-叙事层已 strip SC/FC 场头 · 场级对照见上方 G-SHOT-T 块 · A003
+【EDITOR · REVIEW_LOOP R17 · 2026-06-08】
+M1′/M2′（又查了gag·慧美上打半秒·口述体验化）· FC全保留 · doc47
 
 
 ---
 
-【EDITOR · PRODUCTION META · A003 · foot · R3 2026-06-08】
+【EDITOR · PRODUCTION META · A003 · foot · R17 2026-06-08】
 【Hybrid Voice · V2.0 · A003】
 
   · 案③《每个人都记得的海报》
 
   · 案号：A003 · Engine V2.0 · Campus Ripple
 
-  · 状态：REVIEW_LOOP_R2 · Hybrid Voice v3 · reader-flow 2026-06-08
+  · 状态：REVIEW_LOOP_R17 · M1′/M2′ · humor/mechanism experiential · 2026-06-08
 
   · 八秒句：全班都记得那张海报——可学校连一张完整的都找不到。
 
@@ -513,7 +516,7 @@
   · FC概要：FC-1 口述版式不一致 · FC-2 正式照无海报 · FC-3 草稿夹页尺寸不符 · FC-4 远标题+占位
 
   · 钩子：碎片化信息 → 失物柜/抽屉 → A004
-· 状态：REVIEW_LOOP_R3 · Hybrid Voice v3 · reader-flow 2026-06-08
+· 状态：REVIEW_LOOP_R17 · M1′/M2′ · doc37/47 · 2026-06-08
 
 
 ---

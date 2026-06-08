@@ -338,7 +338,7 @@
 有人问：「那为什么 **只有她** 的影子不见了？」
 
 
-「因为车经过时，**只有我需要侧让**。」陸珣说，「照片没被修改。被软件拼接过。全景照片本来就是拼接。但不是观察社事后把人加进去。」
+「因为车经过时，**只有我需要侧让**。」陸珣说，「照片没被 **抠掉** 谁。是用好几段拍好的 **拼成一张** 的——全景本来就这样拼。不是观察社事后把人加进去。」
 
 
 **仅水野** 脚下无影 · 四人+车+灯杆 **有影** —— **不是** 五人 全无影的「集体消失」。
@@ -554,20 +554,20 @@
 
 ---
 
-【EDITOR · REVIEW_LOOP R3 · 2026-06-08】
-叙事层已 strip SC/FC 场头 · 场级对照见上方 G-SHOT-T 块 · A005
+【EDITOR · REVIEW_LOOP R17 · 2026-06-08】
+M1′/M2′（洗不掉gag·全景拼接体验化·卷收束）· EXPERT_LOCK保留 · doc47
 
 
 ---
 
-【EDITOR · PRODUCTION META · A005 · foot · R3 2026-06-08】
+【EDITOR · PRODUCTION META · A005 · foot · R17 2026-06-08】
 【Hybrid Voice · V2.0 · A005】
 
   · 案⑤《午休后消失的影子》
 
   · 案号：A005 · Engine V2.0 · Campus Ripple
 
-  · 状态：G-CN_LOCK · LOCK aligned · Hybrid Voice v3 · 卷末瘦圈 2026-06-08
+  · 状态：REVIEW_LOOP_R17 · M1′/M2′ · humor/mechanism experiential · 2026-06-08
 
   · 八秒句：合照里只有一个人的影子不见了——大家都说是她干的。
 
@@ -578,7 +578,7 @@
   · FC概要：FC-1 全景icon · FC-2 分段曝光拍摄信息 · FC-3 器材车时间线 · FC-4 单次快门对照有影
 
   · 钩子：卷终重拍 · 写回名字 · 陸珣正式入社 · 单元收束
-· 状态：REVIEW_LOOP_R3 · Hybrid Voice v3 · reader-flow 2026-06-08
+· 状态：REVIEW_LOOP_R17 · M1′/M2′ · doc37/47 · 2026-06-08
 
 
 ---

@@ -7,8 +7,8 @@
 【G-JP MVP · Hybrid Voice · V2.0 · A002】
 
   · 状態：MVP-JP FULL 2026-06-08 · **非 G-JP LOCK**
-  · 品質：CN R3 構造対応 · MoA-lite 未 · 田中 J10 未
-  · 参照：CN_BODY R3 · academy-jp-voice-editor
+  · 品質：CN R17 構造対応 · MoA-lite 未 · 田中 J10 未
+  · 参照：CN_BODY R17 · academy-jp-voice-editor
 
 ========================
 
