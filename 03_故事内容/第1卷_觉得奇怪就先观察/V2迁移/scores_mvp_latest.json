@@ -236,14 +236,16 @@
       "recommend": "E20探针 + G1空栏帧"
     },
     "A004": {
-      "review_loop_terminal": "R17",
+      "review_loop_terminal": "R18",
+      "prior_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.8,
+      "reader": 8.85,
       "humor_H": 7.0,
       "cute_C": 7.0,
       "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.8,
+      "r18_changelog": "R18 micro-pass: 门槛一跳体验化·振动间接 framing·删实验 lecturing",
       "r17_changelog": "M1prime: 偏了一格; M2prime: 门槛一跳体验化",
       "good": [
         "倾斜水泡机制清晰",
@@ -256,8 +258,8 @@
         "E07失物柜待细签",
         "H/C/S未E20验证"
       ],
-      "why": "机制强·表层R16·C 5→7",
-      "recommend": "E07细签 + 失物柜G1 brief"
+      "why": "机制强·R18门槛一跳 reader+0.05·expert plateau 8.9",
+      "recommend": "E07细签 + 失物柜G1 brief · stop R19 without E20"
     },
     "A005": {
       "review_loop_terminal": "R17",
@@ -302,14 +304,21 @@
     "date": "2026-06-08",
     "method": "simulated expert+reader per doc47 · 2 rounds/case · NOT E20",
     "rounds": 2,
+    "r18_micro_pass": {
+      "case": "A004",
+      "date": "2026-06-08",
+      "delta_reader": 0.05,
+      "expert_unchanged": true,
+      "note": "门槛一跳 experiential · honest +0.05 reader only · NOT 9.5"
+    },
     "target": 9.5,
     "target_met": false,
     "plateau": true,
     "plateau_note": "automated plateau ~9.0-9.1 expert · humor H cap 7.0 without E20 · science P0 pending",
     "卷专家": 9.0,
-    "卷读者": 8.9,
+    "卷读者": 8.89,
     "卷均_expert": 9.0,
-    "卷均_reader": 8.88,
+    "卷均_reader": 8.87,
     "HCS_avg": 7.33,
     "e20_slots": "0/12",
     "verdict": "🟡 叙事达标 · 表层H/C/S待E20 · 勿fake 9.5"
