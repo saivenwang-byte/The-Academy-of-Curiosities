@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "case": "A001",
+    "case_title": "全班都听见了他的声音",
+    "pack_version": "V0.1",
+    "source": "【CC】files/A001_日文试读实施包_升级版全文_2026-06-07.md",
+    "e20_status": "0/12",
+    "updated": "2026-06-08"
+  },
+  "probes": [
+    {
+      "e20_id": "E20-H1",
+      "dimension": "H",
+      "label": "幽默 / M1prime",
+      "child_q": "Q6",
+      "parent_q": null,
+      "question_ja": "よんでいるとき、わらった ところは あった？ どこが いちばん おもしろかった？",
+      "pass_threshold": { "metric": "pct_answered_funny", "value": 0.6, "note": "至少答出一处好笑" },
+      "red_flag": null,
+      "observation_slot": 2
+    },
+    {
+      "e20_id": "E20-M2",
+      "dimension": "M2",
+      "label": "机制可讲清 / M2prime",
+      "child_q": "Q2",
+      "parent_q": "P4",
+      "question_ja": "放送から、あきらくんが きょう 言って いない ことば が ながれたのは、どうして？",
+      "pass_threshold": { "metric": "pct_can_explain_splice", "value": 0.6, "note": "用自己话讲出旧录音被剪接" },
+      "red_flag": null,
+      "observation_slot": 4
+    },
+    {
+      "e20_id": "E20-S1",
+      "dimension": "S1",
+      "label": "强度—解脱",
+      "child_q": "Q7",
+      "parent_q": "P6",
+      "question_ja": "こわい／ドキドキ しすぎて、しんどかった ところは あった？ あきらくんの ごかいが とけたとき、ほっと した？",
+      "pass_threshold": { "metric": "pct_ok_and_relieved", "value": 0.7, "note": "しんどくなかった·ほっとした" },
+      "red_flag": { "metric": "any_shindokatta", "action": "伦理护栏 · 立即排查 · 见01_伦理" },
+      "observation_slot": 6
+    },
+    {
+      "e20_id": "E20-J1",
+      "dimension": "J",
+      "label": "想加入观察社 / M4",
+      "child_q": "Q8",
+      "parent_q": null,
+      "question_ja": "「観察社（かんさつしゃ）」に はいりたい？ それは どうして？",
+      "pass_threshold": { "metric": "pct_want_join", "value": 0.6, "note": "はい" },
+      "red_flag": null,
+      "observation_slot": 7
+    },
+    {
+      "e20_id": "E20-04",
+      "dimension": "S",
+      "label": "续读钩",
+      "child_q": "Q3",
+      "parent_q": null,
+      "pass_threshold": { "metric": "pct_want_next", "value": 0.7 },
+      "red_flag": null
+    },
+    {
+      "e20_id": "E20-C1",
+      "dimension": "C",
+      "label": "可爱/角色记忆",
+      "child_q": "Q14",
+      "parent_q": null,
+      "optional": true,
+      "pass_threshold": { "metric": "observe_distribution", "note": "分布观察 · 不全集中一人" }
+    }
+  ],
+  "fair_play": [
+    { "child_q": "Q4", "label": "自推", "pass_threshold": 0.5 },
+    { "child_q": "Q5", "label": "回看", "pass_threshold": 0.6 },
+    { "observation_slot": 3, "label": "观察表 fair-play 原话" }
+  ],
+  "notes_layer": [
+    { "child_q": "Q9", "label": "笔记定位", "pass_threshold": 0.5 },
+    { "child_q": "Q10", "label": "笔记新信息", "pass_threshold": 0.5 },
+    { "child_q": "Q12", "label": "延迟回忆", "pass_threshold": 0.4, "delay_minutes": "10-15" },
+    { "observation_slot": 5, "label": "自发读笔记 · 绝不提示" }
+  ],
+  "baseline": [
+    { "child_q": "Q1", "label": "看懂", "pass_threshold": 0.8 },
+    { "child_q": "Q15", "parent_q": "P7", "label": "写实", "pass_threshold": 0.7 },
+    { "child_q": "Q16", "label": "推荐", "pass_threshold": 0.5 }
+  ],
+  "ethics": {
+    "ref": "01_伦理与知情同意.md",
+    "doc22_ref": "V2迁移/22_V2单元1五案_专家组读者群联合打分_V0.1.md §0.5",
+    "pause_triggers": ["误指/排斥情节真实不适", "任一Q7しんどかった", "观察表不适记录"]
+  }
+}

@@ -383,6 +383,7 @@ allowed-tools:
 | **FREEZE** | `案01_*_HybridVoice_V2.0.txt` at R16 · commit `11cf625` |
 | **禁止 R17+** | 自评 9.0/8.8 **不得**触发 A001 改写 |
 | **E20 前置** | 真实 10–12 岁试读 **≥1/12** 方可开 R17 议程 |
+| **试读包 SSOT** | [`薄样张_试读/A001_E20/00_README_索引.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/薄样张_试读/A001_E20/00_README_索引.md) · doc 46/47 |
 | **CC supersede** | 表层维以 CC round2 为准 · 见 `scores_mvp_latest.json` · `cc_round2` |
 
 ### 幽默伦理（M1′ · doc 41）
