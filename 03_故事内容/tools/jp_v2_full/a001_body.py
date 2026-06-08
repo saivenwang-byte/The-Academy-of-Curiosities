@@ -1,17 +1,7 @@
-『学堂奇事録』
+# -*- coding: utf-8 -*-
+"""Full G-JP body for A001 — CN R17 parity (M1′/M2′ merge)."""
 
-第1巻 · へんなところ、先に見てみよう
-
-========================
-
-【G-JP MVP · Hybrid Voice · V2.0 · A001】
-
-  · 状態：MVP-JP FULL 2026-06-08 · **非 G-JP LOCK**
-  · 品質：CN R17 構造対応 · MoA-lite 未 · 田中 J10 未
-  · 参照：CN_BODY R17 · academy-jp-voice-editor
-
-========================
-
+BODY = """
 序 · 全校が彼の認めを待っている
 
 ------------------
@@ -370,8 +360,4 @@
 **短く切られた本当の言葉**から始まる。
 
 ——第一案完——
----
-
-【G-JP · EDITOR · 2026-06-08】
-· 状態：G-JP MVP FULL A001 · **非 G-JP LOCK**
-· G-BODY 後：MoA-lite 四視角 + J10 標日字符検
+"""

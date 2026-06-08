@@ -19,8 +19,8 @@ HEADER_TMPL = """『学堂奇事録』
 【G-JP MVP · Hybrid Voice · V2.0 · {case_id}】
 
   · 状態：MVP-JP FULL 2026-06-08 · **非 G-JP LOCK**
-  · 品質：CN R3 構造対応 · MoA-lite 未 · 田中 J10 未
-  · 参照：CN_BODY R3 · academy-jp-voice-editor
+  · 品質：CN R17 構造対応 · MoA-lite 未 · 田中 J10 未
+  · 参照：CN_BODY R17 · academy-jp-voice-editor
 
 ========================
 
@@ -35,6 +35,7 @@ FOOTER_TMPL = """
 """
 
 CASES = [
+    ("A001", "案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt", "a001_body"),
     ("A002", "案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt", "a002_body"),
     ("A003", "案03_每个人都记得的海报_HybridVoice_V2.0_日本語.txt", "a003_body"),
     ("A004", "案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt", "a004_body"),
