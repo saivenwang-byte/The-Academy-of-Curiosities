@@ -20,6 +20,12 @@ alwaysApply: true
 - 小改迭代后 **同轮** 更新 doc 22 定量 + doc 23 好坏清单
 - 生产化动作 **全部** 指向 doc 24 §5 · 待 **G-BODY** 签后执行
 
+## A001 特例（FREEZE · doc 40）
+
+- **禁止** 编辑 `案01_*_HybridVoice_V2.0.txt` · REVIEW LOOP R17+ on A001
+- **解冻**：E20 真实试读 ≥1/12 + IP 批准 · SSOT doc 40
+- **允许**：E20 试读包 · 旁注/示范段 · doc 41 规则入库
+
 ## 过关线（解锁生产化包）
 
 | 条件 | 阈值 |

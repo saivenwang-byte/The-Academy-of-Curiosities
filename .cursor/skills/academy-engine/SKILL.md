@@ -364,7 +364,7 @@ allowed-tools:
 
 ## 十二、全球 IP 表层（增补 · doc37 · 不替代 L2/LOCK）
 
-> SSOT：`V2迁移/37_全球IP表层标准_幽默可爱简单_V0.1.md` · 真人专家 2026-06-07
+> SSOT：`V2迁移/37_全球IP表层标准_幽默可爱简单_V0.1.md` · CC round2 · doc 41
 
 **REVIEW LOOP / G-BODY 前自检（序+场1）**：
 
@@ -376,4 +376,19 @@ allowed-tools:
 [ ] EXPERT_LOCK + doc35 视觉锚 **不动**
 ```
 
-**禁**：因 H/C/S 自评 claim G-BODY PASS · 改 science lock · fake E20 9+
+### A001 冻结与 E20 门禁（doc 40 · 强制）
+
+| 规则 | 说明 |
+|------|------|
+| **FREEZE** | `案01_*_HybridVoice_V2.0.txt` at R16 · commit `11cf625` |
+| **禁止 R17+** | 自评 9.0/8.8 **不得**触发 A001 改写 |
+| **E20 前置** | 真实 10–12 岁试读 **≥1/12** 方可开 R17 议程 |
+| **CC supersede** | 表层维以 CC round2 为准 · 见 `scores_mvp_latest.json` · `cc_round2` |
+
+### 幽默伦理（M1′ · doc 41）
+
+- **侧打/上打**：四人小癖 · 传言荒诞 · 给被冤主角一口气  
+- **不下打**：**永不**拿被冤孩子（水野等）的痛当笑料  
+- **FC 保留**：M1′/M2′ 改写 **不动** FC-0~4 · 机制可审计
+
+**禁**：因 H/C/S 自评 claim G-BODY PASS · 改 science lock · fake E20 9+ · **A001 R17 无 E20**
