@@ -130,7 +130,7 @@
     "slots_filled": 0,
     "slots_total": 12,
     "status": "SKIPPED_BY_MANDATE",
-    "mandate_note": "E20 explicitly SKIPPED per pipeline续跑 mandate · 2026-06-08 · NOT blocking scoring",
+    "mandate_note": "E20 still 0/12 · NO real child trial · V3.0 JP sync 2026-06-09 · doc80 PREP · NOT blocking scoring",
     "pilot_pack": "薄样张_试读/E20_pilot_A001_20260608/",
     "ip_ruling_date": "2026-06-08",
     "ip_ruling_doc": "V2迁移/42_IP裁定_E20启动与R17门禁_V0.1.md",

@@ -23,13 +23,34 @@
   "P0_jump_pct": 0.0,
   "target": 9.5,
   "target_met": false,
-  "v3_changelog": "2026-06-09 · full rewrite A001-A005 · metadata→sidecar · subtraction ≤6000/case · doc78",
+  "v3_changelog": "2026-06-09 · full rewrite A001-A005 · metadata→sidecar · subtraction ≤6000/case · doc78 · JP V3.0 sync 2026-06-09",
+  "jp_v3_sync": {
+    "date": "2026-06-09",
+    "status": "DRAFT · 待田中 J10",
+    "files": "正式版/01_正文/案0X_*_HybridVoice_V3.0_日本語.txt",
+    "char_counts_kana_kanji": {
+      "A001": 4363,
+      "A002": 4203,
+      "A003": 4663,
+      "A004": 4425,
+      "A005": 5507
+    },
+    "char_counts_cn_cjk": {
+      "A001": 3137,
+      "A002": 2834,
+      "A003": 3149,
+      "A004": 2896,
+      "A005": 3814
+    }
+  },
   "e20_real": {
     "slots_filled": 0,
     "slots_total": 12,
     "status": "pending",
-    "mandate_note": "E20 still 0/12 · reader/H/C/S scores simulated · NOT blocking doc79 write-up",
+    "mandate_note": "E20 still 0/12 · NO real child trial run · reader/H/C/S simulated · doc80 PREP ONLY · NOT blocking doc79",
     "pilot_pack": "薄样张_试读/E20_pilot_A001_20260608/",
+    "pilot_body": "01_试读正文_V3.0_日本語.txt",
+    "prep_doc": "V2迁移/80_E20_V3.0试读实施包_V0.1.md",
     "new_probes": [
       "E20-H1_笑过吗",
       "E20-M2_机制可讲清",
