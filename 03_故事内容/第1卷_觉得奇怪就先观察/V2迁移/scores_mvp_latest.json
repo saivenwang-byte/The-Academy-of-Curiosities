@@ -1,21 +1,48 @@
 {
-  "version": "mvp_latest_9.5_target",
+  "version": "mvp_latest_r16_global_ip",
   "date": "2026-06-08",
   "unit": "Vol1-Unit1",
-  "baseline_commit": "67631ac",
-  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed · honesty cap applied",
+  "baseline_commit": "050f810",
+  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed · honesty cap applied · global_ip_expert overlay doc36",
   "卷专家": 9.0,
   "卷读者": 8.9,
   "P0_jump_pct": 4.0,
-  "ralph_iter": 17,
+  "ralph_iter": 16,
   "target": 9.5,
   "target_met": false,
+  "global_ip_expert": {
+    "source": "V2.0_全球IP标准对标评判_修改意见_2026-06-07.md",
+    "real_human": true,
+    "soul_dimensions_avg": 8.2,
+    "body_dimensions_avg": 4.4,
+    "gap_note": "自评9.0/8.9测不出幽默/钩子/想加入·专家表层3-5分",
+    "dimensions": {
+      "情绪发动机": { "expert": 9.0, "self": 9.0 },
+      "固定仪式口令": { "expert": 8.0, "self": null },
+      "可持续生产": { "expert": 8.0, "self": null },
+      "身份与收集": { "expert": 7.0, "self": null },
+      "语言签名": { "expert": 8.0, "self": null },
+      "重构落地": { "expert": 7.5, "self": null },
+      "开篇钩子": { "expert": 5.0, "self": null, "r16_action": "冷开广播+禁声", "verified": "pending_E20" },
+      "表层简单": { "expert": 5.0, "self": null, "r16_action": "开篇角色6→4", "verified": "pending_E20" },
+      "角色鲜活": { "expert": 5.0, "self": null, "r16_action": "渴望+缺口+社徽", "verified": "pending_E20" },
+      "想加入世界": { "expert": 4.0, "self": null, "r16_action": "观察社角落种子", "verified": "pending_E20" },
+      "幽默": { "expert": 3.0, "self": null, "r16_action": "更牢gag×2+慧美字面记", "verified": "pending_E20" }
+    }
+  },
+  "e20_real": {
+    "slots_filled": 0,
+    "slots_total": 12,
+    "status": "NOT_RUN",
+    "new_probes": ["E20-H1_笑过吗", "E20-J1_想加入吗"],
+    "probe_template": "薄样张_试读/E20_探针模板_V0.1.md"
+  },
   "g_body": {
     "literary_expert": 9.0,
     "literary_reader": 8.9,
     "illustration_executability": 8.5,
     "illustration_executability_prior_r14": 6.5,
-    "illustration_lift_note": "R15 visual anchors + doc35 SSOT + G-BODY gate checklist · separate from literary G-BODY · NOT G-IMG PASS",
+    "illustration_lift_note": "R15 visual anchors + doc35 SSOT · R16 序+场1 锚句保留 SC-02/03",
     "ip_sign": false,
     "g1_batch_text_ready": true,
     "g1_batch_png_ready": false
@@ -26,10 +53,21 @@
       "reader": 8.8,
       "p0_jump": false,
       "illustration_executability": 8.6,
-      "good": ["钩子+禁声双重不可能", "三周前彩排录音gloss", "波形剪刀比喻儿童可读", "R15 SC-02/03 L0+上履き锚"],
-      "bad": ["科学P0波形lab未人类签", "机制维度封顶"],
-      "why": "LOCK兑现9.8级·科学签核缺−0.5·插画锚+0.8",
-      "recommend": "科学P0 lab签核 + Shot Map波形帧 + G1DRAFT重跑"
+      "r16_changelog": "global IP M1-M3: hook first, humor gags, 4-char vivid, 观察社种子",
+      "good": [
+        "钩子+禁声双重不可能",
+        "三周前彩排录音gloss",
+        "R16冷开+PLAY屏锚",
+        "志郎更牢running gag",
+        "观察社角落+翘角社徽"
+      ],
+      "bad": [
+        "幽默/钩子/想加入未E20验证",
+        "科学P0波形lab未人类签",
+        "机制维度封顶"
+      ],
+      "why": "叙事LOCK不变·表层执行R16焊进·专家幽默3分待孩子验证",
+      "recommend": "真实E20探针H1/J1 + 科学P0 lab签核 + G1DRAFT重跑"
     },
     "A002": {
       "expert": 9.1,
@@ -37,9 +75,9 @@
       "p0_jump": false,
       "illustration_executability": 8.4,
       "good": ["FC-1 inline已清", "膜段压缩", "八秒句+洗冤峰值", "R15 SC-02 教室+上履き锚"],
-      "bad": ["展示膜P0人类lab pending", "器材车频次仍略高"],
+      "bad": ["展示膜P0人类lab pending", "器材车频次仍略高", "M1-M3未焊"],
       "why": "叙事改善+0.3·科学P0−0.4·膜边正文锚已足",
-      "recommend": "A002展示膜P0签 + indirect framing可选"
+      "recommend": "parent批准後扩展M1-M3模式"
     },
     "A003": {
       "expert": 8.9,
@@ -76,12 +114,13 @@
     "science P0 human lab pending (A001/A002/A005) caps expert at ~9.0",
     "G-BODY IP sign pending — literary 9.0 does NOT auto-pass illustration gate",
     "G-IMG PH not production PNG — prior DEMO G1DRAFT_REJECT",
-    "E20 real child trial not run — reader scores simulated"
+    "E20 real child trial 0/12 — reader scores simulated; global_ip body dims unverified"
   ],
   "dimensions_weakest": {
-    "case": "A004",
-    "dimension": "reader",
-    "score": 8.7
+    "case": "global_ip_expert",
+    "dimension": "幽默",
+    "expert_score": 3.0,
+    "r16_mitigation": "A001 running gags · verify E20-H1"
   },
-  "r15_changelog": "2026-06-08 · doc35 + G-BODY gate + CN inline visual anchors + KF G-BODY锚点列 · illustration_executability 6.5→8.5 · literary unchanged"
+  "r16_changelog": "2026-06-08 · doc36 + A001 R16 M1-M3 + E20探针模板 + honest global_ip_expert gap in scores"
 }
