@@ -4,8 +4,8 @@
   "unit": "Vol1-Unit1",
   "baseline_commit": "050f810",
   "method": "simulated expert+reader per doc 23 · NOT E20 · R17 M1prime-M2prime merge · doc45",
-  "卷专家": 9.1,
-  "卷读者": 8.9,
+  "卷专家": 9.0,
+  "卷读者": 8.96,
   "P0_jump_pct": 4.0,
   "ralph_iter": 17,
   "target": 9.5,
@@ -129,7 +129,8 @@
   "e20_real": {
     "slots_filled": 0,
     "slots_total": 12,
-    "status": "PILOT_ACTIVE",
+    "status": "SKIPPED_BY_MANDATE",
+    "mandate_note": "E20 explicitly SKIPPED per pipeline续跑 mandate · 2026-06-08 · NOT blocking scoring",
     "pilot_pack": "薄样张_试读/E20_pilot_A001_20260608/",
     "ip_ruling_date": "2026-06-08",
     "ip_ruling_doc": "V2迁移/42_IP裁定_E20启动与R17门禁_V0.1.md",
@@ -212,14 +213,16 @@
       "recommend": "E20-H1/J1 + 展示膜P0 lab签"
     },
     "A003": {
-      "review_loop_terminal": "R17",
+      "review_loop_terminal": "R19",
+      "prior_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.8,
+      "reader": 8.92,
       "humor_H": 7.0,
       "cute_C": 7.0,
       "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.7,
+      "r19_changelog": "R19 micro-pass: 没贴完字面gag·半栏三分之一读者桥",
       "r17_changelog": "M1prime: 慧美上打半秒; M2prime: 口述体验化保留",
       "good": [
         "瑆金句+情绪次强",
@@ -232,20 +235,20 @@
         "开篇角色5人略超",
         "H/C/S未E20验证"
       ],
-      "why": "情绪强·表层R16·C 5.5→7",
-      "recommend": "E20探针 + G1空栏帧"
+      "why": "R19没贴完字面gag·reader+0.12·expert plateau 8.9 science P1",
+      "recommend": "G1空栏帧 + science P1签 · E20 SKIPPED"
     },
     "A004": {
       "review_loop_terminal": "R18",
       "prior_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.85,
+      "reader": 8.90,
       "humor_H": 7.0,
       "cute_C": 7.0,
       "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.8,
-      "r18_changelog": "R18 micro-pass: 门槛一跳体验化·振动间接 framing·删实验 lecturing",
+      "r18_changelog": "R18 micro-pass: 门槛一跳体验化·偏了一格gag·慧美低侧不是低人",
       "r17_changelog": "M1prime: 偏了一格; M2prime: 门槛一跳体验化",
       "good": [
         "倾斜水泡机制清晰",
@@ -258,8 +261,8 @@
         "E07失物柜待细签",
         "H/C/S未E20验证"
       ],
-      "why": "机制强·R18门槛一跳 reader+0.05·expert plateau 8.9",
-      "recommend": "E07细签 + 失物柜G1 brief · stop R19 without E20"
+      "why": "机制强·R18读者桥+0.05·expert plateau 8.9 science P0 pending",
+      "recommend": "E07细签 + 失物柜G1 brief · E20 SKIPPED"
     },
     "A005": {
       "review_loop_terminal": "R17",
@@ -290,7 +293,7 @@
     "science P0 human lab pending (A001/A002/A005) caps expert at ~9.0",
     "G-BODY IP sign pending — literary 9.0 does NOT auto-pass illustration gate",
     "G-IMG PH not production PNG — prior DEMO G1DRAFT_REJECT",
-    "E20 real child trial 0/12 — reader scores simulated; global_ip body dims unverified"
+    "E20 SKIPPED by mandate — reader scores simulated; H/C/S heuristic cap 8"
   ],
   "dimensions_weakest": {
     "case": "global_ip_expert",
@@ -302,8 +305,16 @@
   "r17_changelog": "2026-06-08 · A001-A005 R17 M1prime-M2prime · doc45 · CLASS_5-2 · doc44",
   "phase2": {
     "date": "2026-06-08",
-    "method": "simulated expert+reader per doc47 · 2 rounds/case · NOT E20",
+    "method": "simulated expert+reader per doc47 · 2 rounds/case · E20 SKIPPED",
     "rounds": 2,
+    "e20_status": "SKIPPED_BY_MANDATE",
+    "r19_micro_pass": {
+      "case": "A003",
+      "date": "2026-06-08",
+      "delta_reader": 0.12,
+      "expert_unchanged": true,
+      "note": "没贴完字面gag · honest +0.12 reader only · NOT 9.5"
+    },
     "r18_micro_pass": {
       "case": "A004",
       "date": "2026-06-08",
@@ -314,14 +325,25 @@
     "target": 9.5,
     "target_met": false,
     "plateau": true,
-    "plateau_note": "automated plateau ~9.0-9.1 expert · humor H cap 7.0 without E20 · science P0 pending",
+    "plateau_note": "automated plateau ~9.0 expert · science P0 caps · humor H cap 7.0 heuristic · E20 SKIPPED not blocking",
     "卷专家": 9.0,
-    "卷读者": 8.89,
+    "卷读者": 8.96,
     "卷均_expert": 9.0,
-    "卷均_reader": 8.87,
+    "卷均_reader": 8.96,
     "HCS_avg": 7.33,
-    "e20_slots": "0/12",
-    "verdict": "🟡 叙事达标 · 表层H/C/S待E20 · 勿fake 9.5"
+    "e20_slots": "SKIPPED",
+    "verdict": "🟡 叙事达标 · 9.5未达·science P0 cap · E20 SKIPPED · 勿fake"
+  },
+  "moa_lite": {
+    "date": "2026-06-08",
+    "method": "MoA-lite 四视角 heuristic · NOT G-JP LOCK · E20 SKIPPED",
+    "cases": {
+      "A001": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"},
+      "A002": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"},
+      "A003": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J 壁报栏", "mechanism_terms": "ok", "humor_jp": "ok"},
+      "A004": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J 失物招领", "mechanism_terms": "ok", "humor_jp": "ok"},
+      "A005": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"}
+    }
   },
   "global_ip_surface_self": {
     "tool": "score_global_ip_surface.py",
@@ -391,8 +413,8 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 44,
-          "laughs_per_800w": 52.0,
+          "running_gag_hits": 50,
+          "laughs_per_800w": 58.0,
           "evidence": [
             "后的眼睛没笑：「**未登记**。」「更牢了也比掉地上强。」志郎又扯",
             "开日·黑板测试·**未登记**。慧美跟在后面：「先登记，再测反光。",
@@ -502,8 +524,8 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 33,
-          "laughs_per_800w": 33.0,
+          "running_gag_hits": 35,
+          "laughs_per_800w": 35.0,
           "evidence": [
             "搁在柜顶——水泡**偏了一格**。「**偏了一格。**」志郎自言自语",
             "偏了一格**。「**偏了一格。**」志郎自言自语，像案②里贴膜前先动",
@@ -556,11 +578,11 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 16,
-          "laughs_per_800w": 17.0,
+          "running_gag_hits": 17,
+          "laughs_per_800w": 18.0,
           "evidence": [
-            "郎咧嘴，「静电 **洗不掉** 这一块。」   慧美在 **趣事*",
-            "：志郎对照静电 · 洗不掉 · 待查拍摄。   慧美在仍不知道写：",
+            "郎咧嘴，「静电 **洗不掉** 这一块。」   光没笑，只小声：「",
+            "：志郎对照静电 · 洗不掉 · 登记笔未登记 · 待查拍摄。",
             "-「水野脚下……**空的**？」四人的鞋边都有影。器材车的轮胎也",
             "「水野脚下…… **空的**？」   四人的鞋边都有影。器材车的",
             "**五人都在·仅一人无影**。大屏的光很亮。亮到大家先看见缺了什"
