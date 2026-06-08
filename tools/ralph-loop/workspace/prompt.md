@@ -8,13 +8,13 @@
 Push Vol1 Unit1 A001–A005 MVP from ~78% to machine-verified COMPLETE:
 G-BODY scores · JP MoA-lite · editor-pollution clean · honest scores JSON.
 
-## FROZEN (IP+CC 2026-06-08)
+## FROZEN → R17 UNFROZEN (IP 2026-06-08)
 
-- Do **NOT** edit `案01_*_HybridVoice_V2.0.txt`
-- Do **NOT** run REVIEW LOOP R17+ on A001
-- Next gate: E20 real child trial (**0/12**)
-- SSOT: `V2迁移/40_A001迭代冻结_E20门禁_V0.1.md` · anchor commit `11cf625`
-- Drift check: `python 03_故事内容/tools/check_a001_freeze.py`
+- **R17 ACTIVE** · M1′/M2′ merged · doc45 audit complete
+- **Do NOT** run R18+ on A001 without new IP agenda
+- E20 pilot continues · 0/12 slots · do not fake
+- SSOT: `V2迁移/40_A001迭代冻结_E20门禁_V0.1.md` · `45_A001_R17_…`
+- Prior anchor: `11cf625` (R16)
 
 ## Constraints
 

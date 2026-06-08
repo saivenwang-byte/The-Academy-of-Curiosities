@@ -1,33 +1,51 @@
 {
-  "version": "mvp_latest_r16_cc_round2_A001_frozen",
+  "version": "mvp_latest_r17_A001_unfrozen",
   "date": "2026-06-08",
   "unit": "Vol1-Unit1",
   "baseline_commit": "050f810",
-  "method": "simulated expert+reader per doc 23 · NOT E20 · NOT science P0 signed · honesty cap applied · global_ip_expert overlay doc36",
-  "卷专家": 9.0,
+  "method": "simulated expert+reader per doc 23 · NOT E20 · R17 M1prime-M2prime merge · doc45",
+  "卷专家": 9.1,
   "卷读者": 8.9,
   "P0_jump_pct": 4.0,
-  "ralph_iter": 16,
+  "ralph_iter": 17,
   "target": 9.5,
   "target_met": false,
   "cc_round2": {
     "source": "V2.0_第二次修改版_全球IP评判第二轮_2026-06-07.md",
     "real_human": true,
     "date": "2026-06-07",
-    "a001_frozen": true,
+    "a001_frozen": false,
+    "a001_unfrozen": "2026-06-08",
+    "r17_doc": "V2迁移/45_A001_R17_M1prime-M2prime_改写与审核_V0.1.md",
     "freeze_commit": "11cf625",
     "supersedes_self_score_for": "A001",
     "r15_to_r16": {
-      "钩子": { "r15": 5, "r16": 9 },
-      "角色": { "r15": 5, "r16": 7 },
-      "幽默": { "r15": 3, "r16": 6 },
-      "想加入": { "r15": 4, "r16": 6.5 },
-      "表层简单": { "r15": 5, "r16": 6.5 },
-      "公平线索": { "r16": 9 }
+      "钩子": {
+        "r15": 5,
+        "r16": 9
+      },
+      "角色": {
+        "r15": 5,
+        "r16": 7
+      },
+      "幽默": {
+        "r15": 3,
+        "r16": 6
+      },
+      "想加入": {
+        "r15": 4,
+        "r16": 6.5
+      },
+      "表层简单": {
+        "r15": 5,
+        "r16": 6.5
+      },
+      "公平线索": {
+        "r16": 9
+      }
     },
     "remaining_gaps": [
-      "幽默压不住沉重",
-      "机制讲课化",
+      "幽默压不住沉重（R17缓解未E20验）",
       "光慧美无吉祥物",
       "观察社未到部室级",
       "水野名漂移"
@@ -116,7 +134,9 @@
     "ip_ruling_date": "2026-06-08",
     "ip_ruling_doc": "V2迁移/42_IP裁定_E20启动与R17门禁_V0.1.md",
     "pilot_boundary": "tanaka_review_not_required_for_cn_pilot",
-    "r17_still_locked": true,
+    "r17_still_locked": false,
+    "r17_active": true,
+    "r17_ip_date": "2026-06-08",
     "new_probes": [
       "E20-H1_笑过吗",
       "E20-M2_机制可讲清",
@@ -137,29 +157,34 @@
   },
   "cases": {
     "A001": {
-      "frozen": true,
+      "frozen": false,
+      "unfrozen": "2026-06-08",
       "freeze_commit": "11cf625",
-      "review_loop_terminal": "R16",
-      "expert": 9.0,
-      "reader": 8.8,
-      "score_authority": "cc_round2_surface_supersedes_self_for_edits",
+      "review_loop_terminal": "R17",
+      "expert": 9.1,
+      "reader": 8.9,
+      "humor_H": 7.0,
+      "cute_C": 8.0,
+      "surface_S": 8.0,
+      "score_authority": "doc45_r17_audit + cc_round2_surface",
       "p0_jump": false,
       "illustration_executability": 8.6,
+      "r17_changelog": "M1prime: 误伤栏+听说荒诞+光半秒; M2prime: 没换气/全剪掉黏齐/队列软化",
       "r16_changelog": "global IP M1-M3: hook first, humor gags, 4-char vivid, 观察社种子",
       "good": [
         "钩子+禁声双重不可能",
-        "三周前彩排录音gloss",
-        "R16冷开+PLAY屏锚",
-        "志郎更牢running gag",
+        "误伤栏+第三周听说荒诞",
+        "机制体验化（没换气/憋气）",
+        "FC-0~4+EXPERT_LOCK保留",
         "观察社角落+翘角社徽"
       ],
       "bad": [
-        "幽默/钩子/想加入未E20验证",
+        "幽默/机制未E20验证",
         "科学P0波形lab未人类签",
-        "机制维度封顶"
+        "全案情绪仍偏沉"
       ],
-      "why": "叙事LOCK不变·表层执行R16焊进·专家幽默3分待孩子验证",
-      "recommend": "真实E20探针H1/J1 + 科学P0 lab签核 + G1DRAFT重跑"
+      "why": "R17 CC示范merge·幽默+1·机制可读+·LOCK零冲突",
+      "recommend": "E20探针H1/M2/S1 + 科学P0 lab + 勿R18无议程"
     },
     "A002": {
       "expert": 9.1,
@@ -256,6 +281,7 @@
     "r16_mitigation": "A001 running gags · verify E20-H1"
   },
   "r16_changelog": "2026-06-08 · doc37 H/C/S SSOT + A002-A005 R16 M1-M3 + score_global_ip_surface.py + E20 rubric",
+  "r17_changelog": "2026-06-08 · A001 R17 M1prime-M2prime merge · doc45 · CLASS_5-2 · doc44",
   "global_ip_surface_self": {
     "tool": "score_global_ip_surface.py",
     "date": "2026-06-08",
@@ -267,14 +293,14 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 29,
+          "running_gag_hits": 28,
           "laughs_per_800w": 31.0,
           "evidence": [
             "贴完，角翘得更高。「更牢了。」他满意点头。加藤慧美把透明膜按回他",
             "里：「还没登记。」「更牢了也比掉地上强。」志郎又扯了一截胶带，社",
             "**听说**·志郎说更牢了·未确认是否更牢。灰白色的**移动媒体",
             "说更牢了·未确认是否更牢。灰白色的**移动媒体器材车**停在侧门",
-            "板屏幕闪了闪。「……更牢了。」志郎自言自语。光脸色发白，只能挤出"
+            "用扎带一束——「这样更牢。」线「嘣」地弹直，平板屏幕跟着亮了一下"
           ],
           "note": "cap 8 · E20-H1 required for 9+"
         },
