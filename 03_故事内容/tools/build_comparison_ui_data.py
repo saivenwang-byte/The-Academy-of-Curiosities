@@ -24,6 +24,9 @@ REPO_ROOT = TOOLS_DIR.parent.parent
 STORY_ROOT = TOOLS_DIR.parent / "第1卷_觉得奇怪就先观察"
 BODY_DIR = STORY_ROOT / "正式版" / "01_正文"
 UI_DIR = STORY_ROOT / "正式版" / "06_审读对比UI"
+EMBED_START = "<!-- COMPARISON_DATA_EMBED -->"
+EMBED_END = "<!-- /COMPARISON_DATA_EMBED -->"
+INDEX_HTML = UI_DIR / "index.html"
 SCORES_JSON = STORY_ROOT / "V2迁移" / "scores_mvp_latest.json"
 A001_COMPARE_MD = STORY_ROOT / "V2迁移" / "37_A001_R16_原稿对比表_V0.1.md"
 
@@ -287,6 +290,28 @@ def build_case(repo: Path, case_id: str, filename: str, title: str, scores: dict
     }
 
 
+def embed_data_in_index(html_path: Path, payload_json: str) -> None:
+    """Inject COMPARISON_DATA into index.html for reliable file:// open."""
+    if not html_path.exists():
+        print(f"Skip embed: missing {html_path}", file=sys.stderr)
+        return
+    text = html_path.read_text(encoding="utf-8")
+    if EMBED_START not in text or EMBED_END not in text:
+        print(f"Skip embed: markers not found in {html_path}", file=sys.stderr)
+        return
+    embed_block = (
+        f"{EMBED_START}\n"
+        f"  <script>\n"
+        f"window.__COMPARISON_DATA__ = {payload_json};\n"
+        f"  </script>\n"
+        f"  {EMBED_END}"
+    )
+    before, rest = text.split(EMBED_START, 1)
+    _, after = rest.split(EMBED_END, 1)
+    html_path.write_text(before + embed_block + after, encoding="utf-8")
+    print(f"Embedded data in {html_path} ({html_path.stat().st_size:,} bytes)")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build 三稿对比 UI data")
     parser.add_argument("--repo", type=Path, default=REPO_ROOT)
@@ -327,17 +352,16 @@ def main() -> int:
 
     json_path = UI_DIR / "comparison_data.json"
     js_path = UI_DIR / "comparison_data.js"
-    json_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    payload_text = json.dumps(payload, ensure_ascii=False, indent=2)
+    payload_compact = json.dumps(payload, ensure_ascii=False)
+    json_path.write_text(payload_text, encoding="utf-8")
     js_path.write_text(
-        "window.__COMPARISON_DATA__ = "
-        + json.dumps(payload, ensure_ascii=False)
-        + ";\n",
+        "window.__COMPARISON_DATA__ = " + payload_compact + ";\n",
         encoding="utf-8",
     )
     print(f"Wrote {json_path} ({json_path.stat().st_size:,} bytes)")
     print(f"Wrote {js_path} ({js_path.stat().st_size:,} bytes)")
+    embed_data_in_index(INDEX_HTML, payload_compact)
     return 0
 
 
