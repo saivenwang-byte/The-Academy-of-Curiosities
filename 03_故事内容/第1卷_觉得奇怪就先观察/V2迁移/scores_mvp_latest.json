@@ -111,9 +111,16 @@
   "e20_real": {
     "slots_filled": 0,
     "slots_total": 12,
-    "status": "NOT_RUN",
+    "status": "PILOT_ACTIVE",
+    "pilot_pack": "薄样张_试读/E20_pilot_A001_20260608/",
+    "ip_ruling_date": "2026-06-08",
+    "ip_ruling_doc": "V2迁移/42_IP裁定_E20启动与R17门禁_V0.1.md",
+    "pilot_boundary": "tanaka_review_not_required_for_cn_pilot",
+    "r17_still_locked": true,
     "new_probes": [
       "E20-H1_笑过吗",
+      "E20-M2_机制可讲清",
+      "E20-S1_强度解脱",
       "E20-J1_想加入吗"
     ],
     "probe_template": "薄样张_试读/E20_探针模板_V0.1.md"

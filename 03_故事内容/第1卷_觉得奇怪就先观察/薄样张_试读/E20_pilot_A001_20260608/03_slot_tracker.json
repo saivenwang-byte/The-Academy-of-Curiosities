@@ -1,0 +1,27 @@
+{
+  "pilot_id": "E20_pilot_A001_20260608",
+  "case": "A001",
+  "body_source": "正式版/01_正文/案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
+  "freeze_commit": "11cf625",
+  "review_loop": "R16",
+  "slots_filled": 0,
+  "slots_total": 12,
+  "status": "PILOT_ACTIVE",
+  "ip_ruling_date": "2026-06-08",
+  "ip_ruling_ref": "V2迁移/42_IP裁定_E20启动与R17门禁_V0.1.md",
+  "tanaka_review_required_for": "formal_jp_distribution",
+  "pilot_boundary": "cn_body_ok_before_tanaka",
+  "sessions": [],
+  "mandatory_probes": [
+    "E20-H1",
+    "E20-M2",
+    "E20-S1",
+    "E20-J1"
+  ],
+  "r17_gate": {
+    "min_slots": 1,
+    "requires_ip_approval_m1_m2_merge": true,
+    "a001_body_still_frozen": true
+  },
+  "sync_to": "V2迁移/scores_mvp_latest.json#e20_real"
+}
