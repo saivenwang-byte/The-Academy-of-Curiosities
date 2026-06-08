@@ -1,6 +1,6 @@
 # A001 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R7 · V0.7 role placement + lip-sync EXPERT_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R8 · V0.8 R3-C1 surgical + E06-S face lock** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A001_分镜拆解_R17_V0.1.md`](../分镜拆解/A001_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`V2迁移/65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **L0 参照**: `CHAR_lineup_L0_专家共识_画师发包_3840.png`（**垫图必附**）  
@@ -204,6 +204,55 @@ Shiro at podium center Akira at mixer wrong lip sync matching broadcast red puff
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S01-V2-A1_广播响起_G1draft_c07.png`
+
+---
+
+## DA1 · R8 c08 · R3-C1 座席 surgical · SC-02 · P0 ⚠️
+
+> **R7 REVISE c07**: 群像过多(8人) · 珣 R3-C1🟡 · R8 **仅四人+器材** · E06-S 脸签 · 保留 PA/PLAY 机制
+
+### EXPERT_LOCK（A001 DA1 · R8）
+
+| 必须 | 禁止 |
+|------|------|
+| 天花板 **PA 喇叭** 橙指示灯/声波 · 视觉中心 | 8+ 路人 · 成人(美咲/直人)入画 |
+| 讲台 **伊藤光** slot④ 橙红 vest · **嘴闭合** 与广播不同步 | 志郎占讲台 · PLAY 可读字 |
+| **松本志郎** slot③ 器材车侧查线 · 非讲台 | speech bubbles · caption bars |
+| **珣 slot② R3·C1** 廊下侧后看屏 · **唯一最矮** | 珣 C 位 · 前排中心 |
+| 监视器 **三角 PLAY 图标 + 波形** · **无可读字** | 英文 UI · 日文字幕 |
+
+### E06-S FACE LIBRARY LOCK（per-slot · 3840 sheet）
+
+```
+Slot ② Riku Shun 142cm: oval face messy black hair focused eyes navy zip hoodie yellow inner — seated R3-C1 corridor-side rear-left
+Slot ③ Matsumoto Shiro 145cm: round glasses stocky spiky hair green plaid green utility vest — at equipment cart side NOT podium
+Slot ④ Ito Akira 146cm: round eyes warm-brown spiky hair white tee orange-red utility vest — at podium mouth closed
+Slot ⑦ Kato Keimi 155cm: silver-rim glasses low ponytail ear braid yellow cardigan — interview notebook edge only
+Match face geometry exactly to attached L0 3840 reference per slot above.
+```
+
+### 合成 Prompt（G1 · c08 · R8 surgical · max 4 students visible）
+
+```
+E06-S FACE LIBRARY LOCK from CHAR_lineup_L0_3840 per slots ②③④⑦ listed above.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink warm brown #2A1810,
+restrained watercolor 6-7 head NOT chibi NOT seifuku, MS east-facing combined classroom late April,
+ONLY four students visible plus equipment NO extra crowd NO adults,
+VISUAL CENTER: ceiling PA loudspeaker orange LED active curved sound-wave lines,
+SECOND READ: podium Ito Akira slot④ orange-red utility vest mouth closed NOT matching broadcast lip-sync,
+Matsumoto Shiro slot③ stocky green plaid green vest at grey equipment cart checking cables NOT at podium,
+monitor shows abstract triangle play icon and audio waveform NO readable letters,
+Riku Shun slot② seated R3-C1 corridor-side rear-left smallest observing monitor NOT podium NOT center,
+Keimi slot⑦ yellow cardigan silver glasses edge only all white uwabaki on floor NOT sneakers,
+rear sink 流し area slanted April aluminum window light fair-play lip-sync clue,
+NOT speech bubbles NOT caption bars NOT English Chinese Japanese text in image
+[NEGATIVE KF-LOCK-J++] chibi SD seifuku blazer gakuran sneakers readable PLAY text watermark,
+Shiro at podium eight students crowd adults wrong lip sync matching broadcast red puffer vest,
+sticky notes English letters UI HUD boxes manga panel borders phone screen legible text
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S01-V2-A1_广播响起_G1draft_c08.png`
 
 ---
 

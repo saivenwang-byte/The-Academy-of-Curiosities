@@ -1,6 +1,6 @@
 # A004 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R7 · V0.7 L0 face lock promote c04→PASS** · 2026-06-08  
+> **Status**: **Gate 3 R8 · V0.8 E06-S per-slot face lock c04→c08** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A004_分镜拆解_R17_V0.1.md`](../分镜拆解/A004_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **失物柜走廊 brief** · doc16 §2 · 临时柜靠墙 · 两列窄缝 · 上履き  
@@ -102,6 +102,41 @@ English Chinese text watermark character lineup board height chart
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S04-V2-A1_抽屉失物_G1draft_c07.png`
+
+---
+
+## DA1 · R8 c08 · E06-S face lock · c04 baseline · SC-02 · P0 ⚠️
+
+> **R7 near-PASS c04** · c07 队列过密 · R8 **E06-S per-slot 脸签 + 全员 uwabaki + KF-LOCK-J++** · c04 构图冻结
+
+### E06-S FACE LIBRARY LOCK（per-slot · 3840 sheet · c04 frozen）
+
+```
+Slot ② Riku Shun 142cm: oval face messy black hair navy zip hoodie yellow inner — corridor edge route notebook
+Slot ⑦ Kato Keimi 155cm: silver-rim glasses low ponytail yellow cardigan — visible edge only
+Mizuno Maho: slim shoulders casual clothes NOT villain spotlight — two steps away hands empty NO key
+Match face geometry exactly to attached L0 3840 reference. Minimal scene change from c04.
+```
+
+### 合成 Prompt（G1 · c08 · R8 E06-S · c04 frozen)
+
+```
+E06-S FACE LIBRARY LOCK from CHAR_lineup_L0_3840 per slots ②⑦ and Mizuno above.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS-CU lost-and-found corridor wooden lockers open-day labels,
+bottom drawer half-open lost items pile inside seal intact NO pry marks,
+Mizuno standing two steps away hands empty NO key NOT villain spotlight,
+Riku slot② at corridor edge route notebook, Keimi slot⑦ visible edge,
+MANDATORY all visible students white uwabaki indoor shoes on floor NOT sneakers NOT outdoor shoes,
+Nagoya elementary hallway April side light fair-play mystery NOT accusation,
+NOT seifuku NOT chalk dust circle NOT theft pose
+[NEGATIVE KF-LOCK-J++] chibi SD seifuku blazer gakuran sneakers outdoor shoes villain spotlight,
+English Chinese Japanese text watermark character lineup board height chart speech bubbles caption overlay,
+sticky notes UI HUD boxes readable labels on lockers
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S04-V2-A1_抽屉失物_G1draft_c08.png`
 
 ---
 

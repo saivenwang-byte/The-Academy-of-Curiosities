@@ -1,6 +1,6 @@
 # A003 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R7 · V0.7 空栏+uwabaki 同帧 · 禁 c06 运动鞋** · 2026-06-08  
+> **Status**: **Gate 3 R8 · V0.8 空栏·少人数·uwabaki surgical** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A003_分镜拆解_R17_V0.1.md`](../分镜拆解/A003_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **侧廊 G1** · 四栏壁报 · 引き戸 · doc16 §1.2 · **禁 6-2/4-2 门牌** · **禁 Panel3 lineup 海报**  
@@ -126,6 +126,51 @@ readable text watermark five identical blank tan sheets orange puffer vest
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S03-V2-DEMO_空海报位_G1draft_c07.png`
+
+---
+
+## DA1 · R8 c08 · 空栏·三人·uwabaki · SC-01 · P0 ⚠️
+
+> **R7 c04 near-PASS** · c07 9人过多 · R8 **仅珣+慧美+光 三人** · 钉印空位 · E06-S 脸签
+
+### EXPERT_LOCK（A003 DA1 · R8）
+
+| 必须 | 禁止 |
+|------|------|
+| 四栏壁报 · **一空栏** 钉印/胶带残痕 | 5+ 学生 · 完整 A3 海报 |
+| **仅三人** 慧美+光+低年级1人 · **全员 uwabaki** | sneakers · speech bubbles |
+| 口述分叉（**无气泡无字**） | puffer vest 替 orange utility vest |
+| E06-S slot ④⑦ 脸互认 | 6-2/4-2 门牌 · lineup 海报 |
+
+### E06-S FACE LIBRARY LOCK
+
+```
+Slot ④ Ito Akira 146cm: round eyes spiky warm-brown hair white tee orange-red utility vest
+Slot ⑦ Kato Keimi 155cm: silver-rim glasses low ponytail ear braid yellow cardigan interview notebook
+One younger student generic face only — NOT full L0 cast
+Match slot ④⑦ face geometry exactly to attached L0 3840 reference.
+```
+
+### 合成 Prompt（G1 · c08 · R8 max 3 students)
+
+```
+E06-S FACE LIBRARY LOCK from CHAR_lineup_L0_3840 slots ④⑦ above.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS corridor bulletin wall four-column layout Nagoya elementary side hallway G1 scale,
+ONLY three students visible NOT crowd NOT nine people,
+VISUAL CENTER: one empty poster slot with visible pin holes tape residue torn paper edges NO complete A3 poster,
+other columns partial papers, students pointing conflicting directions toward empty slot,
+MANDATORY all three white uwabaki indoor shoes 上履き clearly visible on green corridor floor,
+blank mouth areas NO speech bubbles NO text, spring cherry-gray corridor slanted April light equipment cart wheel tracks,
+fair-play memory conflict clue NOT horror NOT character lineup poster,
+NOT seifuku NOT 6-2 door plate NOT 4-2 door plate
+[NEGATIVE KF-LOCK-J++] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay UI boxes,
+readable text watermark five identical blank tan sheets nine students crowd orange puffer vest,
+English Chinese Japanese rendered text manga panel borders
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S03-V2-DEMO_空海报位_G1draft_c08.png`
 
 ---
 

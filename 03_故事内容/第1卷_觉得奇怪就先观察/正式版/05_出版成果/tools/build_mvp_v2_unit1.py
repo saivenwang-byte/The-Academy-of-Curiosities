@@ -43,7 +43,7 @@ CASES = [
         "cn_file": "案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
         "jp_file": "案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S01-V2-A1_广播响起_G1draft_c07.png", "A001 · 放送 · 唇が合わない · G1 R7"),
+            ("V-S01-V2-A1_广播响起_G1draft_c08.png", "A001 · 放送 · 唇が合わない · G1 R8"),
             ("V-S01-V2-A3_文件时间_G1draft_c02.png", "A001 · 0328 · 旧録音 · G1 R2"),
         ],
         "illus_subdir": "案01",
@@ -57,7 +57,7 @@ CASES = [
         "cn_file": "案02_没有人写过的道歉_HybridVoice_V2.0.txt",
         "jp_file": "案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S02-V2-A1_黑板对不起_G1draft_c04.png", "A002 · 黒板 · SC-02 · G1 R4 · c06 ごめん回归"),
+            ("V-S02-V2-A1_黑板对不起_G1draft_c08.png", "A002 · 黒板 · SC-02 · G1 R8 · c08 无英文便签"),
             ("V-S02-V2-A3_膜边反光_G1draft_c06.png", "A002 · 膜の端 · SC-05 · G1 R6 PASS"),
         ],
         "illus_subdir": "案02",
@@ -432,9 +432,9 @@ def write_manifest(extra_paths: list[str]) -> Path:
     lines = [
         "# MVP V2 Unit1 · 交付清单 · 2026-06-08",
         "",
-        "> **状态**：MVP v4 · G1 R6 c06 · 1/10 PASS · 2026-06-08 · 非 G-IMG PRODUCT lock",
+        "> **状态**：MVP v5 · G1 R8 c08 · 1/10 PASS · 2026-06-08 · 非 G-IMG PRODUCT lock",
         "> **清理 SSOT**：`V2迁移/48_教室座位插图清理与更新_V0.1.md`",
-        "> **进度 SSOT**：`V2迁移/68_插画规范对齐重做_R6_20260608.md`",
+        "> **进度 SSOT**：`V2迁移/70_插画规范对齐重做_R8_20260608.md`",
         "",
         "## 核心交付物",
         "",

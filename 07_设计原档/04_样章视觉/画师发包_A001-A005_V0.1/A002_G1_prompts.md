@@ -1,6 +1,6 @@
 # A002 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R7 · V0.7 L0 face lock promote c04→PASS** · 2026-06-08  
+> **Status**: **Gate 3 R8 · V0.8 E06-S per-slot face lock c04→c08** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A002_分镜拆解_R17_V0.1.md`](../分镜拆解/A002_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **5年2組教室** · CLASS_5-2 · 绿黑板 · 板槽 · 珣 **R3·C1**  
@@ -141,6 +141,39 @@ readable watermark English text Riku at window C6 wrong seat character lineup bo
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S02-V2-A1_黑板对不起_G1draft_c07.png`
+
+---
+
+## DA1 · R8 c08 · E06-S face lock · c04 baseline · SC-02 · P0 ⚠️
+
+> **R7 near-PASS c04** · c07 英文 clue 便签回归 · R8 **E06-S per-slot 脸签 + KF-LOCK-J++** · 零场景变更
+
+### E06-S FACE LIBRARY LOCK（per-slot · 3840 sheet · c04 composition frozen）
+
+```
+Slot ② Riku Shun 142cm: oval face messy black hair navy zip hoodie yellow inner khaki shorts — left near balcony door observing
+Slot ③ Matsumoto Shiro 145cm: round glasses stocky green plaid green utility vest — center at board holding cleaning cloth NOT writing
+Slot ⑦ Kato Keimi 155cm: silver-rim glasses low ponytail ear braid yellow cardigan — right profile blocking trial gesture
+Match face geometry exactly to attached L0 3840 reference per slot. Minimal scene change from c04.
+```
+
+### 合成 Prompt（G1 · c08 · R8 E06-S · c04 frozen）
+
+```
+E06-S FACE LIBRARY LOCK from CHAR_lineup_L0_3840 per slots ②③⑦ listed above.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MS-CU 5年2組 classroom green chalkboard three white rounded chalk characters 对不起 period center board,
+Shiro slot③ holding cleaning cloth NOT writing pose, Keimi slot⑦ blocking trial gesture,
+Riku slot② observing stroke angle near balcony door NOT at window, all white uwabaki clearly visible on floor NOT sneakers,
+spring slanted aluminum window light equipment cart corridor door, fair clue readable apology text on board ONLY,
+Nagoya RC school bridge-book watercolor
+[NEGATIVE KF-LOCK-J++] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay UI boxes,
+readable watermark English sticky notes clue cards Japanese text Riku at window C6 wrong seat character lineup board,
+manga panel borders phone screen legible text name tags on clothing
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S02-V2-A1_黑板对不起_G1draft_c08.png`
 
 ---
 

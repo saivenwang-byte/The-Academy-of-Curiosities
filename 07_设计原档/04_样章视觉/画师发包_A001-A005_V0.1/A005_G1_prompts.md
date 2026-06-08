@@ -1,6 +1,6 @@
 # A005 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R7 · V0.7 EXPERT_LOCK 无字 + DA6 五影 reshoot** · 2026-06-08  
+> **Status**: **Gate 3 R8 · V0.8 EXPERT_LOCK shadow gap + KF-LOCK-J++ no text** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A005_分镜拆解_R17_V0.1.md`](../分镜拆解/A005_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **体育馆 brief** · doc16 §2 · 穹顶 · 投屏白墙 · 侧门器材车 · 灯杆长影  
@@ -138,6 +138,54 @@ readable text on clothing English Chinese Japanese text in image speech bubbles
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S05-V2-A1_仅水野无影_G1draft_c07.png`
+
+---
+
+## DA1 · R8 c08 · EXPERT_LOCK shadow gap · KF-LOCK-J++ · SC-01 · P0 ⚠️
+
+> **R3 baseline c03** 机制✅ · 字幕/衣字/馆名牌 P1 · R8 **仅 c08 若 shadow gap 保留** · 禁 batch
+
+### EXPERT_LOCK（A005 DA1 · R8 · c03 shadow gap preserved)
+
+| 必须 | 禁止 |
+|------|------|
+| 投屏五人合照 · **仅水野脚边无影** · 四人影正常 | 五人全无影 · 现场排队 |
+| 真实地板：器材车+灯杆 **长影仍在** | caption bar · 底部字幕条 |
+| E06-S 五人脸 slot ②③④⑦+水野 | 衣上可读名 · 馆名牌汉字 |
+| uwabaki 白 indoor shoes | MIZUNO MAHO text · 英文 UI |
+
+### E06-S FACE LIBRARY LOCK（五人 · 3840 + Mizuno)
+
+```
+Slot ② Riku Shun blue zip hoodie, Slot ④ Ito Akira orange-red utility vest,
+Slot ⑦ Kato Keimi yellow cardigan silver glasses, Slot ③ Matsumoto Shiro green plaid green vest,
+Mizuno Maho slim shoulders casual white top NO text on clothing
+Match all five face geometry to attached L0 3840 reference.
+CRITICAL MECHANISM: ONLY Mizuno shadow missing under feet on projected photo; other four shadows visible; cart and light pole long shadows on real gym floor.
+```
+
+### 合成 Prompt（G1 · c08 · R8 EXPERT_LOCK no text)
+
+```
+E06-S FACE LIBRARY LOCK all five from CHAR_lineup_L0_3840 per slots above.
+MS Nagoya elementary gymnasium eye-level viewing large white PROJECTION SCREEN,
+VISUAL CENTER on screen: group photo five students shoulder to shoulder casual clothes,
+ONLY Mizuno Maho shadow missing under her feet on projected photo floor,
+other four Riku Ito Keimi Shiro shadows clearly visible normal on projected floor,
+SECOND READ on real gym wooden floor: metal equipment cart long shadow,
+tall light pole long diagonal shadow still on floor NOT missing,
+uwabaki white indoor shoes fair-play panorama stitch clue NOT curse NOT supernatural,
+plain gym wall NO readable school name banner NO caption strip at bottom,
+NOT live photoshoot queue NOT height measurement NOT studio lineup,
+bridge-book watercolor #2A1810 6-7 head NOT chibi NOT seifuku NOT sneakers
+[NEGATIVE KF-LOCK-J++] all five shadowless live queue height chart 身長測定 backdrop,
+wrong names Yamamoto Sato Tanaka horror curse caption bar subtitle overlay,
+readable text on clothing MIZUNO MAHO English Chinese Japanese text in image speech bubbles,
+gymnasium name sign banner UI HUD boxes bottom metadata strip
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S05-V2-A1_仅水野无影_G1draft_c08.png`
 
 ---
 
