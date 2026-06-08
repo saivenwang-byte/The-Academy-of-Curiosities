@@ -1,8 +1,26 @@
 # MVP V2 Unit1 · 交付清单 · 2026-06-08
 
-> **状态**：MVP v5 · G1 R8 c08 · 1/10 PASS · 2026-06-08 · 非 G-IMG PRODUCT lock
+> **状态**：MVP v5 · G1 R8 c08 · **1/10 G-BODY PASS** · 2026-06-08 · **非 PRODUCT** · Gate 4 blocked
 > **清理 SSOT**：`V2迁移/48_教室座位插图清理与更新_V0.1.md`
 > **进度 SSOT**：`V2迁移/70_插画规范对齐重做_R8_20260608.md`
+> **画师交接**：`V2迁移/71_插画画师交接包_G1近PASS_V0.1.md`
+
+## G1 插图状态（10 P0 · 诚实）
+
+| 案 | Shot | Baseline | 标记 | 备注 |
+|:--:|:----:|:--------:|:----:|------|
+| A001 | DA1 | c08 | **G1DRAFT-REVISE** | L0 脸 · 珣 R3-C1 |
+| A002 | DA1 | c08 | **G1DRAFT-REVISE** | L0 脸 · 志郎 pose |
+| A002 | DA3 | c06 | **G1DRAFT-PASS** | **唯一 PASS · 禁改** |
+| A003 | DA1 | c04 | **G1DRAFT-REVISE** | 去气泡 · utility vest |
+| A003 | DA4 | c05 | **G1DRAFT-REVISE** | 机制细读 |
+| A004 | DA1 | c04 | **G1DRAFT-REVISE** | L0 脸 |
+| A004 | DA3 | c04 | **G1DRAFT-REVISE** | L0 服道 |
+| A005 | DA1 | c03 | **G1DRAFT-REVISE** | 无影合成 · 去字幕 |
+| A005 | DA6 | c03 | **G1DRAFT-REVISE** | 去英文 UI |
+| A005 | DA3 | c02 | **G1DRAFT-REVISE** | metadata |
+
+> 人类优先：A002 DA1 c08 → A004 DA1 c04 → A003 DA1 c04 → A005 DA1 c03 → A001 DA1 c08 · 详见 doc 71
 
 ## 核心交付物
 
