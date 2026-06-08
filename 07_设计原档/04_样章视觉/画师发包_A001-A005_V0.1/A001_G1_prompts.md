@@ -1,6 +1,6 @@
-# A001 · G1 Prompts · MVP · R4 · V0.4
+# A001 · G1 Prompts · MVP · R5 · V0.5
 
-> **Status**: **Gate 3 R4 · V1→V2 STYLE_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R5 · V1→V2 STYLE_LOCK + KF-LOCK-J** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A001_分镜拆解_R17_V0.1.md`](../分镜拆解/A001_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`V2迁移/65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **L0 参照**: `CHAR_lineup_L0_专家共识_画师发包_3840.png`（**垫图必附**）  
@@ -24,7 +24,7 @@ fair-play clue readable without answer arrows, zero horror zero supernatural,
 4:3 horizontal composition high detail, IP 学堂奇事録 Campus Ripple V2
 ```
 
-## Global NEGATIVE（doc65 §3 · R4）
+## Global NEGATIVE（doc65 §3 · R5 + KF-LOCK-J）
 
 ```
 chibi, SD, Q-version, instructional infographic, textbook diagram panels,
@@ -33,6 +33,9 @@ character lineup board, height chart, portrait grid, scrapbook俯拍占满画幅
 detective magnifying glass pose, side corridor poster curl main frame, AC vent wind,
 3D render, fluorescent neon, horror, supernatural glow, Chinese classroom layout,
 English Chinese text rendered in image, watermark,
+NOT speech bubbles with readable text, NOT caption overlay bars, NOT UI HUD boxes,
+NOT manga panel borders with text, NOT phone screen with legible text,
+NOT Japanese rendered text in image, NOT watermark subtitle,
 Yamamoto Risa, Nakatani camera, Lu Kei sister, generic anime classroom,
 villain spotlight on Mizuno, wrong character names, 4年2組 door plate, 6年2組 door plate
 ```
@@ -92,6 +95,36 @@ fair-play clue lip sync mismatch without arrows, bridge-book watercolor tone
 ```
 
 **Output**: `V-S01-V2-A1_广播响起_G1draft_c04.png`
+
+---
+
+## DA1 · R5 c05 · CLASS_5-2 座席 · SC-02 · P0
+
+> **R4 REVISE**: 座席 C9🟡 · R5 显式 R3·C1 / 讲台光
+
+### 合成 Prompt（G1 · c05 · R5 座席 LOCK + KF-LOCK-J）
+
+```
+[STYLE] medium shot MS east-facing eye-level rule-of-thirds,
+interior combined-grade classroom Nagoya late April open-day rehearsal morning,
+VISUAL CENTER: ceiling PA loudspeaker active orange LED indicator sound-wave hint,
+SECOND READ: podium boy Ito Akira ~146cm white tee bright orange-red utility vest
+at podium front mouth just opening NOT matching broadcast lip-sync,
+broadcast monitor beside podium showing abstract PLAY icon and waveform NO readable text labels,
+students in casual clothes white uwabaki indoor shoes NOT school uniforms,
+girl Kato Keimi ~155cm yellow cardigan low ponytail ear braid silver-rim glasses interview notebook,
+stocky Matsumoto Shiro ~145cm green plaid shirt green utility vest round glasses at equipment cart,
+Riku Shun shortest ~142cm messy black hair blue zip hoodie yellow inner seated desk
+R3 row C1 corridor-side rear-left observing PLAY monitor NOT at podium NOT center seat,
+rear classroom sink 流し area grey equipment cart at corridor door,
+slanted spring aluminum window light cold gray room broadcast orange accents,
+fair-play clue lip sync mismatch without arrows bridge-book watercolor tone
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay UI boxes,
+readable text watermark English Chinese Japanese text in image,
+Riku at center front seat Akira seated at desk wrong seating grid
+```
+
+**Output**: `V-S01-V2-A1_广播响起_G1draft_c05.png`
 
 ---
 
@@ -166,4 +199,4 @@ NOT seifuku NOT formula text NOT horror waveform
 
 ---
 
-*A001 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · 私服+上履き NOT seifuku NOT chibi*
+*A001 G1 prompts R5 · V0.5 · doc65 STYLE_LOCK · KF-LOCK-J · 私服+上履き NOT seifuku NOT chibi*

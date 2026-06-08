@@ -1,6 +1,6 @@
-# A003 · G1 Prompts · MVP · R4 · V0.4
+# A003 · G1 Prompts · MVP · R5 · V0.5
 
-> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R5 · doc65 STYLE_LOCK + KF-LOCK-J** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A003_分镜拆解_R17_V0.1.md`](../分镜拆解/A003_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **侧廊 G1** · 四栏壁报 · 引き戸 · doc16 §1.2 · **禁 6-2/4-2 门牌** · **禁 Panel3 lineup 海报**  
@@ -120,4 +120,44 @@ English Chinese text rendered in image watermark High School text,
 
 ---
 
-*A003 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · 侧廊 G1 · 禁门牌/lineup*
+## DA4 · R5 c05 · 上履き修复 · SC-04 · P0 ⚠️
+
+> **R4 REJECT**: c04 **运动鞋 C7 P0** · R5 强制 uwabaki
+
+### KF-LOCK-J NEGATIVE（R5 必贴）
+
+```
+NOT speech bubbles with readable text, NOT caption overlay bars, NOT UI HUD boxes,
+NOT manga panel borders with text, NOT phone screen with legible text,
+NOT English Chinese Japanese rendered text in image, NOT watermark subtitle,
+NOT sneakers, NOT outdoor athletic shoes, NOT leather shoes, NOT running shoes
+```
+
+### 合成 Prompt（G1 · c05 · R5 uwabaki LOCK + L0 垫图）
+
+```
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MS distant corridor shot Nagoya elementary CLASS_5-2 side hallway G1 scale locked,
+bulletin wall empty poster slot pin holes tape residue NO complete A3 poster entity,
+distant bulletin title area placeholder visual line connecting empty slot NOT full poster,
+equipment cart background spring cherry-gray corridor slanted April light,
+Riku Shun ~142cm blue zip hoodie yellow inner at corridor-side,
+Kato Keimi ~155cm yellow cardigan silver-rim glasses low ponytail ear braid,
+Matsumoto Shiro ~145cm green plaid green vest round glasses,
+MANDATORY all students wearing white uwabaki indoor shoes 上履き clearly visible on green corridor floor,
+feet and uwabaki in frame NOT sneakers NOT outdoor shoes NOT leather shoes,
+students casual clothes pointing conflicting directions blank areas NO readable text,
+fair-play memory fragment NOT horror NOT bullying NOT character lineup poster,
+NOT seifuku NOT 6-2 door plate NOT 4-2 door plate
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers outdoor athletic shoes leather shoes,
+speech bubbles caption overlay UI boxes readable text watermark,
+English Chinese Japanese text rendered in image,
+6年2組 door plate 4年2組 door plate complete poster entity character lineup board
+```
+
+**Output**: `V-S03-V2-A4_远标题连线_G1draft_c05.png`
+
+---
+
+*A003 G1 prompts R5 · V0.5 · doc65 STYLE_LOCK · KF-LOCK-J · 侧廊 G1 · 禁门牌/lineup*

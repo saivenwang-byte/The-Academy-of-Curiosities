@@ -1,6 +1,6 @@
-# A002 · G1 Prompts · MVP · R4 · V0.4
+# A002 · G1 Prompts · MVP · R5 · V0.5
 
-> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R5 · doc65 STYLE_LOCK + KF-LOCK-J** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A002_分镜拆解_R17_V0.1.md`](../分镜拆解/A002_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **5年2組教室** · CLASS_5-2 · 绿黑板 · 板槽 · 珣 **R3·C1**  
@@ -10,7 +10,7 @@
 
 ## Global STYLE_LOCK / NEGATIVE / L0
 
-同 [`A001_G1_prompts.md`](./A001_G1_prompts.md) **Global STYLE_LOCK + NEGATIVE**（doc65 §3 · 禁 chibi · 禁 seifuku · 禁 lineup board）。  
+同 [`A001_G1_prompts.md`](./A001_G1_prompts.md) **Global STYLE_LOCK + NEGATIVE**（doc65 §3 · R5 KF-LOCK-J · 禁 chibi · 禁 seifuku · 禁 lineup board）。  
 **A002 追加**：志郎 **5年3組扫除当番** 时穿 **绿格+绿vest 私服 L0** · **NOT** 学校扫除网 vest 替代 L0 · **NOT** 秘密写字 pose。
 
 **A002 R3 追加 NEGATIVE**（DA3 专用 · 禁错帧）:
@@ -63,6 +63,32 @@ English Chinese text rendered in image watermark,
 ```
 
 **Output**: `V-S02-V2-A1_黑板对不起_G1draft_c04.png`
+
+---
+
+## DA1 · R5 c05 · CLASS_5-2 座席 · SC-02 · P0
+
+> **R4 REVISE**: 珣 R3C1🟡 · R5 显式廊下侧观察位
+
+### 合成 Prompt（G1 · c05 · R5 座席 + KF-LOCK-J）
+
+```
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor 6-7 head NOT chibi NOT seifuku,
+MS-CU 5年2組 classroom green chalkboard three characters 对不起 period white rounded chalk strokes,
+Matsumoto Shiro ~145cm stocky green plaid shirt green utility vest round glasses
+holding cleaning cloth NOT writing pose at board center,
+Kato Keimi ~155cm yellow cardigan silver-rim glasses low ponytail ear braid blocking trial gesture,
+Riku Shun ~142cm blue zip hoodie yellow inner at R3-C1 corridor-side observing stroke angle NOT at window,
+students casual clothes white uwabaki indoor shoes clearly visible on floor NOT sneakers,
+spring slanted aluminum window light equipment cart corridor door seed,
+fair clue readable apology text Nagoya RC school bridge-book watercolor
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay UI boxes,
+readable text watermark English Chinese Japanese text in image,
+Riku at window side C6 wrong seat character lineup board height chart
+```
+
+**Output**: `V-S02-V2-A1_黑板对不起_G1draft_c05.png`
 
 ---
 
@@ -144,4 +170,4 @@ NOT ghost apology NOT seifuku NOT horror
 
 ---
 
-*A002 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · DA3 board-slot POV*
+*A002 G1 prompts R5 · V0.5 · doc65 STYLE_LOCK · KF-LOCK-J · DA3 board-slot POV*
