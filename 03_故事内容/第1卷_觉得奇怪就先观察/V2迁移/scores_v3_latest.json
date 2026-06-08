@@ -312,5 +312,51 @@
     "expert_score": 5.5,
     "mitigation": "P0 human sign + 读者化时间戳"
   },
-  "verdict": "🟢 V3减法兑现 · 读者+0.07 vs R17 plateau · 🟡 9.5未达 · E20+科学 blocking"
+  "verdict": "🟢 V3减法兑现 · 读者+0.07 vs R17 plateau · 🟡 9.5未达 · E20+科学 blocking",
+  "human_editor_review": {
+    "date": "2026-06-09",
+    "source": "V2迁移/81_真人编辑评审_专家组读者群合议_V0.1.md",
+    "note": "REFERENCE ONLY · does NOT replace simulated scores above · human editor read V3.0 CN+JP",
+    "publication_readiness_pct": 55,
+    "dimensions": {
+      "核心创意": 8.5,
+      "主题": 9.0,
+      "悬念": 7.5,
+      "娱乐性": 5.5,
+      "人物": 6.0,
+      "公平": 6.5,
+      "日语自然度": 3.5,
+      "校园真实感": 5.0
+    },
+    "case_rank_editor": [
+      "A004",
+      "A001",
+      "A005",
+      "A002",
+      "A003"
+    ],
+    "age_note": "10-13 actual · not grade 2-3 primary",
+    "vs_doc79_simulated": {
+      "doc79_expert": 9.0,
+      "doc79_reader": 9.04,
+      "alignment": "CN G-BODY milestone valid · JP 3.5 likely correct · 55% = publication track · not contradictory",
+      "jp_gap": "simulated JP 6.5 was cap not J10 measurement · editor 3.5/10 adopted"
+    },
+    "top5_adopted_actions": [
+      "A005 metadata/timestamp 读者化 · V3.1 P0",
+      "E20 A001 real trial ≥1 slot · doc80",
+      "JP track a→b→c: glossary → MoA-lite → 田中 J10",
+      "Science P0 human sign A001/A002/A005",
+      "V3.1 repeat-trial compression −15–20% post-E20"
+    ],
+    "ip_decision_gates": [
+      "SD-1 five-cases-one-vol",
+      "SD-2 V3.1 directed cut 15-25%",
+      "SD-3 equipment-truck direct 4-case",
+      "SD-4 观察社 JP display name (recommend 観察クラブ)",
+      "SD-5 E20 launch date",
+      "SD-6 V3.1 patch timing vs E20"
+    ],
+    "structural_recommendation": "方案A five-cases-one-vol · reject split vol B at this stage"
+  }
 }
