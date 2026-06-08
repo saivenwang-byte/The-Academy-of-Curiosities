@@ -1,9 +1,9 @@
-# A002 · G1 Prompts · MVP · R2 · V0.2
+# A002 · G1 Prompts · MVP · R3 · V0.3
 
-> **Status**: **Gate 2 refresh · R2 spec-aligned** · 2026-06-08  
+> **Status**: **Gate 3 R3 retry · DA3 fix** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A002_分镜拆解_R17_V0.1.md`](../分镜拆解/A002_分镜拆解_R17_V0.1.md)  
 > **空间**: **5年2組教室** · CLASS_5-2 · 绿黑板 · 板槽 · 珣 **R3·C1**  
-> **输出命名**: `V-S02-V2-A*_G1draft_c02.png`
+> **输出命名**: `V-S02-V2-A*_G1draft_c03.png`（R3 retry 帧）
 
 ---
 
@@ -11,6 +11,14 @@
 
 同 [`A001_G1_prompts.md`](./A001_G1_prompts.md) Global 块。  
 **A002 追加**：志郎 **5年3組扫除当番** 时穿 **绿格+绿vest 私服 L0** · **NOT** 学校扫除网 vest 替代 L0 · **NOT** 秘密写字 pose。
+
+**A002 R3 追加 NEGATIVE**（DA3 专用 · 禁错帧）:
+```
+character lineup board, height chart, portrait grid, student photo slots,
+身長測定, height measurement backdrop, acrylic name card grid,
+11-slot character board, roster display, class photo wall,
+6年2組 door plate, wrong grade label
+```
 
 ---
 
@@ -32,7 +40,7 @@
 | 正文锚点 | 「黑板上写着三个字：对不起。」 |
 | G-BODY锚 | 5-2教室·CLASSROOM_4-2·四月光·私服上履き |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c02 · 未改）
 
 ```
 [STYLE] MS-CU 5年2組 classroom green chalkboard three characters 对不起 period
@@ -51,7 +59,7 @@ fair clue readable apology text, Nagoya RC school bridge-book watercolor #2A1810
 
 ---
 
-## DA3 · 膜边反光 · SC-05 · P0
+## DA3 · 膜边反光 · SC-05 · P0 · R3 ⚠️
 
 ### §11 分镜规划书
 
@@ -60,27 +68,40 @@ fair clue readable apology text, Nagoya RC school bridge-book watercolor #2A1810
 | 镜头编号 | **V-S02-V2-A3 / DA3** |
 | 所属 | Vol1 · A002 · SC-05 |
 | 镜头功能 | **L+C** |
-| 景别 | **MCU** |
-| 机位 | **板槽 POV** · 四月斜光 |
-| 视觉中心 | 透明展示膜 **膜边反光细线** 斜光亮一下 |
-| 第二信息 | 清洁液瓶缘 · 样品袋「未登记」 · 珣手指板槽 |
-| 禁项 | FC标签入叙事 · 鬼怪 · 制服 |
+| 景别 | **MCU · ECU** |
+| 机位 | **板槽 POV 近距** · 四月斜光 · **NOT 全身 lineup** |
+| 视觉中心 | 绿黑板 **板槽内** 透明展示膜 **膜边反光细线** 斜光亮一下 |
+| 第二信息 | 清洁液瓶缘 · 样品袋「未登记」标签 · 珣手指指向板槽边缘 |
+| 禁项 | **character lineup board** · **height measure** · portrait grid · FC标签入叙事 · 鬼怪 · 制服 |
 | 正文锚点 | 「膜边有一条细线，像有人贴过又揭。」 |
-| G-BODY锚 | 板槽POV自C1侧·四月光移动 |
+| G-BODY锚 | 板槽POV自C1侧·四月光移动·展示膜非人物墙 |
 
-### 合成 Prompt（G1 · c02）
+### EXPERT_LOCK（R3 · 禁错帧）
+
+| 必须 | 禁止 |
+|------|------|
+| 绿黑板板槽 **单条透明膜边** 反光 | 11格人物 lineup · 身長測定 |
+| 清洁液瓶 + 未登记样品袋 | 学生肖像卡网格 · 身高尺 backdrop |
+| POV 近距 · 膜边 ECU | 6年2組门牌 · 全身五人排队 |
+
+### 合成 Prompt（G1 · c03 · R3）
 
 ```
-[STYLE] MCU POV board slot slanted April window light on green chalkboard,
-thin reflective line on transparent display film edge glinting,
-cleaning fluid bottle label edge sample bag unregistered tag,
-Riku Shun ~142cm blue hoodie finger pointing slot uwabaki,
-fair-play film glint NOT ghost writing, classroom Nagoya bridge-book watercolor,
-NOT seifuku NOT horror ghost NOT Chinese classroom
-[NEGATIVE]
+[STYLE] MCU ECU first-person POV close-up at green chalkboard BOARD SLOT only,
+NOT character lineup NOT height chart NOT portrait grid,
+VISUAL CENTER: thin reflective glint line on transparent display film edge
+where film meets chalkboard slot, April slanted window light catching film edge,
+SECOND READ: cleaning fluid spray bottle label edge on shelf below,
+small sample plastic bag with handwritten unregistered tag,
+Riku Shun blue zip hoodie finger pointing at film edge uwabaki visible at bottom,
+5年2組 classroom Nagoya April fair-play film clue NOT ghost writing,
+bridge-book watercolor restrained ink #2A1810 6-7 head NOT chibi
+[NEGATIVE] character lineup board height measurement chart portrait slots grid,
+student photo wall acrylic name cards 身長測定 backdrop 11 slots,
+6年2組 door plate seifuku horror ghost Chinese classroom sneakers
 ```
 
-**Output**: `V-S02-V2-A3_膜边反光_G1draft_c02.png`
+**Output**: `V-S02-V2-A3_膜边反光_G1draft_c03.png`
 
 ---
 
@@ -100,7 +121,7 @@ NOT seifuku NOT horror ghost NOT Chinese classroom
 | 正文锚点 | 「不是幽灵写字——是膜和清洁液的时间差。」 |
 | G-BODY锚 | 对照实验儿童可读·L0 四人私服 |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c02 · 未改）
 
 ```
 [STYLE] MS folding table experiment wet wipe cleaning fluid old trace reappears sequence,
@@ -116,4 +137,4 @@ NOT ghost apology NOT seifuku NOT horror
 
 ---
 
-*A002 G1 prompts R2 · V0.2*
+*A002 G1 prompts R3 · V0.3 · DA3 board-slot POV fix*

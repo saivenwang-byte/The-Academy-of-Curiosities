@@ -58,7 +58,7 @@ CASES = [
         "jp_file": "案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt",
         "illus": [
             ("V-S02-V2-A1_黑板对不起_G1draft_c02.png", "A002 · 黒板 · SC-02 · G1 R2"),
-            ("V-S02-V2-A3_膜边反光_G1draft_c02.png", "A002 · 膜の端 · SC-05 · G1 R2"),
+            ("V-S02-V2-A3_膜边反光_G1draft_c03.png", "A002 · 膜の端 · SC-05 · G1 R3"),
         ],
         "illus_subdir": "案02",
         "hook": "黒板に謝罪の字——書いた人は教室に入っていない。",
@@ -100,8 +100,8 @@ CASES = [
         "cn_file": "案05_午休后消失的影子_HybridVoice_V2.0.txt",
         "jp_file": "案05_午休后消失的影子_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S05-V2-A1_仅水野无影_G1draft_c02.png", "A005 · 影なし · SC-01 · G1 R2"),
-            ("V-S05-V2-A6_重拍有影_G1draft_c02.png", "A005 · 再撮影 · SC-08 · G1 R2"),
+            ("V-S05-V2-A1_仅水野无影_G1draft_c03.png", "A005 · 影なし · SC-01 · G1 R3 EXPERT_LOCK"),
+            ("V-S05-V2-A6_重拍有影_G1draft_c03.png", "A005 · 再撮影 · SC-08 · G1 R3 EXPERT_LOCK"),
         ],
         "illus_subdir": "案05",
         "hook": "集合写真で一人だけ影がない——タイムラインのずれ。",
