@@ -6,6 +6,22 @@
 
 ---
 
+## A001 FREEZE (IP+CC 2026-06-08) — HARD STOP
+
+| 项 | 值 |
+|----|-----|
+| **案01 正文** | **FROZEN** at REVIEW_LOOP_R16 · commit `11cf625` |
+| **禁止** | Edit `案01_*_HybridVoice_V2.0.txt` · REVIEW LOOP R17+ on A001 |
+| **解冻** | E20 real child trial **≥1/12** + IP 批准第三次改稿 |
+| **CC 裁决** | 停止 A001 自评刷分 · 先真人试读再改 |
+| **SSOT** | `V2迁移/40_A001迭代冻结_E20门禁_V0.1.md` · doc 39 讨论单 |
+| **探针** | 好玩吗 / 看懂机制吗 / 想加入吗（0/12） |
+| **A002–A005** | **不在冻结范围** · Ralph 可续 |
+
+> Ralph **must NOT** treat A001 self-score (9.0/8.8) as reason to keep iterating. CC round-2 surface dims supersede for A001.
+
+---
+
 ## Machine gates — PASS except scores (9.5 threshold)
 
 | Gate | Status |

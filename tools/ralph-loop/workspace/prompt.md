@@ -8,6 +8,14 @@
 Push Vol1 Unit1 A001–A005 MVP from ~78% to machine-verified COMPLETE:
 G-BODY scores · JP MoA-lite · editor-pollution clean · honest scores JSON.
 
+## FROZEN (IP+CC 2026-06-08)
+
+- Do **NOT** edit `案01_*_HybridVoice_V2.0.txt`
+- Do **NOT** run REVIEW LOOP R17+ on A001
+- Next gate: E20 real child trial (**0/12**)
+- SSOT: `V2迁移/40_A001迭代冻结_E20门禁_V0.1.md` · anchor commit `11cf625`
+- Drift check: `python 03_故事内容/tools/check_a001_freeze.py`
+
 ## Constraints
 
 - Do **not** revert or re-run `_review_loop_r5_cn_body.py` / `_mvp_g1_placeholders.py` unless doc 33 says so

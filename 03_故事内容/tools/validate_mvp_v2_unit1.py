@@ -132,9 +132,37 @@ def weakest_dimension(summary: dict) -> str:
     return dims[0][0]
 
 
+def check_a001_freeze() -> dict:
+    """Lightweight A001 freeze warn — read-only, non-blocking by default."""
+    freeze_script = REPO / "03_故事内容/tools/check_a001_freeze.py"
+    result = {"status": "skipped", "message": ""}
+    if not freeze_script.exists():
+        result["message"] = "check_a001_freeze.py missing"
+        return result
+    import subprocess
+
+    proc = subprocess.run(
+        [sys.executable, str(freeze_script)],
+        cwd=REPO,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    msg = (proc.stdout or proc.stderr or "").strip()
+    result["message"] = msg
+    if proc.returncode == 0 and "OK:" in msg:
+        result["status"] = "frozen_ok"
+    elif "VIOLATION" in msg:
+        result["status"] = "drift_warn"
+    else:
+        result["status"] = "warn"
+    return result
+
+
 def main() -> int:
     summary: dict = {
         "baseline_commit": "f95da38",
+        "a001_freeze": check_a001_freeze(),
         "cn": {"pass": [], "fail": [], "chars": {}},
         "jp": {"pass": [], "fail": [], "chars": {}},
         "deliverables": {"pass": [], "fail": []},
