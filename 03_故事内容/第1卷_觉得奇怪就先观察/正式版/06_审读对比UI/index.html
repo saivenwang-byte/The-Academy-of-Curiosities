@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vol1 单元1 · 三稿对比审读 UI</title>
+  <script src="comparison_data.js"></script>
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --surface: #ffffff;
+      --border: #e2dfd6;
+      --text: #1a1a18;
+      --muted: #6b6860;
+      --accent: #c45c26;
+      --accent-soft: #fef3eb;
+      --hl-add: #e8f5e9;
+      --hl-add-border: #81c784;
+      --hl-chg: #fff8e1;
+      --hl-chg-border: #ffb74d;
+      --score-up: #2e7d32;
+      --score-down: #c62828;
+      --tab-active: #c45c26;
+      --font-serif: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      --font-sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    [data-theme="dark"] {
+      --bg: #141412;
+      --surface: #1e1e1c;
+      --border: #3a3834;
+      --text: #eceae4;
+      --muted: #9a968e;
+      --accent: #e8834a;
+      --accent-soft: #2a2018;
+      --hl-add: #1b2e1b;
+      --hl-add-border: #4caf50;
+      --hl-chg: #2a2418;
+      --hl-chg-border: #ff9800;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    header .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 0.75rem;
+    }
+    .tabs { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+    .tab {
+      padding: 0.4rem 0.85rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.15s;
+    }
+    .tab:hover { border-color: var(--accent); }
+    .tab.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn {
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--text);
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn.active { background: var(--accent-soft); border-color: var(--accent); }
+    .version-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent-soft);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
+    }
+    .version-legend code {
+      background: var(--surface);
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+    }
+    main { padding: 1rem 1.5rem 2rem; max-width: 1800px; margin: 0 auto; }
+    .panels-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 900px) { .panels-row { grid-template-columns: 1fr; } }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.65rem 1rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      user-select: none;
+    }
+    .panel-header h2 { font-size: 0.95rem; font-weight: 600; }
+    .panel-header .chevron { transition: transform 0.2s; color: var(--muted); }
+    .panel.collapsed .panel-body { display: none; }
+    .panel.collapsed .chevron { transform: rotate(-90deg); }
+    .panel-body { padding: 1rem; max-height: 420px; overflow-y: auto; }
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    .score-card {
+      padding: 0.65rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.82rem;
+    }
+    .score-card .label { color: var(--muted); font-size: 0.75rem; }
+    .score-card .value { font-size: 1.1rem; font-weight: 600; margin-top: 0.15rem; }
+    .score-arrow { display: flex; align-items: center; gap: 0.35rem; flex-wrap: wrap; }
+    .score-arrow .before { color: var(--muted); text-decoration: line-through; }
+    .score-arrow .after { color: var(--score-up); font-weight: 700; }
+    .score-arrow .delta-up { color: var(--score-up); font-size: 0.75rem; }
+    .score-arrow .delta-down { color: var(--score-down); font-size: 0.75rem; }
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      margin-right: 0.25rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+    .changes-list { list-style: none; }
+    .changes-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .changes-list li:last-child { border-bottom: none; }
+    .changes-list .dim { font-weight: 600; }
+    .good-bad { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.75rem; }
+    @media (max-width: 600px) { .good-bad { grid-template-columns: 1fr; } }
+    .good-bad ul { padding-left: 1.2rem; font-size: 0.82rem; }
+    .good-bad h4 { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .diff-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+      height: calc(100vh - 320px);
+      min-height: 400px;
+    }
+    @media (max-width: 1100px) {
+      .diff-container { grid-template-columns: 1fr; height: auto; }
+    }
+    .diff-col {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border);
+      min-height: 0;
+    }
+    .diff-col:last-child { border-right: none; }
+    .diff-col-header {
+      padding: 0.6rem 0.85rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .diff-col-header .sub {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 0.72rem;
+      display: block;
+      margin-top: 0.15rem;
+    }
+    .diff-col-header .badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-left: 0.35rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .diff-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0.75rem;
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .para {
+      margin-bottom: 0.85rem;
+      padding: 0.35rem 0.5rem;
+      border-radius: 4px;
+      border-left: 3px solid transparent;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .para.highlight {
+      background: var(--hl-chg);
+      border-left-color: var(--hl-chg-border);
+    }
+    .para.same-note {
+      color: var(--muted);
+      font-style: italic;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .loading {
+      text-align: center;
+      padding: 4rem;
+      color: var(--muted);
+    }
+    .e20-placeholder {
+      padding: 0.5rem;
+      border: 1px dashed var(--border);
+      border-radius: 4px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>《学堂趣事录》Vol1 单元1 · 三稿对比审读</h1>
+    <div class="meta" id="meta-line">加载中…</div>
+    <div class="toolbar">
+      <div class="tabs" id="case-tabs"></div>
+      <button class="btn" id="sync-scroll" title="三列同步滚动">🔗 同步滚动</button>
+      <button class="btn" id="theme-toggle">🌙 深色</button>
+    </div>
+  </header>
+  <div class="version-legend" id="version-legend"></div>
+  <main id="app">
+    <div class="loading">正在加载 comparison_data.js …</div>
+  </main>
+  <script>
+    const DRAFT_KEYS = ['原稿', '修改1稿', '修改2稿'];
+    let DATA = null;
+    let currentCase = 'A001';
+    let syncScroll = true;
+
+    function esc(s) {
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    function renderScoreArrow(obj) {
+      if (!obj) return '<span class="value">—</span>';
+      if (obj.before == null) return `<span class="value">${obj.after}</span>`;
+      const delta = obj.delta;
+      const cls = delta >= 0 ? 'delta-up' : 'delta-down';
+      const sign = delta >= 0 ? '+' : '';
+      return `<div class="score-arrow">
+        <span class="before">${obj.before}</span>
+        <span>→</span>
+        <span class="after">${obj.after}</span>
+        <span class="${cls}">(${sign}${delta})</span>
+      </div>`;
+    }
+
+    function renderTags(tags) {
+      return (tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+    }
+
+    function renderScores(sc) {
+      const ep = sc.expert_panel;
+      const rp = sc.reader_panel;
+      return `
+        <div class="score-grid">
+          <div class="score-card">
+            <div class="label">专家组 · 文学卷专家</div>
+            ${renderScoreArrow(ep['文学卷专家'])}
+          </div>
+          <div class="score-card">
+            <div class="label">专家组 · 机制/科学</div>
+            <div class="value">${ep['机制科学']?.illustration_executability ?? '—'}</div>
+            <div style="font-size:0.72rem;color:var(--muted)">${esc(ep['机制科学']?.note || '')}</div>
+          </div>
+          <div class="score-card">
+            <div class="label">H · 幽默（专家→自评）</div>
+            ${renderScoreArrow(ep['幽默_H'])}
+          </div>
+          <div class="score-card">
+            <div class="label">C · 可爱（专家→自评）</div>
+            ${renderScoreArrow(ep['可爱_C'])}
+          </div>
+          <div class="score-card">
+            <div class="label">S · 表层（专家→自评）</div>
+            ${renderScoreArrow(ep['表层_S'])}
+          </div>
+          <div class="score-card">
+            <div class="label">读者群 · 卷读者</div>
+            ${renderScoreArrow(rp['卷读者'])}
+          </div>
+          <div class="score-card">
+            <div class="label">单元卷读者（汇总）</div>
+            <div class="value">${rp.unit_reader ?? '—'}</div>
+          </div>
+        </div>
+        <div class="e20-placeholder">
+          <strong>E20 探针</strong> · 状态：${esc(rp.e20_probes?.status || 'NOT_RUN')}
+          · 进度 ${esc(rp.e20_probes?.slots || '0/12')}
+          · H1 笑过吗 / J1 想加入吗 / C1 角色记忆 — <em>placeholder，待真实试读</em>
+        </div>
+        <div class="good-bad">
+          <div><h4>✓ 亮点</h4><ul>${(sc.good||[]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></div>
+          <div><h4>△ 待验证</h4><ul>${(sc.bad||[]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></div>
+        </div>
+        <p style="margin-top:0.75rem;font-size:0.82rem;color:var(--muted)">${esc(sc.why||'')} · 建议：${esc(sc.recommend||'')}</p>
+      `;
+    }
+
+    function renderChanges(changes, changelog) {
+      let html = '';
+      if (changelog) html += `<p style="font-size:0.82rem;margin-bottom:0.75rem;color:var(--muted)">${esc(changelog)}</p>`;
+      html += '<ul class="changes-list">';
+      for (const c of changes) {
+        html += `<li>
+          ${renderTags(c.tags)}
+          <span class="dim">${esc(c.dimension || c.summary)}</span>
+          ${c.before && c.after ? `<br><span style="color:var(--muted)">${esc(c.before)} → ${esc(c.after)}</span>` : ''}
+        </li>`;
+      }
+      html += '</ul>';
+      return html;
+    }
+
+    function renderDiff(caseData) {
+      const stats = caseData.stats;
+      const vm = caseData.version_mapping;
+      let cols = '';
+      for (const key of DRAFT_KEYS) {
+        const draft = caseData.drafts[key];
+        const vmInfo = vm[key];
+        const sameBadge = vmInfo.same_as_原稿 ? '<span class="badge">同原稿</span>' : '';
+        let body = '';
+        if (key === '修改1稿' && vmInfo.same_as_原稿) {
+          body = '<div class="para same-note">本案修改1稿与原稿相同<br>（R16 在修改2稿）</div>';
+        } else {
+          body = draft.paragraphs.map((p, i) => {
+            const hl = draft.highlights[i] ? ' highlight' : '';
+            return `<div class="para${hl}" data-idx="${i}">${esc(p)}</div>`;
+          }).join('');
+        }
+        cols += `
+          <div class="diff-col" data-col="${key}">
+            <div class="diff-col-header">
+              ${esc(key)} ${sameBadge}
+              <span class="sub">${esc(vmInfo.label)} · <code>${esc(vmInfo.commit.slice(0,7))}</code></span>
+            </div>
+            <div class="diff-scroll">${body}</div>
+          </div>`;
+      }
+      return `
+        <div class="stats-bar">
+          <span>汉字：原稿 ${stats.chars_原稿} · 改1 ${stats.chars_修改1稿} · 改2 ${stats.chars_修改2稿}</span>
+          <span>高亮段：改1 vs 原稿 ${stats.changed_p1_vs_p0} · 改2 vs 改1 ${stats.changed_p2_vs_p1}</span>
+        </div>
+        <div class="diff-container" id="diff-container">${cols}</div>`;
+    }
+
+    function renderCase(caseData) {
+      return `
+        <div class="panels-row">
+          <div class="panel" id="score-panel">
+            <div class="panel-header" onclick="togglePanel('score-panel')">
+              <h2>📊 打分 · 专家 / 读者群 / H·C·S</h2>
+              <span class="chevron">▼</span>
+            </div>
+            <div class="panel-body">${renderScores(caseData.scores)}</div>
+          </div>
+          <div class="panel" id="changes-panel">
+            <div class="panel-header" onclick="togglePanel('changes-panel')">
+              <h2>📝 具体修改内容 · R16 global IP</h2>
+              <span class="chevron">▼</span>
+            </div>
+            <div class="panel-body">${renderChanges(caseData.changes, caseData.scores.r16_changelog)}</div>
+          </div>
+        </div>
+        ${renderDiff(caseData)}
+      `;
+    }
+
+    function togglePanel(id) {
+      document.getElementById(id)?.classList.toggle('collapsed');
+    }
+    window.togglePanel = togglePanel;
+
+    function setupScrollSync() {
+      const cols = document.querySelectorAll('.diff-scroll');
+      if (cols.length < 2) return;
+      let syncing = false;
+      cols.forEach(col => {
+        col.addEventListener('scroll', () => {
+          if (!syncScroll || syncing) return;
+          syncing = true;
+          const ratio = col.scrollTop / (col.scrollHeight - col.clientHeight || 1);
+          cols.forEach(c => {
+            if (c !== col) c.scrollTop = ratio * (c.scrollHeight - c.clientHeight);
+          });
+          syncing = false;
+        });
+      });
+    }
+
+    function selectCase(id) {
+      currentCase = id;
+      const caseData = DATA.cases.find(c => c.id === id);
+      if (!caseData) return;
+      document.querySelectorAll('.tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.case === id);
+      });
+      document.getElementById('app').innerHTML = renderCase(caseData);
+      setupScrollSync();
+    }
+
+    function init() {
+      DATA = window.__COMPARISON_DATA__;
+      if (!DATA) {
+        document.getElementById('app').innerHTML =
+          '<div class="loading">未找到数据。请先运行：<code>python 03_故事内容/tools/build_comparison_ui_data.py</code></div>';
+        return;
+      }
+      const g = DATA.version_mapping_global;
+      document.getElementById('meta-line').textContent =
+        `生成 ${DATA.generated_at} · R${DATA.scores_meta?.ralph_iter} · ${DATA.scores_meta?.method || ''}`;
+      document.getElementById('version-legend').innerHTML = DRAFT_KEYS.map(k =>
+        `<span><strong>${esc(k)}</strong>：${esc(g[k].meaning)} · <code>${esc(g[k].commit.slice(0,7))}</code></span>`
+      ).join('');
+      const tabsEl = document.getElementById('case-tabs');
+      tabsEl.innerHTML = DATA.cases.map(c =>
+        `<button class="tab${c.id==='A001'?' active':''}" data-case="${c.id}">${c.id} ${esc(c.title)}</button>`
+      ).join('');
+      tabsEl.querySelectorAll('.tab').forEach(btn => {
+        btn.addEventListener('click', () => selectCase(btn.dataset.case));
+      });
+      document.getElementById('sync-scroll').addEventListener('click', function() {
+        syncScroll = !syncScroll;
+        this.classList.toggle('active', syncScroll);
+        this.textContent = syncScroll ? '🔗 同步滚动' : '⛓ 独立滚动';
+      });
+      document.getElementById('sync-scroll').classList.add('active');
+      document.getElementById('theme-toggle').addEventListener('click', function() {
+        const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+        this.textContent = dark ? '🌙 深色' : '☀️ 浅色';
+      });
+      selectCase('A001');
+    }
+    init();
+  </script>
+</body>
+</html>

@@ -12,6 +12,7 @@
 | PDF | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_MVP试读_V2.0_20260608.pdf` |
 | PPT | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\第1单元_MVP路演_V2.0_20260608.pptx` |
 | HTML | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\reader.html` |
+| **三稿对比审读 UI** | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\06_审读对比UI\index.html` · 说明 `V2迁移/38_三稿对比UI说明_V0.1.md` |
 | 阶段文档 | `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\V2迁移\30_MVP截止交付_20260608.md` |
 
 ## 正文源文件
