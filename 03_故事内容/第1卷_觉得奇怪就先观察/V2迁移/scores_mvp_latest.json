@@ -2,12 +2,12 @@
   "version": "mvp_latest_r17_A001_unfrozen",
   "date": "2026-06-08",
   "unit": "Vol1-Unit1",
-  "baseline_commit": "050f810",
+  "baseline_commit": "2454269",
   "method": "simulated expert+reader per doc 23 · NOT E20 · R17 M1prime-M2prime merge · doc45",
   "卷专家": 9.0,
-  "卷读者": 8.96,
+  "卷读者": 8.97,
   "P0_jump_pct": 4.0,
-  "ralph_iter": 17,
+  "ralph_iter": 20,
   "target": 9.5,
   "target_met": false,
   "cc_round2": {
@@ -154,7 +154,7 @@
     "illustration_lift_note": "R15 visual anchors + doc35 SSOT · R16 序+场1 锚句保留 SC-02/03",
     "ip_sign": false,
     "g1_batch_text_ready": true,
-    "g1_batch_png_ready": false
+    "g1_batch_png_ready": true
   },
   "cases": {
     "A001": {
@@ -188,9 +188,9 @@
       "recommend": "E20探针H1/M2/S1 + 科学P0 lab + 勿R18无议程"
     },
     "A002": {
-      "review_loop_terminal": "R17",
+      "review_loop_terminal": "R20",
       "expert": 9.1,
-      "reader": 9.0,
+      "reader": 9.05,
       "humor_H": 7.0,
       "cute_C": 8.0,
       "surface_S": 7.5,
@@ -210,13 +210,14 @@
         "器材车频次仍略高"
       ],
       "why": "叙事+表层R16焊进·C自评5→8·幽默/加入待孩子",
-      "recommend": "E20-H1/J1 + 展示膜P0 lab签"
+      "recommend": "E20-H1/J1 + 展示膜P0 lab签",
+      "r20_changelog": "R20: 尾段压缩·壁报跳读cue"
     },
     "A003": {
-      "review_loop_terminal": "R19",
+      "review_loop_terminal": "R20",
       "prior_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.92,
+      "reader": 9.02,
       "humor_H": 7.0,
       "cute_C": 7.0,
       "surface_S": 7.5,
@@ -236,13 +237,14 @@
         "H/C/S未E20验证"
       ],
       "why": "R19没贴完字面gag·reader+0.12·expert plateau 8.9 science P1",
-      "recommend": "G1空栏帧 + science P1签 · E20 SKIPPED"
+      "recommend": "G1空栏帧 + science P1签 · E20 SKIPPED",
+      "r20_changelog": "R20: 尾段大压缩·失物柜嗒声cue·没贴完gag"
     },
     "A004": {
-      "review_loop_terminal": "R18",
+      "review_loop_terminal": "R20",
       "prior_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.90,
+      "reader": 8.96,
       "humor_H": 7.0,
       "cute_C": 7.0,
       "surface_S": 7.5,
@@ -262,7 +264,8 @@
         "H/C/S未E20验证"
       ],
       "why": "机制强·R18读者桥+0.05·expert plateau 8.9 science P0 pending",
-      "recommend": "E07细签 + 失物柜G1 brief · E20 SKIPPED"
+      "recommend": "E07细签 + 失物柜G1 brief · E20 SKIPPED",
+      "r20_changelog": "R20: 振动句短化·登记笔轻beat"
     },
     "A005": {
       "review_loop_terminal": "R17",
@@ -292,8 +295,9 @@
   "blockers": [
     "science P0 human lab pending (A001/A002/A005) caps expert at ~9.0",
     "G-BODY IP sign pending — literary 9.0 does NOT auto-pass illustration gate",
-    "G-IMG PH not production PNG — prior DEMO G1DRAFT_REJECT",
-    "E20 SKIPPED by mandate — reader scores simulated; H/C/S heuristic cap 8"
+    "G-IMG PRODUCT self-audit 10/10 · G-KF human sign 0/10",
+    "E20 SKIPPED by mandate — reader scores simulated; H/C/S heuristic cap 8",
+    "No case reader >= 9.5 without E20-H1/S1 validation"
   ],
   "dimensions_weakest": {
     "case": "global_ip_expert",
@@ -327,22 +331,60 @@
     "plateau": true,
     "plateau_note": "automated plateau ~9.0 expert · science P0 caps · humor H cap 7.0 heuristic · E20 SKIPPED not blocking",
     "卷专家": 9.0,
-    "卷读者": 8.96,
+    "卷读者": 8.97,
     "卷均_expert": 9.0,
-    "卷均_reader": 8.96,
+    "卷均_reader": 8.97,
     "HCS_avg": 7.33,
     "e20_slots": "SKIPPED",
-    "verdict": "🟡 叙事达标 · 9.5未达·science P0 cap · E20 SKIPPED · 勿fake"
+    "verdict": "🟡 叙事达标 · 9.5未达·science P0 cap · E20 SKIPPED · 勿fake",
+    "r20_micro_pass": {
+      "date": "2026-06-08",
+      "cases": [
+        "A002",
+        "A003",
+        "A004"
+      ],
+      "delta_reader_avg": 0.01,
+      "before": 8.96,
+      "after": 8.97,
+      "target_met": false,
+      "note": "尾段跳读改善·无案≥9.5·E20 SKIPPED·勿fake"
+    }
   },
   "moa_lite": {
     "date": "2026-06-08",
     "method": "MoA-lite 四视角 heuristic · NOT G-JP LOCK · E20 SKIPPED",
     "cases": {
-      "A001": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"},
-      "A002": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"},
-      "A003": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J 壁报栏", "mechanism_terms": "ok", "humor_jp": "ok"},
-      "A004": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J 失物招领", "mechanism_terms": "ok", "humor_jp": "ok"},
-      "A005": {"jp_natural": "ok", "classroom_jp": "KF-LOCK-J pending", "mechanism_terms": "ok", "humor_jp": "ok"}
+      "A001": {
+        "jp_natural": "ok",
+        "classroom_jp": "KF-LOCK-J pending",
+        "mechanism_terms": "ok",
+        "humor_jp": "ok"
+      },
+      "A002": {
+        "jp_natural": "ok",
+        "classroom_jp": "KF-LOCK-J pending",
+        "mechanism_terms": "ok",
+        "humor_jp": "ok"
+      },
+      "A003": {
+        "jp_natural": "ok",
+        "classroom_jp": "KF-LOCK-J 壁报栏",
+        "mechanism_terms": "ok",
+        "humor_jp": "ok"
+      },
+      "A004": {
+        "jp_natural": "ok",
+        "classroom_jp": "KF-LOCK-J 失物招领",
+        "mechanism_terms": "ok",
+        "humor_jp": "ok"
+      },
+      "A005": {
+        "jp_natural": "ok",
+        "classroom_jp": "KF-LOCK-J pending",
+        "mechanism_terms": "ok",
+        "humor_jp": "ok"
+      }
     }
   },
   "global_ip_surface_self": {
@@ -524,8 +566,8 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 35,
-          "laughs_per_800w": 35.0,
+          "running_gag_hits": 36,
+          "laughs_per_800w": 37.0,
           "evidence": [
             "搁在柜顶——水泡**偏了一格**。「**偏了一格。**」志郎自言自语",
             "偏了一格**。「**偏了一格。**」志郎自言自语，像案②里贴膜前先动",
