@@ -247,7 +247,7 @@
 备课本上一试：压膜、湿擦，字没了；点一点清洁液，旧痕又浮出。
 
 
-「膜边昨天没撕净。」志郎指板槽，「湿擦把粉打进去。清洁液一干，旧痕再显——字不是新写的，是被显出来的。」
+「膜边昨天没撕净。」志郎指板槽，「抹布一湿，粉糊进缝里。清洁液一干，旧字 **浮** 上来——不是刚写的，是 **被洗出来的**。」
 
 
 志郎让三位同学闭眼回忆 「谁写的」 —— 三人都说志郎。睁眼对照握笔角度—— 三人都改口「像膜」但仍不信「没写」。
@@ -511,20 +511,20 @@
 
 ---
 
-【EDITOR · REVIEW_LOOP R3 · 2026-06-08】
-叙事层已 strip SC/FC 场头 · 场级对照见上方 G-SHOT-T 块 · A002
+【EDITOR · REVIEW_LOOP R17 · 2026-06-08】
+M1′/M2′（未登记gag·膜边体验化·误指后轻beat）· FC全保留 · doc47
 
 
 ---
 
-【EDITOR · PRODUCTION META · A002 · foot · R3 2026-06-08】
+【EDITOR · PRODUCTION META · A002 · foot · R17 2026-06-08】
 【Hybrid Voice · V2.0 · A002】
 
   · 案②《没有人写过的道歉》
 
   · 案号：A002 · Engine V2.0 · Campus Ripple
 
-  · 状态：REVIEW_LOOP_R2 · Hybrid Voice v3 · reader-flow 2026-06-08
+  · 状态：REVIEW_LOOP_R17 · M1′/M2′ · humor/mechanism experiential · 2026-06-08
 
   · 八秒句：黑板上写着对不起，可写字的人根本没进教室。
 
@@ -535,7 +535,7 @@
   · FC概要：FC-1 膜边反光 · FC-2 握笔角度不符 · FC-3 清洁后再现 · FC-4 样品袋标签
 
   · 钩子：透明膜、清洁流程 → 壁报「记得」海报 → A003
-· 状态：REVIEW_LOOP_R3 · Hybrid Voice v3 · reader-flow 2026-06-08
+· 状态：REVIEW_LOOP_R17 · M1′/M2′ · doc37/47 · 2026-06-08
 
 
 ---
