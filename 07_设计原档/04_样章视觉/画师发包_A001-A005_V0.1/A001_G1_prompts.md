@@ -1,21 +1,166 @@
-# A001 · G1 Prompts · MVP
+# A001 · G1 Prompts · MVP · R2 · V0.2
 
-## DA1 · 广播响起
+> **Status**: **Gate 2 refresh · R2 spec-aligned** · 2026-06-08  
+> **SSOT**: [`分镜拆解/A001_分镜拆解_R17_V0.1.md`](../分镜拆解/A001_分镜拆解_R17_V0.1.md)  
+> **L0 参照**: `CHAR_lineup_L0_专家共识_画师发包_3840.png`  
+> **座席**: [`CLASS_5-2_教室插图表_V0.1.md`](../CLASS_5-2_教室插图表_V0.1.md) · 珣 **R3·C1** · 光 **R3·C6**（就座）/ 讲台（DA1）  
+> **输出命名**: `V-S01-V2-A*_G1draft_c02.png`
+
+---
+
+## Global STYLE（每条必贴）
 
 ```
-[STYLE] Modern Japanese bridge-book illustration ages 10-12, Nagoya combined classroom April morning,
-warm brown outline #2A1810, uwabaki, fair-play mystery NOT detective
-MS east-facing classroom ceiling broadcast speaker orange indicator active,
-Ito Hikari at podium lips not synced with speaker, PLAY screen three-week rehearsal recording,
-Riku Shun R3-C1 corridor-side back view watching screen, Kato Keimi silver glasses heard-not-confirmed,
-Matsumoto Shiro at equipment cart door, spring slanted aluminum window light
-NEGATIVE: Chinese UI, horror, lip-sync match, side corridor poster curl, chibi, sneakers
+Modern Japanese bridge-book illustration ages 10-12,
+clear light-manga ink line with warm brown outline #2A1810 NOT pure black,
+soft painterly coloring with restrained watercolor paper texture NOT flat vector,
+6-7 head pre-teen proportions NOT chibi NOT shonen hero,
+warm golden April morning cinematic side light through aluminum windows,
+Nagoya public elementary RC school combined-grade classroom,
+gentle fair-play mystery mood observation club NOT detective agency,
+casual clothes day NOT seifuku NOT blazer NOT sailor suit NOT gakuran,
+uwabaki white indoor shoes on wooden floor ONLY,
+4:3 horizontal composition high detail, IP 学堂奇事録 Campus Ripple V2
 ```
 
-## DA3 · 文件时间
+## Global NEGATIVE
 
-See `07_设计原档/04_样章视觉/G1/A001_G1_keyframes_MVP_V0.1.md` DA3 block.
+```
+chibi SD, horror mob trial, supernatural glow, Chinese classroom layout,
+detective magnifying glass pose, side corridor poster curl, AC vent wind diagram,
+3D render, fluorescent neon, English or Chinese text rendered in image, watermark,
+school uniform blazer sailor suit gakuran seifuku, sneakers outdoor shoes on floor,
+Yamamoto Risa, Nakatani camera, Lu Kei sister, generic anime classroom,
+villain spotlight on Mizuno, wrong character names, 4年2組 door plate, 6年2組 door plate
+```
 
-## DA4 · 波形硬切
+## L0 四人 LOCK（私服+上履き · NOT 制服）
 
-See `07_设计原档/04_样章视觉/G1/A001_G1_keyframes_MVP_V0.1.md` DA4 block.
+| 角色 | cm | LOCK |
+|------|-----|------|
+| **陸珣** Riku Shun | **142** | 藏青 zip 卫衣 · 黄内衬 · 卡其短/九分 · 路线观察本 · **R3·C1 廊下侧** · 禁 C 位 |
+| **伊藤光** Ito Akira | **146** | 白T + **橙红 utility vest** · 刺状暖棕发 · 讲台/窗际 · 禁 gakuran |
+| **加藤慧美** Kato Keimi | **155** | **黄开衫** · 低马尾+耳侧细辫+柔黄发带 · **银框镜** · 采访本 · 5年1組 |
+| **松本志郎** Matsumoto Shiro | **145** | **绿格衬衫 + 绿 utility vest** · 圆框镜 · 矮壮 · 查证卡 · 5年3組 |
+
+---
+
+## DA1 · 广播响起 · SC-02 · P0
+
+### §11 分镜规划书
+
+| 字段 | 值 |
+|------|-----|
+| 镜头编号 | **V-S01-V2-A1 / DA1** |
+| 所属 | Vol1 · A001 · SC-02 |
+| 镜头功能 | **S+L** |
+| 强制级 | **P0** |
+| 景别 | **MS** |
+| 机位 | 合班教室 · **东向平视** · 三分构图 |
+| 视觉中心 | 天花板 **广播喇叭正在响**（橙指示灯/声波） |
+| 第二信息 | 讲台 **光唇未动完** · PLAY 屏「三周前彩排录音」 |
+| 人物 | 光=讲台C · 珣=**R3·C1**侧后看屏 · 慧美挤入 · 志郎器材车门 |
+| 场景 | 名古屋 · **4月下旬午前** · 合班教室 · 流し后方 |
+| 光源 | 窗侧四月斜光 · 冷灰底 + 广播橙点缀 |
+| 关键道具 | PLAY屏 · 器材车 · 投影幕 · **上履き** |
+| 线索公平性 | FC-1 唇形/时间不同步 · 无答案箭头 |
+| 禁项 | 侧廊翘边 · vent · **制服/seifuku** · 珣C位侦探pose |
+| 正文锚点 | 「喇叭里传出他的声音——可他的嘴还没动完。」 |
+| G-BODY锚 | 四月侧光·CLASS_5-2·PLAY三周前彩排·私服上履き |
+
+### 合成 Prompt（G1 · c02）
+
+```
+[STYLE] medium shot MS east-facing eye-level rule-of-thirds,
+interior combined-grade classroom Nagoya late April open-day rehearsal morning,
+VISUAL CENTER: ceiling PA loudspeaker active orange LED indicator sound-wave hint,
+SECOND READ: podium boy Ito Akira ~146cm white tee bright orange-red utility vest
+mouth just opening or still closed NOT matching broadcast lip-sync,
+broadcast monitor beside podium showing PLAY and three-week rehearsal recording label,
+students in casual clothes uwabaki white indoor shoes NOT school uniforms,
+girl Kato Keimi ~155cm yellow cardigan low ponytail ear braid silver-rim glasses interview notebook,
+stocky Matsumoto Shiro ~145cm green plaid shirt green utility vest round glasses at equipment cart,
+Riku Shun shortest ~142cm messy black hair blue zip hoodie yellow inner at R3-C1 corridor-side
+rear angle looking at PLAY monitor NOT at Akira face,
+rear classroom sink 流し area, grey equipment cart at corridor door,
+slanted spring aluminum window light cold gray room broadcast orange accents,
+fair-play clue lip sync mismatch without arrows, bridge-book watercolor tone
+[NEGATIVE]
+```
+
+**Output**: `V-S01-V2-A1_广播响起_G1draft_c02.png`
+
+---
+
+## DA3 · 文件时间 · SC-05 · P0
+
+### §11 分镜规划书
+
+| 字段 | 值 |
+|------|-----|
+| 镜头编号 | **V-S01-V2-A3 / DA3** |
+| 所属 | Vol1 · A001 · SC-05 |
+| 镜头功能 | **L+C** |
+| 强制级 | **P0** |
+| 景别 | **MCU** |
+| 机位 | 珣 POV · **框中框**（平板屏幕） |
+| 视觉中心 | 平板显示 **三月二十八日 · 三周前彩排录音** |
+| 第二信息 | 慧美「听说」栏未升格 · 志郎递平板边缘 |
+| 人物 | 珣 ~142cm 蓝卫衣 POV · 慧美银框镜写方格本 · 志郎圆框镜 |
+| 场景 | 同 DA1 教室连续 · 私服+上履き |
+| 禁项 | 珣指光脸 · .wav 恐怖 UI · 制服 |
+| 正文锚点 | 「三周前。」慧美轻声。不是今天的现场录音。 |
+| G-BODY锚 | 旧录音非今日·同室连续·L0 外装 |
+
+### 合成 Prompt（G1 · c02）
+
+```
+[STYLE] MCU over-shoulder Riku Shun ~142cm blue zip hoodie yellow inner casual clothes uwabaki,
+frame-in-frame tablet screen showing date March 28 and label three-week rehearsal recording NOT today live,
+Kato Keimi ~155cm yellow cardigan silver-rim glasses writing heard-not-confirmed column in grid notebook,
+Matsumoto Shiro ~145cm green plaid green vest round glasses passing tablet edge,
+Nagoya classroom April morning side light, fair clue old file timestamp readable without answer arrow,
+NOT seifuku NOT school uniform, bridge-book watercolor #2A1810 outline
+[NEGATIVE]
+```
+
+**Output**: `V-S01-V2-A3_文件时间_G1draft_c02.png`
+
+---
+
+## DA4 · 波形硬切 · SC-06 · P0
+
+### §11 分镜规划书
+
+| 字段 | 值 |
+|------|-----|
+| 镜头编号 | **V-S01-V2-A4 / DA4** |
+| 所属 | Vol1 · A001 · SC-06 |
+| 镜头功能 | **L+P** |
+| 强制级 | **P0** |
+| 景别 | **CU** |
+| 机位 | 平板波形特写 · 桌面水平 |
+| 视觉中心 | 音频波形 **硬切断点** · 儿童可读剪刀感 |
+| 第二信息 | 志郎圆框镜反射 · 慧美方格本角 |
+| 禁项 | 公式堆砌 · 恐怖波形 · 答案箭头 |
+| 正文锚点 | 「波形在『不该参加』前面被切了一刀。」 |
+| G-BODY锚 | 没换气/剪齐·机制可见 |
+
+### 合成 Prompt（G1 · c02）
+
+```
+[STYLE] close-up CU tablet audio waveform on classroom desk,
+hard cut discontinuity before phrase should-not-attend readable like scissors cut same recording twice,
+Matsumoto Shiro round glasses reflection edge green plaid sleeve,
+Keimi yellow cardigan grid notebook corner silver glasses,
+compressed format hint small text, uwabaki soft blur background,
+fair-play clue splice NOT supernatural, warm April side light watercolor #2A1810
+NOT seifuku NOT formula text NOT horror waveform
+[NEGATIVE]
+```
+
+**Output**: `V-S01-V2-A4_波形硬切_G1draft_c02.png`
+
+---
+
+*A001 G1 prompts R2 · V0.2 · Gate 2 · 私服+上履き NOT seifuku*
