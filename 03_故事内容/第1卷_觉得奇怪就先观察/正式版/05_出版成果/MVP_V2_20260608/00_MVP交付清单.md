@@ -1,26 +1,8 @@
 # MVP V2 Unit1 · 交付清单 · 2026-06-08
 
-> **状态**：MVP v5 · G1 R8 c08 · **1/10 G-BODY PASS** · 2026-06-08 · **非 PRODUCT** · Gate 4 blocked
+> **状态**：MVP v5 · G1 R8 c08 · 1/10 PASS · 2026-06-08 · 非 G-IMG PRODUCT lock
 > **清理 SSOT**：`V2迁移/48_教室座位插图清理与更新_V0.1.md`
 > **进度 SSOT**：`V2迁移/70_插画规范对齐重做_R8_20260608.md`
-> **画师交接**：`V2迁移/71_插画画师交接包_G1近PASS_V0.1.md`
-
-## G1 插图状态（10 P0 · 诚实）
-
-| 案 | Shot | Baseline | 标记 | 备注 |
-|:--:|:----:|:--------:|:----:|------|
-| A001 | DA1 | c08 | **G1DRAFT-REVISE** | L0 脸 · 珣 R3-C1 |
-| A002 | DA1 | c08 | **G1DRAFT-REVISE** | L0 脸 · 志郎 pose |
-| A002 | DA3 | c06 | **G1DRAFT-PASS** | **唯一 PASS · 禁改** |
-| A003 | DA1 | c04 | **G1DRAFT-REVISE** | 去气泡 · utility vest |
-| A003 | DA4 | c05 | **G1DRAFT-REVISE** | 机制细读 |
-| A004 | DA1 | c04 | **G1DRAFT-REVISE** | L0 脸 |
-| A004 | DA3 | c04 | **G1DRAFT-REVISE** | L0 服道 |
-| A005 | DA1 | c03 | **G1DRAFT-REVISE** | 无影合成 · 去字幕 |
-| A005 | DA6 | c03 | **G1DRAFT-REVISE** | 去英文 UI |
-| A005 | DA3 | c02 | **G1DRAFT-REVISE** | metadata |
-
-> 人类优先：A002 DA1 c08 → A004 DA1 c04 → A003 DA1 c04 → A005 DA1 c03 → A001 DA1 c08 · 详见 doc 71
 
 ## 核心交付物
 
@@ -35,8 +17,8 @@
 
 ## 正文源文件
 
-- **A001** CN: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案01_全班都听见了他的声音_HybridVoice_V2.0.txt`
-- **A001** JP: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt`
+- **A001** CN: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案01_全班都听见了他的声音_HybridVoice_V2.1.txt`
+- **A001** JP: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案01_全班都听见了他的声音_HybridVoice_V2.1_日本語.txt`
 - **A002** CN: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案02_没有人写过的道歉_HybridVoice_V2.0.txt`
 - **A002** JP: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt`
 - **A003** CN: `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\01_正文\案03_每个人都记得的海报_HybridVoice_V2.0.txt`
@@ -50,11 +32,13 @@
 
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\00_MVP交付清单.md`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.0.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.1.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案02_没有人写过的道歉_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案03_每个人都记得的海报_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案04_只出现在她抽屉里的失物_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案05_午休后消失的影子_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案01_全班都听见了他的声音_HybridVoice_V2.1_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案03_每个人都记得的海报_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt`
@@ -277,12 +261,12 @@
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_日语试读版_V2.0.pdf`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\学堂趣事录_第1单元_读者试读_FULL_V2.0.pdf`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\第1单元_MVP路演_V2.0_20260608.pptx`
-- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.0.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案01_全班都听见了他的声音_HybridVoice_V2.1.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案02_没有人写过的道歉_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案03_每个人都记得的海报_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案04_只出现在她抽屉里的失物_HybridVoice_V2.0.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\01_五案CN\案05_午休后消失的影子_HybridVoice_V2.0.txt`
-- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt`
+- `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案01_全班都听见了他的声音_HybridVoice_V2.1_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案03_每个人都记得的海报_HybridVoice_V2.0_日本語.txt`
 - `D:\【AI Project】\【The Academy of Curiosities】\03_故事内容\第1卷_觉得奇怪就先观察\正式版\05_出版成果\MVP_V2_20260608\02_五案JP\案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt`

@@ -40,8 +40,8 @@ CASES = [
         "num": "一",
         "cn_title": "全班都听见了他的声音",
         "jp_title": "クラス全員が彼の声を聞いた",
-        "cn_file": "案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
-        "jp_file": "案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt",
+        "cn_file": "案01_全班都听见了他的声音_HybridVoice_V2.1.txt",
+        "jp_file": "案01_全班都听见了他的声音_HybridVoice_V2.1_日本語.txt",
         "illus": [
             ("V-S01-V2-A1_广播响起_G1draft_c08.png", "A001 · 放送 · 唇が合わない · G1 R8"),
             ("V-S01-V2-A3_文件时间_G1draft_c02.png", "A001 · 0328 · 旧録音 · G1 R2"),
