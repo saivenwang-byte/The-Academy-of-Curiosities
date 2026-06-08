@@ -54,3 +54,9 @@ __pycache__/
 # Scratch inbound (not canonical)
 【CC】files/竞品*.md
 【Gpt】files/
+
+# Ralph Loop runtime (templates committed; workspace is local)
+tools/ralph-loop/workspace/prompt.md
+tools/ralph-loop/workspace/progress.txt
+tools/ralph-loop/workspace/BLOCKERS.md
+tools/ralph-loop/workspace/.ralph/

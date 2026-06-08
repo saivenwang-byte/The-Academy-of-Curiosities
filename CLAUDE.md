@@ -27,6 +27,8 @@
 
 **禁止**：把中国校园直译成日文；日文正文出现 **标日外** 文字/语法/叫法（见 `日文正文文字与语法标准_标日对齐_V1.0.md`）；未过 L1 标 `READY_FOR_SAMPLE`；安装来路不明第三方 Skill。
 
+**Layer 0.5 — Session Memory（Lite ECC）**：跨会话 continuity → 读 [`.cursor/memory/MEMORY.md`](.cursor/memory/MEMORY.md)（当前 Gate · 待办 · SSOT）；显著变更时更新；交接运行 [`tools/ecc-memory/bin/memory_checkpoint.ps1`](tools/ecc-memory/bin/memory_checkpoint.ps1) 或写 `sessions/`。全指南 [`docs/learning/ecc/00_ECC_长期记忆全指南_V1.0.md`](docs/learning/ecc/00_ECC_长期记忆全指南_V1.0.md) · 可选 gstack `/context-save` 互补。
+
 **Agent 协作范式（每会话）**：先读 `06_Agent运作卡`；创作/日译/群像读 `11_`（§9 硬触发）；**找真人专家**读 `12_人类专家池_V1.0.md`；**IP 开放议题**读 `00_项目总览/专家组审议工作流_V1.0.md`。架构 `05_` · 返工 `07_`。
 
 **IP 产品战略正典（立项/受众/钩子/节奏/观察社）**：`00_项目概览/01_分支讨论_范式与框架/10_IP战略参考_ChatGPT对话/00_INDEX.md` — 战略层正文正典 · A1–A7 · B1–B4 · **D1 · E1 · F1**（**对外统计数据须核实**）。日常路径见 `09_日常怎么用.md`。

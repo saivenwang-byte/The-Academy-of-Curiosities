@@ -22,7 +22,9 @@ indoor shoes uwabaki on classroom floor, observation club NOT detective agency
 
 ## DA1 · V-S01-V2-A1 · Broadcast · Lips Not Synced
 
-**Positive**
+> **G1 正本**: [`prompts_A001_V2_DA1_G1draft_V0.1.md`](./prompts_A001_V2_DA1_G1draft_V0.1.md) · Shot Map §11 全字段 · **2026-06-08 取代下方简版**
+
+**Positive**（简版 · 归档参考）
 ```
 [Style block] half-page interior illustration, combined-grade classroom Nagoya spring morning,
 public open-day rehearsal week, ceiling PA speaker active with subtle sound-wave or LED indicator,

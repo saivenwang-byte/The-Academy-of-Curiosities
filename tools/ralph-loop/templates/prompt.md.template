@@ -1,0 +1,30 @@
+# Ralph Agent Instructions
+
+> 复制到 `workspace/prompt.md` 并编辑。每轮 Ralph 读取**同一份**文件；进度靠 git + 本仓库文件持久化。
+
+## Task
+
+（单一、可验证目标。例：修到 eslint 零 error / 为 utils/ 补测试）
+
+## Constraints
+
+- 不改：（列目录或文件）
+- 不 git push
+- 每轮开始：读 `progress.txt` 与 `git log -3`
+
+## Verification（每轮必跑）
+
+```bash
+# 例：npm test
+# 例：python -m pytest
+```
+
+## Done
+
+全部验证通过后，且仅此时，输出一行：
+
+<promise>COMPLETE</promise>
+
+## If stuck
+
+若连续 5 轮无进展：写 `workspace/BLOCKERS.md` 说明阻塞点，然后停止（不要输出 COMPLETE）。

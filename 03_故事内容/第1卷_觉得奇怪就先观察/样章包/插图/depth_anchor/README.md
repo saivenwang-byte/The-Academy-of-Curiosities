@@ -1,6 +1,18 @@
-# A001 深度锚点 · 插图产出目录
+## V2 五案 Demo 主帧（2026-06-08 · Campus Ripple）
 
-> **画师开工单**: [`07_设计原档/04_样章视觉/A001_深度锚点包_6张_画师开工单_V1.0.md`](../../../../07_设计原档/04_样章视觉/A001_深度锚点包_6张_画师开工单_V1.0.md)
+| 案 | 文件 | Prompt |
+|:--:|------|--------|
+| A001 | `V-S01-V2-DEMO_广播唇不同步.png` | `prompts_A001_V2_demo_v0.1.md` |
+| A002 | `V-S02-V2-DEMO_黑板对不起.png` | `prompts_A002_V2_demo_v0.1.md` |
+| A003 | `V-S03-V2-DEMO_空海报位.png` | `prompts_A003_V2_demo_v0.1.md` |
+| A004 | `V-S04-V2-DEMO_抽屉失物.png` | `prompts_A004_V2_demo_v0.1.md` |
+| A005 | `V-S05-V2-DEMO_仅水野无影.png` | `prompts_A005_V2_demo_v0.1.md` |
+
+批次清单：[`V2迁移/12_第一单元五案生产批次_V0.1.md`](../../../V2迁移/12_第一单元五案生产批次_V0.1.md) · **INTERNAL_DRAFT**
+
+> **V2 DEMO 状态（2026-06-08）**：`V-S0X-V2-DEMO_*.png` = **G1DRAFT_REJECT** — 概念方向可留 · 人物/取景/画风未过 V1.0 门禁 · 重出须先 [`13_V1到V2插图生产工作流`](../../../V2迁移/13_V1到V2插图生产工作流对照_V0.1.md) + [`academy-illustration-pipeline`](../../../../.cursor/skills/academy-illustration-pipeline/SKILL.md)
+
+---
 
 交付 **6 张精修 PNG**（v1.0 定稿后复制至 `正式版/02_插画/assets/`）：
 
