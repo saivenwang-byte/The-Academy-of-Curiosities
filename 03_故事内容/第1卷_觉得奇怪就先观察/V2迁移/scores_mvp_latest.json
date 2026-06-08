@@ -10,62 +10,78 @@
   "ralph_iter": 17,
   "target": 9.5,
   "target_met": false,
+  "g_body": {
+    "literary_expert": 9.0,
+    "literary_reader": 8.9,
+    "illustration_executability": 8.5,
+    "illustration_executability_prior_r14": 6.5,
+    "illustration_lift_note": "R15 visual anchors + doc35 SSOT + G-BODY gate checklist · separate from literary G-BODY · NOT G-IMG PASS",
+    "ip_sign": false,
+    "g1_batch_text_ready": true,
+    "g1_batch_png_ready": false
+  },
   "cases": {
     "A001": {
       "expert": 9.0,
       "reader": 8.8,
       "p0_jump": false,
-      "good": ["钩子+禁声双重不可能", "三周前彩排录音gloss", "波形剪刀比喻儿童可读"],
+      "illustration_executability": 8.6,
+      "good": ["钩子+禁声双重不可能", "三周前彩排录音gloss", "波形剪刀比喻儿童可读", "R15 SC-02/03 L0+上履き锚"],
       "bad": ["科学P0波形lab未人类签", "机制维度封顶"],
-      "why": "LOCK兑现9.8级·科学签核缺−0.5",
-      "recommend": "科学P0 lab签核 + Shot Map波形帧"
+      "why": "LOCK兑现9.8级·科学签核缺−0.5·插画锚+0.8",
+      "recommend": "科学P0 lab签核 + Shot Map波形帧 + G1DRAFT重跑"
     },
     "A002": {
       "expert": 9.1,
       "reader": 9.0,
       "p0_jump": false,
-      "good": ["FC-1 inline已清", "膜段压缩", "八秒句+洗冤峰值"],
+      "illustration_executability": 8.4,
+      "good": ["FC-1 inline已清", "膜段压缩", "八秒句+洗冤峰值", "R15 SC-02 教室+上履き锚"],
       "bad": ["展示膜P0人类lab pending", "器材车频次仍略高"],
-      "why": "叙事改善+0.3·科学P0−0.4",
+      "why": "叙事改善+0.3·科学P0−0.4·膜边正文锚已足",
       "recommend": "A002展示膜P0签 + indirect framing可选"
     },
     "A003": {
       "expert": 8.9,
       "reader": 8.8,
       "p0_jump": false,
-      "good": ["瑆金句+情绪次强", "三版口述公平实验", "post-repair trim"],
+      "illustration_executability": 8.7,
+      "good": ["瑆金句+情绪次强", "三版口述公平实验", "post-repair trim", "R15侧廊G1+空栏锚+KF G-BODY列"],
       "bad": ["科学P1观察型未签", "SC-04–06仍略长"],
-      "why": "情绪9.0·科学软6.0拉均",
-      "recommend": "P1签或标注观察型 · 可选C7增厚实验"
+      "why": "情绪9.0·科学软6.0拉均·插画薄帧已补",
+      "recommend": "P1签或标注观察型 · G1 空栏帧优先重跑"
     },
     "A004": {
       "expert": 8.9,
       "reader": 8.7,
       "p0_jump": false,
-      "good": ["倾斜水泡机制清晰", "尾钩仅水野无影", "repair_action叙事化"],
+      "illustration_executability": 8.8,
+      "good": ["倾斜水泡机制清晰", "尾钩仅水野无影", "repair_action叙事化", "R15柜区+KF全帧G-BODY锚"],
       "bad": ["振动实验句略硬", "E07失物柜待细签"],
-      "why": "机制强·校园流程E07 pending",
-      "recommend": "E07细签 + 振动句子向化"
+      "why": "机制强·校园流程E07 pending·插画锚最完整",
+      "recommend": "E07细签 + 振动句子向化 + 失物柜G1 brief"
     },
     "A005": {
       "expert": 9.0,
       "reader": 8.9,
       "p0_jump": false,
-      "good": ["仅水野无影LOCK", "拍摄信息gloss", "卷终洗冤+入社"],
+      "illustration_executability": 8.5,
+      "good": ["仅水野无影LOCK", "拍摄信息gloss", "卷终洗冤+入社", "R15体育馆五人L0+上履き锚"],
       "bad": ["全景P0人类lab pending", "陸瑆尾段信息密度高"],
       "why": "EXPERT_LOCK 9.8·科学5.5/metadata已化仍−0.5",
-      "recommend": "全景P0 lab签 + SC-10瘦圈"
+      "recommend": "全景P0 lab签 + SC-10瘦圈 + DA1/DA6对照重跑"
     }
   },
   "blockers": [
     "science P0 human lab pending (A001/A002/A005) caps expert at ~9.0",
-    "G-BODY IP sign pending",
-    "G-IMG PH not production PNG",
+    "G-BODY IP sign pending — literary 9.0 does NOT auto-pass illustration gate",
+    "G-IMG PH not production PNG — prior DEMO G1DRAFT_REJECT",
     "E20 real child trial not run — reader scores simulated"
   ],
   "dimensions_weakest": {
     "case": "A004",
     "dimension": "reader",
     "score": 8.7
-  }
+  },
+  "r15_changelog": "2026-06-08 · doc35 + G-BODY gate + CN inline visual anchors + KF G-BODY锚点列 · illustration_executability 6.5→8.5 · literary unchanged"
 }
