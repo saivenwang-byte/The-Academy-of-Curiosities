@@ -1,5 +1,5 @@
 {
-  "version": "mvp_latest_r16_global_ip",
+  "version": "mvp_latest_r16_global_ip_A002-A005",
   "date": "2026-06-08",
   "unit": "Vol1-Unit1",
   "baseline_commit": "050f810",
@@ -17,24 +17,70 @@
     "body_dimensions_avg": 4.4,
     "gap_note": "自评9.0/8.9测不出幽默/钩子/想加入·专家表层3-5分",
     "dimensions": {
-      "情绪发动机": { "expert": 9.0, "self": 9.0 },
-      "固定仪式口令": { "expert": 8.0, "self": null },
-      "可持续生产": { "expert": 8.0, "self": null },
-      "身份与收集": { "expert": 7.0, "self": null },
-      "语言签名": { "expert": 8.0, "self": null },
-      "重构落地": { "expert": 7.5, "self": null },
-      "开篇钩子": { "expert": 5.0, "self": null, "r16_action": "冷开广播+禁声", "verified": "pending_E20" },
-      "表层简单": { "expert": 5.0, "self": null, "r16_action": "开篇角色6→4", "verified": "pending_E20" },
-      "角色鲜活": { "expert": 5.0, "self": null, "r16_action": "渴望+缺口+社徽", "verified": "pending_E20" },
-      "想加入世界": { "expert": 4.0, "self": null, "r16_action": "观察社角落种子", "verified": "pending_E20" },
-      "幽默": { "expert": 3.0, "self": null, "r16_action": "更牢gag×2+慧美字面记", "verified": "pending_E20" }
+      "情绪发动机": {
+        "expert": 9.0,
+        "self": 9.0
+      },
+      "固定仪式口令": {
+        "expert": 8.0,
+        "self": null
+      },
+      "可持续生产": {
+        "expert": 8.0,
+        "self": null
+      },
+      "身份与收集": {
+        "expert": 7.0,
+        "self": null
+      },
+      "语言签名": {
+        "expert": 8.0,
+        "self": null
+      },
+      "重构落地": {
+        "expert": 7.5,
+        "self": null
+      },
+      "开篇钩子": {
+        "expert": 5.0,
+        "self": null,
+        "r16_action": "冷开广播+禁声",
+        "verified": "pending_E20"
+      },
+      "表层简单": {
+        "expert": 5.0,
+        "self": null,
+        "r16_action": "开篇角色6→4",
+        "verified": "pending_E20"
+      },
+      "角色鲜活": {
+        "expert": 5.0,
+        "self": null,
+        "r16_action": "渴望+缺口+社徽",
+        "verified": "pending_E20"
+      },
+      "想加入世界": {
+        "expert": 4.0,
+        "self": null,
+        "r16_action": "观察社角落种子",
+        "verified": "pending_E20"
+      },
+      "幽默": {
+        "expert": 3.0,
+        "self": null,
+        "r16_action": "更牢gag×2+慧美字面记",
+        "verified": "pending_E20"
+      }
     }
   },
   "e20_real": {
     "slots_filled": 0,
     "slots_total": 12,
     "status": "NOT_RUN",
-    "new_probes": ["E20-H1_笑过吗", "E20-J1_想加入吗"],
+    "new_probes": [
+      "E20-H1_笑过吗",
+      "E20-J1_想加入吗"
+    ],
     "probe_template": "薄样张_试读/E20_探针模板_V0.1.md"
   },
   "g_body": {
@@ -74,40 +120,81 @@
       "reader": 9.0,
       "p0_jump": false,
       "illustration_executability": 8.4,
-      "good": ["FC-1 inline已清", "膜段压缩", "八秒句+洗冤峰值", "R15 SC-02 教室+上履き锚"],
-      "bad": ["展示膜P0人类lab pending", "器材车频次仍略高", "M1-M3未焊"],
-      "why": "叙事改善+0.3·科学P0−0.4·膜边正文锚已足",
-      "recommend": "parent批准後扩展M1-M3模式"
+      "r16_changelog": "global IP M1-M3: 序锁门+对不起 · 未登记gag · 观察社社徽",
+      "good": [
+        "FC-1 inline已清",
+        "膜段压缩",
+        "八秒句+洗冤峰值",
+        "R16序冷开+未登记×3",
+        "观察社角落+翘角社徽"
+      ],
+      "bad": [
+        "展示膜P0人类lab pending",
+        "H/C/S未E20验证",
+        "器材车频次仍略高"
+      ],
+      "why": "叙事+表层R16焊进·C自评5→8·幽默/加入待孩子",
+      "recommend": "E20-H1/J1 + 展示膜P0 lab签"
     },
     "A003": {
       "expert": 8.9,
       "reader": 8.8,
       "p0_jump": false,
       "illustration_executability": 8.7,
-      "good": ["瑆金句+情绪次强", "三版口述公平实验", "post-repair trim", "R15侧廊G1+空栏锚+KF G-BODY列"],
-      "bad": ["科学P1观察型未签", "SC-04–06仍略长"],
-      "why": "情绪9.0·科学软6.0拉均·插画薄帧已补",
-      "recommend": "P1签或标注观察型 · G1 空栏帧优先重跑"
+      "r16_changelog": "global IP M1-M3: 序三版式+空栏 · 又查了还是没有×3",
+      "good": [
+        "瑆金句+情绪次强",
+        "三版口述公平实验",
+        "R16序三海报冷开",
+        "没贴完字面误会gag"
+      ],
+      "bad": [
+        "科学P1观察型未签",
+        "开篇角色5人略超",
+        "H/C/S未E20验证"
+      ],
+      "why": "情绪强·表层R16·C 5.5→7",
+      "recommend": "E20探针 + G1空栏帧"
     },
     "A004": {
       "expert": 8.9,
       "reader": 8.7,
       "p0_jump": false,
       "illustration_executability": 8.8,
-      "good": ["倾斜水泡机制清晰", "尾钩仅水野无影", "repair_action叙事化", "R15柜区+KF全帧G-BODY锚"],
-      "bad": ["振动实验句略硬", "E07失物柜待细签"],
-      "why": "机制强·校园流程E07 pending·插画锚最完整",
-      "recommend": "E07细签 + 振动句子向化 + 失物柜G1 brief"
+      "r16_changelog": "global IP M1-M3: 序封条+录音卡 · 偏了一格×3",
+      "good": [
+        "倾斜水泡机制清晰",
+        "尾钩仅水野无影",
+        "R16序封条冷开",
+        "水平仪偏了一格gag"
+      ],
+      "bad": [
+        "振动实验句略硬",
+        "E07失物柜待细签",
+        "H/C/S未E20验证"
+      ],
+      "why": "机制强·表层R16·C 5→7",
+      "recommend": "E07细签 + 失物柜G1 brief"
     },
     "A005": {
       "expert": 9.0,
       "reader": 8.9,
       "p0_jump": false,
       "illustration_executability": 8.5,
-      "good": ["仅水野无影LOCK", "拍摄信息gloss", "卷终洗冤+入社", "R15体育馆五人L0+上履き锚"],
-      "bad": ["全景P0人类lab pending", "陸瑆尾段信息密度高"],
-      "why": "EXPERT_LOCK 9.8·科学5.5/metadata已化仍−0.5",
-      "recommend": "全景P0 lab签 + SC-10瘦圈 + DA1/DA6对照重跑"
+      "r16_changelog": "global IP M1-M3: 序无影前置 · 洗不掉gag · 社徽本皮",
+      "good": [
+        "仅水野无影LOCK",
+        "R16序仅一人无影",
+        "静电洗不掉running gag",
+        "五人L0+社徽种子"
+      ],
+      "bad": [
+        "全景P0人类lab pending",
+        "开篇角色5人",
+        "H/C/S未E20验证"
+      ],
+      "why": "EXPERT_LOCK不变·S 6.5→7.5·表层焊进",
+      "recommend": "全景P0 lab签 + E20-H1/J1"
     }
   },
   "blockers": [
@@ -122,5 +209,290 @@
     "expert_score": 3.0,
     "r16_mitigation": "A001 running gags · verify E20-H1"
   },
-  "r16_changelog": "2026-06-08 · doc36 + A001 R16 M1-M3 + E20探针模板 + honest global_ip_expert gap in scores"
+  "r16_changelog": "2026-06-08 · doc37 H/C/S SSOT + A002-A005 R16 M1-M3 + score_global_ip_surface.py + E20 rubric",
+  "global_ip_surface_self": {
+    "tool": "score_global_ip_surface.py",
+    "date": "2026-06-08",
+    "method": "heuristic H/C/S · cap 8 · NOT E20",
+    "cases": {
+      "A001": {
+        "case": "A001",
+        "file": "案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
+        "date": "2026-06-08",
+        "humor_H": {
+          "score": 7.0,
+          "running_gag_hits": 29,
+          "laughs_per_800w": 31.0,
+          "evidence": [
+            "贴完，角翘得更高。「更牢了。」他满意点头。加藤慧美把透明膜按回他",
+            "里：「还没登记。」「更牢了也比掉地上强。」志郎又扯了一截胶带，社",
+            "**听说**·志郎说更牢了·未确认是否更牢。灰白色的**移动媒体",
+            "说更牢了·未确认是否更牢。灰白色的**移动媒体器材车**停在侧门",
+            "板屏幕闪了闪。「……更牢了。」志郎自言自语。光脸色发白，只能挤出"
+          ],
+          "note": "cap 8 · E20-H1 required for 9+"
+        },
+        "cute_C": {
+          "score": 8.0,
+          "markers_hit": 7,
+          "evidence": [
+            "缺口：说不出",
+            "慧美可画外形",
+            "志郎可画外形",
+            "光可画外形",
+            "珣可画习惯",
+            "mascot种子",
+            "想加入空间"
+          ],
+          "note": "cap 8 · E20-C1/J1 for character memory"
+        },
+        "surface_S": {
+          "score": 8.0,
+          "hook_keywords_in_first_150": [
+            "海报",
+            "空的"
+          ],
+          "opening_named_chars": 4,
+          "named_list": [
+            "光",
+            "志郎",
+            "慧美",
+            "珣"
+          ],
+          "arc_spoiler_in_xu": false,
+          "spoiler_phrases": [],
+          "evidence": [
+            "前150字含: 海报, 空的",
+            "开篇角色数: 4 (光, 志郎, 慧美, 珣)",
+            "序剧透: 否"
+          ],
+          "note": "cap 8 · E20-04续读 for hook validation"
+        },
+        "composite_avg": 7.67,
+        "verified": "pending_E20",
+        "disclaimer": "heuristic self-score · NOT G-BODY PASS"
+      },
+      "A002": {
+        "case": "A002",
+        "file": "案02_没有人写过的道歉_HybridVoice_V2.0.txt",
+        "date": "2026-06-08",
+        "humor_H": {
+          "score": 7.0,
+          "running_gag_hits": 44,
+          "laughs_per_800w": 52.0,
+          "evidence": [
+            "后的眼睛没笑：「**未登记**。」「更牢了也比掉地上强。」志郎又扯",
+            "开日·黑板测试·**未登记**。慧美跟在后面：「先登记，再测反光。",
+            "样品袋——标签**仍未登记**。他看见字，眉头拧起来：「……不是我",
+            "：志郎昨日贴膜·标签未登记。志郎把样品袋放到窗台上，袋口朝外。他*",
+            "后的眼睛没笑：「**未登记**。」   「更牢了也比掉地上强。」志"
+          ],
+          "note": "cap 8 · E20-H1 required for 9+"
+        },
+        "cute_C": {
+          "score": 8.0,
+          "markers_hit": 6,
+          "evidence": [
+            "缺口：说不出",
+            "慧美可画外形",
+            "志郎可画外形",
+            "光可画外形",
+            "mascot种子",
+            "想加入空间"
+          ],
+          "note": "cap 8 · E20-C1/J1 for character memory"
+        },
+        "surface_S": {
+          "score": 7.5,
+          "hook_keywords_in_first_150": [
+            "空的"
+          ],
+          "opening_named_chars": 4,
+          "named_list": [
+            "光",
+            "志郎",
+            "慧美",
+            "珣"
+          ],
+          "arc_spoiler_in_xu": false,
+          "spoiler_phrases": [],
+          "evidence": [
+            "前150字含: 空的",
+            "开篇角色数: 4 (光, 志郎, 慧美, 珣)",
+            "序剧透: 否"
+          ],
+          "note": "cap 8 · E20-04续读 for hook validation"
+        },
+        "composite_avg": 7.5,
+        "verified": "pending_E20",
+        "disclaimer": "heuristic self-score · NOT G-BODY PASS"
+      },
+      "A003": {
+        "case": "A003",
+        "file": "案03_每个人都记得的海报_HybridVoice_V2.0.txt",
+        "date": "2026-06-08",
+        "humor_H": {
+          "score": 7.0,
+          "running_gag_hits": 16,
+          "laughs_per_800w": 19.0,
+          "evidence": [
+            "翻备份文件夹：「**又查了，还是没有。**」慧美银框眼镜后的眼睛",
+            "加」成稿记录。「**又查了，还是没有。**」他第三次说，像对自己",
+            "翻备份文件夹：「**又查了，还是没有。**」   慧美银框眼镜后",
+            "稿记录。   「**又查了，还是没有。**」他第三次说，像对自己",
+            "**口述A·B·C·无实体**。「观察社**删稿**了吧？」有人让"
+          ],
+          "note": "cap 8 · E20-H1 required for 9+"
+        },
+        "cute_C": {
+          "score": 7.0,
+          "markers_hit": 5,
+          "evidence": [
+            "缺口：说不出",
+            "慧美可画外形",
+            "志郎可画外形",
+            "mascot种子",
+            "想加入空间"
+          ],
+          "note": "cap 8 · E20-C1/J1 for character memory"
+        },
+        "surface_S": {
+          "score": 7.5,
+          "hook_keywords_in_first_150": [
+            "海报",
+            "空栏"
+          ],
+          "opening_named_chars": 5,
+          "named_list": [
+            "光",
+            "志郎",
+            "慧美",
+            "水野",
+            "珣"
+          ],
+          "arc_spoiler_in_xu": false,
+          "spoiler_phrases": [],
+          "evidence": [
+            "前150字含: 海报, 空栏",
+            "开篇角色数: 5 (光, 志郎, 慧美, 水野, 珣)",
+            "序剧透: 否"
+          ],
+          "note": "cap 8 · E20-04续读 for hook validation"
+        },
+        "composite_avg": 7.17,
+        "verified": "pending_E20",
+        "disclaimer": "heuristic self-score · NOT G-BODY PASS"
+      },
+      "A004": {
+        "case": "A004",
+        "file": "案04_只出现在她抽屉里的失物_HybridVoice_V2.0.txt",
+        "date": "2026-06-08",
+        "humor_H": {
+          "score": 7.0,
+          "running_gag_hits": 32,
+          "laughs_per_800w": 32.0,
+          "evidence": [
+            "搁在柜顶——水泡**偏了一格**。「**偏了一格。**」志郎自言自语",
+            "偏了一格**。「**偏了一格。**」志郎自言自语，像案②里贴膜前先动",
+            "靠墙这列低。「**又偏了一格。**不是今天才歪。」本子：**失物·清",
+            "*失物·清单·倾斜·偏了一格**。第一件失物，是蓝色徽章。第二件，是",
+            "顶 —— 水泡 **偏了一格**。   「**偏了一格。**」志郎自"
+          ],
+          "note": "cap 8 · E20-H1 required for 9+"
+        },
+        "cute_C": {
+          "score": 7.0,
+          "markers_hit": 5,
+          "evidence": [
+            "缺口：说不出",
+            "慧美可画外形",
+            "珣可画习惯",
+            "mascot种子",
+            "想加入空间"
+          ],
+          "note": "cap 8 · E20-C1/J1 for character memory"
+        },
+        "surface_S": {
+          "score": 7.5,
+          "hook_keywords_in_first_150": [
+            "抽屉"
+          ],
+          "opening_named_chars": 4,
+          "named_list": [
+            "志郎",
+            "慧美",
+            "水野",
+            "珣"
+          ],
+          "arc_spoiler_in_xu": false,
+          "spoiler_phrases": [],
+          "evidence": [
+            "前150字含: 抽屉",
+            "开篇角色数: 4 (志郎, 慧美, 水野, 珣)",
+            "序剧透: 否"
+          ],
+          "note": "cap 8 · E20-04续读 for hook validation"
+        },
+        "composite_avg": 7.17,
+        "verified": "pending_E20",
+        "disclaimer": "heuristic self-score · NOT G-BODY PASS"
+      },
+      "A005": {
+        "case": "A005",
+        "file": "案05_午休后消失的影子_HybridVoice_V2.0.txt",
+        "date": "2026-06-08",
+        "humor_H": {
+          "score": 7.0,
+          "running_gag_hits": 16,
+          "laughs_per_800w": 17.0,
+          "evidence": [
+            "郎咧嘴，「静电 **洗不掉** 这一块。」   慧美在 **趣事*",
+            "：志郎对照静电 · 洗不掉 · 待查拍摄。   慧美在仍不知道写：",
+            "-「水野脚下……**空的**？」四人的鞋边都有影。器材车的轮胎也",
+            "「水野脚下…… **空的**？」   四人的鞋边都有影。器材车的",
+            "**五人都在·仅一人无影**。大屏的光很亮。亮到大家先看见缺了什"
+          ],
+          "note": "cap 8 · E20-H1 required for 9+"
+        },
+        "cute_C": {
+          "score": 7.0,
+          "markers_hit": 5,
+          "evidence": [
+            "慧美可画外形",
+            "志郎可画外形",
+            "光可画外形",
+            "珣可画习惯",
+            "mascot种子"
+          ],
+          "note": "cap 8 · E20-C1/J1 for character memory"
+        },
+        "surface_S": {
+          "score": 7.5,
+          "hook_keywords_in_first_150": [
+            "影子",
+            "空的"
+          ],
+          "opening_named_chars": 5,
+          "named_list": [
+            "光",
+            "志郎",
+            "慧美",
+            "水野",
+            "珣"
+          ],
+          "arc_spoiler_in_xu": false,
+          "spoiler_phrases": [],
+          "evidence": [
+            "前150字含: 影子, 空的",
+            "开篇角色数: 5 (光, 志郎, 慧美, 水野, 珣)",
+            "序剧透: 否"
+          ],
+          "note": "cap 8 · E20-04续读 for hook validation"
+        },
+        "composite_avg": 7.17,
+        "verified": "pending_E20",
+        "disclaimer": "heuristic self-score · NOT G-BODY PASS"
+      }
+    }
+  }
 }
