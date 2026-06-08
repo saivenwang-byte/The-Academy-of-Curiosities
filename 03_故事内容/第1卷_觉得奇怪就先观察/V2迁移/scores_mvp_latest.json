@@ -187,11 +187,15 @@
       "recommend": "E20探针H1/M2/S1 + 科学P0 lab + 勿R18无议程"
     },
     "A002": {
+      "review_loop_terminal": "R17",
       "expert": 9.1,
       "reader": 9.0,
+      "humor_H": 7.0,
+      "cute_C": 8.0,
+      "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.4,
-      "r16_changelog": "global IP M1-M3: 序锁门+对不起 · 未登记gag · 观察社社徽",
+      "r17_changelog": "M1prime: 未登记gag; M2prime: 被洗出来/浮上来",
       "good": [
         "FC-1 inline已清",
         "膜段压缩",
@@ -208,11 +212,15 @@
       "recommend": "E20-H1/J1 + 展示膜P0 lab签"
     },
     "A003": {
+      "review_loop_terminal": "R17",
       "expert": 8.9,
       "reader": 8.8,
+      "humor_H": 7.0,
+      "cute_C": 7.0,
+      "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.7,
-      "r16_changelog": "global IP M1-M3: 序三版式+空栏 · 又查了还是没有×3",
+      "r17_changelog": "M1prime: 慧美上打半秒; M2prime: 口述体验化保留",
       "good": [
         "瑆金句+情绪次强",
         "三版口述公平实验",
@@ -228,11 +236,15 @@
       "recommend": "E20探针 + G1空栏帧"
     },
     "A004": {
+      "review_loop_terminal": "R17",
       "expert": 8.9,
-      "reader": 8.7,
+      "reader": 8.8,
+      "humor_H": 7.0,
+      "cute_C": 7.0,
+      "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.8,
-      "r16_changelog": "global IP M1-M3: 序封条+录音卡 · 偏了一格×3",
+      "r17_changelog": "M1prime: 偏了一格; M2prime: 门槛一跳体验化",
       "good": [
         "倾斜水泡机制清晰",
         "尾钩仅水野无影",
@@ -248,11 +260,15 @@
       "recommend": "E07细签 + 失物柜G1 brief"
     },
     "A005": {
+      "review_loop_terminal": "R17",
       "expert": 9.0,
       "reader": 8.9,
+      "humor_H": 7.0,
+      "cute_C": 7.0,
+      "surface_S": 7.5,
       "p0_jump": false,
       "illustration_executability": 8.5,
-      "r16_changelog": "global IP M1-M3: 序无影前置 · 洗不掉gag · 社徽本皮",
+      "r17_changelog": "M1prime: 洗不掉gag; M2prime: 几段拼成一张",
       "good": [
         "仅水野无影LOCK",
         "R16序仅一人无影",
@@ -281,7 +297,23 @@
     "r16_mitigation": "A001 running gags · verify E20-H1"
   },
   "r16_changelog": "2026-06-08 · doc37 H/C/S SSOT + A002-A005 R16 M1-M3 + score_global_ip_surface.py + E20 rubric",
-  "r17_changelog": "2026-06-08 · A001 R17 M1prime-M2prime merge · doc45 · CLASS_5-2 · doc44",
+  "r17_changelog": "2026-06-08 · A001-A005 R17 M1prime-M2prime · doc45 · CLASS_5-2 · doc44",
+  "phase2": {
+    "date": "2026-06-08",
+    "method": "simulated expert+reader per doc47 · 2 rounds/case · NOT E20",
+    "rounds": 2,
+    "target": 9.5,
+    "target_met": false,
+    "plateau": true,
+    "plateau_note": "automated plateau ~9.0-9.1 expert · humor H cap 7.0 without E20 · science P0 pending",
+    "卷专家": 9.0,
+    "卷读者": 8.9,
+    "卷均_expert": 9.0,
+    "卷均_reader": 8.88,
+    "HCS_avg": 7.33,
+    "e20_slots": "0/12",
+    "verdict": "🟡 叙事达标 · 表层H/C/S待E20 · 勿fake 9.5"
+  },
   "global_ip_surface_self": {
     "tool": "score_global_ip_surface.py",
     "date": "2026-06-08",
@@ -405,14 +437,14 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 16,
-          "laughs_per_800w": 19.0,
+          "running_gag_hits": 18,
+          "laughs_per_800w": 21.0,
           "evidence": [
             "翻备份文件夹：「**又查了，还是没有。**」慧美银框眼镜后的眼睛",
             "加」成稿记录。「**又查了，还是没有。**」他第三次说，像对自己",
+            "空气留半口气：「**又查了，还是没有。**」慧美把笔记本摊在壁报",
             "翻备份文件夹：「**又查了，还是没有。**」   慧美银框眼镜后",
-            "稿记录。   「**又查了，还是没有。**」他第三次说，像对自己",
-            "**口述A·B·C·无实体**。「观察社**删稿**了吧？」有人让"
+            "稿记录。   「**又查了，还是没有。**」他第三次说，像对自己"
           ],
           "note": "cap 8 · E20-H1 required for 9+"
         },
@@ -461,8 +493,8 @@
         "date": "2026-06-08",
         "humor_H": {
           "score": 7.0,
-          "running_gag_hits": 32,
-          "laughs_per_800w": 32.0,
+          "running_gag_hits": 33,
+          "laughs_per_800w": 33.0,
           "evidence": [
             "搁在柜顶——水泡**偏了一格**。「**偏了一格。**」志郎自言自语",
             "偏了一格**。「**偏了一格。**」志郎自言自语，像案②里贴膜前先动",
