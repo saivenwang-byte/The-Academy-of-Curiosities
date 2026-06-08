@@ -43,7 +43,7 @@ CASES = [
         "cn_file": "案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
         "jp_file": "案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S01-V2-A1_广播响起_G1draft_c06.png", "A001 · 放送 · 唇が合わない · G1 R6"),
+            ("V-S01-V2-A1_广播响起_G1draft_c07.png", "A001 · 放送 · 唇が合わない · G1 R7"),
             ("V-S01-V2-A3_文件时间_G1draft_c02.png", "A001 · 0328 · 旧録音 · G1 R2"),
         ],
         "illus_subdir": "案01",

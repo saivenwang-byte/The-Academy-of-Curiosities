@@ -1,6 +1,6 @@
-# A001 · G1 Prompts · MVP · R6 · V0.6
+# A001 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R6 · V0.6 L0 face ref forced + mechanism fine-read** · 2026-06-08  
+> **Status**: **Gate 3 R7 · V0.7 role placement + lip-sync EXPERT_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A001_分镜拆解_R17_V0.1.md`](../分镜拆解/A001_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`V2迁移/65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **L0 参照**: `CHAR_lineup_L0_专家共识_画师发包_3840.png`（**垫图必附**）  
@@ -164,6 +164,46 @@ Riku center seat wrong lip sync matching broadcast side corridor poster curl
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S01-V2-A1_广播响起_G1draft_c06.png`
+
+---
+
+## DA1 · R7 c07 · 广播唇不同步 · 角色站位 · SC-02 · P0 ⚠️
+
+> **R6 REVISE**: c06 站位错（志郎占讲台·橙vest漂移）· R7 **光讲台禁声 + 志郎器材侧查线**
+
+### EXPERT_LOCK（A001 DA1 · R7）
+
+| 必须 | 禁止 |
+|------|------|
+| 天花板 **PA 喇叭** 橙指示灯/声波 · 视觉中心 | 志郎占讲台 C 位 · 红 puffer 替橙 vest |
+| 讲台 **伊藤光** 146cm 白T **橙红 utility vest** · **嘴闭合/未动完** 与广播不同步 | 光嘴型匹配广播 · PLAY 可读字 |
+| **松本志郎** 145cm 绿格+绿vest **蹲/站器材车侧** 查线 · 非讲台 | 志郎 red vest · 侦探 pose |
+| 监视器 **三角 PLAY 图标 + 波形** · **无可读字** | speech bubbles · caption bars |
+| 珣 **R3·C1** 侧后看屏 · L0 脸互认 | 珣 C 位 · 前排中心 |
+
+### 合成 Prompt（G1 · c07 · R7 L0 + 站位 EXPERT_LOCK）
+
+```
+Match character faces exactly to attached L0 lineup reference sheet:
+Riku Shun 142cm blue zip hoodie yellow inner, Ito Akira 146cm white tee orange-red utility vest spiky hair,
+Kato Keimi 155cm yellow cardigan silver-rim glasses low ponytail ear braid,
+Matsumoto Shiro 145cm green plaid green utility vest round glasses stocky NOT at podium.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink warm brown #2A1810,
+restrained watercolor 6-7 head NOT chibi NOT seifuku, MS east-facing combined classroom late April,
+VISUAL CENTER: ceiling PA loudspeaker orange LED active curved sound-wave lines,
+SECOND READ: podium Ito Akira orange-red utility vest mouth closed or barely opening NOT matching broadcast,
+Matsumoto Shiro stocky green plaid green vest at grey equipment cart side checking cables NOT at podium,
+monitor beside podium shows abstract triangle play icon and audio waveform NO readable letters,
+Riku Shun seated R3-C1 corridor-side rear-left observing monitor NOT podium,
+Keimi interview notebook all students white uwabaki on floor NOT sneakers,
+rear sink 流し area slanted April aluminum window light fair-play lip-sync clue,
+NOT speech bubbles NOT caption bars NOT English Chinese Japanese text in image
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers readable PLAY text watermark,
+Shiro at podium center Akira at mixer wrong lip sync matching broadcast red puffer vest
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S01-V2-A1_广播响起_G1draft_c07.png`
 
 ---
 

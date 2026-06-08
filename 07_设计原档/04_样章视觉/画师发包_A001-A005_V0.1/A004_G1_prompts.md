@@ -1,6 +1,6 @@
-# A004 · G1 Prompts · MVP · R6 · V0.6
+# A004 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R6 · V0.6 L0 face ref** · 2026-06-08  
+> **Status**: **Gate 3 R7 · V0.7 L0 face lock promote c04→PASS** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A004_分镜拆解_R17_V0.1.md`](../分镜拆解/A004_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **失物柜走廊 brief** · doc16 §2 · 临时柜靠墙 · 两列窄缝 · 上履き  
@@ -75,6 +75,33 @@ English Chinese text watermark character lineup board height chart
 
 **L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
 **Output**: `V-S04-V2-A1_抽屉失物_G1draft_c06.png`
+
+---
+
+## DA1 · R7 c07 · L0 face lock only · SC-02 · P0
+
+> **R6 near-PASS c04** · R7 **L0 3840 + 全员 uwabaki** · c04 构图保留
+
+### 合成 Prompt（G1 · c07 · R7 L0 face lock · c04 baseline）
+
+```
+Match character faces exactly to attached L0 lineup reference sheet:
+Mizuno Maho slim shoulders casual clothes, Riku Shun 142cm blue zip hoodie yellow inner,
+Kato Keimi 155cm yellow cardigan silver-rim glasses low ponytail.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS-CU lost-and-found corridor wooden lockers open-day labels,
+bottom drawer half-open lost items pile inside seal intact NO pry marks,
+Mizuno standing two steps away hands empty NO key NOT villain spotlight,
+Riku at corridor edge route notebook, Keimi visible edge,
+MANDATORY all visible students white uwabaki indoor shoes on floor NOT sneakers NOT outdoor shoes,
+Nagoya elementary hallway April side light fair-play mystery NOT accusation,
+NOT seifuku NOT chalk dust circle NOT theft pose
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers outdoor shoes villain spotlight,
+English Chinese text watermark character lineup board height chart
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S04-V2-A1_抽屉失物_G1draft_c07.png`
 
 ---
 

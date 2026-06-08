@@ -1,6 +1,6 @@
-# A005 · G1 Prompts · MVP · R6 · V0.6
+# A005 · G1 Prompts · MVP · R7 · V0.7
 
-> **Status**: **Gate 3 R6 · V0.6 L0 face ref + EXPERT_LOCK 无影细读** · 2026-06-08  
+> **Status**: **Gate 3 R7 · V0.7 EXPERT_LOCK 无字 + DA6 五影 reshoot** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A005_分镜拆解_R17_V0.1.md`](../分镜拆解/A005_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **体育馆 brief** · doc16 §2 · 穹顶 · 投屏白墙 · 侧门器材车 · 灯杆长影  
@@ -110,6 +110,37 @@ readable text on clothing English Chinese Japanese text in image speech bubbles
 
 ---
 
+## DA1 · R7 c07 · 投屏无影 · EXPERT_LOCK · SC-01 · P0 ⚠️
+
+> **R3 baseline c03** 机制✅ · 字幕/衣字 P1 · R7 **L0 五人 + 无字无 caption** · 仅 c07> c03 时替换
+
+### 合成 Prompt（G1 · c07 · R7 L0 + EXPERT_LOCK no text）
+
+```
+Match all five character faces to attached L0 lineup reference:
+Riku Shun 142cm blue zip hoodie, Ito Akira 146cm white tee orange-red utility vest,
+Kato Keimi 155cm yellow cardigan silver glasses low ponytail,
+Matsumoto Shiro 145cm green plaid green vest round glasses stocky,
+Mizuno Maho slim shoulders casual clothes NOT villain lighting NO text on clothing.
+MS Nagoya elementary gymnasium eye-level viewing large white PROJECTION SCREEN,
+VISUAL CENTER on screen: group photo five students shoulder to shoulder casual clothes,
+ONLY Mizuno Maho shadow missing under her feet on projected photo floor,
+other four shadows clearly visible normal on projected floor,
+SECOND READ on real gym wooden floor: metal equipment cart long shadow,
+tall light pole long diagonal shadow still on floor NOT missing,
+uwabaki white indoor shoes fair-play panorama stitch clue NOT curse NOT supernatural,
+NOT live photoshoot queue NOT height measurement NOT studio lineup,
+bridge-book watercolor #2A1810 6-7 head NOT chibi NOT seifuku NOT sneakers
+[NEGATIVE] all five shadowless live queue height chart 身長測定 backdrop,
+wrong names Yamamoto Sato Tanaka horror curse caption bar subtitle overlay,
+readable text on clothing English Chinese Japanese text in image speech bubbles
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S05-V2-A1_仅水野无影_G1draft_c07.png`
+
+---
+
 ## DA3 · 拍摄信息三帧 · SC-05 · P0
 
 ### §11 分镜规划书
@@ -177,4 +208,34 @@ five shadowless live studio queue wrong names horror English text blocks outdoor
 
 ---
 
-*A005 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · EXPERT_LOCK*
+## DA6 · R7 c07 · 五影全在 · EXPERT_LOCK · SC-08 · P0 ⚠️
+
+> **R3 baseline c03** 五影✅ · 英文 UI P1 · R7 **无字 reshoot + 全员 uwabaki**
+
+### 合成 Prompt（G1 · c07 · R7 L0 + five shadows no text）
+
+```
+Match all five character faces to attached L0 lineup reference:
+Riku Shun 142cm blue zip hoodie, Ito Akira 146cm white tee orange-red utility vest,
+Kato Keimi 155cm yellow cardigan silver glasses low ponytail,
+Matsumoto Shiro 145cm green plaid green vest round glasses stocky,
+Mizuno Maho slim shoulders casual clothes.
+MS gymnasium reshoot area five students standing in line for single shutter photo,
+ALL five shadows clearly visible on polished gym floor INCLUDING Mizuno Maho shadow returned,
+camera on tripod in foreground LCD showing same five-person frame NO readable text on screen,
+all five wearing white uwabaki indoor shoes NOT sneakers NOT outdoor shoes,
+bright overhead gymnasium April light equipment cart edge visible,
+contrast optional small projection screen inset showing previous missing shadow moment NO caption text,
+repair fair-play NOT supernatural NOT seifuku NOT maintenance scene,
+NOT height measurement NOT 身長測定 NOT school banner with cm lines,
+Nagoya elementary gymnasium bridge-book watercolor #2A1810
+[NEGATIVE] height chart backdrop 身長測定 measuring lines school name banner,
+five shadowless live studio queue wrong names horror English text blocks speech bubbles caption overlay
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S05-V2-A6_重拍有影_G1draft_c07.png`
+
+---
+
+*A005 G1 prompts R7 · V0.7 · doc65 STYLE_LOCK · EXPERT_LOCK*
