@@ -1,6 +1,6 @@
-# A004 · G1 Prompts · MVP · R4 · V0.4
+# A004 · G1 Prompts · MVP · R6 · V0.6
 
-> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R6 · V0.6 L0 face ref** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A004_分镜拆解_R17_V0.1.md`](../分镜拆解/A004_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **失物柜走廊 brief** · doc16 §2 · 临时柜靠墙 · 两列窄缝 · 上履き  
@@ -49,6 +49,32 @@ character lineup board height chart
 ```
 
 **Output**: `V-S04-V2-A1_抽屉失物_G1draft_c04.png`
+
+---
+
+## DA1 · R6 c06 · L0 face · SC-02 · P0
+
+> **R4 PASS candidate c04** · R6 珣 uwabaki 修复 · 保留 c04 若 c06 回归
+
+### 合成 Prompt（G1 · c06 · R6 L0 face ref）
+
+```
+Match character faces to attached L0 lineup reference:
+Mizuno Maho slim shoulders casual clothes, Riku Shun 142cm blue zip hoodie yellow inner,
+Kato Keimi 155cm yellow cardigan silver-rim glasses low ponytail.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS-CU lost-and-found corridor wooden lockers open-day labels,
+bottom drawer half-open lost items pile inside seal intact NO pry marks,
+Mizuno standing two steps away hands empty NO key NOT villain spotlight,
+Riku at corridor edge route notebook white uwabaki NOT sneakers,
+Nagoya elementary hallway April side light fair-play mystery NOT accusation,
+NOT seifuku NOT chalk dust circle NOT theft pose
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers outdoor shoes villain spotlight,
+English Chinese text watermark character lineup board height chart
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S04-V2-A1_抽屉失物_G1draft_c06.png`
 
 ---
 

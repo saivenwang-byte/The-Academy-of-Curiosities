@@ -1,6 +1,6 @@
-# A005 · G1 Prompts · MVP · R4 · V0.4
+# A005 · G1 Prompts · MVP · R6 · V0.6
 
-> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK · EXPERT_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R6 · V0.6 L0 face ref + EXPERT_LOCK 无影细读** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A005_分镜拆解_R17_V0.1.md`](../分镜拆解/A005_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **体育馆 brief** · doc16 §2 · 穹顶 · 投屏白墙 · 侧门器材车 · 灯杆长影  
@@ -76,6 +76,37 @@ wrong names Yamamoto Sato Tanaka horror curse rubber eraser villain lighting
 ```
 
 **Output**: `V-S05-V2-A1_仅水野无影_G1draft_c04.png`
+
+---
+
+## DA1 · R6 c06 · 投屏无影 · EXPERT_LOCK · SC-01 · P0 ⚠️
+
+> **R3 baseline c03** 机制✅ · 字幕/衣字 P1 · R6 **L0 五人 + 无字 EXPERT_LOCK** · 仅 c06> c03 时替换
+
+### 合成 Prompt（G1 · c06 · R6 L0 face ref + EXPERT_LOCK）
+
+```
+Match all five character faces to attached L0 lineup reference:
+Riku Shun 142cm blue zip hoodie, Ito Akira 146cm white tee orange-red utility vest,
+Kato Keimi 155cm yellow cardigan silver glasses low ponytail,
+Matsumoto Shiro 145cm green plaid green vest round glasses stocky,
+Mizuno Maho slim shoulders casual clothes NOT villain lighting.
+MS Nagoya elementary gymnasium eye-level viewing large white PROJECTION SCREEN,
+VISUAL CENTER on screen: group photo five students shoulder to shoulder casual clothes,
+ONLY Mizuno Maho shadow missing under her feet on projected photo floor,
+other four shadows clearly visible normal on projected floor,
+SECOND READ on real gym wooden floor: metal equipment cart long shadow,
+tall light pole long diagonal shadow still on floor NOT missing,
+uwabaki white indoor shoes fair-play panorama stitch clue NOT curse NOT supernatural,
+NOT live photoshoot queue NOT height measurement NOT studio lineup,
+bridge-book watercolor #2A1810 6-7 head NOT chibi NOT seifuku NOT sneakers
+[NEGATIVE] all five shadowless live queue height chart 身長測定 backdrop,
+wrong names Yamamoto Sato Tanaka horror curse caption bar subtitle overlay,
+readable text on clothing English Chinese Japanese text in image speech bubbles
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S05-V2-A1_仅水野无影_G1draft_c06.png`
 
 ---
 

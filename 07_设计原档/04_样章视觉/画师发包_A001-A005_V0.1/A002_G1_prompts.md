@@ -1,6 +1,6 @@
-# A002 · G1 Prompts · MVP · R5 · V0.5
+# A002 · G1 Prompts · MVP · R6 · V0.6
 
-> **Status**: **Gate 3 R5 · doc65 STYLE_LOCK + KF-LOCK-J** · 2026-06-08  
+> **Status**: **Gate 3 R6 · V0.6 L0 face ref + 膜边 ECU EXPERT_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A002_分镜拆解_R17_V0.1.md`](../分镜拆解/A002_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **5年2組教室** · CLASS_5-2 · 绿黑板 · 板槽 · 珣 **R3·C1**  
@@ -92,6 +92,32 @@ Riku at window side C6 wrong seat character lineup board height chart
 
 ---
 
+## DA1 · R6 c06 · L0 face · SC-02 · P0
+
+> **R4 PASS candidate c04** · R6 L0 脸库强化 · 保留 c04/c05 若 c06 回归
+
+### 合成 Prompt（G1 · c06 · R6 L0 face ref）
+
+```
+Match character faces exactly to attached L0 lineup reference:
+Matsumoto Shiro 145cm green plaid green utility vest round glasses stocky,
+Kato Keimi 155cm yellow cardigan silver-rim glasses low ponytail ear braid,
+Riku Shun 142cm blue zip hoodie yellow inner at R3-C1 corridor-side.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS-CU 5年2組 classroom green chalkboard three white rounded chalk characters 对不起 period center board,
+Shiro holding cleaning cloth NOT writing pose, Keimi blocking trial gesture,
+Riku observing stroke angle NOT at window, all white uwabaki clearly visible on floor NOT sneakers,
+spring slanted aluminum window light equipment cart corridor door, fair clue readable apology text on board,
+Nagoya RC school bridge-book watercolor
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay,
+readable watermark English text Riku at window C6 wrong seat character lineup board
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S02-V2-A1_黑板对不起_G1draft_c06.png`
+
+---
+
 ## DA3 · 膜边反光 · SC-05 · P0 · R3 ⚠️
 
 ### §11 分镜规划书
@@ -135,6 +161,40 @@ student photo wall acrylic name cards 身長測定 backdrop 11 slots,
 ```
 
 **Output**: `V-S02-V2-A3_膜边反光_G1draft_c04.png`
+
+---
+
+## DA3 · R6 c06 · 膜边 ECU · EXPERT_LOCK · SC-05 · P0 ⚠️
+
+> **R3 baseline c03** 膜边✅ · 日文字 P1 · R6 **无字 ECU 强化** · 仅 c06> c03 时替换
+
+### EXPERT_LOCK（A002 DA3 · R6 · 禁错帧）
+
+| 必须 | 禁止 |
+|------|------|
+| 绿黑板 **板槽 POV ECU** · **膜边反光细线** 斜光一闪 | lineup 11格 · 身長測定 |
+| 清洁液瓶缘 · 未登记样品袋（**无可读字**） | 学生肖像卡网格 · 6-2门牌 |
+| 珣手指指向膜边 · uwabaki 底缘 | 全身五人排队 · 错帧 height chart |
+
+### 合成 Prompt（G1 · c06 · R6 L0 + EXPERT_LOCK ECU）
+
+```
+MCU ECU first-person POV close-up green chalkboard BOARD SLOT only,
+NOT character lineup NOT height chart NOT portrait grid,
+VISUAL CENTER: thin bright reflective glint line on transparent display film edge
+where film meets chalkboard slot, April slanted window light catching film edge sharply,
+SECOND READ: cleaning fluid spray bottle silhouette on shelf below,
+small sample plastic bag with blank handwritten tag shape NO readable letters,
+Riku Shun blue zip hoodie finger pointing at film edge uwabaki visible at bottom frame edge,
+5年2組 classroom Nagoya April fair-play film clue NOT ghost writing,
+bridge-book watercolor restrained ink #2A1810 6-7 head NOT chibi NOT seifuku
+[NEGATIVE] character lineup board height measurement chart portrait slots grid,
+student photo wall acrylic name cards 身長測定 backdrop 11 slots readable Japanese text,
+6年2組 door plate seifuku horror ghost Chinese classroom sneakers speech bubbles
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S02-V2-A3_膜边反光_G1draft_c06.png`
 
 ---
 

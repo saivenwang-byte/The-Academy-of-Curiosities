@@ -1,6 +1,6 @@
-# A003 · G1 Prompts · MVP · R5 · V0.5
+# A003 · G1 Prompts · MVP · R6 · V0.6
 
-> **Status**: **Gate 3 R5 · doc65 STYLE_LOCK + KF-LOCK-J** · 2026-06-08  
+> **Status**: **Gate 3 R6 · V0.6 L0 face ref + 空栏机制 EXPERT_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A003_分镜拆解_R17_V0.1.md`](../分镜拆解/A003_分镜拆解_R17_V0.1.md)  
 > **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **侧廊 G1** · 四栏壁报 · 引き戸 · doc16 §1.2 · **禁 6-2/4-2 门牌** · **禁 Panel3 lineup 海报**  
@@ -52,6 +52,42 @@ English Chinese text rendered in image watermark High School text,
 ```
 
 **Output**: `V-S03-V2-DEMO_空海报位_G1draft_c04.png`
+
+---
+
+## DA1 · R6 c06 · 空海报位 · EXPERT_LOCK · SC-01 · P0 ⚠️
+
+> **R4 REVISE**: 空栏弱（空白纸非钉印空位）· 气泡 P1 · R6 **L0 垫图 + 钉印空位机制**
+
+### EXPERT_LOCK（A003 DA1 · R6）
+
+| 必须 | 禁止 |
+|------|------|
+| 四栏壁报 · **一空栏** 钉印/胶带残痕 · 无 A3 实体 | 完整海报 · 五张空白纸 |
+| 三人口述分叉（**无气泡无字**） | 可读 speech bubbles |
+| 侧廊 G1 尺度 · 四月侧光 | 6-2/4-2 门牌 · lineup 海报 |
+
+### 合成 Prompt（G1 · c06 · R6 L0 face ref + EXPERT_LOCK）
+
+```
+Match character faces to attached L0 lineup reference:
+Kato Keimi 155cm yellow cardigan silver-rim glasses low ponytail ear braid interview notebook,
+Ito Akira 146cm white tee orange-red utility vest spiky warm-brown hair,
+younger students casual clothes white uwabaki.
+Soft cinematic anime children's mystery ages 10-12, clear light-manga ink #2A1810 watercolor NOT chibi NOT seifuku,
+MS corridor bulletin wall four-column layout Nagoya elementary side hallway G1 scale,
+VISUAL CENTER: one empty poster slot with visible pin holes tape residue torn paper edges,
+other columns have partial papers but NO complete A3 poster entity,
+students pointing conflicting directions toward empty slot blank mouth areas NO speech bubbles NO text,
+spring cherry-gray corridor slanted April light equipment cart wheel tracks on tile,
+fair-play memory conflict clue NOT horror NOT character lineup poster,
+NOT seifuku NOT 6-2 door plate NOT 4-2 door plate NOT complete red-black poster
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers speech bubbles caption overlay,
+readable text watermark five identical blank tan sheets character lineup board
+```
+
+**L0 ref**: `CHAR_lineup_L0_专家共识_画师发包_3840.png` **mandatory**  
+**Output**: `V-S03-V2-DEMO_空海报位_G1draft_c06.png`
 
 ---
 
