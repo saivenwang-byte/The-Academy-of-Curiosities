@@ -1,9 +1,11 @@
 # 4年2組 · 教室透视基准图 · 规格（Vol1 正典）
 
-> **Status**: ACTIVE · **2026-06-03**  
+> **Status**: ACTIVE · **2026-06-08 refresh**  
+> **座席 SSOT（V2）**：[`CLASS_5-2_座位表_V0.1.md`](../04_样章视觉/CLASS_5-2_座位表_V0.1.md) · **5年2組** · 珣 R3·C1 · 光 R3·C6  
+> **V2 跨班**：慧美 **5年1組** · 志郎 **5年3組** — 本班网格 **仅锁珣+光** · 下表 R1/R6 慧美/志郎为 **V1 湿椅子同班快照 · 勿用于 V2  classroom 主图**  
 > **交互稿**：`CLASSROOM_4-2_baseline.html`（浏览器打开）  
 > **参考图**：`CLASSROOM_4-2_perspective_reference.png`  
-> **正典**：`00_SCHOOL_CLASS_CANON_LOCKED.md` · `03_CASE_CARD.md` · v1.2 日文稿
+> **正典**：`00_SCHOOL_CLASS_CANON_LOCKED.md` · doc44
 
 ---
 

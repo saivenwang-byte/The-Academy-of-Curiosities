@@ -2,6 +2,7 @@
 
 > **Status**: G1DRAFT_PRODUCTION · 2026-06-08  
 > **KF brief**: [`KF_LOCK_T/A001-A005_P0关键帧文字brief_V0.1.md`](../KF_LOCK_T/A001-A005_P0关键帧文字brief_V0.1.md) §A001  
+> **座席 SSOT**: [`CLASS_5-2_教室插图表_V0.1.md`](../CLASS_5-2_教室插图表_V0.1.md) · 珣 **R3·C1** · 光 **R3·C6**（就座）/ 讲台（DA1）  
 > **MVP scope**: DA1 · DA3 · DA4（3/7 P0 帧 · 非全六帧）
 
 ---
@@ -12,6 +13,7 @@
 |------|-----|
 | **Output** | `V-S01-V2-A1_广播响起_G1draft_c01.png` ✅ |
 | **景别** | MS · 合班教室东向平视 |
+| **座席** | 珣 **R3·C1 廊下侧** 侧后看 PLAY 屏 · 光 **讲台 C**（非 C6 就座）· 慧美/志郎无固定席 |
 | **视觉中心** | 天花板广播喇叭发声 · 橙指示灯 |
 | **第二信息** | 光唇未动完 · PLAY 屏「三周前彩排录音」 |
 | **Prompt SSOT** | `样章包/插图/depth_anchor/prompts_A001_V2_DA1_G1draft_V0.1.md` |

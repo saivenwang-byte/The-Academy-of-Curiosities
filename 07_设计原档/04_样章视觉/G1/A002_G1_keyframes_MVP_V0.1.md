@@ -7,7 +7,7 @@
 
 ## DA1 · 黑板对不起 · SC-02 · P0
 
-| **Output** | `V-S02-V2-A1_黑板对不起_G1draft_c01.png` ⬜ · DEMO ✅ `V-S02-V2-DEMO_黑板对不起.png` |
+| **Output** | `V-S02-V2-A1_黑板对不起_G1draft_c01.png` ⬜ · ~~DEMO~~ **DELETED** doc48 |
 | **视觉中心** | 绿黑板「对不起。」· 志郎扫除服非写字 pose |
 | **Prompt base** | `样章包/插图/depth_anchor/prompts_A002_V2_demo_v0.1.md` |
 
