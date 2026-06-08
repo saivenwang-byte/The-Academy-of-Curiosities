@@ -1,15 +1,16 @@
-# A002 · G1 Prompts · MVP · R3 · V0.3
+# A002 · G1 Prompts · MVP · R4 · V0.4
 
-> **Status**: **Gate 3 R3 retry · DA3 fix** · 2026-06-08  
+> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A002_分镜拆解_R17_V0.1.md`](../分镜拆解/A002_分镜拆解_R17_V0.1.md)  
+> **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **5年2組教室** · CLASS_5-2 · 绿黑板 · 板槽 · 珣 **R3·C1**  
-> **输出命名**: `V-S02-V2-A*_G1draft_c03.png`（R3 retry 帧）
+> **输出命名**: `V-S02-V2-A*_G1draft_c04.png`
 
 ---
 
-## Global STYLE / NEGATIVE / L0
+## Global STYLE_LOCK / NEGATIVE / L0
 
-同 [`A001_G1_prompts.md`](./A001_G1_prompts.md) Global 块。  
+同 [`A001_G1_prompts.md`](./A001_G1_prompts.md) **Global STYLE_LOCK + NEGATIVE**（doc65 §3 · 禁 chibi · 禁 seifuku · 禁 lineup board）。  
 **A002 追加**：志郎 **5年3組扫除当番** 时穿 **绿格+绿vest 私服 L0** · **NOT** 学校扫除网 vest 替代 L0 · **NOT** 秘密写字 pose。
 
 **A002 R3 追加 NEGATIVE**（DA3 专用 · 禁错帧）:
@@ -40,22 +41,28 @@ character lineup board, height chart, portrait grid, student photo slots,
 | 正文锚点 | 「黑板上写着三个字：对不起。」 |
 | G-BODY锚 | 5-2教室·CLASSROOM_4-2·四月光·私服上履き |
 
-### 合成 Prompt（G1 · c02 · 未改）
+### 合成 Prompt（G1 · c04 · R4 STYLE_LOCK + L0 垫图）
 
 ```
-[STYLE] MS-CU 5年2組 classroom green chalkboard three characters 对不起 period
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 NOT pure black,
+restrained watercolor paper texture 6-7 head NOT chibi NOT seifuku,
+MS-CU 5年2組 classroom green chalkboard three characters 对不起 period
 white rounded chalk strokes center board,
 Matsumoto Shiro ~145cm stocky green plaid shirt green utility vest round glasses
 holding cleaning cloth NOT writing pose NOT secret writer,
-Kato Keimi ~155cm yellow cardigan silver-rim glasses blocking trial gesture,
-Riku Shun ~142cm blue zip hoodie at R3-C1 corridor-side observing stroke angle,
-students casual clothes uwabaki white indoor shoes NOT seifuku NOT gakuran,
+Kato Keimi ~155cm yellow cardigan silver-rim glasses low ponytail ear braid blocking trial gesture,
+Riku Shun ~142cm blue zip hoodie yellow inner at R3-C1 corridor-side observing stroke angle,
+students casual clothes uwabaki white indoor shoes on floor NOT gakuran NOT blazer,
 spring slanted aluminum window light equipment cart corridor door seed,
-fair clue readable apology text, Nagoya RC school bridge-book watercolor #2A1810
-[NEGATIVE] mud prints ghost writing seifuku blazer sneakers Chinese classroom
+fair clue readable apology text, Nagoya RC school bridge-book watercolor
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers mud prints ghost writing,
+character lineup board height chart portrait grid,
+English Chinese text rendered in image watermark,
+6年2組 door plate 4年2組 door plate Chinese classroom
 ```
 
-**Output**: `V-S02-V2-A1_黑板对不起_G1draft_c02.png`
+**Output**: `V-S02-V2-A1_黑板对不起_G1draft_c04.png`
 
 ---
 
@@ -101,7 +108,7 @@ student photo wall acrylic name cards 身長測定 backdrop 11 slots,
 6年2組 door plate seifuku horror ghost Chinese classroom sneakers
 ```
 
-**Output**: `V-S02-V2-A3_膜边反光_G1draft_c03.png`
+**Output**: `V-S02-V2-A3_膜边反光_G1draft_c04.png`
 
 ---
 
@@ -133,8 +140,8 @@ NOT ghost apology NOT seifuku NOT horror
 [NEGATIVE]
 ```
 
-**Output**: `V-S02-V2-A4_对照实验_G1draft_c02.png`
+**Output**: `V-S02-V2-A4_对照实验_G1draft_c04.png`
 
 ---
 
-*A002 G1 prompts R3 · V0.3 · DA3 board-slot POV fix*
+*A002 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · DA3 board-slot POV*

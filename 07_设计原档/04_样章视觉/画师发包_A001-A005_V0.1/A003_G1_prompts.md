@@ -1,15 +1,16 @@
-# A003 · G1 Prompts · MVP · R2 · V0.2
+# A003 · G1 Prompts · MVP · R4 · V0.4
 
-> **Status**: **Gate 2 refresh · R2 spec-aligned** · 2026-06-08  
+> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A003_分镜拆解_R17_V0.1.md`](../分镜拆解/A003_分镜拆解_R17_V0.1.md)  
-> **空间**: **侧廊 G1** · 四栏壁报 · 引き戸 · doc16 §1.2 · **禁 6-2/4-2 门牌**  
-> **输出命名**: `V-S03-V2-A*_G1draft_c02.png`
+> **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
+> **空间**: **侧廊 G1** · 四栏壁报 · 引き戸 · doc16 §1.2 · **禁 6-2/4-2 门牌** · **禁 Panel3 lineup 海报**  
+> **输出命名**: `V-S03-V2-A*_G1draft_c04.png`
 
 ---
 
-## Global STYLE / NEGATIVE / L0
+## Global STYLE_LOCK / NEGATIVE / L0
 
-同 A001 Global 块 · 侧廊场景追加：瓷砖干灰 · 四月侧光框中框 · 器材车轮迹。
+同 A001 **Global STYLE_LOCK + NEGATIVE** · 侧廊场景追加：瓷砖干灰 · 四月侧光框中框 · 器材车轮迹 · **NOT character lineup poster**。
 
 ---
 
@@ -32,22 +33,25 @@
 | 正文锚点 | 「每个人都记得——可记得的版式，不一样。」 |
 | G-BODY锚 | 四月侧廊·四栏·空位可读·私服 |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c04 · R4 STYLE_LOCK + L0 垫图）
 
 ```
-[STYLE] MS corridor bulletin wall four-column layout Nagoya elementary side hallway,
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MS corridor bulletin wall four-column layout Nagoya elementary side hallway,
 empty poster slot with visible pin holes tape residue NO complete A3 poster entity,
 Kato Keimi ~155cm yellow cardigan silver-rim glasses low ponytail ear braid interview notebook,
-Ito Akira ~146cm white tee orange-red utility vest,
-younger students casual clothes uwabaki pointing conflicting directions speech bubbles blank areas,
+Ito Akira ~146cm white tee orange-red utility vest spiky warm-brown hair,
+younger students casual clothes uwabaki pointing conflicting directions blank speech areas NO text,
 spring cherry-gray corridor slanted light equipment cart wheel tracks,
-fair-play memory conflict clue NOT horror NOT bullying,
+fair-play memory conflict clue NOT horror NOT bullying NOT character lineup poster,
 NOT seifuku NOT 6-2 door plate NOT 4-2 door plate NOT complete red-black poster
-bridge-book watercolor #2A1810
-[NEGATIVE]
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers character lineup board height chart,
+English Chinese text rendered in image watermark High School text,
+6年2組 door plate 4年2組 door plate leather shoes
 ```
 
-**Output**: `V-S03-V2-DEMO_空海报位_G1draft_c02.png`
+**Output**: `V-S03-V2-DEMO_空海报位_G1draft_c04.png`
 
 ---
 
@@ -75,7 +79,7 @@ spring Nagoya corridor fair clue NOT horror, casual clothes NOT seifuku bridge-b
 [NEGATIVE] complete poster villain Mizuno poster curl sneakers
 ```
 
-**Output**: `V-S03-V2-A2_正式照无海报_G1draft_c02.png`
+**Output**: `V-S03-V2-A2_正式照无海报_G1draft_c04.png`
 
 ---
 
@@ -95,21 +99,25 @@ spring Nagoya corridor fair clue NOT horror, casual clothes NOT seifuku bridge-b
 | 正文锚点 | 「远一点的标题，和近处说的，对不上。」 |
 | G-BODY锚 | 侧廊尺度锁·禁门牌漂移·L0 |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c04 · R4 STYLE_LOCK + L0 垫图）
 
 ```
-[STYLE] MS distant corridor shot bulletin wall empty slot pin holes,
-distant title text 我们眼中的学校 readable connecting placeholder visual line NOT full poster,
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MS distant corridor shot bulletin wall empty slot pin holes,
+distant bulletin title area placeholder visual line connecting empty slot NOT full poster entity,
 equipment cart background students casual clothes uwabaki pointing conflicting directions,
-Riku Shun blue hoodie Keimi yellow cardigan silver glasses Shiro green plaid green vest,
+Riku Shun ~142cm blue zip hoodie Keimi ~155cm yellow cardigan silver-rim glasses low ponytail,
+Shiro ~145cm green plaid green vest round glasses,
 spring Nagoya elementary side corridor G1 scale locked fair-play memory fragment,
-NOT seifuku NOT 6-2 door plate NOT 4-2 door plate NOT leather shoes NOT complete poster entity
-bridge-book watercolor #2A1810
-[NEGATIVE]
+NOT seifuku NOT 6-2 door plate NOT 4-2 door plate NOT leather shoes
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers character lineup board,
+English Chinese text rendered in image watermark High School text,
+6年2組 door plate 4年2組 door plate complete poster entity
 ```
 
-**Output**: `V-S03-V2-A4_远标题连线_G1draft_c02.png`
+**Output**: `V-S03-V2-A4_远标题连线_G1draft_c04.png`
 
 ---
 
-*A003 G1 prompts R2 · V0.2 · 侧廊 G1 · 禁门牌漂移*
+*A003 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · 侧廊 G1 · 禁门牌/lineup*

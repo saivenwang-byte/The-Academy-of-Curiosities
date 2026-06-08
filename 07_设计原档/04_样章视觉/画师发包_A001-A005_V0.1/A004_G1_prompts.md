@@ -1,15 +1,16 @@
-# A004 · G1 Prompts · MVP · R2 · V0.2
+# A004 · G1 Prompts · MVP · R4 · V0.4
 
-> **Status**: **Gate 2 refresh · R2 spec-aligned** · 2026-06-08  
+> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A004_分镜拆解_R17_V0.1.md`](../分镜拆解/A004_分镜拆解_R17_V0.1.md)  
+> **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **失物柜走廊 brief** · doc16 §2 · 临时柜靠墙 · 两列窄缝 · 上履き  
-> **输出命名**: `V-S04-V2-A*_G1draft_c02.png`
+> **输出命名**: `V-S04-V2-A*_G1draft_c04.png`
 
 ---
 
-## Global STYLE / NEGATIVE / L0
+## Global STYLE_LOCK / NEGATIVE / L0
 
-同 A001 · 追加 **水野真帆** L0：瘦 · 易缩肩 · 便服+上履き · 节目表 · **非 villain 光** · 无钥匙。
+同 A001 **Global STYLE_LOCK + NEGATIVE** · 追加 **水野真帆** L0：瘦 · 易缩肩 · 便服+上履き · 节目表 · **非 villain 光** · 无钥匙。
 
 ---
 
@@ -30,20 +31,24 @@
 | 正文锚点 | 「东西在她抽屉里——可抽屉没有钥匙。」 |
 | G-BODY锚 | 失物柜靠墙·临时柜·走廊brief |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c04 · R4 STYLE_LOCK + L0 垫图）
 
 ```
-[STYLE] MS-CU lost-and-found corridor wooden lockers open-day labels,
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MS-CU lost-and-found corridor wooden lockers open-day labels,
 bottom drawer half-open lost items pile inside seal intact NO pry marks,
 Mizuno Maho ~slim shoulders casual clothes uwabaki standing two steps away hands empty NO key,
-Riku Shun ~142cm blue zip hoodie at corridor edge route notebook,
-Keimi yellow cardigan silver glasses visible edge,
-Nagoya elementary hallway April side light fair-play mystery NOT accusation,
-NOT seifuku NOT chalk dust circle NOT theft pose bridge-book watercolor #2A1810
-[NEGATIVE]
+Riku Shun ~142cm blue zip hoodie yellow inner at corridor edge route notebook,
+Keimi ~155cm yellow cardigan silver-rim glasses low ponytail visible edge,
+Nagoya elementary hallway April side light fair-play mystery NOT accusation NOT villain spotlight,
+NOT seifuku NOT chalk dust circle NOT theft pose
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers villain spotlight on Mizuno,
+English Chinese text rendered in image watermark,
+character lineup board height chart
 ```
 
-**Output**: `V-S04-V2-A1_抽屉失物_G1draft_c02.png`
+**Output**: `V-S04-V2-A1_抽屉失物_G1draft_c04.png`
 
 ---
 
@@ -62,18 +67,22 @@ NOT seifuku NOT chalk dust circle NOT theft pose bridge-book watercolor #2A1810
 | 正文锚点 | 「水泡偏了——不是 eye 错觉。」 |
 | G-BODY锚 | 柜倾可读·走廊brief·L0 |
 
-### 合成 Prompt（G1 · c02）
+### 合成 Prompt（G1 · c04 · R4 STYLE_LOCK + L0 垫图）
 
 ```
-[STYLE] MCU locker top POV spirit level bubble off-center one notch cabinet tilt visible,
+Soft cinematic anime children's mystery illustration ages 10-12,
+clear light-manga ink warm brown outline #2A1810 restrained watercolor NOT chibi NOT seifuku,
+MCU locker top POV spirit level bubble off-center one notch cabinet tilt visible,
 vibration log timestamp sheet edge Matsumoto Shiro ~145cm green plaid green vest chalk mark low side round glasses,
-Riku Shun blue hoodie noting gap uwabaki corridor background,
+Riku Shun ~142cm blue zip hoodie noting gap uwabaki corridor background,
 lost-and-found wooden lockers open-day labels Nagoya April fair-play mechanism,
-NOT seifuku NOT chalk dust circle NOT horror accusation bridge-book watercolor
-[NEGATIVE]
+NOT seifuku NOT chalk dust circle NOT horror accusation
+[NEGATIVE] chibi SD seifuku blazer gakuran sneakers green hoodie NOT L0 Shiro,
+English Chinese text rendered in image watermark,
+character lineup board height chart
 ```
 
-**Output**: `V-S04-V2-A3_倾斜水泡_G1draft_c02.png`
+**Output**: `V-S04-V2-A3_倾斜水泡_G1draft_c04.png`
 
 ---
 
@@ -105,8 +114,8 @@ Nagoya hallway April NOT seifuku bridge-book watercolor #2A1810
 [NEGATIVE] broken lock theft pose poster curl
 ```
 
-**Output**: `V-S04-V2-A4_振动复现_G1draft_c02.png`
+**Output**: `V-S04-V2-A4_振动复现_G1draft_c04.png`
 
 ---
 
-*A004 G1 prompts R2 · V0.2 · 失物柜走廊 brief*
+*A004 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · 失物柜走廊 brief*

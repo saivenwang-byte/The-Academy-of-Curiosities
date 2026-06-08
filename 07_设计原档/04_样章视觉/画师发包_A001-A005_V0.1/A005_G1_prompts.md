@@ -1,17 +1,18 @@
-# A005 · G1 Prompts · MVP · R3 · V0.3
+# A005 · G1 Prompts · MVP · R4 · V0.4
 
-> **Status**: **Gate 3 R3 retry · EXPERT_LOCK** · 2026-06-08  
+> **Status**: **Gate 3 R4 · doc65 STYLE_LOCK · EXPERT_LOCK** · 2026-06-08  
 > **SSOT**: [`分镜拆解/A005_分镜拆解_R17_V0.1.md`](../分镜拆解/A005_分镜拆解_R17_V0.1.md)  
+> **STYLE_LOCK**: [`65_V1.0参考图与V2规范对照_V0.1.md`](../../../03_故事内容/第1卷_觉得奇怪就先观察/V2迁移/65_V1.0参考图与V2规范对照_V0.1.md) §3  
 > **空间**: **体育馆 brief** · doc16 §2 · 穹顶 · 投屏白墙 · 侧门器材车 · 灯杆长影  
 > **EXPERT_LOCK**: **仅水野** 脚下无影 · 四人+器材车+灯杆 **有影** · 重拍 **五影全在**  
-> **输出命名**: `V-S05-V2-A*_G1draft_c03.png`（R3 retry 帧）
+> **输出命名**: `V-S05-V2-A*_G1draft_c04.png`
 
 ---
 
-## Global STYLE / NEGATIVE / L0
+## Global STYLE_LOCK / NEGATIVE / L0
 
-同 A001 · Plan B 五人正典名：**陸珣 · 伊藤光 · 加藤慧美 · 松本志郎 · 水野真帆**  
-**禁**：山本/佐藤/田中 错名 · 五人全无影 · 橡皮屑 · 运动鞋
+同 A001 **Global STYLE_LOCK + NEGATIVE** · Plan B 五人正典名：**陸珣 · 伊藤光 · 加藤慧美 · 松本志郎 · 水野真帆**  
+**禁**：山本/佐藤/田中 错名 · 五人全无影 · 橡皮屑 · 运动鞋 · **chibi · Panel4 教辅体**
 
 **A005 R3 追加 NEGATIVE**:
 ```
@@ -74,7 +75,7 @@ bridge-book watercolor #2A1810 6-7 head NOT chibi NOT seifuku NOT sneakers
 wrong names Yamamoto Sato Tanaka horror curse rubber eraser villain lighting
 ```
 
-**Output**: `V-S05-V2-A1_仅水野无影_G1draft_c03.png`
+**Output**: `V-S05-V2-A1_仅水野无影_G1draft_c04.png`
 
 ---
 
@@ -104,7 +105,7 @@ fair-play panorama stitch clue casual clothes NOT seifuku bridge-book watercolor
 [NEGATIVE] all five shadowless horror curse rubber eraser crumbs villain lighting
 ```
 
-**Output**: `V-S05-V2-A3_metadata三帧_G1draft_c02.png`
+**Output**: `V-S05-V2-A3_metadata三帧_G1draft_c04.png`
 
 ---
 
@@ -141,8 +142,8 @@ Nagoya elementary gymnasium bridge-book watercolor #2A1810
 five shadowless live studio queue wrong names horror English text blocks outdoor shoes
 ```
 
-**Output**: `V-S05-V2-A6_重拍有影_G1draft_c03.png`
+**Output**: `V-S05-V2-A6_重拍有影_G1draft_c04.png`
 
 ---
 
-*A005 G1 prompts R3 · V0.3 · EXPERT_LOCK · 投屏/重拍 fix*
+*A005 G1 prompts R4 · V0.4 · doc65 STYLE_LOCK · EXPERT_LOCK*

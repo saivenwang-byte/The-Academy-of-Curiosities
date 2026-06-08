@@ -43,7 +43,7 @@ CASES = [
         "cn_file": "案01_全班都听见了他的声音_HybridVoice_V2.0.txt",
         "jp_file": "案01_全班都听见了他的声音_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S01-V2-A1_广播响起_G1draft_c02.png", "A001 · 放送 · 唇が合わない · G1 R2"),
+            ("V-S01-V2-A1_广播响起_G1draft_c04.png", "A001 · 放送 · 唇が合わない · G1 R4"),
             ("V-S01-V2-A3_文件时间_G1draft_c02.png", "A001 · 0328 · 旧録音 · G1 R2"),
         ],
         "illus_subdir": "案01",
@@ -57,8 +57,8 @@ CASES = [
         "cn_file": "案02_没有人写过的道歉_HybridVoice_V2.0.txt",
         "jp_file": "案02_没有人写过的道歉_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S02-V2-A1_黑板对不起_G1draft_c02.png", "A002 · 黒板 · SC-02 · G1 R2"),
-            ("V-S02-V2-A3_膜边反光_G1draft_c03.png", "A002 · 膜の端 · SC-05 · G1 R3"),
+            ("V-S02-V2-A1_黑板对不起_G1draft_c04.png", "A002 · 黒板 · SC-02 · G1 R4"),
+            ("V-S02-V2-A3_膜边反光_G1draft_c03.png", "A002 · 膜の端 · SC-05 · G1 R3 · c04 REJECT"),
         ],
         "illus_subdir": "案02",
         "hook": "黒板に謝罪の字——書いた人は教室に入っていない。",
@@ -71,8 +71,8 @@ CASES = [
         "cn_file": "案03_每个人都记得的海报_HybridVoice_V2.0.txt",
         "jp_file": "案03_每个人都记得的海报_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S03-V2-DEMO_空海报位_G1draft_c02.png", "A003 · 空欄 · SC-01 · G1 R2"),
-            ("V-S03-V2-A4_远标题连线_G1draft_c02.png", "A003 · 遠タイトル · SC-04 · G1 R2"),
+            ("V-S03-V2-DEMO_空海报位_G1draft_c04.png", "A003 · 空欄 · SC-01 · G1 R4"),
+            ("V-S03-V2-A4_远标题连线_G1draft_c04.png", "A003 · 遠タイトル · SC-04 · G1 R4"),
         ],
         "illus_subdir": "案03",
         "hook": "三人が三種類のポスターを覚えている——実物はない。",
@@ -85,8 +85,8 @@ CASES = [
         "cn_file": "案04_只出现在她抽屉里的失物_HybridVoice_V2.0.txt",
         "jp_file": "案04_只出现在她抽屉里的失物_HybridVoice_V2.0_日本語.txt",
         "illus": [
-            ("V-S04-V2-A1_抽屉失物_G1draft_c02.png", "A004 · 引き出し · SC-02 · G1 R2"),
-            ("V-S04-V2-A3_倾斜水泡_G1draft_c02.png", "A004 · 傾き水準器 · SC-05 · G1 R2"),
+            ("V-S04-V2-A1_抽屉失物_G1draft_c04.png", "A004 · 引き出し · SC-02 · G1 R4"),
+            ("V-S04-V2-A3_倾斜水泡_G1draft_c04.png", "A004 · 傾き水準器 · SC-05 · G1 R4"),
             ("V-S04-V2-A4_振动复现_G1draft_c02.png", "A004 · 振動再現 · SC-07 · G1 R2"),
         ],
         "illus_subdir": "案04",
