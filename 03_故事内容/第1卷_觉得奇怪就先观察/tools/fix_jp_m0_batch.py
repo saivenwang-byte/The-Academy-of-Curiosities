@@ -19,13 +19,14 @@ GLOBS = [
     UNIT / "A005" / "01_正文" / "案05_*_日本語.txt",
 ]
 
-CORRUPT = "学校学校学校学校公開日と学習発表会と学習発表会と学習発表会と学習発表会"
+CANON_EVENT = "公開日と学習発表会"
 CORRUPT_RE = re.compile(
-    r"学校学校(?:学校学校)*(?:公開日と学習発表会(?:と学習発表会)*)+"
+    r"(?:学校)+(?:学校)?公開日と(?:学習発表会と)+学習発表会"
+    r"|学校公開日と(?:学習発表会と)+学習発表会"
 )
+GOUDOU_FURIGANA_RE = re.compile(r"合同教室(?:（[ぁ-んァ-ヶー]+）)+")
 
 REPLACEMENTS: list[tuple[str, str]] = [
-    (CORRUPT, "公開日と学習発表会"),
     ("三周前", "三週間前"),
     ("椅背", "背もたれ"),
     ("瑆笔记", "ひかるのノート"),
@@ -36,7 +37,6 @@ REPLACEMENTS: list[tuple[str, str]] = [
     ("那天", "あの日"),
     ("画面灰字", "画面の灰色の文字"),
     ("提醒みたいに", "知らせるみたいに"),
-    ("（がっどうきょうしつ）", "（ごうどうきょうしつ）"),
     # 骂 (CN) → けなし系
     ("骂り方", "言い方"),
     ("骂った", "けなした"),
@@ -88,7 +88,11 @@ def collect_files() -> list[Path]:
 
 def fix_text(text: str) -> tuple[str, int]:
     n = 0
-    new_text, c = CORRUPT_RE.subn("公開日と学習発表会", text)
+    new_text, c = CORRUPT_RE.subn(CANON_EVENT, text)
+    if c:
+        text = new_text
+        n += c
+    new_text, c = GOUDOU_FURIGANA_RE.subn("合同教室（ごうどうきょうしつ）", text)
     if c:
         text = new_text
         n += c
