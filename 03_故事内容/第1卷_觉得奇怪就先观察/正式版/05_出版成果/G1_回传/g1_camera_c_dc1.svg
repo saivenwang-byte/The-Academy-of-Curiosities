@@ -1,24 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" font-family="Yu Gothic, Meiryo, sans-serif">
-  <rect width="400" height="280" fill="#faf7f2"/>
-  <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold">:M C � ��: CU</text>
-  <text x="200" y="36" text-anchor="middle" font-size="9" fill="#666">DC1 � eLe3m �w�:</text>
-  <polygon points="200,50 188,68 212,68" fill="#333"/>
-  <text x="200" y="82" text-anchor="middle" font-size="8">b��</text>
-  <!-- ��� -->
-  <rect x="50" y="100" width="300" height="100" fill="#f5f0e8" stroke="#8a6d4b" stroke-width="2"/>
-  <line x1="125" y1="100" x2="125" y2="200" stroke="#bbb"/>
-  <line x1="200" y1="100" x2="200" y2="200" stroke="#bbb"/>
-  <line x1="275" y1="100" x2="275" y2="200" stroke="#bbb"/>
-  <text x="87" y="140" text-anchor="middle" font-size="7">�O�_</text>
-  <text x="87" y="155" text-anchor="middle" font-size="7">ݹ��</text>
-  <text x="162" y="140" text-anchor="middle" font-size="7"><�</text>
-  <text x="162" y="155" text-anchor="middle" font-size="7">թ���</text>
-  <text x="237" y="148" text-anchor="middle" font-size="7">b	</text>
-  <rect x="280" y="105" width="65" height="90" fill="#fff" stroke="#c44" stroke-dasharray="4,4"/>
-  <text x="312" y="155" text-anchor="middle" font-size="12" fill="#c44"></text>
-  <text x="312" y="175" text-anchor="middle" font-size="7" fill="#c44">,4z</text>
-  <text x="200" y="220" text-anchor="middle" font-size="8" fill="#555">witnessx�ΧW	</text>
-  <text x="200" y="240" text-anchor="middle" font-size="8" fill="#666">�w�� � ���</text>
-  <text x="200" y="265" text-anchor="middle" font-size="8" fill="#a00">�A002�?�a � P�~</text>
-</svg>

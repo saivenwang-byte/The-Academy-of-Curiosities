@@ -1,4 +1,0 @@
-G1 PLACEHOLDER
-A004 DA4
-振动复现 · SC-07
-Status: awaiting G1draft production

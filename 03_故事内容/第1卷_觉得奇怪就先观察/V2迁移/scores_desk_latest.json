@@ -1,0 +1,15 @@
+{
+  "desk": "TANAKA-DESK",
+  "date": "2026-06-10",
+  "cn_version": "V3.1",
+  "jp_in": "V3.9",
+  "jp_out": "V3.9",
+  "cases": [
+    {
+      "case": "A005",
+      "synth": "DESK_PASS",
+      "chars": 7153,
+      "out": "D:\\【AI Project】\\【The Academy of Curiosities】\\03_故事内容\\第1卷_觉得奇怪就先观察\\单元1_第一单元_五案\\正文\\V3.9\\02_日本語\\案05_午休后消失的影子_HybridVoice_V3.9_日本語.txt"
+    }
+  ]
+}

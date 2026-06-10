@@ -1,6 +1,13 @@
 {
   "version": 1,
   "hooks": {
+    "preToolUse": [
+      {
+        "command": "python .cursor/hooks/on_pre_tool_use.py",
+        "matcher": "Write|StrReplace",
+        "failClosed": false
+      }
+    ],
     "stop": [
       {
         "command": "python .cursor/hooks/on_agent_stop.py",

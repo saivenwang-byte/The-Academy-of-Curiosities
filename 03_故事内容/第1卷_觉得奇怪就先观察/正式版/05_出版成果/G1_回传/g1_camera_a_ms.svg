@@ -1,24 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" font-family="Yu Gothic, Meiryo, sans-serif">
-  <rect width="400" height="300" fill="#faf7f2"/>
-  <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold">:M A � s� MS</text>
-  <text x="200" y="36" text-anchor="middle" font-size="9" fill="#666">DA1 � DA2 � DA4</text>
-  <!-- �: -->
-  <polygon points="200,55 185,75 215,75" fill="#333"/>
-  <text x="200" y="90" text-anchor="middle" font-size="8">Dq � <sH1.2m</text>
-  <line x1="200" y1="75" x2="200" y2="120" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="200" y="115" text-anchor="middle" font-size="8" fill="#555">� ƿ</text>
-  <!-- ;bF -->
-  <rect x="60" y="130" width="280" height="140" fill="#f5f0e8" stroke="#8a6d4b" stroke-width="2"/>
-  <rect x="150" y="140" width="100" height="18" fill="#c5d5e8" stroke="#4a6a8a"/>
-  <text x="200" y="152" text-anchor="middle" font-size="7">vent</text>
-  <rect x="130" y="165" width="140" height="55" fill="#fffef8" stroke="#c44"/>
-  <text x="200" y="195" text-anchor="middle" font-size="8">w�+ع</text>
-  <ellipse cx="120" cy="240" rx="14" ry="20" fill="#e8a050" opacity="0.6"/>
-  <ellipse cx="160" cy="242" rx="13" ry="19" fill="#e8d050" opacity="0.6"/>
-  <ellipse cx="210" cy="245" rx="12" ry="18" fill="#50a050" opacity="0.6"/>
-  <ellipse cx="270" cy="238" rx="13" ry="19" fill="#5080c0" opacity="0.6"/>
-  <text x="200" y="268" text-anchor="middle" font-size="8" fill="#555">ۺ MS F � 
-eM</text>
-  <text x="200" y="290" text-anchor="middle" font-size="8" fill="#888">DA4teN � b4�\</text>
-</svg>

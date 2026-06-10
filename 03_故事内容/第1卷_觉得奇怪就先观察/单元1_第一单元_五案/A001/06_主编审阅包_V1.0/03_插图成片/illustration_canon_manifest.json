@@ -1,0 +1,62 @@
+{
+  "case": "A001",
+  "updated": "2026-06-10",
+  "frames": {
+    "DA1": {
+      "file": "A001_DA1_PRODUCT_StyleB_V3.9_v1.3.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "agent",
+      "date": "2026-06-10"
+    },
+    "DA2": {
+      "file": "A001_DA2_PRODUCT_StyleB_V3.9_v1.3.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "agent",
+      "date": "2026-06-10"
+    },
+    "DA3": {
+      "file": "A001_DA3_PRODUCT_StyleB_V3.9_v1.2.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "agent",
+      "date": "2026-06-10"
+    },
+    "DA4": {
+      "file": "A001_DA4_PRODUCT_StyleB_V3.9_v1.1.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "visual-auditor",
+      "date": "2026-06-10"
+    },
+    "DA5": {
+      "file": "A001_DA5_PRODUCT_StyleB_V3.9_v1.2.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "agent",
+      "date": "2026-06-10"
+    },
+    "TAIL": {
+      "file": "A001_TAIL_PRODUCT_StyleB_V3.9_v1.2.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "agent",
+      "date": "2026-06-10"
+    },
+    "DB1": {
+      "file": "A001_DB1_PRODUCT_StyleB_V3.9_v1.0.png",
+      "verdict": "PASS",
+      "canonical": true,
+      "reasons": [],
+      "auditor": "visual-auditor",
+      "date": "2026-06-10"
+    }
+  }
+}

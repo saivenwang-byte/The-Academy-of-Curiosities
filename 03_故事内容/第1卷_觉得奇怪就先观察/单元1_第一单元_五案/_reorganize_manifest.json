@@ -1,0 +1,17 @@
+{
+  "date": "2026-06-09",
+  "active_unit": "A001",
+  "canonical": {
+    "cn": "V3.1",
+    "jp": "V3.8",
+    "illustration": "V3.6"
+  },
+  "cases": [
+    "A001",
+    "A002",
+    "A003",
+    "A004",
+    "A005"
+  ],
+  "log_count": 314
+}

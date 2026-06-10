@@ -1,0 +1,88 @@
+# Vol1 Unit1 · 全自动阶段累进流水线 · manifest
+# SSOT: V2迁移/89_单元1全自动阶段累进工作流_V0.1.md
+
+pipeline_id: vol1_unit1_auto
+version: "1.0"
+authorization: .cursor/authorization/vol1_full_auto.json
+
+defaults:
+  cn_version: V3.1
+  cases: [A001, A002, A003, A004, A005]
+
+phases:
+  - id: desk
+    name: TANAKA-DESK 复合体
+    tool: jp_tanaka_desk/run_desk.py
+    args: ["--all", "--cn-version", "{cn}", "--jp-in-version", "{jp_in}", "--jp-out-version", "{jp_out}"]
+    jp_in: V3.3
+    jp_out: V3.4
+    skip_if_exists: 正文/V3.4/03_版本意见/00_TANAKA-DESK_复合体报告_A001.md
+
+  - id: kids
+    name: KIDS-SIMPLIFY
+    tool: jp_kids_simplify_pass.py
+    args: ["--all", "--cn-version", "{cn}", "--jp-in-version", "{jp_in}", "--jp-out-version", "{jp_out}"]
+    jp_in: V3.4
+    jp_out: V3.5
+    skip_if_exists: 正文/V3.5/02_日本語
+
+  - id: score
+    name: 专家组读者群模拟打分
+    handler: phase_score
+    jp_version: V3.5
+    skip_if_exists: V2迁移/scores_v35_jp.json
+
+  - id: v36_body
+    name: V3.6 正文 bump（试读+分镜锚）
+    handler: phase_v36_body
+    jp_in: V3.5
+    jp_out: V3.6
+    skip_if_exists: 正文/V3.6/02_日本語
+
+  - id: shot_maps
+    name: JP 锚定分镜头 + 画师 prompt
+    handler: phase_shot_maps
+    body_version: V3.6
+    skip_if_exists: 正文/V3.6/04_分镜插画/A001/03_分镜头_插页地图_V3.6_JP.md
+
+  - id: bind_illustrations
+    name: 插图绑定 V3.6
+    handler: phase_bind_illustrations
+    skip_if_exists: 插图/绑定正文_V3.6/A001/00_插图清单_V3.6.md
+
+  - id: build_pdf
+    name: 单元1 五案试读 PDF
+    handler: phase_build_pdf
+    skip_if_exists: 薄样张_试读/Unit1_V3.6_五案试读/PDF/学堂奇事録_Vol1_单元1_试读_V3.6_日本語_軽量版.pdf
+
+  - id: batch2_compress
+    name: Batch2 插图压缩
+    tool: compress_unit1_illustrations.py
+    args: []
+    skip_if_exists: 插图/绑定正文_V3.6_试读压缩/00_压缩清单.md
+
+  - id: ill_pass
+    name: 插画用户验收 V3.6.3
+    handler: phase_ill_pass
+    skip_if_exists: V2迁移/93_插画验收_启动V3.7_V0.1.md
+
+  - id: shinpan_fix
+    name: 审判腔收尾 V3.7
+    tool: jp_shinpan_fix_pass.py
+    args: ["--all", "--cn-version", "{cn}", "--jp-in-version", "V3.6", "--jp-out-version", "V3.7"]
+    jp_in: V3.6
+    jp_out: V3.7
+    skip_if_exists: 正文/V3.7/02_日本語
+
+  - id: desk_v37
+    name: TANAKA-DESK 复跑 V3.8
+    tool: jp_tanaka_desk/run_desk.py
+    args: ["--all", "--cn-version", "{cn}", "--jp-in-version", "V3.7", "--jp-out-version", "V3.8"]
+    jp_in: V3.7
+    jp_out: V3.8
+    skip_if_exists: 正文/V3.8/03_版本意见/00_TANAKA-DESK_复合体报告_A001.md
+
+  - id: score_v38
+    name: V3.8 模拟打分
+    handler: phase_score_v38
+    skip_if_exists: V2迁移/scores_v38_jp.json

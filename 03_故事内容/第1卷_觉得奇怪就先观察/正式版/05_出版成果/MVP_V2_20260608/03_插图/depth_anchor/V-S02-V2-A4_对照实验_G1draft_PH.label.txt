@@ -1,4 +1,0 @@
-G1 PLACEHOLDER
-A002 DA4
-对照实验 · SC-07
-Status: awaiting G1draft production

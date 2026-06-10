@@ -25,6 +25,7 @@ python scripts/body_lint.py --vol 2
 | `run_tanaka_calibration.py` | 田中 HTML · CALIBRATION_DB 五维批量扫描 |
 | `canon_sweep_4-2.py` | 4年2組 漂移扫描 → `docs/canon_remap/4年2組_漂移扫描清单.md` |
 | `audit_phase_package.py` | 阶段交付包门禁 · P0–P3（薄样张/正式版等） |
+| `vol1_ssot_gate.py` | Vol1 正本路径门禁 · A001–A005 SSOT + shim 检查 |
 | `build_ledger_v02.py` | 200 篇故事资产台账 v0.2 生成 |
 | `build_ledger_v03.py` | 200 篇故事资产台账 v0.3 生成 |
 

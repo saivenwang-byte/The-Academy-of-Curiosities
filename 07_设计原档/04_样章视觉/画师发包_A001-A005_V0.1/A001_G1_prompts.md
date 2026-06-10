@@ -14,8 +14,8 @@
 
 ```
 Soft cinematic anime children's mystery illustration ages 10-12,
-clear light-manga ink warm brown outline #2A1810 NOT pure black,
-restrained watercolor paper texture and gentle wash NOT flat vector NOT 3D,
+alcohol marker pen flat color Copic-like clean warm brown outline #2A1810 NOT heavy watercolor wash,
+light paper grain only restrained marker blending at edges NOT wet-on-wet muddy grain,
 6-7 head pre-teen proportions NOT chibi NOT SD NOT instructional infographic,
 warm golden April cinematic side light through aluminum school windows,
 Nagoya public elementary RC school observation club daily life NOT detective agency,
@@ -37,6 +37,8 @@ NOT speech bubbles with readable text, NOT caption overlay bars, NOT UI HUD boxe
 NOT manga panel borders with text, NOT phone screen with legible text,
 NOT Japanese rendered text in image, NOT watermark subtitle,
 Yamamoto Risa, Nakatani camera, Lu Kei sister, generic anime classroom,
+Kasai Senzo, Lu Misaki mother, Lu Naoto father, adult parents in classroom,
+elderly community member in school interior, film crew, video camera filming classmates,
 villain spotlight on Mizuno, wrong character names, 4年2組 door plate, 6年2組 door plate
 ```
 

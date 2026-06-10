@@ -5,7 +5,7 @@
 汇总：DESK_PASS
 
 HERMES-RONRI: PASS — FC 叙事关键词抽检
-HERMES-BUNPO: CONDITIONAL — 长句段落 (173字): 合同教室（がっどうきょうしつ）（ごうどうきょうしつ）（ごうどうきょうしつ）（ごう…; 长句段落 (124字): 志郎（しろう）がテープで部章を補強している。加藤慧美（かとう けいみ）が透明膜を…; 长句段落 (130字): 陸珣はすぐ答えない。機材ワゴンを見る。屋根の透明な展示膜が風で一角めくれる。一番…
+HERMES-BUNPO: CONDITIONAL — 长句段落 (124字): 志郎（しろう）がテープで部章を補強している。加藤慧美（かとう けいみ）が透明膜を…
 HERMES-GOUI: PASS — J10 词表扫描 OK
 HERMES-DOKUSHA: PASS — ふりがな A类
 EDITOR-SHO: PASS — 出版可读性 OK

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 3200" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#b91c1c"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font-size: 28px; font-weight: 700; fill: #0f172a; }
+      .subtitle { font-size: 14px; fill: #475569; }
+      .phase-id { font-size: 13px; font-weight: 700; fill: #fff; }
+      .phase-name { font-size: 16px; font-weight: 700; fill: #0f172a; }
+      .meta { font-size: 12px; fill: #475569; }
+      .small { font-size: 11px; fill: #64748b; }
+      .pass { font-size: 12px; font-weight: 700; fill: #15803d; }
+      .ret { font-size: 12px; font-weight: 700; fill: #b91c1c; }
+      .legend-t { font-size: 13px; fill: #334155; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="3200" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="640" y="48" text-anchor="middle" class="title">《学堂趣事录》Vol1 · 零 → 试读小样 · P0–P9 流程示意图</text>
+  <text x="640" y="78" text-anchor="middle" class="subtitle">标准已在 11_规则与规范 · 每步：执行 → 对照验收表 → PASS 放行 | RETURN 退回（48h 内，禁止 pending 卡线）</text>
+  <text x="640" y="102" text-anchor="middle" class="subtitle">2026-06-11 · 待确认后写入 MD · SSOT：00_全流程标准作业手册_V1.0.md</text>
+
+  <!-- Legend -->
+  <g transform="translate(80,120)">
+    <rect x="0" y="0" width="1120" height="88" rx="12" fill="#fff" stroke="#cbd5e1" filter="url(#shadow)"/>
+    <text x="24" y="28" class="legend-t">图例</text>
+    <rect x="24" y="40" width="18" height="18" rx="4" fill="#6366f1"/><text x="50" y="54" class="small">立项 / 框架 P0–P1</text>
+    <rect x="180" y="40" width="18" height="18" rx="4" fill="#0ea5e9"/><text x="206" y="54" class="small">正文 P2–P3</text>
+    <rect x="320" y="40" width="18" height="18" rx="4" fill="#22c55e"/><text x="346" y="54" class="small">produce 出图 P4–P6</text>
+    <rect x="500" y="40" width="18" height="18" rx="4" fill="#f97316"/><text x="526" y="54" class="small">deliver 试读 P7 ★</text>
+    <rect x="680" y="40" width="18" height="18" rx="4" fill="#a855f7"/><text x="706" y="54" class="small">读者 / 正式 P8–P9</text>
+    <line x1="860" y1="49" x2="890" y2="49" stroke="#15803d" stroke-width="2.5" marker-end="url(#arrow-green)"/><text x="898" y="54" class="small">PASS 下一阶</text>
+    <line x1="1020" y1="49" x2="1050" y2="49" stroke="#b91c1c" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow-red)"/><text x="1058" y="54" class="small">RETURN</text>
+  </g>
+
+  <!-- Swimlane labels -->
+  <g transform="translate(40,240)">
+    <text x="0" y="0" class="small" transform="rotate(-90 0,0)" text-anchor="middle">主流程 ↓</text>
+  </g>
+
+  <!-- Main column x=460, box width 360 -->
+  <!-- P0 -->
+  <g transform="translate(460,240)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="108" rx="14" fill="#fff" stroke="#6366f1" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="108" rx="14" fill="#6366f1"/>
+    <rect x="14" y="0" width="42" height="108" fill="#6366f1"/>
+    <text x="28" y="58" text-anchor="middle" class="phase-id">P0</text>
+    <text x="76" y="32" class="phase-name">IP / 治理立项</text>
+    <text x="76" y="54" class="meta">工位：IP · 主编 · 正典治理</text>
+    <text x="76" y="72" class="meta">交付：11_规则与规范 · 目录架构 · 门禁</text>
+    <text x="76" y="90" class="meta">验收：完整产品阶段交付包 §2</text>
+  </g>
+  <line x1="640" y1="348" x2="640" y2="378" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="368" class="pass">PASS</text>
+
+  <!-- P1 -->
+  <g transform="translate(460,378)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="108" rx="14" fill="#fff" stroke="#6366f1" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="108" rx="14" fill="#6366f1"/>
+    <text x="28" y="58" text-anchor="middle" class="phase-id">P1</text>
+    <text x="76" y="32" class="phase-name">案卡 · 单元框架</text>
+    <text x="76" y="54" class="meta">工位：系列主编 · Case Card</text>
+    <text x="76" y="72" class="meta">交付：五案框架总表 · A00X/00_正典指针</text>
+    <text x="76" y="90" class="meta">验收：正本登记册 · 测试启动单</text>
+  </g>
+  <line x1="640" y1="486" x2="640" y2="516" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="506" class="pass">PASS</text>
+  <text x="830" y="440" class="ret">RETURN → P0 补治理</text>
+  <path d="M 820 448 L 780 470" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- P2 -->
+  <g transform="translate(460,516)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="108" rx="14" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="108" rx="14" fill="#0ea5e9"/>
+    <text x="28" y="58" text-anchor="middle" class="phase-id">P2</text>
+    <text x="76" y="32" class="phase-name">编辑部 · CN 定稿</text>
+    <text x="76" y="54" class="meta">工位：编辑部 · Hybrid Voice</text>
+    <text x="76" y="72" class="meta">交付：01_正文/*_HybridVoice_V3.x.txt</text>
+    <text x="76" y="90" class="meta">验收：文学标准 · 声线清单 · ssot 7/7</text>
+  </g>
+  <line x1="640" y1="624" x2="640" y2="654" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="644" class="pass">PASS</text>
+  <text x="830" y="578" class="ret">RETURN → 编辑部改稿</text>
+  <path d="M 820 586 L 780 560" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- P3 -->
+  <g transform="translate(460,654)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="120" rx="14" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="120" rx="14" fill="#0ea5e9"/>
+    <text x="28" y="64" text-anchor="middle" class="phase-id">P3</text>
+    <text x="76" y="32" class="phase-name">翻译部 · JP + M0</text>
+    <text x="76" y="54" class="meta">工位：HERMES 链 → TANAKA 汇总</text>
+    <text x="76" y="72" class="meta">交付：*_日本語.txt · M0-A 脚本 · M0-B 签字</text>
+    <text x="76" y="90" class="meta">M0-A PASS → 可进 P4（并行）</text>
+    <text x="76" y="108" class="meta">M0-B → P7 deliver 前必过（不挡出图）</text>
+  </g>
+  <!-- fork note P3 to P4 -->
+  <line x1="640" y1="774" x2="640" y2="804" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="794" class="pass">M0-A PASS</text>
+  <text x="830" y="716" class="ret">RETURN → 翻译部</text>
+  <path d="M 820 724 L 780 700" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- produce zone band -->
+  <rect x="420" y="812" width="440" height="620" rx="16" fill="#ecfdf5" stroke="#22c55e" stroke-width="2" stroke-dasharray="8 4" opacity="0.55"/>
+  <text x="640" y="836" text-anchor="middle" class="legend-t" fill="#15803d">produce 区 · workflow_preflight --mode produce</text>
+
+  <!-- P4 -->
+  <g transform="translate(460,848)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="120" rx="14" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="120" rx="14" fill="#22c55e"/>
+    <text x="28" y="64" text-anchor="middle" class="phase-id">P4</text>
+    <text x="76" y="32" class="phase-name">编+导 · 分镜文字 brief</text>
+    <text x="76" y="54" class="meta">工位：编辑部（导演组）</text>
+    <text x="76" y="72" class="meta">交付：00_插画师分镜文字稿 · G-CAST</text>
+    <text x="76" y="90" class="meta">裁决：editorial_verdict: PASS</text>
+    <text x="76" y="108" class="meta">验收：分镜总则 · 深度标准 · 插页地图</text>
+  </g>
+  <line x1="640" y1="968" x2="640" y2="998" stroke="#15803d" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="652" y="988" class="pass">PASS</text>
+  <text x="830" y="910" class="ret">RETURN → 编+导改 brief</text>
+  <path d="M 820 918 L 780 900" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- P5 -->
+  <g transform="translate(460,998)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="132" rx="14" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="132" rx="14" fill="#22c55e"/>
+    <text x="28" y="70" text-anchor="middle" class="phase-id">P5</text>
+    <text x="76" y="32" class="phase-name">译部审核 + 设计部出图</text>
+    <text x="76" y="54" class="meta">① 译部：translation_verdict PASS/RETURN</text>
+    <text x="76" y="72" class="meta">② 设计部：Style DEMO → prompt → 成图</text>
+    <text x="76" y="90" class="meta">交付：03_插画/ · prompts/</text>
+    <text x="76" y="108" class="meta">验收：Style B LOCK · g_cast_prompt_gate</text>
+    <text x="76" y="126" class="meta">RETURN 仅停该案/该镜 · 其他案继续</text>
+  </g>
+  <line x1="640" y1="1130" x2="640" y2="1160" stroke="#15803d" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="652" y="1150" class="pass">PASS</text>
+  <text x="830" y="1060" class="ret">RETURN → 译部或编+导</text>
+  <path d="M 820 1068 L 780 1040" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- P6 -->
+  <g transform="translate(460,1160)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="120" rx="14" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="120" rx="14" fill="#22c55e"/>
+    <text x="28" y="64" text-anchor="middle" class="phase-id">P6</text>
+    <text x="76" y="32" class="phase-name">成图验收</text>
+    <text x="76" y="54" class="meta">工位：visual-auditor · 编+译双审</text>
+    <text x="76" y="72" class="meta">验收：G-CAST COUNT_PASS · M4 画风 · M0-C</text>
+    <text x="76" y="90" class="meta">交付：PRODUCT 成图 · 导演表签字</text>
+    <text x="76" y="108" class="meta">深度 D1–D6 · 连续性表</text>
+  </g>
+  <line x1="640" y1="1280" x2="640" y2="1320" stroke="#15803d" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="652" y="1304" class="pass">COUNT_PASS</text>
+  <text x="830" y="1222" class="ret">RETURN → 设计部重绘</text>
+  <path d="M 820 1230 L 780 1200" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- deliver zone -->
+  <rect x="420" y="1336" width="440" height="200" rx="16" fill="#fff7ed" stroke="#f97316" stroke-width="2" stroke-dasharray="8 4" opacity="0.65"/>
+  <text x="640" y="1360" text-anchor="middle" class="legend-t" fill="#c2410c">deliver 区 · --mode deliver · 试读小样终点 ★</text>
+
+  <!-- P7 -->
+  <g transform="translate(460,1372)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="140" rx="14" fill="#fff" stroke="#f97316" stroke-width="3"/>
+    <rect x="0" y="0" width="56" height="140" rx="14" fill="#f97316"/>
+    <text x="28" y="74" text-anchor="middle" class="phase-id">P7</text>
+    <text x="76" y="32" class="phase-name">试读 PDF 交付 ★</text>
+    <text x="76" y="54" class="meta">前置：M0-B + G-AB-JP + COUNT_PASS</text>
+    <text x="76" y="72" class="meta">交付：07_试读交付_V1.0/ · 04_样张 PDF</text>
+    <text x="76" y="90" class="meta">验收：桥梁书出厂标准 · deliver exit 0</text>
+    <text x="76" y="108" class="meta">脚本：build_*_trial_deliverable.py</text>
+    <text x="76" y="128" class="meta" fill="#c2410c">★ 试读小样完成线</text>
+  </g>
+  <line x1="640" y1="1512" x2="640" y2="1552" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="1536" class="pass">PASS</text>
+  <text x="830" y="1434" class="ret">RETURN → 译部(M0/G-AB) 或 设计部</text>
+  <path d="M 820 1442 L 780 1410" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrow-red)"/>
+
+  <!-- P8 -->
+  <g transform="translate(460,1552)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="108" rx="14" fill="#fff" stroke="#a855f7" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="108" rx="14" fill="#a855f7"/>
+    <text x="28" y="58" text-anchor="middle" class="phase-id">P8</text>
+    <text x="76" y="32" class="phase-name">读者试读 · G-AB-FULL / E20</text>
+    <text x="76" y="54" class="meta">工位：主编 · 读者运营</text>
+    <text x="76" y="72" class="meta">验收：AB 盲测 · 真实孩子试读</text>
+    <text x="76" y="90" class="meta">FAIL → 分轨 RETURN（文/图/画风）</text>
+  </g>
+  <line x1="640" y1="1660" x2="640" y2="1690" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="652" y="1680" class="pass">PASS</text>
+
+  <!-- P9 -->
+  <g transform="translate(460,1690)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="108" rx="14" fill="#fff" stroke="#a855f7" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="108" rx="14" fill="#a855f7"/>
+    <text x="28" y="58" text-anchor="middle" class="phase-id">P9</text>
+    <text x="76" y="32" class="phase-name">排版 · 正式版</text>
+    <text x="76" y="54" class="meta">工位：排版 · 出版社</text>
+    <text x="76" y="72" class="meta">交付：05_排版/ · 正式版通告</text>
+    <text x="76" y="90" class="meta">验收：E22 排版规范 · Reader Master</text>
+  </g>
+
+  <!-- END -->
+  <circle cx="640" cy="1840" r="28" fill="#0f172a"/>
+  <text x="640" y="1846" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">END</text>
+
+  <!-- Side panel: A001 critical path -->
+  <g transform="translate(80,848)">
+    <rect x="0" y="0" width="320" height="520" rx="12" fill="#fff" stroke="#94a3b8" filter="url(#shadow)"/>
+    <text x="16" y="28" class="legend-t">A001 关键路径（10 步）</text>
+    <text x="16" y="52" class="small">1. CN V3.1 · ssot 7/7</text>
+    <text x="16" y="70" class="small">2. JP V3.9 · M0-A lint</text>
+    <text x="16" y="88" class="small">3. 分镜文字 · 编+导 PASS</text>
+    <text x="16" y="106" class="small">4. 译部 translation PASS</text>
+    <text x="16" y="124" class="small">5. prompt · G-CAST gate 7/7</text>
+    <text x="16" y="142" class="small">6. Style B 成图 · COUNT_PASS</text>
+    <text x="16" y="160" class="small">7. M0-B 田中签</text>
+    <text x="16" y="178" class="small">8. G-AB-JP PASS</text>
+    <text x="16" y="196" class="small">9. deliver preflight exit 0</text>
+    <text x="16" y="214" class="small">10. 07_试读交付_V1.0/</text>
+    <line x1="16" y1="232" x2="304" y2="232" stroke="#e2e8f0"/>
+    <text x="16" y="256" class="legend-t">一案一时</text>
+    <text x="16" y="278" class="small">ACTIVE 仅一个 A00X</text>
+    <text x="16" y="296" class="small">A001 样张 PASS → A002 …</text>
+    <line x1="16" y1="314" x2="304" y2="314" stroke="#e2e8f0"/>
+    <text x="16" y="338" class="legend-t">废止（勿再用）</text>
+    <text x="16" y="360" class="small">✗ M0-B 挡出图</text>
+    <text x="16" y="378" class="small">✗ G-AB 挡 G-BRIEF</text>
+    <text x="16" y="396" class="small">✗ pending 空签卡线</text>
+    <line x1="16" y1="414" x2="304" y2="414" stroke="#e2e8f0"/>
+    <text x="16" y="438" class="legend-t">打开方式</text>
+    <text x="16" y="460" class="small">浏览器 / VS Code 预览本 SVG</text>
+    <text x="16" y="478" class="small">确认后 → 写入 MD 嵌入</text>
+    <text x="16" y="502" class="small">路径：11_规则与规范/diagrams/</text>
+  </g>
+
+  <!-- Side panel: workstation -->
+  <g transform="translate(880,848)">
+    <rect x="0" y="0" width="320" height="400" rx="12" fill="#fff" stroke="#94a3b8" filter="url(#shadow)"/>
+    <text x="16" y="28" class="legend-t">工位主责速查</text>
+    <text x="16" y="56" class="meta">P0–P1 · IP / 主编</text>
+    <text x="16" y="78" class="meta">P2 · 编辑部</text>
+    <text x="16" y="100" class="meta">P3 · 翻译部（107 专家组）</text>
+    <text x="16" y="122" class="meta">P4 · 编+导（导演组+编辑部）</text>
+    <text x="16" y="144" class="meta">P5 · 译部审核 → 设计部出图</text>
+    <text x="16" y="166" class="meta">P6 · 设计部 + visual-auditor</text>
+    <text x="16" y="188" class="meta">P7 · Agent/工具 + 主编放行</text>
+    <text x="16" y="210" class="meta">P8 · 读者运营 + 主编</text>
+    <text x="16" y="232" class="meta">P9 · 排版</text>
+    <line x1="16" y1="250" x2="304" y2="250" stroke="#e2e8f0"/>
+    <text x="16" y="274" class="legend-t">专家组（执表不立法）</text>
+    <text x="16" y="296" class="small">HERMES-GOUI/BUNPO/DOKUSHA</text>
+    <text x="16" y="314" class="small">HERMES-RONRI · SCI-RIKA</text>
+    <text x="16" y="332" class="small">TANAKA · EDITOR-SHO</text>
+    <text x="16" y="350" class="small">E06-S · G-CAST 106</text>
+    <text x="16" y="368" class="small">academy-visual-auditor</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="640" y="1900" text-anchor="middle" class="subtitle">确认项：阶段划分 · 工位 · PASS/RETURN · produce/deliver 分界 · P7 试读终点 — 无误后回复「确认」生成 MD 版</text>
+</svg>

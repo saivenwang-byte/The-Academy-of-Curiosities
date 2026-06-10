@@ -1,4 +1,0 @@
-G1 PLACEHOLDER
-A003 DA4
-远标题连线 · SC-04
-Status: awaiting G1draft production

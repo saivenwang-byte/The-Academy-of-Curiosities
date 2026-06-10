@@ -1,0 +1,21 @@
+{
+  "workflow": "vol1_unit1_auto_pipeline",
+  "authorized": true,
+  "granted_by": "IP",
+  "granted_at": "2026-06-09",
+  "scope": [
+    "version_bump_minor",
+    "tanaka_desk_auto",
+    "kids_simplify_auto",
+    "expert_reader_score_simulation",
+    "shot_map_generation",
+    "illustration_bind_g1draft",
+    "trial_pdf_build"
+  ],
+  "gates_override": {
+    "G1DRAFT_for_trial_pdf": true,
+    "skip_human_confirm": true,
+    "agent_max_verdict": "DESK_PASS_PENDING_HUMAN"
+  },
+  "note": "全自动阶段累进 · 不替代真人田中 G-JP LOCK · 不替代 E20 真人试读"
+}

@@ -1,0 +1,116 @@
+# TANAKA-DESK · 助手复合体编制表
+# SSOT: V2迁移/86_田中助手复合体_JP翻译工作流_V0.2.md
+
+desk_id: TANAKA-DESK
+version: "1.0"
+orchestrator: TANAKA
+human_sign_required_for: G-JP_LOCK
+
+assistants:
+  - id: HERMES-RONRI
+    name: 論理席
+    expert_code: E05
+    distill_refs:
+      - "13_真实世界人物专家蒸馏库/D01 Hayamine"
+      - "13_真实世界人物专家蒸馏库/D02 Sobol"
+    checks:
+      - "公平线索在日文版仍可见（C03b）"
+      - "揭晓前无新增关键信息"
+      - "FC-0~4 叙事未剧透"
+    output: "ronri_report"
+
+  - id: HERMES-BUNPO
+    name: 文体席
+    expert_code: E04
+    distill_refs:
+      - "13_/asaba あさばみゆき"
+      - "skills/academy-jp-voice-editor/references/jp-elementary-prose.md"
+    checks:
+      - "L09 非翻译腔 · 短句留白"
+      - "叙事均句 ≤40 假名（抽检）"
+      - "比喩 ≤2/场景"
+    kids_simplify_ip:
+      - "叙事均句 ≤40 假名 · 120+ 字段落须拆（doc81 3.5）"
+      - "短段落 · 一句一意 · 连接词また/しかし 连续 ≤2"
+      - "去直译腔 · 中文式——→……/。 · 半角·→・"
+      - "同辈对话 です・ます · 禁敬语/论文体/审判腔"
+      - "娱乐性：禁重复修辞问 · 研讨会语气（EDITOR-SHO 联动）"
+    output: "bunpo_report"
+    tool: "jp_kids_simplify_pass.apply + scan_bunpo"
+
+  - id: HERMES-GOUI
+    name: 語彙席
+    expert_code: E04
+    distill_refs:
+      - "00_项目总览/日文正文文字与语法标准_标日对齐_V1.0.md J10"
+      - "doc81 真人编辑 §4 语汇表"
+    checks:
+      - "J10a-J10d"
+      - "J1 直译腔 0"
+      - "半角·/中文——/生产词"
+    output: "goui_report"
+    tool: "jp_v32_expert_polish.apply + jp_tanaka_j10.j10_polish"
+
+  - id: HERMES-DOKUSHA
+    name: 読者席
+    expert_code: E03
+    distill_refs:
+      - "10_/B2 儿童阅读"
+      - "00_项目总览/日文读音标注策略_V1.0.md"
+    checks:
+      - "L10 汉字/ルビ A类首次"
+      - "L11 拟声拟态按需"
+      - "10-12 岁可独立读（非论文体）"
+    kids_simplify_ip:
+      - "主读者 小五小六（10–12）· J10 标日对齐 · 非 6–8 岁幼幼体"
+      - "ふりがな A 类首次 · 非全书 ruby · 见日文读音标注策略"
+      - "科学词保留 JP_PROSE_LEXICON（結露/熱伝導/露点 等不幼化）"
+      - "同辈 です・ます · 禁 敬语体/であることから 论文连写"
+      - "儿童冒险感 > 研讨会/确认栏 script 语气"
+    output: "dokusha_report"
+    tool: "jp_kids_simplify_pass.scan_dokusha"
+
+  - id: EDITOR-SHO
+    name: 出版编辑席
+    expert_code: E16
+    human_proxy: "doc81 真人编辑评审（2026-06-09）"
+    distill_refs:
+      - "讲谈社青鸟文库六年级推荐口径"
+      - "V2迁移/81_真人编辑评审_专家组读者群合议"
+    checks:
+      - "娱乐性/审判腔/重复追问"
+      - "卷内信息密度"
+      - "儿童冒险感 vs 研讨会语气"
+    output: "editor_report"
+
+  - id: SCI-RIKA
+    name: 理科术语席
+    expert_code: SCI
+    checks:
+      - "P06 实验句与 CN 机制一致"
+      - "小学理科用语（結露/振动/パノラマ）"
+      - "science P0 未签 → CONDITIONAL only"
+    output: "sci_report"
+
+  - id: TANAKA
+    name: 主审·汇总
+    expert_code: E07
+    role: synthesizer
+    checks:
+      - "五维文化全文（japan_campus_consultant 五维）"
+      - "合并各席冲突 · 优先级：文化>公平>文体>娱乐"
+      - "产出 文化校准报告_日本語"
+    output: "tanaka_synthesis"
+
+pipeline_order:
+  - HERMES-RONRI
+  - HERMES-BUNPO
+  - HERMES-GOUI      # 可改稿
+  - HERMES-DOKUSHA   # 可改稿（ふりがな）
+  - EDITOR-SHO       # 建议项
+  - SCI-RIKA         # 术语锁定
+  - TANAKA           # 汇总 · 不改正文 unless P0
+
+version_bump_rule:
+  minor: "+0.1 per desk pass on same CN"
+  major: "+1.0 if CN structure changes"

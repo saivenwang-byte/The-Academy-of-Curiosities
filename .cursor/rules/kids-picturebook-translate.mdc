@@ -1,0 +1,37 @@
+---
+description: 儿童日语绘本翻译工具链 — 在 tools/儿童日语绘本翻译 或绘本 output 目录工作时启用
+globs:
+  - tools/儿童日语绘本翻译/**
+  - "**/儿童日语绘本翻译/**"
+alwaysApply: false
+---
+
+# 儿童日语绘本翻译
+
+在本规则匹配的路径下工作时，优先使用全局技能链，而非通用翻译。
+
+## 技能顺序
+
+图片/截图 → `vision-understand-kids` → `image-ocr-jp` → `japanese-kids-translate` → 可选 `bilingual-pdf-maker`
+
+视频 → ffmpeg 抽帧 → `video-storyboard-analyzer`
+
+Windows 截图粘贴 → `screenshot-to-cursor`
+
+## 输出标签（强制）
+
+- 【画面解读（儿童版）】— 最多 2 句简单中文，无剧情分析
+- 【日语原文】— OCR  only
+- 【儿童日语（汉字+假名）】— ≤8 词/句，ですます，全汉字振假名
+- 【中文对照】
+
+## 配置与文档
+
+- 工具包：`tools/儿童日语绘本翻译/README.md`
+- 三步场景：`tools/儿童日语绘本翻译/workflow.md`
+- 项目根规则模板：`tools/儿童日语绘本翻译/.cursorrules`（复制到独立绘本项目）
+
+## 边界
+
+- 不修改《学堂趣事录》故事正稿、Case、插图绑定；本规则仅服务通用绘本翻译工具。
+- DeepSeek API / Cursor Nightly 由用户自行启用。

@@ -1,47 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" font-family="Yu Gothic, Meiryo, sans-serif">
-  <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#555"/>
-    </marker>
-  </defs>
-  <rect width="520" height="420" fill="#faf7f2"/>
-  <text x="260" y="24" text-anchor="middle" font-size="14" font-weight="bold">A001 �� � sb� � :
-</text>
-  <!-- ;��� -->
-  <rect x="160" y="40" width="200" height="50" fill="#e8e0d4" stroke="#8a6d4b" stroke-width="1.5"/>
-  <text x="260" y="70" text-anchor="middle" font-size="11">;��� [�]</text>
-  <text x="260" y="38" text-anchor="middle" font-size="9" fill="#666">N �</text>
-  <!-- p�F -->
-  <rect x="60" y="100" width="400" height="280" fill="#f5f0e8" stroke="#8a6d4b" stroke-width="2"/>
-  <!-- vent -->
-  <rect x="200" y="115" width="120" height="18" fill="#c5d5e8" stroke="#4a6a8a"/>
-  <text x="260" y="128" text-anchor="middle" font-size="8">vent ��</text>
-  <!-- �7 -->
-  <rect x="120" y="140" width="50" height="35" fill="#d4e8f5" stroke="#4a6a8a"/>
-  <rect x="180" y="140" width="50" height="35" fill="#d4e8f5" stroke="#4a6a8a"/>
-  <rect x="240" y="140" width="50" height="35" fill="#d4e8f5" stroke="#4a6a8a"/>
-  <text x="195" y="162" text-anchor="middle" font-size="7" fill="#555">�</text>
-  <!-- w� -->
-  <rect x="185" y="185" width="150" height="70" fill="#fffef8" stroke="#c44" stroke-width="2"/>
-  <text x="260" y="215" text-anchor="middle" font-size="9">f!J�W��߯��</text>
-  <text x="260" y="232" text-anchor="middle" font-size="8" fill="#c44">ع=vent�</text>
-  <text x="260" y="248" text-anchor="middle" font-size="8" fill="#666">DA1DA4 ;:</text>
-  <!-- pS� -->
-  <text x="260" y="290" text-anchor="middle" font-size="10" fill="#555">��pS WH2.4m</text>
-  <line x1="80" y1="300" x2="440" y2="300" stroke="#bbb" stroke-dasharray="4,4"/>
-  <!-- �� -->
-  <rect x="340" y="320" width="100" height="50" fill="#fffef8" stroke="#8a6d4b" stroke-width="1.5"/>
-  <text x="390" y="340" text-anchor="middle" font-size="8">��</text>
-  <text x="390" y="355" text-anchor="middle" font-size="7" fill="#666">	�+,4z</text>
-  <text x="390" y="368" text-anchor="middle" font-size="7" fill="#666">DC1</text>
-  <!-- � -->
-  <text x="70" y="200" font-size="10" fill="#555"> �</text>
-  <text x="430" y="200" font-size="10" fill="#555">� </text>
-  <text x="430" y="215" font-size="8" fill="#666">ı</text>
-  <!-- ݻ� -->
-  <line x1="335" y1="250" x2="335" y2="320" stroke="#8a6d4b" stroke-width="1" marker-end="url(#arrow)"/>
-  <text x="350" y="290" font-size="8" fill="#8a6d4b">e3m</text>
-  <!-- :� -->
-  <text x="70" y="400" font-size="8" fill="#888">G1 � V0.2-A � P0-05 LOCK</text>
-</svg>

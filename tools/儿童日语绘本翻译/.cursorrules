@@ -1,0 +1,57 @@
+# 儿童日语绘本翻译 · 项目规则
+# 用法：复制本文件到绘本项目根目录为 .cursorrules，或在 Cursor 中 @ 引用本目录。
+
+## 项目类型
+
+这是**日语儿童绘本翻译**工作区，不是通用编程项目。优先使用绘本翻译技能链，而非随意通用翻译。
+
+## 必用技能（全局 ~/.cursor/skills/）
+
+处理图片、截图、视频帧或「翻译绘本」时，按序调用：
+
+1. vision-understand-kids — 【画面解读（儿童版）】，最多 2 句
+2. image-ocr-jp — 【日语原文】，不翻译
+3. japanese-kids-translate — 【原文】【儿童日语（汉字+假名）】【中文对照】
+4. bilingual-pdf-maker — 组装 output/book_bilingual.md / PDF
+5. screenshot-to-cursor — Windows Win+Shift+S 粘贴流程
+6. video-storyboard-analyzer — ffmpeg 抽帧 + 分镜表
+
+## 翻译风格（强制）
+
+- 每句 ≤ 8 词；です・ます体；可爱绘本语气
+- 所有汉字带振假名：漢字（かんじ）
+- 禁止：新闻体、动漫俚语、过度意译、plot 分析式「画面解读」
+
+## 输出格式（强制）
+
+必须使用标签：
+【画面解读（儿童版）】
+【日语原文】
+【儿童日语（汉字+假名）】
+【中文对照】
+
+## 模型
+
+- OCR / 读图：DeepSeek-VL 或其他多模态模型（用户自行在 Cursor Settings 配置 API）
+- 纯文本翻译：可用同一对话中的文本模型，但须遵守 japanese-kids-translate 规则
+
+## 文件约定
+
+- 图片：images/page_NN.png
+- 双语稿：output/book_bilingual.md
+- 视频分镜：output/storyboard.md，帧在 output/frames/
+
+## 禁止
+
+- 不要修改与本绘本无关的仓库文件（若在 Academy  monorepo 内，仅改 tools/儿童日语绘本翻译/ 与 output/）
+- OCR 阶段不要输出中文或英文翻译
+- 不要跳过振假名
+
+## 用户快捷指令
+
+| 用户说 | Agent 做 |
+|--------|----------|
+| 翻译这页绘本 | 全自动 A 链 |
+| 只 OCR | image-ocr-jp only |
+| 追加到双语书 | japanese-kids-translate + bilingual-pdf-maker append |
+| 处理视频分镜 | ffmpeg + video-storyboard-analyzer |

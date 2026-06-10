@@ -31,6 +31,7 @@ class Check:
 
 def checks() -> list[Check]:
     vol1 = ROOT / "03_故事内容/第1卷_觉得奇怪就先观察"
+    unit1 = vol1 / "单元1_第一单元_五案"
     trial = vol1 / "薄样张_试读"
     sample = vol1 / "样章包"
     formal = vol1 / "正式版"
@@ -42,7 +43,12 @@ def checks() -> list[Check]:
         Check("P0", "CLAUDE", ROOT / "CLAUDE.md"),
         Check("P0", "academy-engine Skill", ROOT / ".cursor/skills/academy-engine/SKILL.md"),
         Check("P0", "正典文件索引", ROOT / "00_项目总览/正典文件索引.md"),
+        Check("P0", "SSOT 登记册", unit1 / "00_正本登记册_V1.0.md"),
+        Check("P0", "SSOT gate script", ROOT / "scripts/vol1_ssot_gate.py"),
         # P1
+        Check("P1", "单元1 导航", unit1 / "00_单元导航.md"),
+        Check("P1", "A001 正典指针", unit1 / "A001/00_正典指针.md"),
+        Check("P1", "A001 JP 正文", unit1 / "A001/01_正文/案01_全班都听见了他的声音_HybridVoice_V3.8_日本語.txt"),
         Check("P1", "薄样张 README", trial / "README.md"),
         Check("P1", "NanoBanana prompts", trial / "01_NanoBanana_成图提示词_V1.0.md"),
         Check("P1", "试读脚本", trial / "02_试读脚本_主持人版_V1.0.md"),

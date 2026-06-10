@@ -1,4 +1,0 @@
-G1 PLACEHOLDER
-A005 DA3
-metadata三帧 · SC-05
-Status: awaiting G1draft production

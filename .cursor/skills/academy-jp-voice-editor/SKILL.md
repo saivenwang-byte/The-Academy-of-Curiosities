@@ -59,7 +59,10 @@ allowed-tools:
 ③ MoA -lite 四视角自评（见下表）→ 改稿
 ④ 可选：npx textlint 完整文字稿_日本語.txt（若已配置 tools/textlint/）
 ⑤ 产出 语感编辑摘要_日本語_VolN.md → 交田中全文督查 · **J10 标日字符自检**
+⑥ **M0 试读门禁**（PDF/E20 前必过）：见 `单元1/00_M0-M5_试读合规验收标准_V1.0.md` · 清查工单 `【CC】files/A001-A005_日文PDF_清查工单_2026-06-07.md` · 脚本 `tools/fix_jp_m0_batch.py`
 ```
+
+**M0 一票否决**：模板乱码 · 中文残留（含 `骂`）· 案末内部代号 · 插图内中英/DA代号 — **清零前禁止试读**
 
 ### MoA-lite 四视角（单 agent 内分四轮读稿）
 
@@ -173,9 +176,17 @@ cd tools/textlint && npm install && npx textlint "../../03_故事内容/第1卷_
 
 ```
 中文：总策划 → 资料总编辑 → 创作引擎 → academy-voice-editor（中文）
-日译：翻译 → 【本 skill】→ 田中みどり全文督查 → READY_FOR_TRANSLATION
+日译：翻译 → academy-jp-voice-editor（MoA-lite）→ jp_tanaka_j10_pass（V3.3）
+  → academy-jp-tanaka-desk（V3.4）→ jp_kids_simplify_pass（V3.5）→ 可选 DESK 复跑 → 真人田中 J10 → E20
 ```
 
-触发语：「日译润色第1卷」「JP Voice Editor 过一遍 完整文字稿_日本語」
+### kids simplify（Plan A）
 
-**专家检查（v0.1 · 硬门禁）**：`11_检查项Skill包_v0.1.md` **L09 L10 L11** · 未过不得 `READY_FOR_TRANSLATION`（`06_` §9）。
+- **工具**：`tools/jp_kids_simplify_pass.py`
+- **SSOT**：`desk_roster.yaml` · `kids_simplify_ip` · `jp-elementary-prose.md`
+- **目标**：doc81 JP 自然度 3.5 → 10–12 岁可读 · **不幼化** JP_PROSE_LEXICON 科学词
+- **CLI**：`python tools/jp_kids_simplify_pass.py --all --cn-version V3.1 --jp-in-version V3.4 --jp-out-version V3.5`
+
+触发语：「日译润色第1卷」「JP Voice Editor 过一遍」· 全卷终审：「跑田中助手复合体」· 「kids simplify V3.5」
+
+**专家检查（v0.1 · 硬门禁）**：`11_检查项Skill包_v0.1.md` **L09 L10 L11** · 复合体见 `academy-jp-tanaka-desk` · 未过不得 `READY_FOR_TRANSLATION`（`06_` §9）。

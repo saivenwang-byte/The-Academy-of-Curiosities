@@ -1,9 +1,0 @@
-# Generated per run; commit selected E20 artifacts manually
-_checkpoint.json
-*.partial
-_poll.log
-hyakkei_*/
-
-# Tracked E20 conclusions
-!読者百景_Phase1_读者群匹配与项目评估结论_*.md
-!panel_match_stats.json
